@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--========== SCP 2687A Base ============-->
+	<ThingDef Abstract="True" Name="SCP2687ABase" ParentName="ResourceBase">
+		<description>A polyethylene model of an organ presumed to have originally been manufactured by Prometheus Labs. Adding a small amount of organic material to this causes this.</description>
+		<graphicData>
+			<texPath>test</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+			 <WorkToMake>4000</WorkToMake>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<recipeMaker>
+         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+         <workSkill>Crafting</workSkill>
+         <effectWorking>Smith</effectWorking>
+         <recipeUsers>
+			<li>CraftingSpot</li>
+            <li>DrugLab</li>
+         </recipeUsers>
+         <skillRequirements>
+            <Crafting>5</Crafting>
+         </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Neutroamine>5</Neutroamine>
+			<Plasteel>15</Plasteel>
+		</costList>
+		<stackLimit>20</stackLimit>
+		<thingCategories>
+			<li>SCP</li>
+		</thingCategories>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
+		<techLevel>Ultra</techLevel>
+		<burnableByRecipe>false</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>2</minRewardCount>
+	</ThingDef>
+	
+<!--========== SCP 2687A ============-->
+
+	<ThingDef ParentName="SCP2687ABase">
+		<defName>SCP_2687A</defName>
+		<label>SCP-2687A - Eye</label>		
+	</ThingDef>
+	<ThingDef ParentName="SCP2687ABase">
+		<defName>SCP_2687A_Heart</defName>
+		<label>SCP-2687A - Heart</label>		
+	</ThingDef>
+	<ThingDef ParentName="SCP2687ABase">
+		<defName>SCP_2687A_Lung</defName>
+		<label>SCP-2687A - Lung</label>		
+	</ThingDef>
+	<ThingDef ParentName="SCP2687ABase">
+		<defName>SCP_2687A_Stomach</defName>
+		<label>SCP-2687A - Stomach</label>		
+	</ThingDef>
+	<ThingDef ParentName="SCP2687ABase">
+		<defName>SCP_2687A_Kidney</defName>
+		<label>SCP-2687A - Kidney</label>		
+	</ThingDef>
+	<ThingDef ParentName="SCP2687ABase">
+		<defName>SCP_2687A_Liver</defName>
+		<label>SCP-2687A - Liver</label>		
+	</ThingDef>
+	
+<!--========== SCP 2687B Base ============-->
+
+	<ThingDef Abstract="True" Name="SCP2687BBase" ParentName="BodyPartBase">
+		<description>A polyethylene organ created by adding a small amount of organic matter to SPC-2687-A. This organ, while perfectly functioning, slowly poisons the body with plastic. Only to be used when it is logistically infeasible to use non-anomalous organs.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Neutroamine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<DeteriorationRate>60</DeteriorationRate>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+			 <WorkToMake>150</WorkToMake>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<recipeMaker>
+         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+         <workSkill>Crafting</workSkill>
+         <effectWorking>Smith</effectWorking>
+         <recipeUsers>
+            <li>DrugLab</li>
+         </recipeUsers>
+         <skillRequirements>
+            <Crafting>5</Crafting>
+         </skillRequirements>
+		</recipeMaker>
+		<stackLimit>5</stackLimit>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<drawerType>MapMeshOnly</drawerType>
+		<thingCategories>
+			<li>SCP</li>
+		</thingCategories>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
+		<techLevel>Ultra</techLevel>
+		<burnableByRecipe>false</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>2</minRewardCount>
+	</ThingDef>
+	
+<!--========== SCP 2687B Eye ============-->
+
+	<ThingDef ParentName="SCP2687BBase">
+      <defName>SCP_2687B_Eye</defName>
+      <label>SCP-2687B - Eye</label>
+	  <descriptionHyperlinks><RecipeDef>SCP_Install2687Eye</RecipeDef></descriptionHyperlinks>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+	  <costList>
+			<SCP_2687A_Liver>1</SCP_2687A_Liver>
+	</costList>
+    </ThingDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SCP_2687B_Eye</defName>
+		<label>SCP-2687B - Eye</label>
+		<description>An installed anomalous eye.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Eye</ThingDef>
+		</descriptionHyperlinks>
+		<labelNoun>an anomalous eye</labelNoun>  
+		<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>  
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>SCP_2687B_Eye</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>SCP_Install2687Eye</defName>
+		<label>install anomalous eye</label>
+		<description>Install anomalous eye.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Eye</ThingDef>
+			<HediffDef>SCP_2687B_Eye</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing anomalous eye.</jobString>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>SCP_2687B_Eye</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>SCP_2687B_Eye</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		  <li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SCP_2687B_Eye</addsHediff>
+		<skillRequirements>
+		  <Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	
+<!--========== SCP 2687B Heart ============-->
+
+	<ThingDef ParentName="SCP2687BBase">
+      <defName>SCP_2687B_Heart</defName>
+      <label>SCP-2687B - Heart</label>
+	  <descriptionHyperlinks><RecipeDef>SCP_Install2687Heart</RecipeDef></descriptionHyperlinks>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+	  <costList>
+			<SCP_2687A_Liver>1</SCP_2687A_Liver>
+	</costList>
+    </ThingDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SCP_2687B_Heart</defName>
+		<label>SCP-2687B - Heart</label>
+		<description>An installed anomalous Heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Heart</ThingDef>
+		</descriptionHyperlinks>
+		<labelNoun>an anomalous Heart</labelNoun>  
+		<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>  
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>SCP_2687B_Heart</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>SCP_Install2687Heart</defName>
+		<label>install anomalous Heart</label>
+		<description>Install anomalous Heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Heart</ThingDef>
+			<HediffDef>SCP_2687B_Heart</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing anomalous Heart.</jobString>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>SCP_2687B_Heart</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>SCP_2687B_Heart</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		  <li>Heart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SCP_2687B_Heart</addsHediff>
+		<skillRequirements>
+		  <Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+<!--========== SCP 2687B Lung ============-->
+
+	<ThingDef ParentName="SCP2687BBase">
+      <defName>SCP_2687B_Lung</defName>
+      <label>SCP-2687B - Lung</label>
+	  <descriptionHyperlinks><RecipeDef>SCP_Install2687Lung</RecipeDef></descriptionHyperlinks>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+	  <costList>
+			<SCP_2687A_Liver>1</SCP_2687A_Liver>
+	</costList>
+    </ThingDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SCP_2687B_Lung</defName>
+		<label>SCP-2687B - Lung</label>
+		<description>An installed anomalous Lung.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Lung</ThingDef>
+		</descriptionHyperlinks>
+		<labelNoun>an anomalous Lung</labelNoun>  
+		<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>  
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>SCP_2687B_Lung</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>SCP_Install2687Lung</defName>
+		<label>install anomalous Lung</label>
+		<description>Install anomalous Lung.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Lung</ThingDef>
+			<HediffDef>SCP_2687B_Lung</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing anomalous Lung.</jobString>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>SCP_2687B_Lung</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>SCP_2687B_Lung</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		  <li>Lung</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SCP_2687B_Lung</addsHediff>
+		<skillRequirements>
+		  <Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	
+<!--========== SCP 2687B Stomach ============-->
+
+	<ThingDef ParentName="SCP2687BBase">
+      <defName>SCP_2687B_Stomach</defName>
+      <label>SCP-2687B - Stomach</label>
+	  <descriptionHyperlinks><RecipeDef>SCP_Install2687Stomach</RecipeDef></descriptionHyperlinks>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+	  <costList>
+			<SCP_2687A_Liver>1</SCP_2687A_Liver>
+	</costList>
+    </ThingDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SCP_2687B_Stomach</defName>
+		<label>SCP-2687B - Stomach</label>
+		<description>An installed anomalous Stomach.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Stomach</ThingDef>
+		</descriptionHyperlinks>
+		<labelNoun>an anomalous Stomach</labelNoun>  
+		<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>  
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>SCP_2687B_Stomach</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>SCP_Install2687Stomach</defName>
+		<label>install anomalous Stomach</label>
+		<description>Install anomalous Stomach.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Stomach</ThingDef>
+			<HediffDef>SCP_2687B_Stomach</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing anomalous Stomach.</jobString>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>SCP_2687B_Stomach</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>SCP_2687B_Stomach</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		  <li>Stomach</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SCP_2687B_Stomach</addsHediff>
+		<skillRequirements>
+		  <Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	
+<!--========== SCP 2687B Kidney ============-->
+
+	<ThingDef ParentName="SCP2687BBase">
+      <defName>SCP_2687B_Kidney</defName>
+      <label>SCP-2687B - Kidney</label>
+	  <descriptionHyperlinks><RecipeDef>SCP_Install2687Kidney</RecipeDef></descriptionHyperlinks>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+	  <costList>
+			<SCP_2687A_Liver>1</SCP_2687A_Liver>
+	</costList>
+    </ThingDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SCP_2687B_Kidney</defName>
+		<label>SCP-2687B - Kidney</label>
+		<description>An installed anomalous Kidney.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Kidney</ThingDef>
+		</descriptionHyperlinks>
+		<labelNoun>an anomalous Kidney</labelNoun>  
+		<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>  
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>SCP_2687B_Kidney</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>SCP_Install2687Kidney</defName>
+		<label>install anomalous Kidney</label>
+		<description>Install anomalous Kidney.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Kidney</ThingDef>
+			<HediffDef>SCP_2687B_Kidney</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing anomalous Kidney.</jobString>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>SCP_2687B_Kidney</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>SCP_2687B_Kidney</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		  <li>Kidney</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SCP_2687B_Kidney</addsHediff>
+		
+		<skillRequirements>
+		  <Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+			
+<!--========== SCP 2687B Liver ============-->
+
+	<ThingDef ParentName="SCP2687BBase">
+      <defName>SCP_2687B_Liver</defName>
+      <label>SCP-2687B - Liver</label>
+	  <descriptionHyperlinks><RecipeDef>SCP_Install2687Liver</RecipeDef></descriptionHyperlinks>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+	  <costList>
+			<SCP_2687A_Liver>1</SCP_2687A_Liver>
+	</costList>
+    </ThingDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SCP_2687B_Liver</defName>
+		<label>SCP-2687B - Liver</label>
+		<description>An installed anomalous liver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Liver</ThingDef>
+		</descriptionHyperlinks>
+		<labelNoun>an anomalous liver</labelNoun>  
+		<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>  
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>SCP_2687B_Liver</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>SCP_Install2687Liver</defName>
+		<label>install anomalous liver</label>
+		<description>Install anomalous liver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687B_Liver</ThingDef>
+			<HediffDef>SCP_2687B_Liver</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing anomalous liver.</jobString>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>SCP_2687B_Liver</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>SCP_2687B_Liver</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		  <li>Liver</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SCP_2687B_Liver</addsHediff>
+		<skillRequirements>
+		  <Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	
+<!--========== Plastic Blood Poisoning ============-->
+<HediffDef ParentName="InfectionBase">
+    <defName>SCP_2687Poison</defName>
+    <label>Microplastic Poisoning </label>
+    <description>The organs derived from SCP-2687 can cause acute poisoning of the blood.</description>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>1</lethalSeverity>
+    <tendable>false</tendable>
+    <comps>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.2488</severityPerDayNotImmune>
+        <immunityPerDaySick>0.2388</immunityPerDaySick>
+        <severityPerDayImmune>-0.4947</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.666</minSeverity>
+        <label>major</label>
+        <vomitMtbDays>1.5</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.833</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <painOffset>0.05</painOffset>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

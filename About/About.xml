@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+    <name>Secure Contain Protect</name>
+	<packageId>VR.SCP</packageId>
+	<author>Viral Reaction</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<description>SCP</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
+</ModMetaData>	
