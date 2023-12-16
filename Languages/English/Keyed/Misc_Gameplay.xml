@@ -54,5 +54,14 @@
 
 	<SCP_RCritical>Critical</SCP_RCritical>
 	<SCP_RCriticalDesc>The anomaly in question has an extremely severe risk potential. Individuals nearby will invariably be exposed to acute, life-threatening harm. These effects cannot be mitigated.</SCP_RCriticalDesc>
+	
+	<!-- Scranton Reality Anchor -->
+	<SCP.Interface.TargetEffect>Target psychic sensitivity decrease: {0}</SCP.Interface.TargetEffect>
+    <SCP.Interface.TargetRadius>Target radius: {0}</SCP.Interface.TargetRadius>
+    <SCP.Interface.PowerConsumption>Predicted power consumption: {0}W</SCP.Interface.PowerConsumption>
+	<SCP.SuppressionField.CurrentEffect>Psychic sensitivity decrease: {0}</SCP.SuppressionField.CurrentEffect>
+    <SCP.SuppressionField.CurrentRadius>Current radius: {0}</SCP.SuppressionField.CurrentRadius>
+    <SCP.SuppressionField.ConfigureSuppressionField>Configure suppression field</SCP.SuppressionField.ConfigureSuppressionField>
+    <SCP.SuppressionField.ConfigureSuppressionFieldDesc>Configure the radius and strength of the suppression</SCP.SuppressionField.ConfigureSuppressionFieldDesc>
 
 </LanguageData>

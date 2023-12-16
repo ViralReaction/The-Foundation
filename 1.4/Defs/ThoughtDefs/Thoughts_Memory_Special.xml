@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThoughtDef>
+    <defName>SCP113_BadThought</defName>
+	<showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+	<durationDays>15</durationDays>
+    <stages>
+      <li>
+        <label>used SCP-113</label>
+        <description>My body has been forcibly changed...</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
+ 
+</Defs>
