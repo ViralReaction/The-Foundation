@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="ResourceBase">
-		<defName>SCP113</defName>
+		<defName>SCP113_Stone</defName>
 		<label>SCP-113 Gender Stone</label>
 		<description>SCP-113 is an object that looks like a small, polished red jasper that switches the gender of the pawn who touches it.</description>
 		<modExtensions>
