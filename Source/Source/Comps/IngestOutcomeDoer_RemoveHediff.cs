@@ -8,6 +8,7 @@ using Verse;
 
 namespace SCP
 { 
+// Removes Hediff specified between <hediff></hediff> in in the comp upon ingestion. Useful for antidotes and such.
 public class IngestionOutcomeDoer_RemoveHediff : IngestionOutcomeDoer
 {
     public HediffDef hediffDef;

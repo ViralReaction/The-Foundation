@@ -29,7 +29,8 @@ namespace SCP
                     usedBy.story.bodyType = BodyTypeDefOf.Male;
             }
             else
-            {
+            {   
+                // To cover players using mods such as Non-Binary Gender. Not perfect may swing back around later.
                 Random rnd = new Random();
                 int gndr = rnd.Next(1, 2);
                 if (gndr == 1)

@@ -12,6 +12,8 @@ namespace SCP
     public static class HediffDefOf
     {
         public static HediffDef SCP_2687Poison;
+        public static HediffDef GutWorms;
+        public static HediffDef MuscleParasites;
 
         static HediffDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));
     }

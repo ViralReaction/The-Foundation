@@ -6,3 +6,5 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\bin\Debug\SCP.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\SCP.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\SCP.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\1.4\Assemblies\SCP.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\1.4\Assemblies\SCP.pdb

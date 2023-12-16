@@ -8,6 +8,7 @@ using Verse;
 
 namespace SCP
 {
+    // Adds plastic poisoning for SCP2687 on adding Hediff with this class.
     public class Hediff_SCP2687 : Hediff_High
     {
         public override void PostAdd(DamageInfo? dinfo)

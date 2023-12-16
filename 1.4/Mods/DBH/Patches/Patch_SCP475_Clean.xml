@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Bad Hygiene</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDefs[defName="SCP475_Soap"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDefs[defName="SCP475_Soap"]/comps</xpath>
+						<value>
+							<li Class="CompProperties_UseEffect">
+								<compClass>SCP.CompUseEffect_UseSCP475_Clean</compClass>
+							</li>
+						</value>
+					</match>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -2,6 +2,7 @@
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
-		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/Mods/Ideology</li>	
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/Mods/Ideology</li>
+		<li IfModActive="dubwise.dubsbadhygiene">1.4/Mods/DBH</li>		
 	</v1.4>
 </loadFolders>
