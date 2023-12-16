@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\bin\Debug\0Harmony.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\SCP.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\SCP.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\SCP.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\bin\Debug\SCP.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\bin\Debug\SCP.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\SCP.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\SCP.pdb

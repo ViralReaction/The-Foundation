@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Plastic Blood Poisoning -->
+	<HediffDef ParentName="InfectionBase">
+		<defName>SCP_2687Poison</defName>
+		<label>Microplastic Poisoning</label>
+		<description>The organs derived from SCP-2687 can cause acute poisoning of the blood. Without a supply of SCP-2687-C, this will most likely result in death.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687_C</ThingDef>
+		</descriptionHyperlinks>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1</lethalSeverity>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.2488</severityPerDayNotImmune>
+				<immunityPerDaySick>0.2388</immunityPerDaySick>
+				<severityPerDayImmune>-0.4947</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.666</minSeverity>
+				<label>major</label>
+				<vomitMtbDays>1.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.833</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<vomitMtbDays>0.75</vomitMtbDays>
+				<painOffset>0.05</painOffset>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

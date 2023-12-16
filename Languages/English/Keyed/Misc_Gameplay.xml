@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Letter Incidents -->
+	<LetterLabelContainmentBreach>Containment Breach</LetterLabelContainmentBreach>
+	<LetterContainmentBreach>One or more SCPs are trying to escape containment!\n\nStop their advances or destroy them.</LetterContainmentBreach>
+
+	<!-- Containment Procedures -->
+	<SCP_Contain>Containment class</SCP_Contain>
+	<SCP_Disrupt>Disruption class</SCP_Disrupt>
+	<SCP_Risk>Risk class</SCP_Risk>
+
+	<!-- Containment -->
+	<SCP_CSafe>Safe</SCP_CSafe>
+	<SCP_CSafeDesc>Anomaly that are easily and safely contained.</SCP_CSafeDesc>
+
+	<SCP_CEuclid>Euclid</SCP_CEuclid>
+	<SCP_CEuclidDesc>Anomaly require more resources to contain completely or where containment isn't always reliable.</SCP_CEuclidDesc>
+
+	<SCP_CKeter>Keter</SCP_CKeter>
+	<SCP_CKeterDesc>Anomaly that is exceedingly difficult to contain consistently or reliably, with containment procedures often being extensive and complex.</SCP_CKeterDesc>
+
+	<SCP_CThaumiel>Thaumiel</SCP_CThaumiel>
+	<SCP_CThaumielDesc>Anomaly that can specifically used to contain other SCPs.</SCP_CThaumielDesc>
+
+	<SCP_CApollyon>Apollyon</SCP_CApollyon>
+	<SCP_CApollyonDesc>Anomaly that cannot be contained, are expected to breach containment imminently, or some other similar scenario.</SCP_CApollyonDesc>
+
+	<!-- Disruption -->
+	<SCP_DDark>Dark</SCP_DDark>
+	<SCP_DDarkDesc>Little to no potential to disrupt the general population.</SCP_DDarkDesc>
+
+	<SCP_DVlam>Vlam</SCP_DVlam>
+	<SCP_DVlamDesc>Low potential to disrupt the general population. Disruption is typically confined to a locality.</SCP_DVlamDesc>
+
+	<SCP_DKeneq>Keneq</SCP_DKeneq>
+	<SCP_DKeneqDesc>Medium potential to disrupt the general population. Disruption is typically confined to a region or city.</SCP_DKeneqDesc>
+
+	<SCP_DEkhi>Ekhi</SCP_DEkhi>
+	<SCP_DEkhiDesc>High potential to disrupt the general population. Disruption is typically widespread, affecting major metropolitan areas or countries.</SCP_DEkhiDesc>
+
+	<!-- Risk -->
+	<SCP_RNotice>Notice</SCP_RNotice>
+	<SCP_RNoticeDesc>The anomaly in question has a low risk potential. Individuals nearby may feel minimal effects from the anomaly, but these effects rarely pose any harm or even discomfort.</SCP_RNoticeDesc>
+
+	<SCP_RCaution>Caution</SCP_RCaution>
+	<SCP_RCautionDesc>The anomaly in question has a moderate risk potential. Individuals nearby will likely experience the effects of the anomaly, and these effects may cause discomfort or harm.</SCP_RCautionDesc>
+
+	<SCP_RWarning>Warning</SCP_RWarning>
+	<SCP_RWarningDesc>The anomaly in question has a high risk potential. Individuals nearby will likely experience the acute effects of the anomaly and will be at risk for experiencing severe harm, up to and including death.</SCP_RWarningDesc>
+
+	<SCP_RDanger>Danger</SCP_RDanger>
+	<SCP_RDangerDesc>The anomaly in question has a very high risk potential. Individuals nearby will invariably be exposed to harm, up to and including death. These effects are very difficult to mitigate.</SCP_RDangerDesc>
+
+	<SCP_RCritical>Critical</SCP_RCritical>
+	<SCP_RCriticalDesc>The anomaly in question has an extremely severe risk potential. Individuals nearby will invariably be exposed to acute, life-threatening harm. These effects cannot be mitigated.</SCP_RCriticalDesc>
+
+</LanguageData>

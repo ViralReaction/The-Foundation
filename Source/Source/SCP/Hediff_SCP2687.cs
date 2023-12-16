@@ -1,0 +1,25 @@
+﻿using RimWorld;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Verse;
+
+namespace SCP
+{
+    public class Hediff_SCP2687 : Hediff_High
+    {
+        public override void PostAdd(DamageInfo? dinfo)
+        {
+            if (!this.pawn.health.hediffSet.HasHediff(HediffDefOf.SCP_2687Poison))
+            {
+                Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.SCP_2687Poison, this.pawn);
+                hediff.Severity = 0.05f;
+                this.pawn.health.AddHediff(hediff);
+            }
+            else
+                this.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.SCP_2687Poison).Severity += 0.05f;
+        }
+    }
+}
