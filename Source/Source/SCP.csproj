@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompUseEffect_SCP113.cs" />
+    <Compile Include="SCP\SCP113_Gender_Swap.cs" />
     <Compile Include="Psychic Suppresion\SuppressionFieldInterface.cs" />
     <Compile Include="Psychic Suppresion\Bulding_PsychicSuppressionField.cs" />
     <Compile Include="Psychic Suppresion\CompProperties_PsychicSuppressionField.cs" />

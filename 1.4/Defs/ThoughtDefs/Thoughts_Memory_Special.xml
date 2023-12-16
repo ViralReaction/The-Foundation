@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThoughtDef>
-    <defName>SCP113_BadThought</defName>
-	<showBubble>true</showBubble>
-    <icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
-	<durationDays>15</durationDays>
-    <stages>
-      <li>
-        <label>used SCP-113</label>
-        <description>My body has been forcibly changed...</description>
-        <baseMoodEffect>-20</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef> 
+	<ThoughtDef>
+		<defName>SCP113_BadThought</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+		<durationDays>15</durationDays>
+		<stages>
+			<li>
+				<label>used SCP-113</label>
+				<description>My body has been forcibly changed...</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+	<ThoughtDef>
+		<defName>SCR_AteSCP2022</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>SCP2022High</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>SCP-2022</label>
+				<description>I feel the sun's warmth and a gentle tropical breeze.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
  
 </Defs>
