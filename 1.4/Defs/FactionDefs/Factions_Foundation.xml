@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>SCP_Foundation</defName>
+		<label>The Foundation</label>
+		<description>Operating clandestine and worldwide, the Foundation operates beyond jurisdiction, empowered and entrusted by every major national government with the task of containing anomalous objects, entities, and phenomena. These anomalies pose a significant threat to global security by threatening either physical or psychological harm.
+
+The Foundation operates to maintain normalcy, so that the worldwide civilian population can live and go on with their daily lives without fear, mistrust, or doubt in their personal beliefs, and to maintain human independence from extraterrestrial, extradimensional, and other extranormal influence.
+
+Their mission is three-fold: Secure, Contain and Protect.</description>
+		<pawnSingular>agent</pawnSingular>
+		<pawnsPlural>agents</pawnsPlural>
+		<listOrderPriority>2</listOrderPriority>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>The Foundation</fixedName>
+		<leaderTitle>Site Overseer</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/SCP</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<settlementNameMaker>SCP_FactionBaseNamer_FoundationSites</settlementNameMaker>
+		<colorSpectrum>
+			<li>(255, 255, 255)</li>
+		</colorSpectrum>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<humanlikeFaction>true</humanlikeFaction>
+		<leaderForceGenerateNewPawn>True</leaderForceGenerateNewPawn>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>true</canUseAvoidGrid>
+		<techLevel>Industrial</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Pirate</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>DevilstrandCloth</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	
+		<caravanTraderKinds>
+			<li>SCPCaravan_Trader</li>
+		</caravanTraderKinds>
+	
+		<visitorTraderKinds>
+			<li>SCPVisitor_Standard</li>
+		</visitorTraderKinds>
+    
+		<baseTraderKinds>
+			<li>SCPBase_Standard</li>
+		</baseTraderKinds>
+    
+		<allowedArrivalTemperatureRange>
+			<min>-40</min>
+			<max>45</max>
+		</allowedArrivalTemperatureRange>
+	
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+	
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(100,  0)</li>
+				<li>(500,  1)</li>
+				<li>(1200, 1.5)</li>
+				<li>(2500, 2.0)</li>
+				<li>(3800, 2.5)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+	
+		<raidLootValueFromPointsCurve>
+			<points>
+				<li>(35,     8)</li>
+				<li>(100,   60)</li>
+				<li>(1000, 250)</li>
+				<li>(2000, 400)</li>
+				<li>(4000, 500)</li>
+			</points>
+		</raidLootValueFromPointsCurve>
+	
+		<!-- Ideology dlc stuff -->
+		<allowedCultures><li>Astropolitan</li></allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+		</disallowedPrecepts>
+	
+	
+	
+		<pawnGroupMakers>
+	
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>95</commonality>
+				<options>
+					<SCP_MobileTaskForce_Marksman>3</SCP_MobileTaskForce_Marksman>
+					<SCP_MobileTaskForce_Sniper>2</SCP_MobileTaskForce_Sniper>
+					<SCP_MobileTaskForce_Gunner>4</SCP_MobileTaskForce_Gunner>
+					<SCP_MobileTaskForce_Assault>10</SCP_MobileTaskForce_Assault>
+					<SCP_MobileTaskForce_Elite>2</SCP_MobileTaskForce_Elite>
+				</options>
+			</li>
+			<li>
+				<!-- Badass -->
+				<kindDef>Combat</kindDef>
+				<commonality>2</commonality>
+				<options>
+					<SCP_MobileTaskForce_Assault>8</SCP_MobileTaskForce_Assault>
+					<SCP_MobileTaskForce_Elite>6</SCP_MobileTaskForce_Elite>
+					<SCP_MobileTaskForce_Gunner>7</SCP_MobileTaskForce_Gunner>
+					<SCP_MobileTaskForce_Sniper>4</SCP_MobileTaskForce_Sniper>
+					<SCP_Staff_SiteHead>1</SCP_Staff_SiteHead>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, explosives with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<SCP_MobileTaskForce_Assault>15</SCP_MobileTaskForce_Assault>
+					<SCP_MobileTaskForce_Gunner>8</SCP_MobileTaskForce_Gunner>
+					<SCP_MobileTaskForce_Marksman>4</SCP_MobileTaskForce_Marksman>
+					<SCP_MobileTaskForce_Sniper>2</SCP_MobileTaskForce_Sniper>
+					<SCP_MobileTaskForce_Elite>1</SCP_MobileTaskForce_Elite>
+				</options>
+			</li>
+	  
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<SCP_MobileTaskForce_Assault>12</SCP_MobileTaskForce_Assault>
+					<SCP_MobileTaskForce_Gunner>4</SCP_MobileTaskForce_Gunner>
+					<SCP_MobileTaskForce_Marksman>3</SCP_MobileTaskForce_Marksman>
+					<SCP_Staff_Ambassador>1</SCP_Staff_Ambassador>
+				</options>
+			</li>
+      
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<SCP_Trader>1</SCP_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<SCP_MobileTaskForce_Assault>10</SCP_MobileTaskForce_Assault>
+					<SCP_MobileTaskForce_Marksman>4</SCP_MobileTaskForce_Marksman>
+					<SCP_MobileTaskForce_Gunner>5</SCP_MobileTaskForce_Gunner>
+					<SCP_Staff_Scientist>2</SCP_Staff_Scientist>
+					<SCP_Staff_Worker>1</SCP_Staff_Worker>
+					<SCP_Staff_Ambassador>1</SCP_Staff_Ambassador>
+				</guards>
+			</li>
+      
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SCP_SecurityGuard_CQB>15</SCP_SecurityGuard_CQB>
+					<SCP_SecurityTaskForce_Assault>8</SCP_SecurityTaskForce_Assault>
+					<SCP_SecurityTaskForce_Marksman>4</SCP_SecurityTaskForce_Marksman>
+					<SCP_SecurityTaskForce_Gunner>5</SCP_SecurityTaskForce_Gunner>
+					<SCP_Staff_Scientist>1</SCP_Staff_Scientist>
+					<SCP_Staff_Worker>1</SCP_Staff_Worker>
+					<SCP_Staff_SiteHead>1</SCP_Staff_SiteHead>
+				</options>
+			</li>
+    
+		</pawnGroupMakers>
+	
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>
