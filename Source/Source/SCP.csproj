@@ -36,9 +36,6 @@
     <Reference Include="0Harmony">
       <HintPath>..\..\..\..\..\..\..\..\..\Games\Rimworld C# Packages\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="BadHygiene">
-      <HintPath>..\..\..\..\..\..\..\..\..\Games\Rimworld C# Packages\BadHygiene.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,6 +64,20 @@
     <Compile Include="SCP\SCP113_Gender_Swap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SCP\SCP475 Pope Soap\CompUseEffect_UseSCP475.cs" />
+    <Compile Include="SCP\SCP939\CompProperties_Voices.cs" />
+    <Compile Include="SCP\SCP939\CompVoices.cs" />
+    <Compile Include="SCP\SCP939\GameCondition_SCP939.cs" />
+    <Compile Include="SCP\SCP939\IncidentWorker_SCP939.cs" />
+    <Compile Include="SCP\SCP939\JobDefOf_SCP.cs" />
+    <Compile Include="SCP\SCP939\JobDriver_LeaveMapPromptly.cs" />
+    <Compile Include="SCP\SCP939\SCPHarmony_Patches.cs" />
+    <Compile Include="SCP\SCP939\MentalStateDefOf_SCP.cs" />
+    <Compile Include="SCP\SCP939\MentalState_Voices.cs" />
+    <Compile Include="SCP\SCP939\PawnKindDefOf_SCP.cs" />
+    <Compile Include="SCP\SCP939\SPExtended\SPTrig.cs" />
+    <Compile Include="SCP\SCP939\SPExtended\SPMultiCell.cs" />
+    <Compile Include="SCP\SCP939\SPExtended\SPExtra.cs" />
+    <Compile Include="SCP\SCP939\SPExtended\SPTuples.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

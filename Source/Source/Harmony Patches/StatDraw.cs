@@ -11,7 +11,6 @@ using Verse;
 
 namespace SCP
 {
-    [StaticConstructorOnStartup]
     public static class StatDrawEntry_Patch
     {
         private static readonly System.Type patchType = typeof(StatDrawEntry_Patch);
@@ -26,7 +25,7 @@ namespace SCP
             {
                 if (__instance.GetModExtension<ContainmentExtension>() == null || __instance.IsCorpse || __instance.GetModExtension<ContainmentExtension>().classRating == null)
                     return;
-                StatCategoryDef category = StatCategoryDefOf.BasicsPawn;
+                StatCategoryDef category = StatCategoryDefOf.Basics;
                 if (__instance.IsWeapon)
                     category = StatCategoryDefOf.Weapon;
                 else if (__instance.IsApparel)
