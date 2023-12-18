@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggSlimybellieFertilized</defName>
+    <label>Slimybellie Egg (fert.)</label>
+    <description>Fertilized slimybellie egg. If all goes well, it should hatch into a baby slimybellie. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggSlimybellie</texPath>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>SCP_111_Slimybellie</hatcherPawn>
+      </li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggOozedrakeFertilized</defName>
+    <label>Oozedrake Egg (fert.)</label>
+    <description>Fertilized oozedrake egg. If all goes well, it should hatch into a baby oozedrake. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOozedrake</texPath>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>SCP_111_Oozedrake</hatcherPawn>
+      </li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggGoowyvernFertilized</defName>
+    <label>Goowyvern Egg (fert.)</label>
+    <description>Fertilized goowyvern egg. If all goes well, it should hatch into a baby goowyvern. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggGoowyvern</texPath>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>SCP_111_Goowyvern</hatcherPawn>
+      </li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggBlobwormFertilized</defName>
+    <label>Blobworm Egg (fert.)</label>
+    <description>Fertilized blobworm egg. If all goes well, it should hatch into a baby blobworm. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggBlobworm</texPath>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>SCP_111_Blobworm</hatcherPawn>
+      </li>
+		</comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggGlowdrakeFertilized</defName>
+    <label>Glowdrake Egg (fert.)</label>
+    <description>Fertilized glowdrake egg. If all goes well, it should hatch into a baby glowdrake. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggGlowdrake</texPath>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>SCP_111_Glowdrake</hatcherPawn>
+      </li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggGunkwyvernFertilized</defName>
+    <label>Gunkwyvern Egg (fert.)</label>
+    <description>Fertilized gunkwyvern egg. If all goes well, it should hatch into a baby gunkwyvern. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggGunkwyvern</texPath>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>40.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>SCP_111_Gunkwyvern</hatcherPawn>
+      </li>
+		</comps>
+  </ThingDef>
+
+</Defs>

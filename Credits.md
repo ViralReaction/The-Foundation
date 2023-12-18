@@ -9,6 +9,7 @@ Church of the Broken God: "Church of the Broken God Hub" by HammerMaiden, from t
 
 SCP	|
 ---	|	
+SCP-111: "SCP-111" by Adam Henderson, from the SCP Wiki. Source: https://scpwiki.com/scp-111. Licensed under CC-BY-SA.
 SCP-113: "SCP-113" by kabu, rewritten by Robin Sure and thedeadlymoose, from the SCP Wiki. Source: https://scpwiki.com/scp-113. Licensed under CC-BY-SA. |
 SCP-475: "SCP-475" by Tarage, rewritten by mlister, from the SCP Wiki. Source: https://scpwiki.com/scp-475. Licensed under CC-BY-SA. |
 SCP-939: "SCP-939" by Adam Smascher and EchoFourDelta, from the SCP Wiki. Source: https://scpwiki.com/scp-939. Licensed under CC-BY-SA.	|
@@ -26,6 +27,7 @@ Global Occult Coalition Logo: GOC-Logo-v4.png by Aelanna, from the SCP Wiki. Sou
 Church of the Broken God Logo: SPMax.png by SunnyClockwork, from the SCP Wiki. Source: https://scpwiki.com/church-of-the-broken-god-hub. Licensed under CC-BY-SA.  |
 Faction clothing textures: By Ods. Source: https://steamcommunity.com/sharedfiles/filedetails/?id=2207934307 . Licensed under CC-BY-SA.|
 Parka clothing texture: By Batjme. Source: https://steamcommunity.com/sharedfiles/filedetails/?id=2207934307 . Licensed under CC-BY-SA.	|
+SCP-111 Textures by Tigersblut. Source: https://steamcommunity.com/sharedfiles/filedetails/?id=1541255910. Licensed under CC-BY-SA.	|
 SCP-939 Texture: Source: https://steamcommunity.com/sharedfiles/filedetails/?id=2207934307 . Licensed under CC-BY-SA.	|
 
 Code	|
