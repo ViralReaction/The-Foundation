@@ -451,8 +451,9 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
+	</ThingDef>
 
-	<PawnKindDef ParentName="SCP_111Base">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_111_Glowdrake</defName>
 		<label>SCP-111 Glowdrake</label>
 		<race>SCP_111_Glowdrake</race>
