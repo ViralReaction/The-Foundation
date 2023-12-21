@@ -16,12 +16,12 @@ namespace SCP
             Map target = (Map)parms.target;
             if (target.IsPlayerHome)
             {
-                if (parms.controllerPawn != null && IncidentWorker_ContainmentBreach.IsSCP(parms.controllerPawn))
+                if (parms.controllerPawn != null && SCP_Startup.IsSCP(parms.controllerPawn))
                     return true;
                 foreach (Pawn pawn in target.mapPawns.AllPawnsSpawned)
                 {
                     ThingDef def = pawn.def;
-                    if (IncidentWorker_ContainmentBreach.IsSCP(pawn) && pawn.GetRoom().Role == SCP_Startup.containmentRoom)
+                    if (SCP_Startup.IsSCP(pawn) && pawn.GetRoom().Role == SCP_Startup.containmentRoom)
                         return true;
                 }
             }
@@ -39,14 +39,14 @@ namespace SCP
             List<Pawn> list = new List<Pawn>();
             foreach (Pawn pawn in target.mapPawns.AllPawnsSpawned)
             {
-                if (IncidentWorker_ContainmentBreach.IsSCP(pawn) && pawn.GetRoom().Role == SCP_Startup.containmentRoom && pawn.def.GetModExtension<ContainmentExtension>().containmentTier > 0)
+                if (SCP_Startup.IsSCP(pawn) && pawn.GetRoom().Role == SCP_Startup.containmentRoom && pawn.def.GetModExtension<ContainmentExtension>().containmentTier > 0)
                     list.Add(pawn);
             }
             if (!list.NullOrEmpty<Pawn>())
             {
                 int index = Rand.Range(0, list.Count);
                 Pawn controllerPawn = list[index];
-                if (parms.controllerPawn != null && IncidentWorker_ContainmentBreach.IsSCP(parms.controllerPawn) && parms.controllerPawn.GetRoom().Role == SCP_Startup.containmentRoom)
+                if (parms.controllerPawn != null && SCP_Startup.IsSCP(parms.controllerPawn) && parms.controllerPawn.GetRoom().Role == SCP_Startup.containmentRoom)
                 {
                     foreach (Pawn pawn in list)
                     {
@@ -74,6 +74,6 @@ namespace SCP
             return false;
         }
 
-        protected static bool IsSCP(Pawn p) => p.def.GetModExtension<ContainmentExtension>() != null;
+        //protected static bool IsSCP(Pawn p) => p.def.GetModExtension<ContainmentExtension>() != null;
     }
 }

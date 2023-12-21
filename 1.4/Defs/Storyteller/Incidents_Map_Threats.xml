@@ -13,5 +13,16 @@
 		<pointsScaleable>true</pointsScaleable>
 		<tale>Raid</tale>
 	</IncidentDef>
+	
+	<IncidentDef>
+    <defName>SCP_Incident_SCP131Join</defName>
+    <label>pair of SCP-131s join</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SCP.IncidentWorker_SCP131</workerClass>
+    <baseChance>0.5</baseChance>
+	</IncidentDef>
 
 </Defs>

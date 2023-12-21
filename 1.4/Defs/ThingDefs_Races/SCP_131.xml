@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>SCP_SCP131R</defName>
+		<label>Eye Pods</label>
+		<description>Item #: SCP-131
+Object Class: Safe
+		
+SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) are a pair of teardrop-shaped creatures roughly 30 cm (1 ft) in height, with a single blue eye in the middle of their bodies. SCP-131-A is burnt orange in color while SCP-131-B is mustard yellow. The subjects seem to have the intelligence of common house cats and are insatiably curious. Most of the time they simply roll around the facility, observing personnel at work and catching peeks at other Safe class SCPs. The subjects seem to be able to communicate with each other via an untranslatable high-pitched babbling. The subjects seem to respond well to any affection given to them and will quickly bond to the giver of said affection, much in the same way a puppy bonds with a human being.</description>
+		<modExtensions>
+			<li Class="SCP.ContainmentExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RCaution</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>50</MoveSpeed>
+			<MarketValue>500</MarketValue>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<FilthRate>0</FilthRate>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<butcherProducts>
+			<Steel>16</Steel>
+		</butcherProducts>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalPet</li>
+			<li>SCP</li>
+		</tradeTags>
+		<race>
+			<body>SCP_Round</body>
+			<herdAnimal>true</herdAnimal>
+			<predator>false</predator>
+			<needsRest>false</needsRest>
+			<baseBodySize>.15</baseBodySize>
+			<baseHungerRate>0.00000001</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>Leather_Patch</leatherDef>
+			<useMeatFrom>Cat</useMeatFrom>
+			<wildness>0</wildness>
+			<petness>1</petness>
+			<trainability>Intermediate</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<lifeExpectancy>50</lifeExpectancy>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>.5</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCP_SCP131R</defName>
+		<label>Eye Pods</label>
+		<race>SCP_SCP131R</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<labelMale>SCP-131-B</labelMale>
+				<labelFemale>SCP-131-A</labelFemale>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/SCP131b</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/SCP131a</texPath>
+					<drawSize>0.5</drawSize>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/Dessicated_SCP131a</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/Dessicated_SCP131a</texPath>
+					<drawSize>0.5</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<labelMale>SCP-131-B</labelMale>
+				<labelFemale>SCP-131-A</labelFemale>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/SCP131b</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/SCP131a</texPath>
+					<drawSize>0.7</drawSize>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/Dessicated_SCP131a</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/Dessicated_SCP131a</texPath>
+					<drawSize>0.7</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

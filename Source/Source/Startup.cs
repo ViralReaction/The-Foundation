@@ -63,6 +63,17 @@ namespace SCP
                 num = 0;
             return num != 0 || thing.def.HasModExtension<ContainmentExtension>() && thing.def.GetModExtension<ContainmentExtension>().containmentTier >= 1;
         }
+        public static bool IsSCP(Pawn p) => p.def.GetModExtension<ContainmentExtension>() != null;
+        public static bool isCage(string defName)
+        {
+            switch (defName)
+            {
+                case "Test_AnimalSleepingSpot":
+                    return true;
+                default:
+                    return false;
+            }
+        }
 
         public static bool isAnyContainmentStorage(string defName)
         {

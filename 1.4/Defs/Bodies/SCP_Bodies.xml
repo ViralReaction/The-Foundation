@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BodyDef>
+		<defName>DragonSnailBody</defName>
+		<label>Dragon Snail</label>
+		<corePart>
+			<def>TurtleShell</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>SnakeHead</def>
+					<coverage>0.20</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Skull</def>
+							<coverage>0.30</coverage>
+							<depth>Inside</depth>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.50</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>Horn</def>
+							<coverage>0.10</coverage>
+							<groups>
+								<li>HornAttackTool</li>
+							</groups>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>left eye</customLabel>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>right eye</customLabel>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>Nose</def>
+							<coverage>0.15</coverage>
+						</li>
+						<li>
+							<def>SnakeMouth</def>
+							<coverage>0.15</coverage>
+							<groups>
+								<li>Mouth</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Foot</def>
+					<coverage>0.20</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+  
+	<!-- Bipedal body with a large eye. For now, SCP-131 -->
+	<BodyDef>
+		<defName>SCP_Round</defName>
+		<label>round</label>
+		<corePart>
+			<def>Body</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Tail</def>
+					<customLabel>head protrusion</customLabel>
+					<coverage>0.1</coverage>
+				</li>
+				<li>
+					<def>Head</def>
+					<coverage>0.2</coverage>
+					<parts>
+						<li>
+							<def>Eye</def>
+							<coverage>0.5</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Leg</def>
+					<customLabel>left locomotion organ</customLabel>
+					<coverage>0.15</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>Foot</def>
+							<customLabel>left locomotion organ</customLabel>
+							<coverage>0.5</coverage>
+							<groups>
+								<li>Feet</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Leg</def>
+					<customLabel>right locomotion organ</customLabel>
+					<coverage>0.15</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>Foot</def>
+							<customLabel>right locomotion organ</customLabel>
+							<coverage>0.5</coverage>
+							<groups>
+								<li>Feet</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

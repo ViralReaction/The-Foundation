@@ -1,0 +1,23 @@
+﻿using RimWorld;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Verse;
+
+namespace SCP
+{
+    internal class ThoughtWorker_SCP939 : ThoughtWorker
+    {
+        protected override ThoughtState CurrentStateInternal(Pawn p)
+        {
+            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("SCP939_BreathHediff"));
+            if (firstHediffOfDef == null || firstHediffOfDef.FullyImmune())
+                return (ThoughtState)false;
+            if ((double)firstHediffOfDef.Severity >= 0.35)
+                p.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Wander_Psychotic, (string)("MBReason".Translate() + "SCP-939"));
+            return (ThoughtState)true;
+        }
+    }
+}

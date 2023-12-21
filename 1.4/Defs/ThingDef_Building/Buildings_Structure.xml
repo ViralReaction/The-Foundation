@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Containment_Zone</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>Containment Zone</label>
+		<description>Designates a spot on the ground where SCP should sleep.</description>
+		<size>(5,5)</size>
+		<passability>Standable</passability>
+		<designationCategory>Furniture</designationCategory>
+		<uiOrder>2035</uiOrder>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ContainmentZone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<uiIconScale>0.80</uiIconScale>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+			<SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<modExtensions>
+			<li Class="SCP.Cage.CageExtension">
+				<isCage>true</isCage>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>SCP.Cage.CompAssignableToPawn_Cage</compClass>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase" Name="SCR_Wall" Abstract="True">
 		<defName>SCR_Wall</defName>

@@ -71,4 +71,8 @@
     <SCP.SuppressionField.ConfigureSuppressionField>Configure suppression field</SCP.SuppressionField.ConfigureSuppressionField>
     <SCP.SuppressionField.ConfigureSuppressionFieldDesc>Configure the radius and strength of the suppression</SCP.SuppressionField.ConfigureSuppressionFieldDesc>
 
+	<!-- Containment Zones -->
+	<SCP_AssignSCP>Assign SCP(s)</SCP_AssignSCP>
+	<SCP_AssignSCPDesc>Assign scp(s) to capture and keep in the cage.</SCP_AssignSCPDesc>
+
 </LanguageData>
