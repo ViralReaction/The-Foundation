@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using Mono.Security;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace SCP.Cage
 {
     internal class CageUtility
     {
-        public static bool CanUseBedEver(Pawn p, ThingDef bedDef) => !p.RaceProps.IsMechanoid && (double)p.BodySize <= (double)bedDef.building.bed_maxBodySize && p.RaceProps.Humanlike == bedDef.building.bed_humanlike && (!ModsConfig.BiotechActive || bedDef != ThingDefOf.DeathrestCasket || p.CanDeathrest());
+        public static bool CanUseBedEver(Pawn p, ThingDef bedDef) => !p.RaceProps.IsMechanoid && (double)p.BodySize <= (double)bedDef.building.bed_maxBodySize/* && p.RaceProps.Humanlike == bedDef.building.bed_humanlike*/;
         public static bool BedOwnerWillShare(Building_Bed bed, Pawn sleeper, GuestStatus? guestStatus)
         {
             if (!bed.OwnersForReading.Any<Pawn>())
@@ -25,7 +26,7 @@ namespace SCP.Cage
                     GuestStatus guestStatus2 = GuestStatus.Slave;
                     if (!(nullable.GetValueOrDefault() == guestStatus2 & nullable.HasValue))
                     {
-                        if (!bed.AnyUnownedSleepingSlot /*|| !CageUtility.IsAnyOwnerLovePartnerOf(bed, sleeper)*/)
+                        if (!bed.AnyUnownedSleepingSlot)
                             return false;
                         goto label_9;
                     }
@@ -43,7 +44,7 @@ namespace SCP.Cage
           bool allowMedBedEvenIfSetToNoCare = false,
           GuestStatus? guestStatusOverride = null)
         {
-            if (!(bedThing is Building_Bed buildingBed) || !buildingBed.Spawned || buildingBed.Map != sleeper.MapHeld || buildingBed.IsBurning() || !RestUtility.CanUseBedEver(sleeper, buildingBed.def) || buildingBed.CompAssignableToPawn.IdeoligionForbids(sleeper))
+            if (!(bedThing is Building_Bed buildingBed) || !buildingBed.Spawned || buildingBed.Map != sleeper.MapHeld || buildingBed.IsBurning() || !RestUtility.CanUseBedEver(sleeper, buildingBed.def))
                 return false;
             int? assignedSleepingSlot;
             bool flag1 = buildingBed.IsOwner(sleeper, out assignedSleepingSlot);
@@ -77,12 +78,6 @@ namespace SCP.Cage
                         return false;
                 }
             }
-            if (sleeper.IsColonist)
-            {
-                Job curJob = sleeper.CurJob;
-                if ((curJob != null ? (curJob.ignoreForbidden ? 1 : 0) : 0) == 0 && !sleeper.Downed && buildingBed.IsForbidden(sleeper))
-                    return false;
-            }
             return true;
         }
         public static bool IsValidBedFor(
@@ -94,7 +89,6 @@ namespace SCP.Cage
       bool ignoreOtherReservations = false,
       GuestStatus? guestStatus = null)
         {
-            Log.Message("Step 7");
             if (!CageUtility.CanUseBedNow(bedThing, sleeper, checkSocialProperness, allowMedBedEvenIfSetToNoCare, guestStatus))
                 return false;
             Building_Bed buildingBed = bedThing as Building_Bed;
@@ -115,7 +109,7 @@ namespace SCP.Cage
       bool ignoreOtherReservations = false,
       GuestStatus? guestStatus = null)
         {
-            bool flag = false;
+            //bool flag = false;
             if (HealthAIUtility.ShouldSeekMedicalRest(sleeper))
             {
                 if (sleeper.InBed() && sleeper.CurrentBed().Medical && CageUtility.IsValidBedFor((Thing)sleeper.CurrentBed(), sleeper, traveler, checkSocialProperness, ignoreOtherReservations: ignoreOtherReservations, guestStatus: guestStatus))
@@ -131,16 +125,16 @@ namespace SCP.Cage
                         {
                             Danger maxDanger = index2 == 0 ? Danger.None : Danger.Deadly;
                             Building_Bed bedFor = (Building_Bed)GenClosest.ClosestThingReachable(sleeper.Position, sleeper.MapHeld, ThingRequest.ForDef(thingDef), PathEndMode.OnCell, TraverseParms.For(traveler), validator: ((Predicate<Thing>)(b => ((Building_Bed)b).Medical && b.Position.GetDangerFor(sleeper, sleeper.Map) <= maxDanger && CageUtility.IsValidBedFor(b, sleeper, traveler, checkSocialProperness, ignoreOtherReservations: ignoreOtherReservations, guestStatus: guestStatus))));
-                            if (bedFor != null && SCP_Startup.isCage(bedFor.def.defName))
+                            if (bedFor != null && SCP_Startup.IsCage(bedFor.def) && bedFor.GetRoom().Role == SCP_Startup.containmentRoom)
                                 return bedFor;
                         }
                     }
                 }
             }
-            if (sleeper.ownership != null && sleeper.ownership.OwnedBed != null && CageUtility.IsValidBedFor((Thing)sleeper.ownership.OwnedBed, sleeper, traveler, checkSocialProperness, ignoreOtherReservations: ignoreOtherReservations, guestStatus: guestStatus))
+            if (sleeper.ownership != null && sleeper.ownership.OwnedBed != null && sleeper.ownership.OwnedBed.GetRoom().Role == SCP_Startup.containmentRoom && CageUtility.IsValidBedFor((Thing)sleeper.ownership.OwnedBed, sleeper, traveler, checkSocialProperness, ignoreOtherReservations: ignoreOtherReservations, guestStatus: guestStatus))
                 return sleeper.ownership.OwnedBed;
             for (int dg = 0; dg < 3; dg++)
-            {;
+            {
                 Danger maxDanger = dg <= 1 ? Danger.None : Danger.Deadly;
                 for (int index = 0; index < DefDatabase<ThingDef>.AllDefs.Where<ThingDef>((Func<ThingDef, bool>)(d => d.IsBed)).OrderBy<ThingDef, float>((Func<ThingDef, float>)(d => d.building.bed_maxBodySize)).ThenByDescending<ThingDef, float>((Func<ThingDef, float>)(d => d.GetStatValueAbstract(StatDefOf.BedRestEffectiveness))).ToList<ThingDef>().Count; ++index)
                 {
@@ -150,11 +144,15 @@ namespace SCP.Cage
                         Building_Bed bedFor = (Building_Bed)GenClosest.ClosestThingReachable(sleeper.PositionHeld, sleeper.MapHeld, ThingRequest.ForDef(thingDef), PathEndMode.OnCell, TraverseParms.For(traveler), validator: ((Predicate<Thing>)(b =>
                         {
                             if (((Building_Bed)b).Medical /*|| b.Position.GetDangerFor(sleeper, sleeper.MapHeld) > maxDanger*/ || !CageUtility.IsValidBedFor(b, sleeper, traveler, checkSocialProperness, ignoreOtherReservations: ignoreOtherReservations, guestStatus: guestStatus))
+                            {
                                 return false;
+                            }
                             return dg > 0 || !b.Position.GetItems(b.Map).Any<Thing>((Func<Thing, bool>)(thing => thing.def.IsCorpse));
                         })));
-                        if (bedFor != null && SCP_Startup.isCage(bedFor.def.defName))
+                        if (bedFor != null && SCP_Startup.IsCage(bedFor.def) && bedFor.GetRoom().Role == SCP_Startup.containmentRoom)
+                        {
                             return bedFor;
+                        }
                     }
                 }
             }

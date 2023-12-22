@@ -1,31 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-		<!-- Plastic Blood Poisoning -->
-	  <HediffDef ParentName="DiseaseBase">
-		<defName>SCR_SCP939BreathHediff</defName>
+	<!-- SCP-939 Amnesic Breath -->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>SCP_939_Breath_Hediff</defName>
 		<label>SCP-939 breath</label>
 		<description>An amnesia-inducing substance exhaled from SCP-939.
 	\nNaturally recovers over time as the body filters it out.</description>
 		<initialSeverity>.15</initialSeverity>
 		<comps>
-		  <li Class="HediffCompProperties_Disappears">
-			<disappearsAfterTicks>45000~100000</disappearsAfterTicks>
-		  </li>
-		  <li Class="HediffCompProperties_SeverityPerDay">
-			<severityPerDay>-0.75</severityPerDay>
-		  </li>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+			</li>
 		</comps>
-	   <stages>
-		  <li>
-			<minSeverity>0.15</minSeverity>
-			<label>moderate</label>
-		  </li>
-		  <li>
-			<minSeverity>0.30</minSeverity>
-			<label>severe</label>
-		  </li>
+		<stages>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>moderate</label>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>severe</label>
+			</li>
 		</stages>
-	  </HediffDef>
+	</HediffDef>
+	
+	<!-- SCP 2845 Aura -->
+	<HediffDef ParentName="DiseaseBase">
+    <defName>SCP_2845_Transmute_Hediff</defName>
+    <label>SCP-2845 Transmutation Aura</label>
+    <description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
+\nNaturally recovers over time as the body filters it out.</description>
+	<initialSeverity>.15</initialSeverity>
+	<lethalSeverity>.84</lethalSeverity>
+	<makesSickThought>true</makesSickThought>
+
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+    </comps>
+   <stages>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <label>initial</label>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <label>moderate</label>
+	    <lifeThreatening>true</lifeThreatening>
+		<capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+	  <minSeverity>0.50</minSeverity>
+	  <label>severe</label>
+	  <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.4</offset>
+          </li>
+        </capMods>
+	  </li>
+    </stages>
+  </HediffDef>
 
 </Defs>

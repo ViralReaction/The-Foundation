@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine.Assertions.Must;
 using Verse;
 
 namespace SCP
@@ -15,13 +16,14 @@ namespace SCP
         {
             Map target = (Map)parms.target;
             if (target.IsPlayerHome)
-            {
-                if (parms.controllerPawn != null && SCP_Startup.IsSCP(parms.controllerPawn))
+            {   
+
+                if (parms.controllerPawn != null && SCP_Startup.IsSCP(parms.controllerPawn) && !parms.controllerPawn.InMentalState)
                     return true;
                 foreach (Pawn pawn in target.mapPawns.AllPawnsSpawned)
                 {
                     ThingDef def = pawn.def;
-                    if (SCP_Startup.IsSCP(pawn) && pawn.GetRoom().Role == SCP_Startup.containmentRoom)
+                    if (SCP_Startup.IsSCP(pawn) && pawn.GetRoom().Role == SCP_Startup.containmentRoom && !parms.controllerPawn.InMentalState)
                         return true;
                 }
             }
@@ -61,19 +63,20 @@ namespace SCP
                 pawnList.Add(controllerPawn);
                 foreach (Pawn thing in list)
                 {
-                    if (thing != controllerPawn && thing.GetRoom() == controllerPawn.GetRoom())
+                    if (thing != controllerPawn && thing.GetRoom() == controllerPawn.GetRoom() && !thing.InMentalState)
                         pawnList.Add(thing);
                 }
                 foreach (Pawn pawn in pawnList)
-                    pawn.mindState.mentalStateHandler.TryStartMentalState(SCP_Startup.containBreachState, forceWake: true, transitionSilently: true);
-                this.SendStandardLetter("LetterLabelContainmentBreach".Translate((NamedArgument)controllerPawn.def.label.CapitalizeFirst()), "LetterContainmentBreach".Translate((NamedArgument)controllerPawn.def.label), LetterDefOf.ThreatBig, parms, (LookTargets)(Thing)pawnList[0]);
-                Find.TickManager.slower.SignalForceNormalSpeedShort();
-                return true;
+                    if (!pawn.InMentalState)
+                    {
+                        pawn.mindState.mentalStateHandler.TryStartMentalState(SCP_Startup.containBreachState, forceWake: true, transitionSilently: true);
+                        this.SendStandardLetter("LetterLabelContainmentBreach".Translate((NamedArgument)controllerPawn.def.label.CapitalizeFirst()), "LetterContainmentBreach".Translate((NamedArgument)controllerPawn.def.label), LetterDefOf.ThreatSmall, parms, (LookTargets)(Thing)pawnList[0]);
+                        Find.TickManager.slower.SignalForceNormalSpeedShort();
+                        return true;
+                    }
             }
             Log.Error("SCP error: Tried to find SCP to cause containment breach but found none.");
             return false;
         }
-
-        //protected static bool IsSCP(Pawn p) => p.def.GetModExtension<ContainmentExtension>() != null;
     }
 }

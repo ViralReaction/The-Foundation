@@ -12,9 +12,9 @@ When SCP-113 comes in direct contact with the flesh of an organism possessing se
 		<modExtensions>
 			<li Class="SCP.ContainmentExtension">
 				<classRating>
-					<li>SCR_CSafe</li>
-					<li>SCR_DDark</li>
-					<li>SCR_RNotice</li>
+					<li>SCP_CSafe</li>
+					<li>SCP_DDark</li>
+					<li>SCP_RNotice</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>

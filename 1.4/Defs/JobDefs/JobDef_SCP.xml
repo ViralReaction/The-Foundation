@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
+
 	<JobDef>
 		<defName>LeaveMapDaylight</defName>
 		<driverClass>SCP.JobDriver_LeaveMapPromptly</driverClass>
@@ -8,4 +8,11 @@
 		<suspendable>false</suspendable>
 		<playerInterruptible>false</playerInterruptible>
 	</JobDef>
+
+	<JobDef>
+		<defName>InduceContaintmentBreak</defName>
+		<driverClass>SCP.Containment.JobDriver_ContainmentBreaker</driverClass>
+		<reportString>inducing TargetA to escape.</reportString>
+	</JobDef>
+
 </Defs>

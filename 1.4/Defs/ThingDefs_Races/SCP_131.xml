@@ -10,9 +10,9 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 		<modExtensions>
 			<li Class="SCP.ContainmentExtension">
 				<classRating>
-					<li>SCR_CSafe</li>
-					<li>SCR_DDark</li>
-					<li>SCR_RCaution</li>
+					<li>SCP_CSafe</li>
+					<li>SCP_DDark</li>
+					<li>SCP_RCaution</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>

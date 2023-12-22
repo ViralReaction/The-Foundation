@@ -56,17 +56,10 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</surpriseAttack>
 			</li>
 		</tools>
-		<comps>
-			<li Class="CompProperties_Milkable">
-				<milkDef>Chemfuel</milkDef>
-				<milkIntervalDays>5</milkIntervalDays>
-				<milkAmount>20</milkAmount>
-				<milkFemaleOnly>false</milkFemaleOnly>
-			</li>
-		</comps>
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
+			 <thinkTreeMain>SCP_AI</thinkTreeMain>
 			<body>DragonSnailBody</body>
 			<baseBodySize>0.83</baseBodySize>
 			<baseHungerRate>0.27</baseHungerRate>
@@ -114,6 +107,18 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
+				<filthType>Filth_Fuel</filthType> 
+				<rate>0.3</rate> 
+				<radius>0.5</radius> 
+				<ticksToCreateFilth>600</ticksToCreateFilth>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -123,26 +128,27 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 		<race>SCP_111_Slimybellie</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
+		<wildGroupSize>3~6</wildGroupSize>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Slimybellie</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Slimybellie_f</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/SlimybellieDead</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Slimybellie</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -150,7 +156,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Slimybellie_f</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -158,13 +164,13 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/SlimybellieDead</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Slimybellie</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -172,7 +178,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Slimybellie_f</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -180,7 +186,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/SlimybellieDead</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -198,6 +204,18 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
+				<filthType>Filth_Fuel</filthType> 
+				<rate>0.3</rate> 
+				<radius>0.5</radius> 
+				<ticksToCreateFilth>600</ticksToCreateFilth>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -207,26 +225,27 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 		<race>SCP_111_Oozedrake</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
+		<wildGroupSize>3~6</wildGroupSize>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Oozedrake</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Oozedrake_f</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/OozedrakeDead</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Oozedrake</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -234,7 +253,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Oozedrake_f</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -242,13 +261,13 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/OozedrakeDead</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Oozedrake</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -256,7 +275,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Oozedrake_f</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -264,7 +283,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/OozedrakeDead</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -282,6 +301,18 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
+				<filthType>Filth_Fuel</filthType> 
+				<rate>0.3</rate> 
+				<radius>0.5</radius> 
+				<ticksToCreateFilth>600</ticksToCreateFilth>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -291,26 +322,27 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 		<race>SCP_111_Goowyvern</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
+		<wildGroupSize>3~6</wildGroupSize>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Goowyvern</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Goowyvern_f</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GoowyvernDead</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Goowyvern</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -318,7 +350,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Goowyvern_f</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -326,13 +358,13 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GoowyvernDead</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Goowyvern</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -340,7 +372,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Goowyvern_f</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -348,7 +380,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GoowyvernDead</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -366,6 +398,18 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
+				<filthType>Filth_Fuel</filthType> 
+				<rate>0.3</rate> 
+				<radius>0.5</radius> 
+				<ticksToCreateFilth>600</ticksToCreateFilth>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -375,26 +419,27 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 		<race>SCP_111_Blobworm</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
+		<wildGroupSize>3~6</wildGroupSize>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Blobworm</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Blobworm_f</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/BlobwormDead</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Blobworm</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -402,7 +447,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Blobworm_f</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -410,13 +455,13 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/BlobwormDead</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Blobworm</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -424,7 +469,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Blobworm_f</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -432,7 +477,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/BlobwormDead</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -450,6 +495,18 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
+				<filthType>Filth_Fuel</filthType> 
+				<rate>0.3</rate> 
+				<radius>0.5</radius> 
+				<ticksToCreateFilth>600</ticksToCreateFilth>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -459,26 +516,27 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 		<race>SCP_111_Glowdrake</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
+		<wildGroupSize>3~6</wildGroupSize>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Glowdrake</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Glowdrake</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GlowdrakeDead</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Glowdrake</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -486,7 +544,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Glowdrake</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -494,13 +552,13 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GlowdrakeDead</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Glowdrake</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -508,7 +566,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Glowdrake</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -516,7 +574,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GlowdrakeDead</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -534,6 +592,18 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Chemfuel</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>20</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
+				<filthType>Filth_Fuel</filthType> 
+				<rate>0.3</rate> 
+				<radius>0.5</radius> 
+				<ticksToCreateFilth>600</ticksToCreateFilth>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -543,26 +613,27 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 		<race>SCP_111_Gunkwyvern</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
+		<wildGroupSize>3~6</wildGroupSize>
 		<ecoSystemWeight>0.30</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Gunkwyvern</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Gunkwyvern_f</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GunkwyvernDead</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Gunkwyvern</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -570,7 +641,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Gunkwyvern_f</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -578,13 +649,13 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GunkwyvernDead</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Gunkwyvern</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -592,7 +663,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/Gunkwyvern_f</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,0)</offset>
@@ -600,7 +671,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCPDragonSnail/GunkwyvernDead</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

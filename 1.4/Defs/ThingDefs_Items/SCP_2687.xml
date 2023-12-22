@@ -13,7 +13,7 @@
 			<RecipeDef>SCP_Install2687Stomach</RecipeDef>
 			<RecipeDef>SCP_Install2687Kidney</RecipeDef>
 			<RecipeDef>SCP_Install2687Liver</RecipeDef>
-			<HediffDef>SCP_2687Poison</HediffDef>
+			<HediffDef>SCP_2687_Poison</HediffDef>
 		</descriptionHyperlinks>
 		<modExtensions>
 			<li Class="SCP.ContainmentExtension">
@@ -68,7 +68,7 @@
 			</li>
 		</modExtensions>
 		<descriptionHyperlinks>
-			<HediffDef>SCP_2687Poison</HediffDef>
+			<HediffDef>SCP_2687_Poison</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Drug/Penoxycyline</texPath>
@@ -87,7 +87,7 @@
 			<drugCategory>Medical</drugCategory>
 			<outcomeDoers>
 				<li Class="SCP.IngestionOutcomeDoer_RemoveHediff">
-					<hediffDef>SCP_2687Poison</hediffDef>
+					<hediffDef>SCP_2687_Poison</hediffDef>
 				</li>
 			</outcomeDoers>
 		</ingestible>

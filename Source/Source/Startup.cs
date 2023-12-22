@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using SCP;
+using SCP.Cage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -64,6 +65,7 @@ namespace SCP
             return num != 0 || thing.def.HasModExtension<ContainmentExtension>() && thing.def.GetModExtension<ContainmentExtension>().containmentTier >= 1;
         }
         public static bool IsSCP(Pawn p) => p.def.GetModExtension<ContainmentExtension>() != null;
+        public static bool IsCage(ThingDef thing) => thing.GetModExtension<CageExtension>().isCage = true;
         public static bool isCage(string defName)
         {
             switch (defName)

@@ -17,7 +17,7 @@ namespace SCP
     {
         static SCPHarmony()
         {
-            Harmony harmony = new Harmony("rimworld.scp.939");
+            Harmony harmony = new Harmony("rimworld.scp");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP939_Starving"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(SCPHarmony), "SCP939_HumansOnlyAcceptablePrey"));
@@ -25,6 +25,10 @@ namespace SCP
             harmony.Patch((MethodBase)AccessTools.Method(typeof(JobDriver_PredatorHunt), "CheckWarnPlayer"), new HarmonyMethod(typeof(SCPHarmony), "SCP939_DontWarnPlayerHunted"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(Pawn), "TickRare"), postfix: new HarmonyMethod(typeof(SCPHarmony), "TickMindstateLeaveDaylight"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(WorldPawns), "GetSituation"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SituationSCPEvent"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP1675_Starving"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(SCPHarmony), "SCP1675_GeeseOnlyAcceptablePrey"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP2584_AlwaysFull"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP2845_AlwaysFull"));
         }
 
         public static void SCP939_Starving(Need_Food __instance, Pawn ___pawn)
@@ -83,5 +87,33 @@ namespace SCP
                 }
             }
         }
+        public static void SCP1675_Starving(Need_Food __instance, Pawn ___pawn)
+        {
+            if (!(___pawn.def.defName == "SCP_1675_Goose_Terminator"))
+                return;
+            __instance.CurLevel = 0.1f;
+        }
+        public static bool SCP1675_GeeseOnlyAcceptablePrey(Pawn predator, Pawn prey, ref bool __result)
+        {
+            if (!(predator.def.defName == "SCP_1675_Goose_Terminator"))
+                return true;
+            __result = false;
+            if (prey.def.defName == "Goose")
+                __result = true;
+            return false;
+        }
+        public static void SCP2584_AlwaysFull(Need_Food __instance, Pawn ___pawn)
+        {
+            if (!(___pawn.def.defName == "SCP_2584_Snake"))
+                return;
+            __instance.CurLevel = 1f;
+        }
+        public static void SCP2845_AlwaysFull(Need_Food __instance, Pawn ___pawn)
+        {
+            if (!(___pawn.def.defName == "SCP_2845_Deer"))
+                return;
+            __instance.CurLevel = 1f;
+        }
     }
+
 }

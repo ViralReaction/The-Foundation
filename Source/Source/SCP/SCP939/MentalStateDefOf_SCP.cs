@@ -12,6 +12,8 @@ namespace SCP
     public class MentalStateDefOf_SCP
     {
         public static MentalStateDef FollowTheVoices;
+        public static MentalStateDef SCP_BreachContainment;
+        public static MentalStateDef SCP_ContainmentBreaker;
 
         static MentalStateDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(MentalStateDefOf_SCP));
     }

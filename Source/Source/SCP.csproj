@@ -51,13 +51,20 @@
     <Compile Include="Cage\Extension.cs" />
     <Compile Include="Cage\Harmony_Cage.cs" />
     <Compile Include="Comps\IngestOutcomeDoer_RemoveHediff.cs" />
+    <Compile Include="Containment\ContainmentBreaker\ContainmentbreakerMentalStateUtility.cs" />
+    <Compile Include="Containment\ContainmentBreaker\JobDriver_ContainmentBreaker.cs" />
+    <Compile Include="Containment\ContainmentBreaker\JobGiver_ContainmentBreaker.cs" />
+    <Compile Include="Containment\ContainmentBreaker\MentalState_Containmentbreaker.cs" />
     <Compile Include="Containment\ContainmentExtensions.cs" />
+    <Compile Include="Containment\ContainmentBreaker\MentalStateWorker_Containmentbreaker.cs" />
     <Compile Include="Containment\IncidentWorker_ContaintmentBreach.cs" />
     <Compile Include="Containment\MentalState_ContainmentBreach.cs" />
     <Compile Include="Containment\RoomRoleWorker_Containment.cs" />
     <Compile Include="Containment\ThinkNode_ContaintmentBreach.cs" />
     <Compile Include="DataExtension.cs" />
     <Compile Include="Harmony Patches\StatDraw.cs" />
+    <Compile Include="InteractionDefOf_SCP.cs" />
+    <Compile Include="MapComponent.cs" />
     <Compile Include="Psychic Suppresion\Bulding_PsychicSuppressionField.cs" />
     <Compile Include="Psychic Suppresion\CompProperties_PsychicSuppressionField.cs" />
     <Compile Include="Psychic Suppresion\CompPsychicSuppress.cs" />
@@ -66,17 +73,20 @@
     <Compile Include="Psychic Suppresion\SuppressionFieldUtility.cs" />
     <Compile Include="SCP\HediffDefOf.cs" />
     <Compile Include="SCP\Hediff_SCP2687.cs" />
+    <Compile Include="SCP\Kitten Flu.cs" />
     <Compile Include="SCP\SCP113_Gender_Swap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SCP\SCP131\IncidentWorker_SCP131.cs" />
+    <Compile Include="SCP\SCP2845\IncidentWorker_2845.cs" />
+    <Compile Include="SCP\SCP2845\ThoughtWorker_SCP2845.cs" />
     <Compile Include="SCP\SCP475 Pope Soap\CompUseEffect_UseSCP475.cs" />
     <Compile Include="SCP\SCP939\CompProperties_Voices.cs" />
     <Compile Include="SCP\SCP939\CompVoices.cs" />
     <Compile Include="SCP\SCP939\GameCondition_SCP939.cs" />
     <Compile Include="SCP\SCP939\IncidentWorker_SCP939.cs" />
-    <Compile Include="SCP\SCP939\JobDefOf_SCP.cs" />
+    <Compile Include="JobDefOf_SCP.cs" />
     <Compile Include="SCP\SCP939\JobDriver_LeaveMapPromptly.cs" />
-    <Compile Include="SCP\SCP939\SCPHarmony_Patches.cs" />
+    <Compile Include="Harmony Patches\SCPHarmony_Patches.cs" />
     <Compile Include="SCP\SCP939\MentalStateDefOf_SCP.cs" />
     <Compile Include="SCP\SCP939\MentalState_Voices.cs" />
     <Compile Include="SCP\SCP939\PawnKindDefOf_SCP.cs" />
@@ -98,6 +108,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="SCP\SC1675\" />
     <Folder Include="Utilities\" />
     <Folder Include="Utlities\" />
   </ItemGroup>

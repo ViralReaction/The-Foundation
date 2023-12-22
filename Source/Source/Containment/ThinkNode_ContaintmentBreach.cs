@@ -7,22 +7,34 @@ using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
 using SCP;
+using UnityEngine.Assertions.Must;
 
 namespace SCP
 {
-    internal class ThinkNode_ContainmentBreach : ThinkNode_Conditional
+    internal class ThinkNode_ContainmentBreach : ThinkNode_ConditionalMentalStates
     {
+        private JobTag tagToGive;
+        public List<MentalStateDef> states;
+        public override ThinkNode DeepCopy(bool resolve = true)
+        {
+            ThinkNode_ConditionalMentalStates conditionalMentalStates = (ThinkNode_ConditionalMentalStates)base.DeepCopy(resolve);
+            conditionalMentalStates.states = this.states;
+            return (ThinkNode)conditionalMentalStates;
+        }
         protected override bool Satisfied(Pawn pawn)
         {
-            if (pawn.def.GetModExtension<ContainmentExtension>() == null || pawn.GetRoom().Role != SCP_Startup.containmentRoom)
+            if (pawn.def.GetModExtension<ContainmentExtension>() == null || pawn.GetRoom().Role != SCP_Startup.containmentRoom || pawn.InMentalState)
                 return !pawn.CanReachMapEdge();
             Map map = pawn.Map;
-            Find.Storyteller.TryFire(new FiringIncident(SCP_Startup.containBreachIncident, (StorytellerComp)null, new IncidentParms()
+            if (!pawn.InMentalState)
             {
-                target = (IIncidentTarget)map,
-                controllerPawn = pawn,
-                forced = true
-            }));
+                Find.Storyteller.TryFire(new FiringIncident(SCP_Startup.containBreachIncident, (StorytellerComp)null, new IncidentParms()
+                {
+                    target = (IIncidentTarget)map,
+                    controllerPawn = pawn,
+                    forced = true
+                }));
+            }
             return false;
         }
     }
