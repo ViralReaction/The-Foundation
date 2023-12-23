@@ -2,6 +2,11 @@
 <Defs>
 
 	<ToolCapacityDef>
+		<defName>SCP_Flame</defName>
+		<label>fire</label>
+	</ToolCapacityDef>
+
+	<ToolCapacityDef>
 		<defName>SCP_Electric</defName>
 		<label>static electricity</label>
 	</ToolCapacityDef>

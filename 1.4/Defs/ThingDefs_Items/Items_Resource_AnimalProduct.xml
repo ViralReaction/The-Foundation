@@ -243,6 +243,31 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		</statBases>
 	</ThingDef>
 	
+	<ThingDef ParentName="EggFertBase">
+		<defName>SCP_5893_Egg</defName>
+		<label>SCP-5893 egg (fert.)</label>
+		<description>A fertilized SCP-5893 egg. If all goes well, it should hatch into an instance of SCP-5893. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>13</hatcherDaystoHatch>
+				<hatcherPawn>SCP_5893R</hatcherPawn>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
+	</ThingDef>
+	
 	<!-- ===== Meat ===== -->
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>SCP_1797_Meat</defName>

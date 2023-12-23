@@ -66,6 +66,7 @@
     <Compile Include="Containment\RoomRoleWorker_Containment.cs" />
     <Compile Include="Containment\ThinkNode_ContaintmentBreach.cs" />
     <Compile Include="Damage.cs" />
+    <Compile Include="Projectiles\Projectile_DinoHunter.cs" />
     <Compile Include="SCP\SCP_610\BiomeWorker_SCP610.cs" />
     <Compile Include="SCP\SCP_610\IncidentWorker_SCP610_Local.cs" />
     <Compile Include="Utilities\DefOf\ThingDefOf_SCP.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="SCP\SCP_3199\IncidentWorker_SCP3199.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Comps\Hatching Utility.cs" />
+    <Compile Include="Utilities\DeathActionWorker_DestroyBody.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">

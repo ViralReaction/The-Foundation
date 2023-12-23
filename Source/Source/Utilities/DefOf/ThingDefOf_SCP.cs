@@ -15,6 +15,7 @@ namespace SCP
         public static ThingDef SCP_3199_Egg;
         public static ThingDef SCP_3199_Egg_Ruined;
         public static ThingDef SCP_610A;
+        public static ThingDef SCP_19051R;
         static ThingDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf_SCP));
     }
 }

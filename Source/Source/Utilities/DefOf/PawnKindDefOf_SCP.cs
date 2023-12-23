@@ -16,6 +16,7 @@ namespace SCP
         public static PawnKindDef SCP_610B;
         public static PawnKindDef SCP_939_Normal;
         public static PawnKindDef SCP_939_Incident;
+        public static PawnKindDef SCP_19051R;
         public static PawnKindDef SCP_2845_Deer;
         public static PawnKindDef SCP_28451R;
         public static PawnKindDef SCP_1797A_Kitten;
