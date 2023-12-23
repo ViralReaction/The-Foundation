@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef Abstract="True" Name="SCP_EggBase" ParentName="OrganicProductBase">
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ingestible>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>AteRawFood</tasteThought>
+						<!-- to prevent pawns from being able to eat it lol -->
+			<foodType>Tree</foodType>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<Mass>0.15</Mass>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>0</MarketValue>
+			<Nutrition>-5</Nutrition>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>EggsFertilized</li>
+		</thingCategories>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+	
+	<!-- ====== Eggs ====== -->
+	<ThingDef ParentName="SCP_EggBase">
 		<defName>EggSlimybellieFertilized</defName>
 		<label>Slimybellie Egg (fert.)</label>
 		<description>Fertilized slimybellie egg. If all goes well, it should hatch into a baby slimybellie. It can be eaten raw, but it's much better cooked.</description>
@@ -20,7 +50,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCP_EggBase">
 		<defName>EggOozedrakeFertilized</defName>
 		<label>Oozedrake Egg (fert.)</label>
 		<description>Fertilized oozedrake egg. If all goes well, it should hatch into a baby oozedrake. It can be eaten raw, but it's much better cooked.</description>
@@ -39,7 +69,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCP_EggBase">
 		<defName>EggGoowyvernFertilized</defName>
 		<label>Goowyvern Egg (fert.)</label>
 		<description>Fertilized goowyvern egg. If all goes well, it should hatch into a baby goowyvern. It can be eaten raw, but it's much better cooked.</description>
@@ -58,7 +88,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCP_EggBase">
 		<defName>EggBlobwormFertilized</defName>
 		<label>Blobworm Egg (fert.)</label>
 		<description>Fertilized blobworm egg. If all goes well, it should hatch into a baby blobworm. It can be eaten raw, but it's much better cooked.</description>
@@ -78,7 +108,7 @@
 	</ThingDef>
   
   
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCP_EggBase">
 		<defName>EggGlowdrakeFertilized</defName>
 		<label>Glowdrake Egg (fert.)</label>
 		<description>Fertilized glowdrake egg. If all goes well, it should hatch into a baby glowdrake. It can be eaten raw, but it's much better cooked.</description>
@@ -97,7 +127,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCP_EggBase">
 		<defName>EggGunkwyvernFertilized</defName>
 		<label>Gunkwyvern Egg (fert.)</label>
 		<description>Fertilized gunkwyvern egg. If all goes well, it should hatch into a baby gunkwyvern. It can be eaten raw, but it's much better cooked.</description>
@@ -116,7 +146,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCP_EggBase">
 		<defName>SCP_2371JP_Seed</defName>
 		<label>Soytaurus Seedling</label>
 		<description>A SCP-2371-JP seedling. It should grow into an instance of SCP-2371-JP.</description>
@@ -136,6 +166,115 @@
 				<hatcherPawn>SCP_2371JP_Soytaurus</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="SCP_EggBase">
+		<defName>SCP_3199_Egg</defName>
+		<label>SCP-3199 egg (fert.)</label>
+		<description>Item #: SCP-3199-1
+Object Class: Keter
+			
+Heat is a primary component in the growth and development of SCP-3199's eggs, and Foundation Researchers are particularly apprehensive towards the idea, believing it would almost certainly result in a second containment breach. Eggs have only been neutralized by extreme cold.</description>
+		<modExtensions>
+			<li Class="SCP.ContainmentExtension">
+				<classRating>
+					<li>SCP_CKeter</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
+			<drawSize>1.5</drawSize>
+			<color>(219, 219, 206)</color>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<useHitPoints>false</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<comps>
+			<li Class="SCP.CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>SCP_3199R</hatcherPawn>
+				<ruinedEgg>SCP_3199_Egg_Ruined</ruinedEgg>
+			</li>	
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-60</minSafeTemperature>
+				<maxSafeTemperature>3000</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>SCP_3199_Egg_Ruined</defName>
+		<label>neutralized SCP-3199 egg</label>
+		<description>Item #: SCP-3199-2
+Object Class: Safe
+			
+An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of plasteel.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
+			<drawSize>1.5</drawSize>
+			<color>(219, 219, 206)</color>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>false</useHitPoints>
+		<techLevel>Ultra</techLevel>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<statBases>
+			<Mass>0.001</Mass>
+			<MarketValue>6</MarketValue>
+			<Beauty>-6</Beauty>
+		</statBases>
+	</ThingDef>
+	
+	<!-- ===== Meat ===== -->
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>SCP_1797_Meat</defName>
+		<label>SCP-1797-A meat</label>
+		<description>Meat from SCP-1797-A. Can be used to create a pill used to infect pawns with SCP-1797.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>.9</MarketValue><!-- Can be used like meat in recipes -->
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>Meat</foodType>
+		</ingestible>
+		<thingCategories>
+			<li>SCPMeat</li>
+		</thingCategories>
+		<allowedArchonexusCount>0</allowedArchonexusCount>
 	</ThingDef>
 
 	<ThingDef ParentName="OrganicProductBase">
@@ -164,9 +303,9 @@
 			<foodType Inherit="False">VegetableOrFruit, Plant, VegetarianAnimal, VegetarianRoughAnimal, Seed, Tree, Kibble</foodType>
 			<optimalityOffsetHumanlikes>0</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>20</optimalityOffsetFeedingAnimals>
-			<tasteThought Inherit="False"></tasteThought>
-			<specialThoughtDirect Inherit="False"></specialThoughtDirect>
-			<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>
+			<tasteThought Inherit="False"/>
+			<specialThoughtDirect Inherit="False"/>
+			<specialThoughtAsIngredient Inherit="False"/>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -178,6 +317,40 @@
 			<li>PlantFoodRaw</li>
 		</thingCategories>
 		<allowedArchonexusCount>5000</allowedArchonexusCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>SCP_3199_Meat</defName>
+		<label>SCP-3199 meat</label>
+		<description>Meat from SCP-3199. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the humanlike-taste.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MarketValue>.7</MarketValue> <!-- Can be used like meat in recipes -->
+		  <Mass>0.045</Mass>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		  <Nutrition>0.025</Nutrition>
+		  <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>14</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<ingestible>
+		  <preferability>RawBad</preferability>
+		  <tasteThought>SCP_Ate3199MeatRaw</tasteThought>
+		  <foodType>Meat</foodType>
+		</ingestible>
+		<thingCategories>
+		  <li>SCPMeat</li>
+		</thingCategories>
+		<allowedArchonexusCount>0</allowedArchonexusCount>
 	</ThingDef>
 
 </Defs>

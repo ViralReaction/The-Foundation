@@ -98,7 +98,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 	<!-- Slimybellies -->
 	<ThingDef ParentName="SCP_111Base">
 		<defName>SCP_111_Slimybellie</defName>
-		<label>SCP-111 Slimybellie</label>
+		<label>SCP-111 "Slimybellie"</label>
 		<comps Inherit="true">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggSlimybellieFertilized</eggFertilizedDef>
@@ -124,7 +124,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_111_Slimybellie</defName>
-		<label>SCP-111 Slimybellie</label>
+		<label>SCP-111 "Slimybellie"</label>
 		<race>SCP_111_Slimybellie</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -195,7 +195,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 	<!-- Oozedrake -->
 	<ThingDef ParentName="SCP_111Base">
 		<defName>SCP_111_Oozedrake</defName>
-		<label>SCP-111 Oozedrake</label>
+		<label>SCP-111 "Oozedrake"</label>
 		<comps Inherit="true">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggOozedrakeFertilized</eggFertilizedDef>
@@ -292,7 +292,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 	<!-- Goowyvern -->
 	<ThingDef ParentName="SCP_111Base">
 		<defName>SCP_111_Goowyvern</defName>
-		<label>SCP-111 Goowyvern</label>
+		<label>SCP-111 "Goowyvern"</label>
 		<comps Inherit="false">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggGoowyvernFertilized</eggFertilizedDef>
@@ -318,7 +318,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_111_Goowyvern</defName>
-		<label>Goowyvern</label>
+		<label>SCP-111 "Goowyvern"</label>
 		<race>SCP_111_Goowyvern</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -389,7 +389,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 	<!-- Blobworm -->
 	<ThingDef ParentName="SCP_111Base">
 		<defName>SCP_111_Blobworm</defName>
-		<label>SCP-111 Blobworm</label>
+		<label>SCP-111 "Blobworm"</label>
 		<comps Inherit="false">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggBlobwormFertilized</eggFertilizedDef>
@@ -415,7 +415,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_111_Blobworm</defName>
-		<label>SCP-111 Blobworm</label>
+		<label>SCP-111 "Blobworm"</label>
 		<race>SCP_111_Blobworm</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -486,7 +486,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 	<!--  Glowdrake  -->
 	<ThingDef ParentName="SCP_111Base">
 		<defName>SCP_111_Glowdrake</defName>
-		<label>SCP-111 Glowdrake</label>
+		<label>SCP-111 "Glowdrake"</label>
 		<comps Inherit="true">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggGlowdrakeFertilized</eggFertilizedDef>
@@ -512,7 +512,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_111_Glowdrake</defName>
-		<label>SCP-111 Glowdrake</label>
+		<label>SCP-111 "Glowdrake"</label>
 		<race>SCP_111_Glowdrake</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -583,7 +583,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 	<!-- Gunkwyvern -->
 	<ThingDef ParentName="SCP_111Base">
 		<defName>SCP_111_Gunkwyvern</defName>
-		<label>SCP-111 Gunkwyvern</label>
+		<label>SCP-111 "Gunkwyvern"</label>
 		<comps Inherit="true">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>EggGunkwyvernFertilized</eggFertilizedDef>
@@ -609,7 +609,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_111_Gunkwyvern</defName>
-		<label>SCP-111 Gunkwyvern</label>
+		<label>SCP-111 "Gunkwyvern"</label>
 		<race>SCP_111_Gunkwyvern</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>

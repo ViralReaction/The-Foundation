@@ -9,7 +9,7 @@ namespace SCP
 {
     internal class RoomRoleWorker_ContainmentRoom : RoomRoleWorker
     {
-        private static ThingDef containSign = ThingDef.Named("Containment_Zone");
+        private static ThingDef containSign = ThingDefOf_SCP.Containment_Zone;
 
         public override float GetScore(Room room)
         {

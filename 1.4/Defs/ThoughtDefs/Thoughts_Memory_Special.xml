@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>SCP113_BadThought</defName>
+		<defName>SCP_113_BadThought</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
 		<durationDays>15</durationDays>
@@ -11,6 +11,30 @@
 				<label>used SCP-113</label>
 				<description>My body has been forcibly changed...</description>
 				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	   <ThoughtDef>
+		<defName>SCP_Infected_SCP939</defName>
+	   <workerClass>SCP.ThoughtWorker_SCP939</workerClass>
+		<stages>
+		  <li>
+			<label>SCP-939 nearby</label>
+			<description>I'm starting to forget what I was supposed to be doing...</description>
+			<baseMoodEffect>-2</baseMoodEffect>
+		  </li>
+		</stages>
+	  </ThoughtDef> 
+
+	<ThoughtDef>
+		<defName>SCP_Infected_SCP1797_Flu</defName>
+		<workerClass>SCP.ThoughtWorker_KittenFlu</workerClass>
+		<stages>
+			<li>
+				<label>Sick with Kitten Flu</label>
+				<description>I'm growing tumors! They're shaped like cats...</description>
+				<baseMoodEffect>-8</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -28,6 +52,8 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+
 	
 	<ThoughtDef>
 		<defName>SCP_TransmuteTime</defName>

@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>SCP_2371JP_Soytaurus</defName>
-		<label>Soytaurus</label>
+		<label>SCP-2371-JP "Soytaurus"</label>
 		<description>Item #: SCP-2371-JP
 Object Class: Safe
 		

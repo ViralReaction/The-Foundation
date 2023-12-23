@@ -3,13 +3,13 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>SCP_2845_Deer</defName>
-		<label>The Deer</label>
+		<label>SCP-2845 "The Deer"</label>
 		<description>Item #: SCP-2845
 Object Class: Keter
 		
 SCP-2845 is an extraterrestrial quadruped entity, terminating in a head with humanoid facial features. SCP-2845 possesses antlers that are white with black marbling in coloration, and have not been observed to shed.
 
-SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,, often converting living subjects into SCP-2845-1.</description>
+SCP-2845 is capable of instantaneous transmutation and reconstruction of matter, often converting living subjects into SCP-2845-1.</description>
 		<modExtensions>
 			<li Class="SCP.ContainmentExtension">
 				<classRating>
@@ -31,15 +31,6 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 			<ArmorRating_Heat>.2</ArmorRating_Heat>
 		</statBases>
 		<uiIconScale>1.6</uiIconScale>
-		<comps>
-			<li Class="AnimalBehaviours.CompProperties_HediffEffecter">
-				<radius>10</radius>
-				<severity>0.1</severity>
-				<tickInterval>600</tickInterval>
-				<hediff>SCP_2845_Transmute_Hediff</hediff>
-				<notOnlyAffectColonists>false</notOnlyAffectColonists>
-			</li>
-		</comps>
 		<race>
 			<!--deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass-->
 			<thinkTreeMain>SCP_AI</thinkTreeMain>
@@ -113,6 +104,18 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<comps>
+			<li Class="SCP.Comps.CompProperties_GiveHediffSeverity">
+				<hediff>SCP_2845_Transmute_Hediff</hediff>
+				<range>10</range>
+				<severityTick>0.1</severityTick>
+				<tickInterval>600</tickInterval>
+				<defNamesImmune>
+					<li>SCP_2845_Deer</li>
+					<li>SCP_28451R</li>
+				</defNamesImmune>
+			</li>
+		</comps>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -140,7 +143,6 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 	</PawnKindDef>
 
 	<!-- SCP-2845-1 -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>SCP_28451R</defName>
 		<label>SCP-2845-1</label>

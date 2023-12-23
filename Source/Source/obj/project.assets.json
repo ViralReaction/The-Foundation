@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.7.2": {
+    ".NETFramework,Version=v4.8": {
       "Krafs.Publicizer/2.2.1": {
         "type": "package",
         "contentFiles": {
@@ -101,7 +101,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.7.2/win": {
+    ".NETFramework,Version=v4.8/win": {
       "Krafs.Publicizer/2.2.1": {
         "type": "package",
         "contentFiles": {
@@ -201,7 +201,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.7.2/win-arm64": {
+    ".NETFramework,Version=v4.8/win-arm64": {
       "Krafs.Publicizer/2.2.1": {
         "type": "package",
         "contentFiles": {
@@ -301,7 +301,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.7.2/win-x64": {
+    ".NETFramework,Version=v4.8/win-x64": {
       "Krafs.Publicizer/2.2.1": {
         "type": "package",
         "contentFiles": {
@@ -401,7 +401,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.7.2/win-x86": {
+    ".NETFramework,Version=v4.8/win-x86": {
       "Krafs.Publicizer/2.2.1": {
         "type": "package",
         "contentFiles": {
@@ -616,7 +616,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.7.2": [
+    ".NETFramework,Version=v4.8": [
       "Krafs.Publicizer >= 2.2.1",
       "Krafs.Rimworld.Ref >= 1.4.3704"
     ]
@@ -639,20 +639,20 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net472"
+        "net48"
       ],
       "sources": {
         "C:\\Games\\Rimworld C# Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
-        "net472": {
+        "net48": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "net472": {
+      "net48": {
         "dependencies": {
           "Krafs.Publicizer": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BasePawn">
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<defName>SCP_1675_Goose_Terminator</defName>
-		<label>Goose Terminator</label>
+		<label>SCP-1675 "Goose Terminator"</label>
 		<description>Item #: SCP-1675
 Object Class: Safe
 			

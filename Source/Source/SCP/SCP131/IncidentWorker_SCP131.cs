@@ -15,7 +15,7 @@ namespace SCP
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map target = (Map)parms.target;
-            PawnKindDef pawnKind = PawnKindDef.Named("SCP131R");
+            PawnKindDef pawnKind = PawnKindDefOf_SCP.SCP_131_Eye_Pod;
             IntVec3 result;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out result, target, CellFinder.EdgeRoadChance_Animal))
                 return false;

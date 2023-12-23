@@ -26,6 +26,39 @@
 	</IncidentDef>
 	
 	<IncidentDef>
+		<defName>SCP_Incident_SCP610Form</defName>
+		<label>SCP-610 formation</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>SCP.IncidentWorker_SCP610_Local</workerClass>
+		<baseChance>3</baseChance>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>ManhunterPack</tale>
+		<minRefireDays>20</minRefireDays>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>SCP939_Group</defName>
+		<label>SCP939</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>SCP.IncidentWorker_SCP939</workerClass>
+		<gameCondition>939WanderingTheArea</gameCondition>
+		<baseChance>2.0</baseChance>
+		<minRefireDays>20</minRefireDays>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>ManhunterPack</tale>
+		<durationDays>
+			<min>10</min>
+			<max>20</max>
+		</durationDays>
+	</IncidentDef>
+	
+	<IncidentDef>
 		<defName>SCP_Incident_SCP2845_Hunt</defName>
 		<label>SCP-2845 and minions</label>
 		<targetTags>
@@ -38,5 +71,20 @@
 		<tale>ManhunterPack</tale>
 		<minRefireDays>35</minRefireDays>
 	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>SCP_Incident_SCP3199_Hunt</defName>
+		<label>SCP-3199 flock</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>SCP.IncidentWorker_SCP3199</workerClass>
+		<baseChance>3</baseChance>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>ManhunterPack</tale>
+		<minRefireDays>30</minRefireDays>
+	</IncidentDef>
+
 
 </Defs>

@@ -290,57 +290,6 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>SCP_ContainRoomMarker</defName>
-		<label>containment room marker</label>
-		<description>An electronic sign designating a containment room. It must be placed in an area enclosed by fences, barricades, walls, and doors. It will alert you to containment breaches in this area.</description>
-		<thingClass>Building</thingClass>
-		<tickerType>Long</tickerType>
-		<designationCategory>Misc</designationCategory>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<graphicData>
-			<texPath>Things/Building/Furniture/PenMarker</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shadowData>
-				<volume>(0.2, 0.5, 0.2)</volume>
-				<offset>(0,0,-0.23)</offset>
-			</shadowData>
-			<damageData>
-				<rect>(0.25,0.6,0.5,0.2)</rect>
-			</damageData>
-		</graphicData>
-		<thingCategories>
-			<li>BuildingsMisc</li>
-		</thingCategories>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.1</fillPercent>
-		<pathCost>0</pathCost>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>8</Mass>
-			<WorkToBuild>500</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<Beauty>0</Beauty>
-		</statBases>
-		<costList>
-			<Steel>2</Steel>
-		</costList>
-		<!--<disallowedThingDefs>
-          <li>Gold</li>
-          <li>Silver</li>
-          <li>Jade</li>
-      </disallowedThingDefs> -->
-		<costStuffCount>5</costStuffCount>
-		<rotatable>false</rotatable>
-		<fertility>0</fertility>
-		<building>
-			<isInert>true</isInert>
-			<ai_chillDestination>false</ai_chillDestination>
-			<ai_neverTrashThis>true</ai_neverTrashThis>
-		</building>
-	</ThingDef>
-
 	<!-- Psychic Suppression Field Projector -->
     <ThingDef ParentName="BuildingBase">
         <defName>SCP_SRA</defName>
@@ -348,11 +297,12 @@
         <description>A building which projects a psychic suppression field in a small area around it, lowering the psychic sensitivity of those nearby. They can be tuned to different intensities and radii, though it takes time for them to change to new targets.\n\nDue to the complex wave interactions, suppression fields do not stack.</description>
         <thingClass>SCP.Building_PsychicSuppressionField</thingClass>
         <graphicData>
-            <texPath>Things/Building/Furniture/PenMarker</texPath>
+            <texPath>Things/Building/Misc/MoisturePump</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1,1)</drawSize>
+            <drawSize>(2,2)</drawSize>
+			<color>(3, 227, 252)</color>
         </graphicData>
-        <size>(1,1)</size>
+        <size>(2,2)</size>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>

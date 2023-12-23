@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>SCP_SCP131R</defName>
-		<label>Eye Pods</label>
+		<defName>SCP_131_Eye_Pod</defName>
+		<label>SCP-131 "Eye Pods"</label>
 		<description>Item #: SCP-131
 Object Class: Safe
 		
@@ -84,9 +84,9 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_SCP131R</defName>
+		<defName>SCP_131_Eye_Pod</defName>
 		<label>Eye Pods</label>
-		<race>SCP_SCP131R</race>
+		<race>SCP_131_Eye_Pod</race>
 		<combatPower>25</combatPower>
 		<lifeStages>
 			<li>

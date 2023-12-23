@@ -146,25 +146,20 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-	
 		<comps>
 			<li Class="SCP.CompProperties_Voices">
 				<voiceRange>30</voiceRange>
 				<directAttackRange>2</directAttackRange>
 				<startPounceOnLuredTargetRange>6</startPounceOnLuredTargetRange>
 			</li>
-			<li Class="CompProperties_GiveHediffSeverity">
+			<li Class="SCP.Comps.CompProperties_GiveHediffSeverity">
 				<hediff>SCP_939_Breath_Hediff</hediff>
 				<range>3</range>
-				<severityPerSecond>0.005</severityPerSecond>
-				<drugExposure>false</drugExposure>
-				<allowMechs>false</allowMechs>
-			  </li>
-			<li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
-				<hediffsToRemove>
-					<li>SCP_939_Breath_Hediff</li>
-				</hediffsToRemove>
-				<tickInterval>150</tickInterval>
+				<severityTick>0.005</severityTick>
+				<tickInterval>600</tickInterval>
+				<defNamesImmune>
+					<li>SCP939_A</li>
+				</defNamesImmune>
 			</li>
 		</comps>
 	</ThingDef>

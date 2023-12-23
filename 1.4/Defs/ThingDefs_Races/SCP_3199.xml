@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>SCP_3199R</defName>
+		<label>SCP-3199</label>
+		<description>Item #: SCP-3199
+Object Class: Keter
+			
+SCP-3199 denotes a species of sapient Category-5 biological entities of currently indeterminable origin, though tissue samples indicate the presence of Silkie chicken, chimpanzee, stoat, mussel, adder, and human DNA. They will produce large eggs of an off-white coloration and rubbery appearance. There is no known limit to the number of eggs SCP-3199 is capable of producing, and the standing theory is as follows: given enough time, a single instance could singlehandedly perform an LK-Class species transmutation scenario.
+
+However, complete eradication has proven impossible difficult, as all instances of SCP-3199 (regardless of age) carry one egg within a specialized stomach-like organ upon birth, assuring that one living instance will persist through even ordinary means of constant and lethal assault. This biological phenomena is presumed to be, in itself, anomalous in origin.
+
+SCP-3199 are opportunistic hunters, engaging with live subjects within a currently unidentified radius within a radius of 0.6 kilometers surrounding hatchlings that have not yet reached full adolescence. Average speed is recorded at 25 km/h. Upon contact with human or animal subjects, SCP-3199 will proceed to [REDACTED], liquefying internal organs and bone structure. A suitable cadaver is then transferred within range of the closest hatchling.</description>
+		<modExtensions>
+			<li Class="SCP.ContainmentExtension">
+				<classRating>
+					<li>SCP_CKeter</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+				<willManhuntAfterBreach>true</willManhuntAfterBreach>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>6.9</MoveSpeed>
+			<MarketValue>300</MarketValue>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMax>300</ComfyTemperatureMax>
+			<FilthRate>18</FilthRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>SCP_3199_Egg</eggUnfertilizedDef>
+				<eggFertilizedDef>SCP_3199_Egg</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>1.5</eggLayIntervalDays>
+				<eggCountRange>1</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+		</comps>
+		<race>
+			<thinkTreeMain>SCP_AI</thinkTreeMain>
+			<deathActionWorkerClass>SCP.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>
+			<body>SCP_Neck</body>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<needsRest>false</needsRest>
+			<baseBodySize>2</baseBodySize>
+			<baseHungerRate>0.4</baseHungerRate>
+			<baseHealthScale>1.8</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<leatherDef>Leather_Patch</leatherDef>
+			<specificMeatDef>SCP_3199_Meat</specificMeatDef>
+			<wildness>0.9</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<lifeExpectancy>30</lifeExpectancy>
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>2</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+					<soundDeath>Pawn_Wildboar_Death</soundDeath>
+					<soundCall>Pawn_Wildboar_Wounded</soundCall>
+					<soundAngry>Pawn_Wildboar_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>18</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCP_3199R</defName>
+		<label>SCP-3199</label>
+		<race>SCP_3199R</race>
+		<combatPower>200</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_3199/SCP_3199</texPath>
+					<drawSize>1</drawSize>
+					<color>(219, 219, 206)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_3199/Dessicated_SCP_3199</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_3199/SCP_3199</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_3199/Dessicated_SCP_3199</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

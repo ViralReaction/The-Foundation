@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiomeDef>
+		<defName>SCP_610_Biome</defName>
+		<label>SCP-610 Plaguelands</label>
+		<description>Item #: SCP-610
+Object Class: Keter
+		
+A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance, and most life is infested with SCP-610. Don't let them touch you.\n\nWarning: Difficult starting location due to sparse resources, wildlife hostility, and SCP-610's fatal disease.</description>
+		<workerClass>SCP.BiomeWorker_SCP610</workerClass>
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<animalDensity>0.5</animalDensity>
+		<plantDensity>0.5</plantDensity>
+		<settlementSelectionWeight>0.001</settlementSelectionWeight>
+		<movementDifficulty>2.5</movementDifficulty>
+		<canAutoChoose>false</canAutoChoose>
+		<texture>World/Biomes/Biome_SCP_610</texture>
+		<forageability>0.5</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<wildPlantRegrowDays>23</wildPlantRegrowDays>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		<diseaseMtbDays>65</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_SCP1797R</diseaseInc>
+				<commonality>120</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+      
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>SCP_610_Fleshy_Gravel</terrain>
+				<min>-999</min>
+				<max>0.46</max>
+			</li>
+			<li>
+				<terrain>SCP_610_Fleshy_Soil</terrain>
+				<min>0.46</min>
+				<max>0.99</max>
+			</li>
+			<li>
+				<terrain>SoilRich</terrain>
+				<min>0.99</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<baseWeatherCommonalities>
+			<Clear>15</Clear>
+			<Fog>1</Fog>
+			<Rain>3</Rain>
+			<DryThunderstorm>.25</DryThunderstorm>
+			<RainyThunderstorm>2</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>2</SnowHard>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<SCP_610_Grass>3.0</SCP_610_Grass>
+			<!--  <Plant_Brambles>0.5</Plant_Brambles> -->
+			<Plant_Dandelion>0.6</Plant_Dandelion>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<Plant_Agave>.09</Plant_Agave>
+			<Plant_TreeDrago>0.25</Plant_TreeDrago>
+			<Plant_TreeOak>0.15</Plant_TreeOak>
+			<Plant_Rafflesia>0.05</Plant_Rafflesia>
+	 
+		</wildPlants>
+		<wildAnimals>
+			<SCP_610A>1.0</SCP_610A>
+			<SCP_610B>1.0</SCP_610B>
+			<Rat>1.0</Rat>
+			<Hare>1.0</Hare>
+			<Boomrat>0.5</Boomrat>
+			<Boomalope>0.6</Boomalope>
+			<Muffalo>0.01</Muffalo>
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+			<li>Elephant</li>
+			<li>Alpaca</li>
+		</allowedPackAnimals>
+	</BiomeDef>
+
+</Defs>
