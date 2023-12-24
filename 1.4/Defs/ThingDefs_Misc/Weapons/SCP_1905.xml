@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_SCP1905R</defName>
 		<label>.577 Tyrannosaur round</label>
-		<thingClass>SCP.SCP_Projectile_DinoHunter</thingClass>
+		<thingClass>SCP.Projectile_DinoHunter</thingClass>
 		<graphicData>
 		<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -18,7 +18,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseGun">
-		<defName>SCP_1905R</defName>
+		<defName>SCP_1905_Dino_Hunter</defName>
 		<label>SCP-1905</label>
 		<description>Item #: SCP-1905
 Object Class: Safe

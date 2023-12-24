@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	
+	<ThoughtDef>
+		<defName>SCP_ES_019_BadThought</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+		<durationDays>5</durationDays>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>used SCP-ES-019</label>
+				<description>That was a very worrying broadcast I listened to.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 	<ThoughtDef>
 		<defName>SCP_113_BadThought</defName>
@@ -14,18 +31,60 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	
-	   <ThoughtDef>
-		<defName>SCP_Infected_SCP939</defName>
-	   <workerClass>SCP.ThoughtWorker_SCP939</workerClass>
+
+	<ThoughtDef>
+		<defName>SCP_EquippedLivingWeapon</defName>
+		<workerClass>SCP.ThoughtWorker_LivingWeaponEquipped</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
-		  <li>
-			<label>SCP-939 nearby</label>
-			<description>I'm starting to forget what I was supposed to be doing...</description>
-			<baseMoodEffect>-2</baseMoodEffect>
-		  </li>
+			<li>
+				<label>living weapon equipped</label>
+				<description>My weapon is alive.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
 		</stages>
-	  </ThoughtDef> 
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCP_EquippedLivingWeaponPsycho</defName>
+		<workerClass>SCP.ThoughtWorker_LivingWeaponEquippedPsycho</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<requiredTraits>
+			<li>Psychopath</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>living weapon equipped</label>
+				<description>My weapon is alive.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCP_EquippedKatana</defName>
+		<workerClass>SCP.ThoughtWorker_EquippedKatana</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>SCP-572 equipped</label>
+				<description>This katana's balance is perfect! It's cutting power is immense... I will take their heads, and with it, their power. I am invincible!</description>
+				<baseMoodEffect>50</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCP_Infected_SCP939</defName>
+		<workerClass>SCP.ThoughtWorker_SCP939</workerClass>
+		<stages>
+			<li>
+				<label>SCP-939 nearby</label>
+				<description>I'm starting to forget what I was supposed to be doing...</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 	<ThoughtDef>
 		<defName>SCP_Infected_SCP1797_Flu</defName>

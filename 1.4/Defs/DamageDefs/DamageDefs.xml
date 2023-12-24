@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	
+	<DamageDef ParentName="Bullet">
+		<defName>SCP_TranqRanged</defName>
+		<label>tranqed</label>
+		<hediff>Gunshot</hediff>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been tranqed to death.</deathMessage>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<additionalHediffs>
+		  <li>
+			<hediff>SCP_TranqHediff</hediff>
+			<severityPerDamageDealt>0.01</severityPerDamageDealt>
+		  </li>
+		</additionalHediffs>
+	</DamageDef>
 
-	<DamageDef Parent="Flame">
+	<DamageDef ParentName="Bullet">
+		<defName>SCP_BluntRanged</defName>
+		<label>blunt</label>
+		<workerClass>DamageWorker_Blunt</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been bludgeoned to death.</deathMessage>
+		<hediff>SCP_BeanBag_Crush</hediff>
+		<hediffSkin>SCP_BeanBag_Bruise</hediffSkin>
+		<hediffSolid>SCP_BeanBag_Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<buildingDamageFactor>0.0</buildingDamageFactor>
+		<bluntStunDuration>2.0</bluntStunDuration>
+		<bluntInnerHitChance>0.4</bluntInnerHitChance>
+		<bluntInnerHitDamageFractionToConvert>0.1~0.2</bluntInnerHitDamageFractionToConvert>
+		<bluntInnerHitDamageFractionToAdd>0.2~0.35</bluntInnerHitDamageFractionToAdd>
+		<bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+			<points>
+				<li>(0.04, 0.20)</li>
+				<li>(0.5, 1)</li>
+			</points>
+		</bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+		<bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+			<points>
+				<li>(0.4, 0)</li>
+				<li>(0.9, 0.15)</li>
+			</points>
+		</bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+	</DamageDef>
+
+	<DamageDef ParentName="Flame">
 		<defName>SCP_Flame</defName>
 		<workerClass>SCP.DamageWorker_SCP_Flame</workerClass>
 		<label>fire</label>
@@ -26,7 +79,7 @@
 		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
 	</DamageDef>
 
-	<DamageDef Parent="Flame">
+	<DamageDef ParentName="Flame">
 		<defName>SCP_Electric</defName>
 		<workerClass>SCP.DamageWorker_SCP_Flame</workerClass>
 		<label>static electricity</label>

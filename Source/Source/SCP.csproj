@@ -55,6 +55,7 @@
     <Compile Include="Comps\IngestOutcomeDoer_RemoveHediff.cs" />
     <Compile Include="Comps\Properties\CompPropertiesGiveHediff.cs" />
     <Compile Include="Comps\Properties\CompPropertiesHatcher.cs" />
+    <Compile Include="CompUseEffect_UseSCP500.cs" />
     <Compile Include="Containment\ContainmentBreaker\ContainmentbreakerMentalStateUtility.cs" />
     <Compile Include="Containment\ContainmentBreaker\JobDriver_ContainmentBreaker.cs" />
     <Compile Include="Containment\ContainmentBreaker\JobGiver_ContainmentBreaker.cs" />
@@ -66,9 +67,17 @@
     <Compile Include="Containment\RoomRoleWorker_Containment.cs" />
     <Compile Include="Containment\ThinkNode_ContaintmentBreach.cs" />
     <Compile Include="Damage.cs" />
+    <Compile Include="Projectiles\Projectile_LunchGun.cs" />
     <Compile Include="Projectiles\Projectile_DinoHunter.cs" />
+    <Compile Include="SCP\CompUseEffect_UseSCPES019.cs" />
+    <Compile Include="SCP\CompUseEffect_UseSCP1577.cs" />
+    <Compile Include="SCP\SCP2687 Plastic Organs\Hediff_TranqDart.cs" />
     <Compile Include="SCP\SCP_610\BiomeWorker_SCP610.cs" />
     <Compile Include="SCP\SCP_610\IncidentWorker_SCP610_Local.cs" />
+    <Compile Include="SCP\ThoughtWorkers\ThoughtWorker_EquippedKatana.cs" />
+    <Compile Include="SCP\ThoughtWorkers\ThoughtWorker_LivingWeaponEquippedPsycho.cs" />
+    <Compile Include="SCP\ThoughtWorkers\ThoughtWortker_LivingWeaponEquipped.cs" />
+    <Compile Include="Utilities\DefOf\DamageDefOf_SCP.cs" />
     <Compile Include="Utilities\DefOf\ThingDefOf_SCP.cs" />
     <Compile Include="Utilities\DefOf\ThoughtDefOF_SCP.cs" />
     <Compile Include="Psychic Suppresion\HarmonyPatches.cs" />

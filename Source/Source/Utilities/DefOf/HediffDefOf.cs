@@ -16,6 +16,7 @@ namespace SCP
         public static HediffDef SCP_2845_Transmute_Hediff; // The Deer Transmute Aura
         public static HediffDef SCP_1797_Flu; // Kitten Flu
         public static HediffDef GutWorms; // Pope Soap Cleanining
+        public static HediffDef SCP_TranqHediff;
 
 
         static HediffDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf_SCP));
