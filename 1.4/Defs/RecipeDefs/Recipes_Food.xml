@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>SCP_MakeThunderMutton</defName>
+		<label>cook thunder mutton</label>
+		<description>Makes SCP-594 meat into a delicious meal.</description>
+		<jobString>Making thunder mutton.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCP_594_Meat</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCP_594_Meat</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<SCP_ThunderMuttonMeal>1</SCP_ThunderMuttonMeal>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>Campfire</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

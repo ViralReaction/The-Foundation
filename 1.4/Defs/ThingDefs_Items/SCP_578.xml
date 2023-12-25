@@ -45,10 +45,10 @@ SCP-578 is a colorless, odorless liquid consisting of a solution of water, silic
 		<label>SCP-578-1</label>
 		<description>Item #: SCP-578-1
 Object Class: Safe
-		
-SCP-578 and several hundred instances of SCP-578-1 were initially discovered during a Foundation raid on a Marshall, Carter, & Dark Ltd. facility. The facility had been used as a production site for various items made of SCP-578-1. The exact process MC&D used to create SCP-578 is unknown.</description>
+	
+SCP-578 and several hundred instances of SCP-578-1 were initially discovered during a Foundation raid on a Marshall, Carter, and Dark Ltd. facility. The facility had been used as a production site for various items made of SCP-578-1. The exact process MCD used to create SCP-578 is unknown.</description>
 		<modExtensions>
-			<li Class="SecureContainRimworld.CProceduresExtension">
+			<li Class="SCP.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

@@ -13,6 +13,7 @@ namespace SCP
     {
         public static JobDef LeaveMapDaylight;
         public static JobDef InduceContaintmentBreak;
+        public static JobDef Play_SCP_1762R;
 
         static JobDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(JobDefOf_SCP));
     }

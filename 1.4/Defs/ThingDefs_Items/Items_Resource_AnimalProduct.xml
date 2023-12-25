@@ -10,7 +10,7 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>AteRawFood</tasteThought>
-						<!-- to prevent pawns from being able to eat it lol -->
+			<!-- to prevent pawns from being able to eat it lol -->
 			<foodType>Tree</foodType>
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
@@ -201,7 +201,7 @@ Heat is a primary component in the growth and development of SCP-3199's eggs, an
 				<hatcherDaystoHatch>2</hatcherDaystoHatch>
 				<hatcherPawn>SCP_3199R</hatcherPawn>
 				<ruinedEgg>SCP_3199_Egg_Ruined</ruinedEgg>
-			</li>	
+			</li>
 			<li Class="CompProperties_TemperatureRuinable">
 				<minSafeTemperature>-60</minSafeTemperature>
 				<maxSafeTemperature>3000</maxSafeTemperature>
@@ -269,6 +269,39 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 	</ThingDef>
 	
 	<!-- ===== Meat ===== -->
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>SCP_594_Meat</defName>
+		<label>raw thunder mutton</label>
+		<description>Meat from SCP-594. Can be used to make an electrifyingly good meal.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>.9</MarketValue><!-- Can be used like meat in recipes -->
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>Meat</foodType>
+		</ingestible>
+		<thingCategories>
+			<li>SCPMeat</li>
+		</thingCategories>
+		<allowedArchonexusCount>0</allowedArchonexusCount>
+	</ThingDef>
+
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>SCP_1797_Meat</defName>
 		<label>SCP-1797-A meat</label>
@@ -349,31 +382,31 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		<label>SCP-3199 meat</label>
 		<description>Meat from SCP-3199. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the humanlike-taste.</description>
 		<graphicData>
-		  <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
-				<graphicClass>Graphic_StackCount</graphicClass>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
-		  <MarketValue>.7</MarketValue> <!-- Can be used like meat in recipes -->
-		  <Mass>0.045</Mass>
-		  <MaxHitPoints>60</MaxHitPoints>
-		  <Flammability>0.2</Flammability>
-		  <Nutrition>0.025</Nutrition>
-		  <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+			<MarketValue>.7</MarketValue><!-- Can be used like meat in recipes -->
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.025</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_Rottable">
-			<daysToRotStart>14</daysToRotStart>
-			<rotDestroys>true</rotDestroys>
-		  </li>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
 		</comps>
 		<ingestible>
-		  <preferability>RawBad</preferability>
-		  <tasteThought>SCP_Ate3199MeatRaw</tasteThought>
-		  <foodType>Meat</foodType>
+			<preferability>RawBad</preferability>
+			<tasteThought>SCP_Ate3199MeatRaw</tasteThought>
+			<foodType>Meat</foodType>
 		</ingestible>
 		<thingCategories>
-		  <li>SCPMeat</li>
+			<li>SCPMeat</li>
 		</thingCategories>
 		<allowedArchonexusCount>0</allowedArchonexusCount>
 	</ThingDef>

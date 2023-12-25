@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>SCP_529R</defName>
+		<defName>SCP_529_Josie</defName>
 		<label>SCP-529</label>
 		<description>Item #: SCP-529
 Object Class: Safe
@@ -161,9 +161,9 @@ In spite of this, the animal has no health problems, and moves about as if its h
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_529R</defName>
+		<defName>SCP_529_Josie</defName>
 		<label>SCP-529</label>
-		<race>SCP_529R</race>
+		<race>SCP_529_Josie</race>
 		<combatPower>35</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>

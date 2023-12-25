@@ -15,6 +15,7 @@ namespace SCP
         public static ThoughtDef SCP_Infected_SCP939;
         public static ThoughtDef SCP_Infected_SCP1797_Flu;
         public static ThoughtDef SCP_ES_019_BadThought;
+        public static ThoughtDef SCP_1695_BadThought;
 
         static ThoughtDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(ThoughtDefOf_SCP));
     }

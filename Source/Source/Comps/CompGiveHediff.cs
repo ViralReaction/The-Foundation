@@ -21,7 +21,7 @@ namespace SCP.Comps
         public override void CompTick()
         {
             base.CompTick();
-            tickCounter++;
+            ++tickCounter;
             if (tickCounter > Props.tickInterval)
             {
                 

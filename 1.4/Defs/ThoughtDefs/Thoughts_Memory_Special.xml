@@ -31,6 +31,20 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>SCP_1695_BadThought</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+		<durationDays>15</durationDays>
+		<stages>
+		  <li>
+			<label>was inside SCP-1695</label>
+			<description>I was turned into Meaty the Meatworm.</description>
+			<baseMoodEffect>-35</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef> 
 
 	<ThoughtDef>
 		<defName>SCP_EquippedLivingWeapon</defName>

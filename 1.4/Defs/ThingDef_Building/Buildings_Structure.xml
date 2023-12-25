@@ -47,8 +47,8 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase" Name="SCR_Wall" Abstract="True">
-		<defName>SCR_Wall</defName>
+	<ThingDef ParentName="BuildingBase" Name="SCP_Wall" Abstract="True">
+		<defName>SCP_Wall</defName>
 		<label>wall</label>
 		<description>An impassable wall. Capable of holding up a roof.</description>
 		<thingClass>Building</thingClass>
@@ -103,7 +103,7 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<!--researchPrerequisites Inherit="False">
-		<li>SCR_WallTier1</li>
+		<li>SCP_WallTier1</li>
 		</researchPrerequisites-->
 		<building>
 			<isInert>true</isInert>
@@ -115,8 +115,8 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="SCR_Wall">
-		<defName>SCR_StrengthenedWall</defName>
+	<ThingDef ParentName="SCP_Wall">
+		<defName>SCP_StrengthenedWall</defName>
 		<label>steel strengthened wall</label>
 		<description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCPs.</description>
 		<modExtensions>
@@ -135,7 +135,7 @@
 
 		<building>
 			<relatedBuildCommands>
-				<li>SCR_Autodoor</li>
+				<li>SCP_Autodoor</li>
 			</relatedBuildCommands>
 		</building>
 	
@@ -156,8 +156,8 @@
 	
 	</ThingDef>
 
-	<ThingDef ParentName="SCR_Wall">
-		<defName>SCR_ReinforcedWall</defName>
+	<ThingDef ParentName="SCP_Wall">
+		<defName>SCP_ReinforcedWall</defName>
 		<label>plasteel reinforced wall</label>
 		<description>An impassable wall strengthened with plasteel. Capable of holding up a roof and keeping in SCPs.</description>
 		<modExtensions>
@@ -176,12 +176,12 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<!--researchPrerequisites Inherit="False">
-			<li>SCR_WallTier2</li>
+			<li>SCP_WallTier2</li>
 		</researchPrerequisites-->
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<building>
 			<relatedBuildCommands>
-				<li>SCR_AutoBlastdoor</li>
+				<li>SCP_AutoBlastdoor</li>
 			</relatedBuildCommands>
 		</building>
 		<damageMultipliers>
@@ -204,7 +204,7 @@
 	<!-- Doors -->
 
 	<ThingDef ParentName="DoorBase">
-		<defName>SCR_Autodoor</defName>
+		<defName>SCP_Autodoor</defName>
 		<label>security door</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down, as well as keeping SCPs from passing through.</description>
 		<modExtensions>
@@ -239,14 +239,14 @@
 			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<!--researchPrerequisites>
-			<li>SCR_SecurityDoors</li>
+			<li>SCP_SecurityDoors</li>
 		</researchPrerequisites-->
 		<designationHotKey>Misc2</designationHotKey>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
 	<ThingDef ParentName="DoorBase">
-		<defName>SCR_AutoBlastdoor</defName>
+		<defName>SCP_AutoBlastdoor</defName>
 		<label>blast door</label>
 		<description>Strong blast door that keeps SCPs inside, even when power is cut off. Powered operation allows people to move through the door without slowing down.</description>
 		<modExtensions>
@@ -276,7 +276,7 @@
 		</costList>
 		<costStuffCount>25</costStuffCount>
 		<!--researchPrerequisites>
-			<li>SCR_BlastDoors</li>
+			<li>SCP_BlastDoors</li>
 		</researchPrerequisites-->
 		<comps>
 			<li Class="CompProperties_Power">

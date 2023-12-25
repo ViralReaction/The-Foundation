@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>SCP_1577R</defName>
+		<defName>SCP_1577_Flare_Gun</defName>
 		<label>SCP-1577-1</label>
 		<description>Item #: SCP-1577-1
 Object Class: Safe

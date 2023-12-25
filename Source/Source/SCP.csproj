@@ -51,11 +51,15 @@
     <Compile Include="Cage\CompAssignableToPawn_Containment.cs" />
     <Compile Include="Cage\Extension.cs" />
     <Compile Include="Cage\Harmony_Cage.cs" />
+    <Compile Include="SCP\SCP_1792_Dragon_Box\CompProperties_CloudMaker.cs" />
     <Compile Include="Comps\CompGiveHediff.cs" />
+    <Compile Include="Comps\CompUsedGraphic.cs" />
     <Compile Include="Comps\IngestOutcomeDoer_RemoveHediff.cs" />
     <Compile Include="Comps\Properties\CompPropertiesGiveHediff.cs" />
     <Compile Include="Comps\Properties\CompPropertiesHatcher.cs" />
-    <Compile Include="CompUseEffect_UseSCP500.cs" />
+    <Compile Include="Comps\Properties\CompProperties_UsedGraphic.cs" />
+    <Compile Include="SCP\SCP_1792_Dragon_Box\CompCloudMaker.cs" />
+    <Compile Include="SCP\SCP_500_Panacea\CompUseEffect_UseSCP500.cs" />
     <Compile Include="Containment\ContainmentBreaker\ContainmentbreakerMentalStateUtility.cs" />
     <Compile Include="Containment\ContainmentBreaker\JobDriver_ContainmentBreaker.cs" />
     <Compile Include="Containment\ContainmentBreaker\JobGiver_ContainmentBreaker.cs" />
@@ -67,17 +71,19 @@
     <Compile Include="Containment\RoomRoleWorker_Containment.cs" />
     <Compile Include="Containment\ThinkNode_ContaintmentBreach.cs" />
     <Compile Include="Damage.cs" />
+    <Compile Include="SCP\SCP_1695_Worm_Machine\Building_SCP1695.cs" />
     <Compile Include="Projectiles\Projectile_LunchGun.cs" />
     <Compile Include="Projectiles\Projectile_DinoHunter.cs" />
-    <Compile Include="SCP\CompUseEffect_UseSCPES019.cs" />
-    <Compile Include="SCP\CompUseEffect_UseSCP1577.cs" />
-    <Compile Include="SCP\SCP2687 Plastic Organs\Hediff_TranqDart.cs" />
-    <Compile Include="SCP\SCP_610\BiomeWorker_SCP610.cs" />
-    <Compile Include="SCP\SCP_610\IncidentWorker_SCP610_Local.cs" />
+    <Compile Include="SCP\SCP_848_Spider\IncidentWorker_SCP848.cs" />
+    <Compile Include="SCP\SCP_848_Spider\IncidentWorker_SCP848_SpawnThing.cs" />
+    <Compile Include="SCP\SCP_ES_019\CompUseEffect_UseSCPES019.cs" />
+    <Compile Include="SCP\SCP_1577_Flare_Gun\CompUseEffect_UseSCP1577.cs" />
+    <Compile Include="SCP\SCP_2687_Plastic_Organs\Hediff_TranqDart.cs" />
+    <Compile Include="SCP\SCP_610_Flesh_That_Hates\BiomeWorker_SCP610.cs" />
+    <Compile Include="SCP\SCP_610_Flesh_That_Hates\IncidentWorker_SCP610_Local.cs" />
     <Compile Include="SCP\ThoughtWorkers\ThoughtWorker_EquippedKatana.cs" />
     <Compile Include="SCP\ThoughtWorkers\ThoughtWorker_LivingWeaponEquippedPsycho.cs" />
     <Compile Include="SCP\ThoughtWorkers\ThoughtWortker_LivingWeaponEquipped.cs" />
-    <Compile Include="Utilities\DefOf\DamageDefOf_SCP.cs" />
     <Compile Include="Utilities\DefOf\ThingDefOf_SCP.cs" />
     <Compile Include="Utilities\DefOf\ThoughtDefOF_SCP.cs" />
     <Compile Include="Psychic Suppresion\HarmonyPatches.cs" />
@@ -85,7 +91,6 @@
     <Compile Include="SCPRadius.cs" />
     <Compile Include="Harmony Patches\StatDraw.cs" />
     <Compile Include="Utilities\DefOf\InteractionDefOf_SCP.cs" />
-    <Compile Include="MapComponent.cs" />
     <Compile Include="Psychic Suppresion\Bulding_PsychicSuppressionField.cs" />
     <Compile Include="Psychic Suppresion\CompProperties_PsychicSuppressionField.cs" />
     <Compile Include="Psychic Suppresion\CompPsychicSuppress.cs" />
@@ -93,31 +98,31 @@
     <Compile Include="Psychic Suppresion\SuppressionFieldManager.cs" />
     <Compile Include="Psychic Suppresion\SuppressionFieldUtility.cs" />
     <Compile Include="Utilities\DefOf\HediffDefOf.cs" />
-    <Compile Include="SCP\SCP2687 Plastic Organs\Hediff_SCP2687.cs" />
-    <Compile Include="SCP\SCP1797 Kitten Flu\ThoughtWorker_KittenFlu.cs" />
-    <Compile Include="SCP\SCP113_Gender_Swap.cs" />
+    <Compile Include="SCP\SCP_2687_Plastic_Organs\Hediff_SCP2687.cs" />
+    <Compile Include="SCP\SCP_1797_Kitten_Flu\ThoughtWorker_KittenFlu.cs" />
+    <Compile Include="SCP\SCP_113 Gender Stone\CompUseEffect_UseSCP113.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SCP\SCP131\IncidentWorker_SCP131.cs" />
-    <Compile Include="SCP\SCP2845 Deer\IncidentWorker_2845.cs" />
-    <Compile Include="SCP\SCP2845 Deer\ThoughtWorker_SCP2845.cs" />
-    <Compile Include="SCP\SCP475 Pope Soap\CompUseEffect_UseSCP475.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\CompProperties_Voices.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\CompVoices.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\GameCondition_SCP939.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\IncidentWorker_SCP939.cs" />
+    <Compile Include="SCP\SCP_131_Eye_Pod\IncidentWorker_SCP131.cs" />
+    <Compile Include="SCP\SCP_2845_Deer\IncidentWorker_2845.cs" />
+    <Compile Include="SCP\SCP_2845_Deer\ThoughtWorker_SCP2845.cs" />
+    <Compile Include="SCP\SCP_475_Pope_Soap\CompUseEffect_UseSCP475.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\CompProperties_Voices.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\CompVoices.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\GameCondition_SCP939.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\IncidentWorker_SCP939.cs" />
     <Compile Include="Utilities\DefOf\JobDefOf_SCP.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\JobDriver_LeaveMapPromptly.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\JobDriver_LeaveMapPromptly.cs" />
     <Compile Include="Harmony Patches\SCPHarmony_Patches.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\MentalStateDefOf_SCP.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\MentalState_Voices.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\MentalStateDefOf_SCP.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\MentalState_Voices.cs" />
     <Compile Include="Utilities\DefOf\PawnKindDefOf_SCP.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\SPExtended\SPTrig.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\SPExtended\SPMultiCell.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\SPExtended\SPExtra.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\SPExtended\SPTuples.cs" />
-    <Compile Include="SCP\SCP939 With Many Voices\ThoughtWorker_939.cs" />
-    <Compile Include="SCP\SCP_3199\DeathActionWOrker_SCP3199.cs" />
-    <Compile Include="SCP\SCP_3199\IncidentWorker_SCP3199.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\SPExtended\SPTrig.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\SPExtended\SPMultiCell.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\SPExtended\SPExtra.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\SPExtended\SPTuples.cs" />
+    <Compile Include="SCP\SCP_939_With_Many_Voices\ThoughtWorker_939.cs" />
+    <Compile Include="SCP\SCP_3199_Human_Refuted\DeathActionWOrker_SCP3199.cs" />
+    <Compile Include="SCP\SCP_3199_Human_Refuted\IncidentWorker_SCP3199.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Comps\Hatching Utility.cs" />
     <Compile Include="Utilities\DeathActionWorker_DestroyBody.cs" />
@@ -132,8 +137,6 @@
       <Version>1.4.3704</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SCP\SC1675\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

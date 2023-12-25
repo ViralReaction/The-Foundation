@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SCP_2228_Playset</defName>
+		<label>SCP-2228</label>
+		<description>Item #: SCP-2228
+Object Class: Safe
+			
+SCP-2228 refers to a series of identical boxed set of figurines and board labeled "SCP Foundation Containment Site Playset", with Dr. Wondertainment given as the items' manufacturer. Small items placed inside will gain anomalous properties, and will lose them upon leaving.</description>
+		<modExtensions>
+			<li Class="SCP.ContainmentExtension">
+				<classRating>
+					<li>SCP_CSafe</li>
+					<li>SCP_DDark</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Building/Misc/SCP_2228</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.65, 0.25, 0.6)</volume>
+				<offset>(0, 0, -0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifacts</li>
+		</tradeTags>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<joyKind>Gaming_Cerebral</joyKind>
+		</building>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<JoyGainFactor>1.2</JoyGainFactor>
+		</statBases>
+		<pathCost>30</pathCost>
+		<passability>PassThroughOnly</passability>
+	</ThingDef>
+
+</Defs>

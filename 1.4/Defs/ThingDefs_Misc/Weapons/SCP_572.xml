@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingDef ParentName="BaseWeapon">
 		<defName>SCP_572R</defName>
 		<label>SCP-572</label>
@@ -56,4 +57,5 @@ SCP-572 is a sword of the [REDACTED] model manufactured by DATA EXPUNGED. Howeve
 			</li>
 		</tools>
 	</ThingDef>
+
 </Defs>

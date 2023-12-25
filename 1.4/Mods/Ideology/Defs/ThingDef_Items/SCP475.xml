@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="ResourceBase">
-		<defName>SCP475_Soap</defName>
+		<defName>SCP_475_Soap</defName>
 		<label>SCP-475 Pope Soap</label>
 		<description>Item #: SCP-475
 Object Class: Safe

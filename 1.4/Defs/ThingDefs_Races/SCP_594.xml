@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>SCP_594R</defName>
+		<defName>SCP_594_Thunder_Sheep</defName>
 		<label>SCP-594 "Thunder Sheep"</label>
 		<description>Item #: SCP-594
 Object Class: Euclid
@@ -27,6 +27,9 @@ The sheep are highly aggressive and territorial in nature, and often attack unfa
 			<FilthRate>8</FilthRate>
 		</statBases>
 		<uiIconScale>1.3</uiIconScale>
+		<butcherProducts>
+			<SCP_594_Meat>30</SCP_594_Meat>
+		</butcherProducts>
 		<comps>
 			<li Class="CompProperties_Shearable">
 				<woolDef>WoolSheep</woolDef>
@@ -91,7 +94,6 @@ The sheep are highly aggressive and territorial in nature, and often attack unfa
 			<roamMtbDays>5</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>13</lifeExpectancy>
-			<useMeatFrom>Sheep</useMeatFrom>
 			<manhunterOnTameFailChance>.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<wildBiomes>
@@ -182,12 +184,12 @@ The sheep are highly aggressive and territorial in nature, and often attack unfa
 	</ThingDef>
 
 	<PawnKindDef Name="Sheep" ParentName="AnimalKindBase">
-		<defName>SCP_594R</defName>
-		<label>SCP-594</label>
+		<defName>SCP_594_Thunder_Sheep</defName>
+		<label>SCP-594 "Thunder Sheep"</label>
 		<labelPlural>SCP-594</labelPlural>
 		<labelMale>SCP-594</labelMale>
 		<labelFemale>SCP-594</labelFemale>
-		<race>SCP_594R</race>
+		<race>SCP_594_Thunder_Sheep</race>
 		<combatPower>100</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<lifeStages>

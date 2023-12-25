@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="ResourceBase">
-		<defName>SCP113_Stone</defName>
+		<defName>SCP_113_Stone</defName>
 		<label>SCP-113 Gender Stone</label>
 		<description>Item #: SCP-113
 Object Class: Safe

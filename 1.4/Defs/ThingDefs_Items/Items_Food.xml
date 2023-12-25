@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealFineBase">
+		<defName>SCP_ThunderMuttonMeal</defName>
+		<label>thunder mutton meal</label>
+		<description>An electrifying, tasty dish assembled with care from SCP-594.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Pemmican</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

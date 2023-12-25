@@ -14,11 +14,8 @@ namespace SCP
         {
             if (p.equipment.Primary == null)
                 return (ThoughtState)false;
-            //foreach (Trait allTrait in p.story.traits.allTraits)
-            //{
                 if (p.story.traits.HasTrait(TraitDefOf.Psychopath))
             { 
-                //if (allTrait.def == TraitDefOf.Psychopath)
                     return (ThoughtState)false;
 
             }
