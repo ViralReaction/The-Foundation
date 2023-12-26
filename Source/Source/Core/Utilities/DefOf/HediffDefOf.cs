@@ -19,6 +19,7 @@ namespace SCP
         public static HediffDef SCP_TranqHediff;
         public static HediffDef SCP_30331R;
         public static HediffDef SCP_30332R;
+        public static HediffDef SCP_610_Infection;
 
 
         static HediffDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf_SCP));

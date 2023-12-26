@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biome</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BiomeDef[defName="SCP_610Biome"]/soundsAmbient</xpath>
+					<value>
+						<li>AB_AmbientAlien</li>
+						<li>Ambient_Wind_Desolate</li>
+					</value>
+				</li>
+
+			</operations>
+		
+		</match>
+	</Operation>
+</Patch>

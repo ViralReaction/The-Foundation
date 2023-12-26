@@ -93,7 +93,7 @@
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
-						<setMax>.75</setMax>
+						<setMax>0.75</setMax>
 					</li>
 					<li>
 						<capacity>Talking</capacity>

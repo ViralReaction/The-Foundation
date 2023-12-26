@@ -21,7 +21,7 @@ SCP-1577-1 is a flare gun, that shows minor wear and damage consistent with its 
 		<graphicData>
 			<texPath>Things/Item/Artifacts/SCP_1577</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>.8</drawSize>
+			<drawSize>0.8</drawSize>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
 		<thingClass>ThingWithComps</thingClass>

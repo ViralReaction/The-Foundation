@@ -3,6 +3,7 @@
 	
 	<!-- SCP-610 -->
 	<HediffDef ParentName="InfectionBase">
+		<hediffClass>SCP.Hediff_610_Infection</hediffClass>
 		<defName>SCP_610_Infection</defName>
 		<label>SCP-610 infection</label>
 		<labelNoun>an SCP-610 infection</labelNoun>

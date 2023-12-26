@@ -164,5 +164,24 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>SCP_SteppingOnTheSick_610</defName>
+		<durationDays>0.25</durationDays>
+		<stackLimit>1</stackLimit>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<nullifyingPrecepts>
+			<li MayRequire="vanillaexpanded.vmemese">VME_Illness_Exalted</li>
+			<li MayRequire="vanillaexpanded.vmemese">VME_Illness_Preferred</li>
+		</nullifyingPrecepts>
+		<stages>
+			<li>
+				<label>stepping on SCP-610 corruption</label>
+				<description>The corruption of the Flesh That Hates is everywhere. Just hearing the all-consuming demon fungus squish and throb under my weight makes me feel malaise.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
  
 </Defs>

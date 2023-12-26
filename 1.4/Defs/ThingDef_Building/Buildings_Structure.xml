@@ -241,7 +241,7 @@
 			</li>
 			<li>
 				<damageDef>Mining</damageDef>
-				<multiplier>.5</multiplier>
+				<multiplier>0.5</multiplier>
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>
@@ -286,7 +286,7 @@
 			</li>
 			<li>
 				<damageDef>Mining</damageDef>
-				<multiplier>.5</multiplier>
+				<multiplier>0.5</multiplier>
 			</li>
 			<li>
 				<damageDef>Thump</damageDef>

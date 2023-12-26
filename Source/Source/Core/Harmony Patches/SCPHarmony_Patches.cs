@@ -76,9 +76,9 @@ namespace SCP
         {
             if (__result != WorldPawnSituation.Free || p.kindDef != PawnKindDefOf_SCP.SCP_939_Incident)
                 return;
-           Log.Message("Checking " + p.LabelShort, false);
+            Log.Message("Checking " + p.LabelShort, false);
             foreach (Map map in Find.Maps)
-           {
+            {
                 if (map.GameConditionManager.ActiveConditions.Any<GameCondition>((Predicate<GameCondition>)(x => x is GameCondition_SCP939 && (x as GameCondition_SCP939).ActiveSCPInArea.Contains(p))))
                 {
                     Log.Message("Result Changed ", false);
@@ -114,6 +114,6 @@ namespace SCP
                 return;
             __instance.CurLevel = 1f;
         }
-    }
 
+    }
 }

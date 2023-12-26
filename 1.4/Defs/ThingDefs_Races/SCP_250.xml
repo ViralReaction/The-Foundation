@@ -31,8 +31,8 @@ SCP-250 emulates what are presumed to have been the standard daily activities of
 	  <FilthRate>2</FilthRate>
 	  <MeatAmount>0</MeatAmount>
 	  <LeatherAmount>0</LeatherAmount>
-	  <ArmorRating_Sharp>.4</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>.2</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 	  <ToxicResistance>1</ToxicResistance>
     </statBases>
 	    <receivesSignals>true</receivesSignals>
@@ -51,25 +51,25 @@ SCP-250 emulates what are presumed to have been the standard daily activities of
       <baseHungerRate>0.325</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <wildness>.97</wildness>
+      <wildness>0.97</wildness>
       <trainability>Advanced</trainability>
 	  <useMeatFrom>Cat</useMeatFrom>
 	  <leatherDef>Leather_Light</leatherDef>
-	  <manhunterOnTameFailChance>.65</manhunterOnTameFailChance>
-	  <manhunterOnDamageChance>.9</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0.65</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 	  			<wildBiomes>
-				<AridShrubland>.1</AridShrubland>
+				<AridShrubland>0.1</AridShrubland>
 				<BorealForest>0</BorealForest>
 				<ColdBog>0</ColdBog>
-				<TemperateForest>.04</TemperateForest>
-				<TemperateSwamp>.04</TemperateSwamp>
+				<TemperateForest>0.04</TemperateForest>
+				<TemperateSwamp>0.04</TemperateSwamp>
 				<TropicalRainforest>0</TropicalRainforest>
 				<TropicalSwamp>0</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
 				<Tundra>0</Tundra>
-				<Desert>.2</Desert>
-				<ExtremeDesert>.1</ExtremeDesert>
+				<Desert>0.2</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
 			</wildBiomes>
       <gestationPeriodDays>20</gestationPeriodDays>
       <lifeExpectancy>20</lifeExpectancy>

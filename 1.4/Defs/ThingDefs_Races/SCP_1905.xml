@@ -58,7 +58,7 @@ Instances of SCP-1905-1 are composed primarily of fiberglass and plaster; they s
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>.5</minAge>
+					<minAge>0.5</minAge>
 					<soundWounded>Pawn_Bear_Injured</soundWounded>
 					<soundDeath>Pawn_Bear_Death</soundDeath>
 					<soundCall>Pawn_Bear_Call</soundCall>

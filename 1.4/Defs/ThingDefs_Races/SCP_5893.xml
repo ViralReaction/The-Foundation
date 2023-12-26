@@ -27,8 +27,8 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 			<FilthRate>7</FilthRate>
 			<MeatAmount>30</MeatAmount>
 			<LeatherAmount>25</LeatherAmount>
-			<ArmorRating_Sharp>.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>2</ArmorRating_Heat>
 		</statBases>
 		<comps>
@@ -55,25 +55,25 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 			<baseHungerRate>0.325</baseHungerRate>
 			<baseHealthScale>1.9</baseHealthScale>
 			<foodType>CarnivoreAnimal, VegetarianRoughAnimal, OvivoreAnimal</foodType>
-			<wildness>.8</wildness>
+			<wildness>0.8</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>Advanced</trainability>
 			<leatherDef>Leather_Light</leatherDef>
-			<manhunterOnTameFailChance>.7</manhunterOnTameFailChance>
+			<manhunterOnTameFailChance>0.7</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<wildBiomes>
-				<AridShrubland>.2</AridShrubland>
-				<BorealForest>.1</BorealForest>
-				<ColdBog>.2</ColdBog>
-				<TemperateForest>.1</TemperateForest>
-				<TemperateSwamp>.1</TemperateSwamp>
-				<TropicalRainforest>.1</TropicalRainforest>
-				<TropicalSwamp>.1</TropicalSwamp>
+				<AridShrubland>0.2</AridShrubland>
+				<BorealForest>0.1</BorealForest>
+				<ColdBog>0.2</ColdBog>
+				<TemperateForest>0.1</TemperateForest>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<TropicalSwamp>0.1</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
-				<Tundra>.2</Tundra>
-				<Desert>.2</Desert>
-				<ExtremeDesert>.2</ExtremeDesert>
+				<Tundra>0.2</Tundra>
+				<Desert>0.2</Desert>
+				<ExtremeDesert>0.2</ExtremeDesert>
 			</wildBiomes>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>25</lifeExpectancy>

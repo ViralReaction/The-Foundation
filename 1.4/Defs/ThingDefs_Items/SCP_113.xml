@@ -23,7 +23,7 @@ When SCP-113 comes in direct contact with the flesh of an organism possessing se
 		<graphicData>
 			<texPath>Things/Item/Artifacts/SCP113</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>.5</drawSize>
+			<drawSize>0.5</drawSize>
 		</graphicData>
 		<thingClass>ThingWithComps</thingClass>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>

@@ -25,7 +25,7 @@ Overuse of the supplements increase this sensation, with the test group experien
 			<texPath>Things/Item/Drug/Penoxycyline</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(187, 203, 40)</color>
-			<drawSize>.8</drawSize>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<stackLimit>20</stackLimit>
 		<statBases>

@@ -54,7 +54,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SCP_Bullet_RiotShotgun</defaultProjectile>
-				<warmupTime>.9</warmupTime>
+				<warmupTime>0.9</warmupTime>
 				<range>16</range>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

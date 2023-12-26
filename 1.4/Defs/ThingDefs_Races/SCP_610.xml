@@ -22,10 +22,13 @@ SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610.
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<MarketValue>450</MarketValue>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>33</ComfyTemperatureMax>
 			<FilthRate>8</FilthRate>
-			<ArmorRating_Sharp>.35</ArmorRating_Sharp>
-			<ArmorRating_Blunt>.35</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<Flammability>10</Flammability>
 		</statBases>
 		<race>
 			<thinkTreeMain>SCP_AI</thinkTreeMain>
@@ -83,41 +86,25 @@ SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610.
 				<capacities>
 					<li>SCP_610_InfectingScratch</li>
 				</capacities>
-				<power>8.2</power>
+				<power>2</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>14</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 			<li>
 				<label>right fist</label>
 				<capacities>
 					<li>SCP_610_InfectingScratch</li>
 				</capacities>
-				<power>8.2</power>
+				<power>2</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>14</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 			<li>
 				<label>teeth</label>
 				<capacities>
 					<li>SCP_610_InfectingBite</li>
 				</capacities>
-				<power>8.2</power>
+				<power>2</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.5</chanceFactor>
@@ -125,14 +112,19 @@ SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610.
 				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
 			</li>
 		</tools>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_610A</defName>
 		<label>SCP-610-A</label>
 		<race>SCP_610A</race>
-		<combatPower>100</combatPower>
-		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<combatPower>200</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<label>small SCP-610-A</label>
@@ -202,10 +194,13 @@ SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-61
 		<statBases>
 			<MoveSpeed>3.0</MoveSpeed>
 			<MarketValue>650</MarketValue>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>33</ComfyTemperatureMax>
 			<FilthRate>8</FilthRate>
-			<ArmorRating_Sharp>.55</ArmorRating_Sharp>
-			<ArmorRating_Blunt>.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<Flammability>10</Flammability>
 		</statBases>
 		<race>
 			<thinkTreeMain>SCP_AI</thinkTreeMain>
@@ -263,31 +258,23 @@ SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-61
 				<capacities>
 					<li>SCP_610_InfectingScratch</li>
 				</capacities>
-				<power>15</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>14</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 			<li>
 				<label>right fist</label>
 				<capacities>
 					<li>SCP_610_InfectingScratch</li>
 				</capacities>
-				<power>15</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>4</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -305,14 +292,19 @@ SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-61
 				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
 			</li>
 		</tools>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_610B</defName>
 		<label>SCP-610-B</label>
 		<race>SCP_610B</race>
-		<combatPower>250</combatPower>
-		<ecoSystemWeight>0.7</ecoSystemWeight>
+		<combatPower>350</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<label>small SCP-610-B</label>

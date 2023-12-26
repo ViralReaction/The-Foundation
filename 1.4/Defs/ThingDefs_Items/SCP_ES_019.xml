@@ -23,7 +23,7 @@ A side effect of SCP-ES-019, displayed in approximately [REDACTED]% of the subje
 		<graphicData>
 			<texPath>Things/Item/Artifacts/SCP_ES_019</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>.6</drawSize>
+			<drawSize>0.6</drawSize>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
 		<thingClass>ThingWithComps</thingClass>

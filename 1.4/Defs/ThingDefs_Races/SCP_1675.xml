@@ -50,18 +50,18 @@ Whenever SCP-1675 is exposed to a specimen of genus Anser, Branta, or Chen, it w
 			<lifeExpectancy>200</lifeExpectancy>
 			<bloodDef>Filth_MachineBits</bloodDef>
 			<wildBiomes>
-				<AridShrubland>.1</AridShrubland>
-				<BorealForest>.1</BorealForest>
-				<ColdBog>.1</ColdBog>
-				<TemperateForest>.1</TemperateForest>
-				<TemperateSwamp>.1</TemperateSwamp>
-				<TropicalRainforest>.1</TropicalRainforest>
-				<TropicalSwamp>.1</TropicalSwamp>
-				<IceSheet>.1</IceSheet>
-				<SeaIce>.1</SeaIce>
-				<Tundra>.1</Tundra>
-				<Desert>.1</Desert>
-				<ExtremeDesert>.1</ExtremeDesert>
+				<AridShrubland>0.1</AridShrubland>
+				<BorealForest>0.1</BorealForest>
+				<ColdBog>0.1</ColdBog>
+				<TemperateForest>0.1</TemperateForest>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<TropicalSwamp>0.1</TropicalSwamp>
+				<IceSheet>0.1</IceSheet>
+				<SeaIce>0.1</SeaIce>
+				<Tundra>0.1</Tundra>
+				<Desert>0.1</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
 			</wildBiomes>
 			<lifeStageAges>
 				<li>

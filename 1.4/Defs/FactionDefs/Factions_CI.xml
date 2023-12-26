@@ -101,6 +101,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
 		</disallowedMemes>
 		<disallowedPrecepts>
 		</disallowedPrecepts>

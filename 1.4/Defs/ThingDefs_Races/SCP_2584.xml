@@ -85,18 +85,18 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<wildBiomes>
-				<AridShrubland>.2</AridShrubland>
+				<AridShrubland>0.2</AridShrubland>
 				<BorealForest>0</BorealForest>
 				<ColdBog>0</ColdBog>
-				<TemperateForest>.1</TemperateForest>
-				<TemperateSwamp>.1</TemperateSwamp>
-				<TropicalRainforest>.1</TropicalRainforest>
-				<TropicalSwamp>.1</TropicalSwamp>
+				<TemperateForest>0.1</TemperateForest>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<TropicalSwamp>0.1</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
 				<Tundra>0</Tundra>
-				<Desert>.2</Desert>
-				<ExtremeDesert>.4</ExtremeDesert>
+				<Desert>0.2</Desert>
+				<ExtremeDesert>0.4</ExtremeDesert>
 			</wildBiomes>
 	  
 		</race>
@@ -117,7 +117,7 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP2584/SCP2584</texPath>
-					<drawSize>.8</drawSize>
+					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
@@ -127,7 +127,7 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP2584/SCP2584</texPath>
-					<drawSize>.8</drawSize>
+					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
@@ -137,7 +137,7 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP2584/SCP2584</texPath>
-					<drawSize>.8</drawSize>
+					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>

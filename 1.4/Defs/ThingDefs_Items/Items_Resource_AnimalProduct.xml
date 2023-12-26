@@ -156,7 +156,7 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<DeteriorationRate>.5</DeteriorationRate>
+			<DeteriorationRate>0.5</DeteriorationRate>
 			<Flammability>0</Flammability>
 			<MarketValue>7.0</MarketValue>
 		</statBases>
@@ -253,7 +253,7 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<DeteriorationRate>.5</DeteriorationRate>
+			<DeteriorationRate>0.5</DeteriorationRate>
 			<Flammability>0</Flammability>
 			<MarketValue>7.0</MarketValue>
 		</statBases>
@@ -279,7 +279,7 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
-			<MarketValue>.9</MarketValue><!-- Can be used like meat in recipes -->
+			<MarketValue>0.9</MarketValue><!-- Can be used like meat in recipes -->
 			<Mass>0.045</Mass>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Flammability>0.2</Flammability>
@@ -294,7 +294,7 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		</comps>
 		<ingestible>
 			<preferability>RawBad</preferability>
-			<foodType>Meat</foodType>
+			<foodType>Meat, CarnivoreAnimalStrict</foodType>
 		</ingestible>
 		<thingCategories>
 			<li>SCPMeat</li>
@@ -312,7 +312,7 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
-			<MarketValue>.9</MarketValue><!-- Can be used like meat in recipes -->
+			<MarketValue>0.9</MarketValue><!-- Can be used like meat in recipes -->
 			<Mass>0.045</Mass>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Flammability>0.2</Flammability>
@@ -327,7 +327,7 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		</comps>
 		<ingestible>
 			<preferability>RawBad</preferability>
-			<foodType>Meat</foodType>
+			<foodType>Meat, CarnivoreAnimalStrict</foodType>
 		</ingestible>
 		<thingCategories>
 			<li>SCPMeat</li>
@@ -355,7 +355,6 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
 			<DeteriorationRate>0.01</DeteriorationRate>
 		</statBases>
-		<stackLimit>1000</stackLimit>
 		<ingestible>
 			<preferability>RawBad</preferability>
 			<foodType Inherit="False">VegetableOrFruit, Plant, VegetarianAnimal, VegetarianRoughAnimal, Seed, Tree, Kibble</foodType>
@@ -387,7 +386,7 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
-			<MarketValue>.7</MarketValue><!-- Can be used like meat in recipes -->
+			<MarketValue>0.7</MarketValue><!-- Can be used like meat in recipes -->
 			<Mass>0.045</Mass>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Flammability>0.2</Flammability>
@@ -403,7 +402,17 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		<ingestible>
 			<preferability>RawBad</preferability>
 			<tasteThought>SCP_Ate3199MeatRaw</tasteThought>
-			<foodType>Meat</foodType>
+			<foodType>Meat, CarnivoreAnimalStrict</foodType>
+			<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.03</severity>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>FoodPoisoning</hediffDef>
+				<severity>0.3</severity>
+			</li>
+		</outcomeDoers>
 		</ingestible>
 		<thingCategories>
 			<li>SCPMeat</li>

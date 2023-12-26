@@ -72,7 +72,7 @@ SCP-127, upon first glance, appears to be a standard MP5K-PDW submachine gun. Te
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SCP_Bullet_SCP127R</defaultProjectile>
-				<warmupTime>.5</warmupTime>
+				<warmupTime>0.5</warmupTime>
 				<range>23</range>
 				<soundCast>Shot_MachinePistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>

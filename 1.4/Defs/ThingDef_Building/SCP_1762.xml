@@ -59,7 +59,7 @@ SCP-1762-1 will infrequently open and initiate a release of SCP-1762-2. During t
 			<li Class="SCP.Comps.CompProperties_CloudMaker">
 				<sourceStreamEffect>SCP_EffecterSCP1762R</sourceStreamEffect>
 				<cloudRadius>2.1</cloudRadius>
-				<fleckScale>.09</fleckScale>
+				<fleckScale>0.09</fleckScale>
 				<cloudFleck>SCP_FleckSCP1762R</cloudFleck>
 				<fleckSpawnMTB>35</fleckSpawnMTB>
 				<checkRadius>1</checkRadius>
@@ -67,7 +67,7 @@ SCP-1762-1 will infrequently open and initiate a release of SCP-1762-2. During t
 			<li Class="SCP.Comps.CompProperties_CloudMaker">
 				<sourceStreamEffect>SCP_EffecterSCP1762R</sourceStreamEffect>
 				<cloudRadius>2.1</cloudRadius>
-				<fleckScale>.09</fleckScale>
+				<fleckScale>0.09</fleckScale>
 				<cloudFleck>SCP_Fleck2SCP1762R</cloudFleck>
 				<fleckSpawnMTB>50</fleckSpawnMTB>
 				<checkRadius>1</checkRadius>

@@ -38,8 +38,8 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
 			<needsRest>false</needsRest>
-			<baseBodySize>.15</baseBodySize>
-			<baseHungerRate>0.00000001</baseHungerRate>
+			<baseBodySize>0.15</baseBodySize>
+			<baseHungerRate>0</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Leather_Patch</leatherDef>
@@ -50,22 +50,18 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<lifeExpectancy>50</lifeExpectancy>
-			<nuzzleMtbHours>8</nuzzleMtbHours>
+			<nuzzleMtbHours>6</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
-			<lifeStageAges>
+			<lifeStageAges Inherit="False">
 				<li>
-					<def>AnimalBaby</def>
+					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>.5</minAge>
 					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
 					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
 				</li>
-			</lifeStageAges>
+		  </lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -81,6 +77,9 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li>
+		</comps>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">

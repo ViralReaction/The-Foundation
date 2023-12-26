@@ -90,23 +90,23 @@ The sheep are highly aggressive and territorial in nature, and often attack unfa
 					<li>(2.0, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<wildness>.2</wildness>
+			<wildness>0.2</wildness>
 			<roamMtbDays>5</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>13</lifeExpectancy>
-			<manhunterOnTameFailChance>.3</manhunterOnTameFailChance>
+			<manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<wildBiomes>
 				<AridShrubland>0</AridShrubland>
-				<BorealForest>.25</BorealForest>
-				<ColdBog>.2</ColdBog>
+				<BorealForest>0.25</BorealForest>
+				<ColdBog>0.2</ColdBog>
 				<TemperateForest>0</TemperateForest>
 				<TemperateSwamp>0</TemperateSwamp>
 				<TropicalRainforest>0</TropicalRainforest>
 				<TropicalSwamp>0</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
-				<Tundra>.25</Tundra>
+				<Tundra>0.25</Tundra>
 				<Desert>0</Desert>
 				<ExtremeDesert>0</ExtremeDesert>
 			</wildBiomes>

@@ -21,7 +21,7 @@
 	<!-- <graphicData> -->
 	<!-- <texPath>Things/Item/Special/SCP_578</texPath> -->
 	<!-- <graphicClass>Graphic_Single</graphicClass> -->
-	<!-- <drawSize>.5</drawSize> -->
+	<!-- <drawSize>0.5</drawSize> -->
 	<!-- </graphicData> -->
 	<!-- <thingClass>ThingWithComps</thingClass> -->
 	<!-- <resourceReadoutPriority>Middle</resourceReadoutPriority> -->

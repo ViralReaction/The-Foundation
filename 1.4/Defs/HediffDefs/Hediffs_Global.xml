@@ -73,7 +73,7 @@
 		<label>SCP-939 breath</label>
 		<description>An amnesia-inducing substance exhaled from SCP-939.
 	\nNaturally recovers over time as the body filters it out.</description>
-		<initialSeverity>.15</initialSeverity>
+		<initialSeverity>0.15</initialSeverity>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>45000~100000</disappearsAfterTicks>
@@ -100,7 +100,7 @@
 		<label>SCP-2845 Transmutation Aura</label>
 		<description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
 \nNaturally recovers over time as the body filters it out.</description>
-		<initialSeverity>.15</initialSeverity>
+		<initialSeverity>0.15</initialSeverity>
 		<lethalSeverity>1</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
 

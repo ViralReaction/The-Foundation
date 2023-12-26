@@ -53,6 +53,7 @@
     <Compile Include="Core\Cage\Extension.cs" />
     <Compile Include="Core\Cage\Harmony_Cage.cs" />
     <Compile Include="Core\SCP\SCP_578 Bloodstone\CompUseEffect_UseSCP578.cs" />
+    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Hediff_610_Infection.cs" />
     <Compile Include="Core\Utilities\DefOf\IdeologyDefOf_SCP.cs" />
     <Compile Include="Ideology\Harmony.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_SCP_InColony.cs" />

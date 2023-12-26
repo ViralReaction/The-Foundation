@@ -18,7 +18,7 @@
 		</tradeTags>
 		<race>
 			<body>SCP_Round</body>
-			<baseBodySize>.15</baseBodySize>
+			<baseBodySize>0.15</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<leatherDef>Leather_Patch</leatherDef>
 			<useMeatFrom>Cat</useMeatFrom>
@@ -46,10 +46,10 @@
 				<AridShrubland>0</AridShrubland>
 				<BorealForest>0</BorealForest>
 				<ColdBog>0</ColdBog>
-				<TemperateForest>.05</TemperateForest>
-				<TemperateSwamp>.2</TemperateSwamp>
-				<TropicalRainforest>.2</TropicalRainforest>
-				<TropicalSwamp>.2</TropicalSwamp>
+				<TemperateForest>0.05</TemperateForest>
+				<TemperateSwamp>0.2</TemperateSwamp>
+				<TropicalRainforest>0.2</TropicalRainforest>
+				<TropicalSwamp>0.2</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
 				<Tundra>0</Tundra>
@@ -81,7 +81,7 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>Corpse, OmnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -106,7 +106,7 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 		<label>SCP-857-A</label>
 		<race>SCP_857A</race>
 		<combatPower>10</combatPower>
-		<alternateGraphicChance>.9</alternateGraphicChance>
+		<alternateGraphicChance>0.9</alternateGraphicChance>
 		<alternateGraphics>
 			<li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
 			<li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
@@ -161,11 +161,11 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.1</baseBodySize>
+			<baseBodySize>0.1</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>.5</wildness>
+			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -233,11 +233,11 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.2</baseBodySize>
+			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -308,16 +308,16 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.3</baseBodySize>
+			<baseBodySize>0.3</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>.2</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
 		</race>
 		<tools>
 			<li>
@@ -382,16 +382,16 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.2</baseBodySize>
+			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.3</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>.2</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
 		</race>
 		<tools>
 			<li>
@@ -457,11 +457,11 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.5</baseBodySize>
+			<baseBodySize>0.5</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.5</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<wildness>0.5</wildness>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -531,9 +531,9 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 			<needsRest>true</needsRest>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
-			<baseBodySize>.5</baseBodySize>
+			<baseBodySize>0.5</baseBodySize>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.3</wildness>
+			<wildness>0.3</wildness>
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -558,7 +558,7 @@ SCP-857 is a creature that looks like a living body part of a baseline human. \n
 		<label>SCP-857-I</label>
 		<race>SCP_857I</race>
 		<combatPower>15</combatPower>
-		<alternateGraphicChance>.9</alternateGraphicChance>
+		<alternateGraphicChance>0.9</alternateGraphicChance>
 		<alternateGraphics>
 			<li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
 			<li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>

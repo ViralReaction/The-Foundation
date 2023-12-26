@@ -8,12 +8,15 @@
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>321</renderPrecedence>
 		<pathCost>10</pathCost>
+		<extraDeteriorationFactor>13</extraDeteriorationFactor>
+		<traversedThought>SCP_SteppingOnTheSick_610</traversedThought>
 		<statBases>
-			<Beauty>-3</Beauty>
-			<BeautyOutdoors>-1</BeautyOutdoors>
-			<Cleanliness>-1</Cleanliness>
+			<Beauty>-10</Beauty>
+			<BeautyOutdoors>-10</BeautyOutdoors>
+			<Cleanliness>-5</Cleanliness>
 		</statBases>
 		<scatterType>Rocky</scatterType>
+		<burnedDef>Soil</burnedDef>
 		<affordances>
 			<li>Light</li>
 			<li>Medium</li>
@@ -23,20 +26,21 @@
 			<li>Bridgeable</li>
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
-		<fertility>0.4</fertility>
-		<takeFootprints>True</takeFootprints>
+		<fertility>0.8</fertility>
+		<takeFootprints>false</takeFootprints>
 		<tools>
 			<li>
-				<label>gravel</label>
+				 <label>plagued toxins</label>
 				<capacities>
 					<li>KickMaterialInEyes</li>
 				</capacities>
-				<hediff>GravelInEyes</hediff>
-				<cooldownTime>1.5</cooldownTime>
+				<hediff>ToxicBuildup</hediff>
+				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
 		<tags>
 			<li>Soil</li>
+			<li>Sandy</li>
 		</tags>
 	</TerrainDef>
 
@@ -47,12 +51,16 @@
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>331</renderPrecedence>
 		<pathCost>3</pathCost>
+		<extraDeteriorationFactor>7</extraDeteriorationFactor>
+		<traversedThought>SCP_SteppingOnTheSick_610</traversedThought>
 		<statBases>
-			<Beauty>-3</Beauty>
-			<BeautyOutdoors>0</BeautyOutdoors>
-			<Cleanliness>-1</Cleanliness>
+			<Beauty>-10</Beauty>
+			<BeautyOutdoors>-10</BeautyOutdoors>
+			<Cleanliness>-5</Cleanliness>
+			<Flammability>3</Flammability>
 		</statBases>
 		<scatterType>Rocky</scatterType>
+		<burnedDef>SoilRich</burnedDef>
 		<affordances>
 			<li>Light</li>
 			<li>Medium</li>
@@ -63,20 +71,92 @@
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>1</fertility>
-		<takeFootprints>True</takeFootprints>
+		<takeFootprints>false</takeFootprints>
 		<tools>
 			<li>
-				<label>dirt</label>
+				<label>plagued toxins</label>
 				<capacities>
-					<li>KickMaterialInEyes</li>
+				  <li>KickMaterialInEyes</li>
 				</capacities>
-				<hediff>DirtInEyes</hediff>
-				<cooldownTime>1.5</cooldownTime>
-			</li>
+				<hediff>ToxicBuildup</hediff>
+				<cooldownTime>2</cooldownTime>
+			  </li>
 		</tools>
 		<tags>
 			<li>Soil</li>
+			<li>Sandy</li>
 		</tags>
 	</TerrainDef>
+	
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>SCP_610_EvilWater_Shallow</defName>
+		<label>corrupted water</label>
+		<edgeType>FadeRough</edgeType>
+		<extraDeteriorationFactor>50</extraDeteriorationFactor>
+		<color>(255, 87, 80, 0.66)</color>
+		<pollutionCloudColor>(255, 87, 80, 0.66)</pollutionCloudColor>
+		<texturePath>Terrain/Surfaces/Mud</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/MarshPolluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSoil</pollutionOverlayTexturePath>
+	    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<!-- <pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath> -->
+		<!-- <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType> -->
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>SCP_610_Fleshy_Soil</driesTo>
+		<traversedThought>SCP_SteppingOnTheSick_610</traversedThought>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
+		<tags>
+		  <li>Water</li>
+		  <li>Waste</li>
+		</tags>
+		<tools Inherit="False">
+		  <li>
+			<label>plagued toxins</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>ToxicBuildup</hediff>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>SCP_610_EvilWater_Deep</defName>
+		<label>deep corrupted water</label>
+		<edgeType>FadeRough</edgeType>
+		<texturePath>Terrain/Surfaces/Mud</texturePath>
+		<color>(200, 87, 80, 0.66)</color>
+		<pollutionCloudColor>(90, 87, 80, 0.66)</pollutionCloudColor>
+		<pollutedTexturePath>Terrain/Surfaces/MarshPolluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSoil</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<!-- <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType> -->
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>395</renderPrecedence>
+		<driesTo>SCP_610_Fleshy_Gravel</driesTo>
+		<extraDeteriorationFactor>100</extraDeteriorationFactor>
+		<traversedThought>SCP_SteppingOnTheSick_610</traversedThought>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
+		<tags>
+		  <li>Water</li>
+		  <li>Waste</li>
+		</tags>
+		<tools Inherit="False">
+		  <li>
+			<label>plagued toxins</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>ToxicBuildup</hediff>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>  
 
 </Defs>

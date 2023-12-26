@@ -22,7 +22,7 @@ SCP-500 is a small red pill that when taken orally, effectively cures the subjec
 			<texPath>Things/Item/Drug/Penoxycyline</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(200, 0, 0)</color>
-			<drawSize>.8</drawSize>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<stackLimit>50</stackLimit>
 		<statBases>

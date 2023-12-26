@@ -24,7 +24,7 @@ In spite of this, the animal has no health problems, and moves about as if its h
 			<MoveSpeed>4.4</MoveSpeed>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
-			<FilthRate>.2</FilthRate>
+			<FilthRate>0.2</FilthRate>
 		</statBases>
 		<race>
 			<body>SCP_BipedalQuad</body>

@@ -37,7 +37,7 @@ After germination, SCP-2371-JP begins to take in nutrients by eating, and grows 
 				<eggFertilizedDef>SCP_2371JP_Seed</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>6.66</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
+				<eggCountRange>1~4</eggCountRange>
 			</li>
 		</comps>
 		<race>
@@ -186,6 +186,7 @@ After germination, SCP-2371-JP begins to take in nutrients by eating, and grows 
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cow/Dessicated_Cow</texPath>
+					<color>(195,237,195)</color>
 					<drawSize>2.0</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
@@ -214,6 +215,7 @@ After germination, SCP-2371-JP begins to take in nutrients by eating, and grows 
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cow/Dessicated_Cow</texPath>
+					<color>(195,237,195)</color>
 					<drawSize>2.6</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
