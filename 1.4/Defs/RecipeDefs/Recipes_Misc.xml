@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>SCR_CremateSCP3199Egg</defName>
+		<label>cremate neutralized SCP-3199 egg</label>
+		<description>Cremate a neutralized SCP-3199 egg to get rid of it completely.</description>
+		<jobString>Cremating.</jobString>
+		<workAmount>360</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<recipeUsers>
+			<li>ElectricCrematorium</li>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+		<products>
+			<Plasteel>2</Plasteel>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SCPObjects</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCP_3199_Egg_Ruined</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Administer_SCP_113_Stone</defName>
+		<label>swap genders with SCR-113</label>
+		<description>Administer a SCP-113 instance. This will turn the targeted Pawn into the opposite sex!</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Transforming {0}.</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>60</workAmount>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+		<isViolation>true</isViolation>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCP_113_Stone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCP_113_Stone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Administer_SCP_578_Stone</defName>
+		<label>infuse with SCP-578</label>
+		<description>Administer a SCP-578 instance. This will not end well for the targeted Pawn!</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Transforming {0}.</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>60</workAmount>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+		<isViolation>true</isViolation>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCP_578_Bloodstone_Maker</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCP_578_Bloodstone_Maker</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+</Defs>

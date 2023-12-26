@@ -82,7 +82,7 @@
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Headgear/GOC/GOC_StrikeTeamBoonie/GOC_StrikeTeamBoonie</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Headgear/GOC/GOC_Boonie/GOC_StrikeTeamBoonie</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>

@@ -32,6 +32,12 @@
 				<max>4</max>
 			</countRange>
 		</inventoryOptions>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<initialWillRange>3~5</initialWillRange>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ChaosInsurgency_Base" Name="CI_InsurgentBase" Abstract="True">
@@ -271,7 +277,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>Gun_LMG</li>
+			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -449,7 +455,7 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>AssaultRifle</li>
-			<li>Gun_ChargeRifle</li>
+			<li>SpacerGun</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -496,7 +502,7 @@
 			<max>2050</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>Gun_ChargeRifle</li>
+			<li>SpacerGun</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -554,6 +560,148 @@
 			<li>Advanced</li>
 		</techHediffsTags>
 		<initialWillRange>3~5</initialWillRange>
+	</PawnKindDef>
+
+	<!-- 3033 Mike Units -->
+	<!-- Regular Mike Normal People -->
+	<PawnKindDef ParentName="CI_InsurgentBase">
+		<defName>CI_30331_Mike_Melee</defName>
+		<label>SCP-3033-1 Mike</label>
+		<combatPower>30</combatPower>
+		<combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>
+			<min>1</min>
+			<max>3</max>
+		</combatEnhancingDrugsCount>
+		<!-- <apparelMoney>400~700</apparelMoney> -->
+		<weaponMoney>500~700</weaponMoney>
+		<apparelRequired>
+			<li>SCP_CI_Cap</li>
+			<li>SCP_CI_Jumpsuit</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsChance>100</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>SCP_30331R</li>
+		</techHediffsRequired>
+		<disallowedTraits>
+			<li>Wimp</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~20</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.97</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialResistanceRange>19~29</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CI_InsurgentBase">
+		<defName>CI_30331_Mike_Shoot</defName>
+		<label>SCP-3033-1 Mike</label>
+		<combatPower>30</combatPower>
+		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>
+			<min>1</min>
+			<max>3</max>
+		</combatEnhancingDrugsCount>
+		<!-- <apparelMoney>400~700</apparelMoney> -->
+		<weaponMoney>500~700</weaponMoney>
+		<apparelRequired>
+			<li>SCP_CI_Cap</li>
+			<li>SCP_CI_Jumpsuit</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>Shortshots</li>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsChance>100</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>SCP_30331R</li>
+		</techHediffsRequired>
+		<disallowedTraits>
+			<li>Wimp</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~20</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.97</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialResistanceRange>19~29</initialResistanceRange>
+	</PawnKindDef>	
+
+	<PawnKindDef ParentName="CI_InsurgentEliteTierBase">
+		<defName>CI_30332_Controller</defName>
+		<label>SCP-3033-2 Mike Commander</label>
+		<combatPower>150</combatPower>
+		<apparelMoney>400~700</apparelMoney>
+		<weaponMoney>500~700</weaponMoney>
+		<apparelRequired>
+			<li>SCP_CI_HelmetMask</li>
+			<li>SCP_CI_MBAV</li>
+			<li>SCP_CI_Jumpsuit</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsChance>100</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>SCP_30332R</li>
+		</techHediffsRequired>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Social</skill>
+				<range>4~20</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.90</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialResistanceRange>19~29</initialResistanceRange>
 	</PawnKindDef>
 
 </Defs>

@@ -635,7 +635,7 @@
 			<max>850</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>Gun_LMG</li>
+			<li>IndustrialGunAdvaned</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -800,8 +800,7 @@
 			<max>2050</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>Gun_ChargeLance</li>
-			<li>Gun_ChargeRifle</li>
+			<li>GunSpacer</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>

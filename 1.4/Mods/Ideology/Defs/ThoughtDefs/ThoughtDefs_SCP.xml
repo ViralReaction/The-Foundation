@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>SCP_Anomaly_Respected_Opinion</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>SCP.ThoughtWorker_Precept_SCP_Social</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>anomaly</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCP_Anomaly_Respected_AnomalyInColony</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>SCP.ThoughtWorker_Precept_SCP_InColony</workerClass>
+		<stages>
+			<li>
+				<label>no anomalies</label>
+				<description>I would prefer to have some anomalies in the colony.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>9</baseMoodEffect>
+			</li>
+			<li>
+				<label>surrounded by anomalies</label>
+				<description>I like having anomalies around. They are great!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCP_Anomaly_Despised_Opinion</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>SCP.ThoughtWorker_Precept_SCP_Social</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>anomaly</label>
+				<baseOpinionOffset>-40</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCP_AnomalyDied_Despised</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<durationDays>10</durationDays>
+		<stages>
+			<li>
+				<label>anomaly died</label>
+				<description>The only good anomaly is a dead one.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCP_AnomalySelfHatred_Despised</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>SCP.ThoughtWorker_Precept_SCP</workerClass>
+		<stages>
+			<li>
+				<label>anomaly self hatred</label>
+				<description>I am what I hate. My whole existence is aberrant.</description>
+				<baseMoodEffect>-12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCP_AnomalyColonist_Despised</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>SCP.ThoughtWorker_Precept_SCP_Present</workerClass>
+		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+		<stages>
+			<li>
+				<label>anomaly among us</label>
+				<description>One of them walks among us. We should expel the anomaly from our home.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

@@ -236,7 +236,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Headgear/Foundation/SCP_MTFGasmask/SCP_MTFHelmetGasmask</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Headgear/Foundation/SCP_MTFGasMask/SCP_MTFHelmetGasmask</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>

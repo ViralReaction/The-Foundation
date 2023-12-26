@@ -755,7 +755,7 @@
 			<max>1500</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>Gun_LMG</li>
+			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -893,7 +893,7 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>Minigun</li>
-			<li>Gun_LMG</li>
+			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -1094,9 +1094,8 @@
 		</weaponMoney>
 		<weaponTags>
 			<li>Gun_IncendiaryLauncher</li>
-			<li>Gun_SniperRifle</li>
-			<li>Gun_ChargeLance</li>
-			<li>Gun_ChargeRifle</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>SpacerGun</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -1147,7 +1146,7 @@
 		</gearHealthRange>
 		<itemQuality>Superior</itemQuality>
 		<weaponTags>
-			<li>RN_HK416</li>
+			<li>AssaultRifle</li>
 		</weaponTags>
 		<weaponMoney>
 			<min>480</min>

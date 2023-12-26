@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCP_113_Stone</defName>
 		<label>SCP-113 Gender Stone</label>
@@ -57,4 +58,5 @@ When SCP-113 comes in direct contact with the flesh of an organism possessing se
 			</li>
 		</comps>
 	</ThingDef>
+
 </Defs>

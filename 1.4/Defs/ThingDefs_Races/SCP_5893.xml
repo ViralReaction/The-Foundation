@@ -148,7 +148,7 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP5893</texPath>
+					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP_5893</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -158,7 +158,7 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP5893</texPath>
+					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP_5893</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -168,7 +168,7 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP5893</texPath>
+					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP_5893</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

@@ -1,202 +1,233 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<FactionDef ParentName="FactionBase">
-    <defName>SCP_CI</defName>
-    <label>Chaos Insurgency</label>
-    <description>A terrorist group of former SCP-Foundation personnel who have defected and stolen several SCPs from them. They use anomalies to build a utopian future, where humanity is the master of everything. They employ SCPs whenever advantageous and steal others to achieve their goals. They often test on lone, unsuspecting colonies and tribes much like the SCP-Foundation does on D-Class. While they do maintain a visible base or two, they still operate in roaming groups.</description>
-    <pawnSingular>insurgent</pawnSingular>
-    <pawnsPlural>insurgents</pawnsPlural>
-	<listOrderPriority>2</listOrderPriority>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <fixedName>Chaos Insurgency</fixedName>
-	<leaderTitle>Delta Commander</leaderTitle>
-	<leaderTitleFemale>Delta Commander</leaderTitleFemale>
-    <factionIconPath>World/WorldObjects/Expanding/CI</factionIconPath>
-	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <colorSpectrum>
-      <li>(1, 1, 1)</li>
-    </colorSpectrum>
-	<canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-    <humanlikeFaction>true</humanlikeFaction>
-	<leaderForceGenerateNewPawn>True</leaderForceGenerateNewPawn>
-    <autoFlee>false</autoFlee>
-    <canUseAvoidGrid>true</canUseAvoidGrid>
-    <techLevel>Spacer</techLevel>
-	 <backstoryFilters>
-      <li>
-        <categories>
-          <li>Pirate</li>
-        </categories>
-      </li>
-    </backstoryFilters>
+	<FactionDef ParentName="FactionBase">
+		<defName>SCP_CI</defName>
+		<label>Chaos Insurgency</label>
+		<description>A terrorist group of former SCP-Foundation personnel who have defected and stolen several SCPs from them. They use anomalies to build a utopian future, where humanity is the master of everything. They employ SCPs whenever advantageous and steal others to achieve their goals. They often test on lone, unsuspecting colonies and tribes much like the SCP-Foundation does on D-Class. While they do maintain a visible base or two, they still operate in roaming groups.</description>
+		<pawnSingular>insurgent</pawnSingular>
+		<pawnsPlural>insurgents</pawnsPlural>
+		<listOrderPriority>2</listOrderPriority>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Chaos Insurgency</fixedName>
+		<leaderTitle>Delta Commander</leaderTitle>
+		<leaderTitleFemale>Delta Commander</leaderTitleFemale>
+		<factionIconPath>World/WorldObjects/Expanding/CI</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<humanlikeFaction>true</humanlikeFaction>
+		<leaderForceGenerateNewPawn>True</leaderForceGenerateNewPawn>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>true</canUseAvoidGrid>
+		<techLevel>Spacer</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Pirate</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 
-	<apparelStuffFilter>
-		<thingDefs>
-			<li>Synthread</li>
-			<li>Plasteel</li>
-		</thingDefs>
-	</apparelStuffFilter>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</apparelStuffFilter>
 
-	<caravanTraderKinds>
-      <li>SCPCaravan_Trader</li>
-    </caravanTraderKinds>
+		<caravanTraderKinds>
+			<li>SCPCaravan_Trader</li>
+		</caravanTraderKinds>
 
-    <visitorTraderKinds>
-      <li>SCPVisitor_Standard</li>
-    </visitorTraderKinds>
+		<visitorTraderKinds>
+			<li>SCPVisitor_Standard</li>
+		</visitorTraderKinds>
 
-	<baseTraderKinds>
-      <li>SCPBase_Standard</li>
-    </baseTraderKinds>
+		<baseTraderKinds>
+			<li>SCPBase_Standard</li>
+		</baseTraderKinds>
 
-	<allowedArrivalTemperatureRange>
-      <min>-40</min>
-      <max>45</max>
-    </allowedArrivalTemperatureRange>
+		<allowedArrivalTemperatureRange>
+			<min>-40</min>
+			<max>45</max>
+		</allowedArrivalTemperatureRange>
 
-    <maxPawnCostPerTotalPointsCurve>
-      <points>
-        <li>(0,35)</li>
-        <li>(70, 50)</li>
-        <li>(700, 100)</li>
-        <li>(1300, 150)</li>
-        <li>(100000, 10000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
 
-	<raidCommonalityFromPointsCurve>
-      <points>
-        <li>(100,  0)</li>
-        <li>(500,  1)</li>
-        <li>(1200, 1.5)</li>
-        <li>(2500, 2.0)</li>
-        <li>(3800, 2.5)</li>
-      </points>
-    </raidCommonalityFromPointsCurve>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(100,  0)</li>
+				<li>(500,  1)</li>
+				<li>(1200, 1.5)</li>
+				<li>(2500, 2.0)</li>
+				<li>(3800, 2.5)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
 
-    <raidLootValueFromPointsCurve>
-      <points>
-        <li>(35,     8)</li>
-        <li>(100,   60)</li>
-        <li>(1000, 250)</li>
-        <li>(2000, 400)</li>
-        <li>(4000, 500)</li>
-      </points>
-    </raidLootValueFromPointsCurve>
+		<raidLootValueFromPointsCurve>
+			<points>
+				<li>(35,     8)</li>
+				<li>(100,   60)</li>
+				<li>(1000, 250)</li>
+				<li>(2000, 400)</li>
+				<li>(4000, 500)</li>
+			</points>
+		</raidLootValueFromPointsCurve>
 
-	<settlementNameMaker>SCP_FactionBaseNamer_CIBases</settlementNameMaker>
+		<settlementNameMaker>SCP_FactionBaseNamer_CIBases</settlementNameMaker>
 	
-							<!-- Ideology dlc stuff -->
-	<allowedCultures><li>Astropolitan</li></allowedCultures>
-	<requiredMemes>
-	   <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-	   <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-	   <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
-	</requiredMemes>
-	<disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
-	</disallowedMemes>
-	<disallowedPrecepts>
-	</disallowedPrecepts>
+		<!-- Ideology dlc stuff -->
+		<allowedCultures><li>Astropolitan</li></allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+		</disallowedPrecepts>
 	
 	
 	
-	<pawnGroupMakers>
-	
-	      <li>
+		<pawnGroupMakers>
+			<li>
 				<!-- Normal fights, ranged with melee mix-ins -->
 				<kindDef>Combat</kindDef>
-        <commonality>95</commonality>
-        <options>
-          <CI_Insurgent_Marksman>3</CI_Insurgent_Marksman>
-          <CI_Insurgent_Sniper>2</CI_Insurgent_Sniper>
-          <CI_Insurgent_Gunner>4</CI_Insurgent_Gunner>
-          <CI_Insurgent_CQB>5</CI_Insurgent_CQB>		  
-          <CI_Insurgent_Assault>10</CI_Insurgent_Assault>
-          <CI_Insurgent_Elite>2</CI_Insurgent_Elite>
-        </options>
-      </li>
-      <li>
-        <!-- Badass -->
-        <kindDef>Combat</kindDef>
-        <commonality>2</commonality>
-        <options>
-          <CI_Insurgent_Assault>8</CI_Insurgent_Assault>		
-          <CI_Insurgent_Elite>5</CI_Insurgent_Elite>
-          <CI_Insurgent_Gunner>7</CI_Insurgent_Gunner>
-          <CI_Insurgent_Sniper>2</CI_Insurgent_Sniper>
-          <CI_Insurgent_Commander>1</CI_Insurgent_Commander>		  
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, explosives with ranged mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>15</commonality>
-        <disallowedStrategies>
-          <li>Siege</li>
-        </disallowedStrategies>
-        <options>
-          <CI_Insurgent_Assault>15</CI_Insurgent_Assault>
-          <CI_Insurgent_Gunner>8</CI_Insurgent_Gunner>
-          <CI_Insurgent_Marksman>4</CI_Insurgent_Marksman>		 
-          <CI_Insurgent_Sniper>2</CI_Insurgent_Sniper>		  
-          <CI_Insurgent_Elite>3</CI_Insurgent_Elite>
-        </options>
-      </li>
+				<commonality>65</commonality>
+				<options>
+					<CI_Insurgent_Marksman>3</CI_Insurgent_Marksman>
+					<CI_Insurgent_Sniper>2</CI_Insurgent_Sniper>
+					<CI_Insurgent_Gunner>4</CI_Insurgent_Gunner>
+					<CI_Insurgent_CQB>5</CI_Insurgent_CQB>
+					<CI_Insurgent_Assault>10</CI_Insurgent_Assault>
+					<CI_Insurgent_Elite>2</CI_Insurgent_Elite>
+				</options>
+			</li>
+			<li>
+				<!-- Badass -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<CI_Insurgent_Assault>8</CI_Insurgent_Assault>
+					<CI_Insurgent_Elite>5</CI_Insurgent_Elite>
+					<CI_Insurgent_Gunner>7</CI_Insurgent_Gunner>
+					<CI_Insurgent_Sniper>2</CI_Insurgent_Sniper>
+					<CI_Insurgent_Commander>1</CI_Insurgent_Commander>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, explosives with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<CI_Insurgent_Assault>15</CI_Insurgent_Assault>
+					<CI_30331_Mike_Melee>20</CI_30331_Mike_Melee>
+					<CI_Insurgent_Gunner>8</CI_Insurgent_Gunner>
+					<CI_Insurgent_Marksman>4</CI_Insurgent_Marksman>
+					<CI_Insurgent_Sniper>2</CI_Insurgent_Sniper>
+					<CI_Insurgent_Elite>3</CI_Insurgent_Elite>
+					<CI_30332_Controller>3</CI_30332_Controller>
+				</options>
+			</li>
+			
+			<!-- Small SCP-3033-1 Mike Raids, melee-only -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<CI_30331_Mike_Melee>10</CI_30331_Mike_Melee>
+					<CI_30332_Controller>1</CI_30332_Controller>
+				</options>
+			</li>
+			
+			<!-- Full Mike Assault -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<CI_30331_Mike_Melee>30</CI_30331_Mike_Melee>
+					<CI_30331_Mike_Shoot>10</CI_30331_Mike_Shoot>
+					<CI_30332_Controller>4</CI_30332_Controller>
+					<CI_Insurgent_Assault>8</CI_Insurgent_Assault>
+					<CI_Insurgent_Elite>5</CI_Insurgent_Elite>
+					<CI_Insurgent_Commander>1</CI_Insurgent_Commander>
+				</options>
+			</li>
 	  
-      <li>
-        <kindDef>Peaceful</kindDef>
-        <options>
-          <CI_Insurgent_Assault>6</CI_Insurgent_Assault>
-		  <CI_Insurgent_CQB>4</CI_Insurgent_CQB>
-          <CI_Insurgent_Gunner>3</CI_Insurgent_Gunner>
-          <CI_Insurgent_Marksman>2</CI_Insurgent_Marksman>
-           <CI_Insurgent_Sniper>1</CI_Insurgent_Sniper>			  
-        </options>
-      </li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<CI_Insurgent_Assault>6</CI_Insurgent_Assault>
+					<CI_Insurgent_CQB>4</CI_Insurgent_CQB>
+					<CI_Insurgent_Gunner>3</CI_Insurgent_Gunner>
+					<CI_Insurgent_Marksman>2</CI_Insurgent_Marksman>
+					<CI_Insurgent_Sniper>1</CI_Insurgent_Sniper>
+				</options>
+			</li>
       
-	  <li>
-        <kindDef>Trader</kindDef>
-        <traders>
-          <CI_Trader>1</CI_Trader>		  
-        </traders>
-        <carriers>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2</Alpaca>
-          <Elephant>1</Elephant>
-        </carriers>
-        <guards>		
-          <CI_Insurgent_Assault>5</CI_Insurgent_Assault>
-		  <CI_Insurgent_CQB>4</CI_Insurgent_CQB>		  
-		  <CI_Insurgent_Gunner>2</CI_Insurgent_Gunner>
-           <CI_Insurgent_Marksman>1</CI_Insurgent_Marksman>		   
-		 </guards>
-      </li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<CI_Trader>1</CI_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<CI_Insurgent_Assault>5</CI_Insurgent_Assault>
+					<CI_Insurgent_CQB>4</CI_Insurgent_CQB>
+					<CI_Insurgent_Gunner>2</CI_Insurgent_Gunner>
+					<CI_Insurgent_Marksman>1</CI_Insurgent_Marksman>
+				</guards>
+			</li>
       
-	  <li>
-        <kindDef>Settlement</kindDef>
-        <options>
-		  <CI_Insurgent_CQB>5</CI_Insurgent_CQB>		
-          <CI_Insurgent_Assault>8</CI_Insurgent_Assault>
-          <CI_Insurgent_Gunner>4</CI_Insurgent_Gunner>
-		  <CI_Insurgent_Marksman>2</CI_Insurgent_Marksman>
-          <CI_Insurgent_Sniper>1</CI_Insurgent_Sniper>			  
-        </options>
-      </li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<CI_Insurgent_CQB>5</CI_Insurgent_CQB>
+					<CI_Insurgent_Assault>8</CI_Insurgent_Assault>
+					<CI_Insurgent_Gunner>4</CI_Insurgent_Gunner>
+					<CI_Insurgent_Marksman>2</CI_Insurgent_Marksman>
+					<CI_Insurgent_Sniper>1</CI_Insurgent_Sniper>
+				</options>
+			</li>
     
-	</pawnGroupMakers>
+		</pawnGroupMakers>
 	
-    <naturalEnemy>true</naturalEnemy>
-    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
-    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>50</configurationListOrderPriority>
-  </FactionDef>
+		<naturalEnemy>true</naturalEnemy>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+	</FactionDef>
   
-  </Defs>
+</Defs>
