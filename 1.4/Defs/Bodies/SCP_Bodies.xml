@@ -99,7 +99,7 @@
 					</parts>
 				</li>
 				<li>
-					<def>Foot</def>
+					<def>SCP_Foot</def>
 					<coverage>0.20</coverage>
 					<height>Bottom</height>
 				</li>

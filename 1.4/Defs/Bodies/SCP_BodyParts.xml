@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>SCP_Foot</defName>
+		<label>foot</label>
+		<hitPoints>35</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>SCP_857_Vein</defName>
+		<label>inferior vena cava</label>
+		<hitPoints>50</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>SCP_857_Brain</defName>
+		<label>brain</label>
+		<hitPoints>50</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ConsciousnessSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>SCP_857_Enchantment</defName>
+		<label>anomalous enchantment</label>
+		<hitPoints>51</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<conceptual>true</conceptual>
+		<socketed>true</socketed>
+		<alive>true</alive>
+		<skinCovered>true</skinCovered>
+		<solid>false</solid>
+		<beautyRelated>false</beautyRelated>
+		<bleedRate>5</bleedRate>
+		<canScarify>false</canScarify>
+		<destroyableByDamage>false</destroyableByDamage>
+		<pawnGeneratorCanAmputate>false</pawnGeneratorCanAmputate>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<delicate>true</delicate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>ManipulationLimbDigit</li>
+			<li>ManipulationLimbSegment</li>
+			<li>MovingLimbCore</li>
+			<li>MovingLimbDigit</li>
+			<li>MovingLimbSegment</li>
+			<li>BreathingSource</li>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>

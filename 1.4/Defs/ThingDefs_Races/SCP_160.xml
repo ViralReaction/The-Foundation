@@ -48,7 +48,6 @@ SCP-160 operates continuously and completely autonomous from any identified cont
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseHealthScale>1.6</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Meal, Processed, Kibble</foodType>
-			<useMeatFrom>Cat</useMeatFrom>
 			<leatherDef>Steel</leatherDef>
 			<specificMeatDef>ChunkSlagSteel</specificMeatDef>
 			<wildness>0</wildness>
