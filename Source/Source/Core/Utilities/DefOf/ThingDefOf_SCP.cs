@@ -37,6 +37,8 @@ namespace SCP
         public static ThingDef SCP_500_Panacea;
         public static ThingDef SCP_1797Consume;
         public static ThingDef SCP_1905_Dino_Hunter;
+        public static ThingDef SCP_610Hive;
+
         static ThingDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf_SCP));
     }
 }

@@ -48,13 +48,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Biotech\FileName.cs" />
-    <Compile Include="Core\Cage\CageUtility.cs" />
-    <Compile Include="Core\Cage\CompAssignableToPawn_Containment.cs" />
-    <Compile Include="Core\Cage\Extension.cs" />
-    <Compile Include="Core\Cage\Harmony_Cage.cs" />
+    <Compile Include="Core\Containment\Cage\CompAssignableToPawn_Containment.cs" />
+    <Compile Include="Core\Containment\Cage\Extension.cs" />
+    <Compile Include="Core\Containment\Cage\Harmony_Cage.cs" />
+    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\CompProperties_FleshHiveSpawn.cs" />
+    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\CompProperties_TerrainChanger.cs" />
     <Compile Include="Core\SCP\SCP_578 Bloodstone\CompUseEffect_UseSCP578.cs" />
+    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Comp_TerrainChanger.cs" />
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Hediff_610_Infection.cs" />
-    <Compile Include="Core\Utilities\DefOf\IdeologyDefOf_SCP.cs" />
+    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Comp_FleshHiveSpawn.cs" />
+    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompProperties_Voices.cs" />
+    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompVoices.cs" />
+    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\SPExtended\SPExtra.cs" />
+    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\SPExtended\SPMultiCell.cs" />
+    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\SPExtended\SPTrig.cs" />
+    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\SPExtended\SPTuples.cs" />
+    <Compile Include="Core\Utilities\DefOf\SCPDefOf.cs" />
     <Compile Include="Ideology\Harmony.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_SCP_InColony.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_SCP_Present.cs" />
@@ -96,7 +105,6 @@
     <Compile Include="Core\SCP\ThoughtWorkers\ThoughtWorker_LivingWeaponEquippedPsycho.cs" />
     <Compile Include="Core\SCP\ThoughtWorkers\ThoughtWortker_LivingWeaponEquipped.cs" />
     <Compile Include="Core\Utilities\DefOf\ThingDefOf_SCP.cs" />
-    <Compile Include="Core\Utilities\DefOf\ThoughtDefOF_SCP.cs" />
     <Compile Include="Core\Psychic Suppresion\HarmonyPatches.cs" />
     <Compile Include="Core\Psychic Suppresion\PsychicCachingUtility.cs" />
     <Compile Include="Core\Utilities\SCPRadius.cs" />
@@ -107,7 +115,6 @@
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldInterface.cs" />
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldManager.cs" />
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldUtility.cs" />
-    <Compile Include="Core\Utilities\DefOf\HediffDefOf.cs" />
     <Compile Include="Core\SCP\SCP_2687_Plastic_Organs\Hediff_SCP2687.cs" />
     <Compile Include="Core\SCP\SCP_1797_Kitten_Flu\ThoughtWorker_KittenFlu.cs" />
     <Compile Include="Core\SCP\SCP_113 Gender Stone\CompUseEffect_UseSCP113.cs" />
@@ -117,20 +124,13 @@
     <Compile Include="Core\SCP\SCP_2845_Deer\IncidentWorker_2845.cs" />
     <Compile Include="Core\SCP\SCP_2845_Deer\ThoughtWorker_SCP2845.cs" />
     <Compile Include="Core\SCP\SCP_475_Pope_Soap\CompUseEffect_UseSCP475.cs" />
-    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompProperties_Voices.cs" />
-    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompVoices.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\GameCondition_SCP939.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\IncidentWorker_SCP939.cs" />
-    <Compile Include="Core\Utilities\DefOf\JobDefOf_SCP.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\JobDriver_LeaveMapPromptly.cs" />
     <Compile Include="Core\Harmony Patches\SCPHarmony_Patches.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\MentalStateDefOf_SCP.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\MentalState_Voices.cs" />
     <Compile Include="Core\Utilities\DefOf\PawnKindDefOf_SCP.cs" />
-    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\SPExtended\SPTrig.cs" />
-    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\SPExtended\SPMultiCell.cs" />
-    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\SPExtended\SPExtra.cs" />
-    <Compile Include="Core\SCP\SCP_939_With_Many_Voices\SPExtended\SPTuples.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\ThoughtWorker_939.cs" />
     <Compile Include="Core\SCP\SCP_3199_Human_Refuted\DeathActionWOrker_SCP3199.cs" />
     <Compile Include="Core\SCP\SCP_3199_Human_Refuted\IncidentWorker_SCP3199.cs" />
@@ -146,7 +146,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.4.3704</Version>
+      <Version>1.4.3901</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />

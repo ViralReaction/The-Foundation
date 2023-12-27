@@ -12,7 +12,7 @@ namespace SCP
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf_SCP.SCP_2845_Transmute_Hediff);
+            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(SCPDefOF.SCP_2845_Transmute_Hediff);
             if (firstHediffOfDef == null || firstHediffOfDef.FullyImmune())
                 return (ThoughtState)false;
             if ((double)firstHediffOfDef.Severity >= 0.8)

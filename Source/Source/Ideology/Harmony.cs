@@ -20,7 +20,7 @@ namespace SCP
             if (!__instance.pawn.IsSCP())
             {
                 Ideo ideo = __instance.pawn.Ideo;
-                if ((ideo != null ? (ideo.HasPrecept(IdeologyDefOf_SCP.SCP_Tools) ? 1 : 0) : 0) != 0 && otherPawn.IsSCP())
+                if ((ideo != null ? (ideo.HasPrecept(SCPDefOF.SCP_Tools) ? 1 : 0) : 0) != 0 && otherPawn.IsSCP())
                     return false;
             }
             return true;
@@ -37,7 +37,7 @@ namespace SCP
             if (!__instance.pawn.IsSCP())
             {
                 Ideo ideo = __instance.pawn.Ideo;
-                if ((ideo != null ? (ideo.HasPrecept(IdeologyDefOf_SCP.SCP_Tools) ? 1 : 0) : 0) != 0 && otherPawn.IsSCP())
+                if ((ideo != null ? (ideo.HasPrecept(SCPDefOF.SCP_Tools) ? 1 : 0) : 0) != 0 && otherPawn.IsSCP())
                     return false;
             }
             return true;
@@ -57,9 +57,9 @@ namespace SCP
             if (!victim.IsSCP())
                 return;
             if (dinfo?.Instigator is Pawn instigator)
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(IdeologyDefOf_SCP.SCP_Died, new SignalArgs(instigator.Named(HistoryEventArgsNames.Doer))));
+                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(SCPDefOF.SCP_Died, new SignalArgs(instigator.Named(HistoryEventArgsNames.Doer))));
             else
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(IdeologyDefOf_SCP.SCP_Died));
+                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(SCPDefOF.SCP_Died));
         }
     }
 }

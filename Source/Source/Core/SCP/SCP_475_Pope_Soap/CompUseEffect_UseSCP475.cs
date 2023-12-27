@@ -19,9 +19,9 @@ internal class CompUseEffect_UseSCP475 : CompUseEffect
                 usedBy.ideo.Reassure(this.baseCertaintyGain);
                 Find.PlayLog.Add((LogEntry)new PlayLogEntry_Interaction(InteractionDefOf.Reassure, usedBy, usedBy, (List<RulePackDef>)null));
             }
-            if (usedBy.health.hediffSet.HasHediff(HediffDefOf_SCP.GutWorms))
+            if (usedBy.health.hediffSet.HasHediff(SCPDefOF.GutWorms))
             {
-                usedBy.health.hediffSet.GetFirstHediffOfDef(HediffDefOf_SCP.GutWorms).Severity *= 0.0f;
+                usedBy.health.hediffSet.GetFirstHediffOfDef(SCPDefOF.GutWorms).Severity *= 0.0f;
             }
            
         }

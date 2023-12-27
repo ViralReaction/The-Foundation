@@ -65,7 +65,7 @@ namespace SCP
             IntVec3 result;
             if (__instance?.kindDef != PawnKindDefOf_SCP.SCP_939_Incident || !__instance.Spawned || GenLocalDate.HourOfDay(__instance.Map) < 5 || GenLocalDate.HourOfDay(__instance.Map) >= 19 || !CellFinder.TryFindRandomPawnExitCell(__instance, out result))
                 return;
-            Job job = new Job(JobDefOf_SCP.LeaveMapDaylight, (LocalTargetInfo)result);
+            Job job = new Job(SCPDefOF.LeaveMapDaylight, (LocalTargetInfo)result);
             __instance.jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
         }
 

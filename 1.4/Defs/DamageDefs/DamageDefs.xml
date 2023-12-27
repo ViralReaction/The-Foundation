@@ -114,7 +114,7 @@
 		<additionalHediffs>
 			<li>
 				<hediff>SCP_610_Infection</hediff>
-				<severityPerDamageDealt>0.004</severityPerDamageDealt>
+				<severityPerDamageDealt>0.00</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
@@ -138,6 +138,8 @@
 				<hediff>SCP_610_Infection</hediff>
 				<severityPerDamageDealt>0.004</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>
 		</additionalHediffs>
 		<defaultDamage>5</defaultDamage>

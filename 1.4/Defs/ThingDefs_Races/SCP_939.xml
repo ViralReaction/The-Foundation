@@ -102,17 +102,17 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 			<predator>true</predator>
 			<maxPreyBodySize>4.0</maxPreyBodySize>
 			<petness>0.0</petness>
-			<baseBodySize>1.0</baseBodySize>
+			<baseBodySize>2.0</baseBodySize>
 			<baseHungerRate>0.9</baseHungerRate>
-			<baseHealthScale>4</baseHealthScale>
+			<baseHealthScale>4.0</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<leatherDef>Leather_Wolf</leatherDef>
-			<gestationPeriodDays>900</gestationPeriodDays>
+			<gestationPeriodDays>60</gestationPeriodDays>
 			<nameOnTameChance>0</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>1.0</wildness>
-			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>10</manhunterOnDamageChance>
 			<needsRest>false</needsRest>
 			<litterSizeCurve>
 				<points>
@@ -123,7 +123,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 					<li>(3, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>999999</lifeExpectancy>
+			<lifeExpectancy>100</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -168,7 +168,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 		<defName>SCP_939_Incident</defName>
 		<label>SCP 939</label>
 		<race>SCP939_A</race>
-		<combatPower>80</combatPower>
+		<combatPower>200</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<lifeStages>
 			<li>

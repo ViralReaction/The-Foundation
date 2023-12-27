@@ -15,6 +15,12 @@
 			<li Class="HediffCompProperties_TendDuration">
 				<baseTendDurationHours>12</baseTendDurationHours>
 			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.84</severityPerDayNotImmune>
+				<immunityPerDaySick>0.6441</immunityPerDaySick>
+				<severityPerDayImmune>-0.70</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.40</immunityPerDayNotSick>
+			</li>
 			<li Class="HediffCompProperties_Discoverable">
 				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
 				<letterType>NegativeEvent</letterType>

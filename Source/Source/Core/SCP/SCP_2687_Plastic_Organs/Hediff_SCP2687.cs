@@ -13,14 +13,14 @@ namespace SCP
     {
         public override void PostAdd(DamageInfo? dinfo)
         {
-            if (!this.pawn.health.hediffSet.HasHediff(HediffDefOf_SCP.SCP_2687_Poison))
+            if (!this.pawn.health.hediffSet.HasHediff(SCPDefOF.SCP_2687_Poison))
             {
-                Hediff hediff = HediffMaker.MakeHediff(HediffDefOf_SCP.SCP_2687_Poison, this.pawn);
+                Hediff hediff = HediffMaker.MakeHediff(SCPDefOF.SCP_2687_Poison, this.pawn);
                 hediff.Severity = 0.05f;
                 this.pawn.health.AddHediff(hediff);
             }
             else
-                this.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf_SCP.SCP_2687_Poison).Severity += 0.05f;
+                this.pawn.health.hediffSet.GetFirstHediffOfDef(SCPDefOF.SCP_2687_Poison).Severity += 0.05f;
         }
     }
 }

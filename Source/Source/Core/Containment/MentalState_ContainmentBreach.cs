@@ -78,8 +78,10 @@ namespace SCP
                 }
                 if (!MentalState_ContainmentBreach.candidates.NullOrEmpty<Thing>())
                 {
-                    foreach (Thing candidate2 in MentalState_ContainmentBreach.candidates)
+                    List<Thing> thingList = MentalState_ContainmentBreach.candidates;
+                    for (int index = 0; index < thingList.Count; index++)
                     {
+                        Thing candidate2 = thingList[index];
                         if (candidate2.HitPoints >= 0 && this.pawn.CanReach((LocalTargetInfo)candidate2.Position, PathEndMode.Touch, Danger.Deadly))
                         {
                             if (this.target is Pawn && !((Pawn)this.target).Downed && candidate2.Faction != this.pawn.Faction)

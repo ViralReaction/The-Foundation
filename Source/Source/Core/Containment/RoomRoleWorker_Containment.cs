@@ -20,18 +20,9 @@ namespace SCP
             for (int index = 0; index < thingList.Count; index++)
             {
                 Thing andAdjacentThing = thingList[index];
-                if (andAdjacentThing.def == RoomRoleWorker_ContainmentRoom.zoneSmall)
-                    ++num;
-                if (andAdjacentThing.def == RoomRoleWorker_ContainmentRoom.zoneMedium)
-                    ++num;
-                if (andAdjacentThing.def == RoomRoleWorker_ContainmentRoom.zoneLarge)
+                if (andAdjacentThing.def == RoomRoleWorker_ContainmentRoom.zoneLarge || andAdjacentThing.def == RoomRoleWorker_ContainmentRoom.zoneMedium || andAdjacentThing.def == RoomRoleWorker_ContainmentRoom.zoneSmall)
                     ++num;
             }
-            //foreach (Thing andAdjacentThing in room.ContainedAndAdjacentThings)
-            //{
-            //    if (andAdjacentThing.def == RoomRoleWorker_ContainmentRoom.zoneSmall )
-            //        ++num;
-            //}
             return 30f * (float)num;
         }
     }

@@ -30,7 +30,7 @@ namespace SCP.Containment
             {
                 this.RecoverFromState();
             }
-            if (!this.pawn.IsHashIntervalTick(600) || animal != null || this.pawn.CurJob != null && this.pawn.CurJob.def == JobDefOf_SCP.InduceContaintmentBreak)
+            if (!this.pawn.IsHashIntervalTick(600) || animal != null || this.pawn.CurJob != null && this.pawn.CurJob.def == SCPDefOF.InduceContaintmentBreak)
                 return;
             this.RecoverFromState();
         }

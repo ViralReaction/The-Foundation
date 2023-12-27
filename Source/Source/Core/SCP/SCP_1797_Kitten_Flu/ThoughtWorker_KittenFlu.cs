@@ -13,7 +13,7 @@ namespace SCP
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(HediffDefOf_SCP.SCP_1797_Flu);
+            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(SCPDefOF.SCP_1797_Flu);
             if (firstHediffOfDef == null || firstHediffOfDef.FullyImmune())
                 return (ThoughtState)false;
             if ((double)firstHediffOfDef.Severity >= 0.3 && (double)firstHediffOfDef.Severity < 0.301 || (double)firstHediffOfDef.Severity >= 0.6 && (double)firstHediffOfDef.Severity < 0.601 || (double)firstHediffOfDef.Severity >= 0.8 && (double)firstHediffOfDef.Severity < 0.801)

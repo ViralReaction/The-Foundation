@@ -46,8 +46,9 @@ SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610.
 			<nameOnTameChance>0</nameOnTameChance>
 			<trainability>None</trainability>
 			<wildness>10</wildness>
-			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>2.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>2.0</manhunterOnDamageChance>
+			<canBePredatorPrey>false</canBePredatorPrey>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -218,8 +219,9 @@ SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-61
 			<nameOnTameChance>0</nameOnTameChance>
 			<trainability>None</trainability>
 			<wildness>10</wildness>
-			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>2.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>2.0</manhunterOnDamageChance>
+			<canBePredatorPrey>false</canBePredatorPrey>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
