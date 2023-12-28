@@ -16,6 +16,20 @@
 	</ManeuverDef>
 
 	<ManeuverDef>
+		<defName>SCP_Acid</defName>
+		<requiredCapacity>SCP_Acid</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>SCP_Acid</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
 		<defName>SCP_Electric</defName>
 		<requiredCapacity>SCP_Electric</requiredCapacity>
 		<verb>

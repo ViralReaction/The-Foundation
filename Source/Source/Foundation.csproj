@@ -7,8 +7,8 @@
     <ProjectGuid>{B91AEE05-43AC-4F9B-A7E7-6F3B91508562}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SCP</RootNamespace>
-    <AssemblyName>SCP</AssemblyName>
+    <RootNamespace>Foundation</RootNamespace>
+    <AssemblyName>Foundation</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,6 +51,7 @@
     <Compile Include="Core\Containment\Cage\CompAssignableToPawn_Containment.cs" />
     <Compile Include="Core\Containment\Cage\Extension.cs" />
     <Compile Include="Core\Containment\Cage\Harmony_Cage.cs" />
+    <Compile Include="Core\SCP\SCP_529_Josie\IncidentWorker_SCP529_Josie.cs" />
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\CompProperties_FleshHiveSpawn.cs" />
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\CompProperties_TerrainChanger.cs" />
     <Compile Include="Core\SCP\SCP_578 Bloodstone\CompUseEffect_UseSCP578.cs" />
@@ -108,7 +109,6 @@
     <Compile Include="Core\Psychic Suppresion\HarmonyPatches.cs" />
     <Compile Include="Core\Psychic Suppresion\PsychicCachingUtility.cs" />
     <Compile Include="Core\Utilities\SCPRadius.cs" />
-    <Compile Include="Core\Harmony Patches\StatDraw.cs" />
     <Compile Include="Core\Psychic Suppresion\Bulding_PsychicSuppressionField.cs" />
     <Compile Include="Core\Psychic Suppresion\CompProperties_PsychicSuppressionField.cs" />
     <Compile Include="Core\Psychic Suppresion\CompPsychicSuppress.cs" />

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Verse.Sound;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class ThoughtWorker_KittenFlu : ThoughtWorker
     {

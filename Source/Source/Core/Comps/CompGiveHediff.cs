@@ -8,7 +8,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace SCP.Comps
+namespace Foundation.Comps
 {
     public class CompGiveHediff : ThingComp
     {

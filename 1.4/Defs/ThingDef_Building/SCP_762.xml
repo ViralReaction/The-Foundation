@@ -9,7 +9,7 @@ Object Class: Safe
 			
 SCP-762-1 is a torture device similar to the ancient iron maiden. Any person placed inside SCP-762 appears to enter a state of suspended animation. Subjects do, however, remain conscious, and the experience is described as being very painful.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

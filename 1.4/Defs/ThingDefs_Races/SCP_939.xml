@@ -9,7 +9,7 @@ Object Class: Keter
 			
 SCP-939, known as "With Many Voices," are predatory, sapient creatures that appear as vaguely reptilian humanoids. They possess the ability to mimic voices to lure potential prey. SCP-939 are carnivorous and primarily hunt through acoustic mimicry, imitating voices of previous victims or sounds in their environment. They are contained in soundproofed cells to prevent their deceptive vocal tactics and minimize potential danger to personnel.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CKeter</li>
 					<li>SCP_DKeneq</li>
@@ -98,7 +98,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 		</tools>
 		<race>
 			<thinkTreeMain>SCP_AI</thinkTreeMain>
-			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<body>QuadrupedAnimalWithPawsMinOrgans</body>
 			<predator>true</predator>
 			<maxPreyBodySize>4.0</maxPreyBodySize>
 			<petness>0.0</petness>
@@ -147,12 +147,12 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<comps>
-			<li Class="SCP.CompProperties_Voices">
+			<li Class="Foundation.CompProperties_Voices">
 				<voiceRange>30</voiceRange>
-				<directAttackRange>2</directAttackRange>
-				<startPounceOnLuredTargetRange>6</startPounceOnLuredTargetRange>
+				<directAttackRange>10</directAttackRange>
+				<startPounceOnLuredTargetRange>20</startPounceOnLuredTargetRange>
 			</li>
-			<li Class="SCP.Comps.CompProperties_GiveHediffSeverity">
+			<li Class="Foundation.Comps.CompProperties_GiveHediffSeverity">
 				<hediff>SCP_939_Breath_Hediff</hediff>
 				<range>3</range>
 				<severityTick>0.005</severityTick>
@@ -175,7 +175,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 				<label>warg puppy</label>
 				<labelPlural>warg puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>>Things/Pawn/Animal/SCP939/SCP939</texPath>
+					<texPath>Things/Pawn/Animal/SCP_939/SCP_939</texPath>
 					<drawSize>1.05</drawSize>
 					<color>(230,230,230)</color>
 				</bodyGraphicData>
@@ -186,7 +186,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP939/SCP939</texPath>
+					<texPath>Things/Pawn/Animal/SCP_939/SCP_939</texPath>
 					<drawSize>1.7</drawSize>
 					<color>(230,230,230)</color>
 					<shadowData>
@@ -201,7 +201,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP939/SCP939</texPath>
+					<texPath>Things/Pawn/Animal/SCP_939/SCP_939</texPath>
 					<drawSize>2.05</drawSize>
 					<color>(230,230,230)</color>
 					<shadowData>
@@ -228,7 +228,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 				<label>warg puppy</label>
 				<labelPlural>warg puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>>Things/Pawn/Animal/SCP939/SCP939</texPath>
+					<texPath>Things/Pawn/Animal/SCP_939/SCP_939</texPath>
 					<drawSize>1.05</drawSize>
 					<color>(230,230,230)</color>
 				</bodyGraphicData>
@@ -239,7 +239,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP939/SCP939</texPath>
+					<texPath>Things/Pawn/Animal/SCP_939/SCP_939</texPath>
 					<drawSize>1.7</drawSize>
 					<color>(230,230,230)</color>
 					<shadowData>
@@ -254,7 +254,7 @@ SCP-939, known as "With Many Voices," are predatory, sapient creatures that appe
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP939/SCP939</texPath>
+					<texPath>Things/Pawn/Animal/SCP_939/SCP_939</texPath>
 					<drawSize>2.05</drawSize>
 					<color>(230,230,230)</color>
 					<shadowData>

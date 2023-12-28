@@ -11,7 +11,7 @@ SCP-250 is the animate fossil skeleton of an allosaur, held together and animate
 
 SCP-250 emulates what are presumed to have been the standard daily activities of a living allosaurus: it wanders its enclosure by day, enters a state of dormancy by night, and will attempt to kill and devour anything which it perceives as suitable prey, including humans.</description>
   	<modExtensions>
-	<li Class="SCP.ContainmentExtension">
+	<li Class="Foundation.ContainmentExtension">
 	<classRating>
 		<li>SCP_CEuclid</li>
 		<li>SCP_DVlam</li>

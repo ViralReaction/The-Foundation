@@ -10,7 +10,7 @@ Object Class: Euclid
 SCP-1797-A have the appearance of Felis catus, domestic cat, from 3 to 8 weeks old depending on the instance. Genetically, instances of SCP-1797-A are identical to the individual they originate from. The organisms do not age once detached from their host and are unable to breed. The average lifespan of SCP-1797-A is two years.
 SCP-1797 is an anomalous strain of influenza, primarily transmitted through contact with SCP-1797-A.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>

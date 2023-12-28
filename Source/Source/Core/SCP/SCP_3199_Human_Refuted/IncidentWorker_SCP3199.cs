@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     public class IncidentWorker_SCP3199 : IncidentWorker
     {

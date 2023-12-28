@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     // Tranq Dart. Checks to see if Pawn is an SCP and is !Tranqable, if so removes the hediff.
     public class Hediff_TranqDart : Hediff_High

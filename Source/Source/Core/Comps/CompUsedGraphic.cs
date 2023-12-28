@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace SCP.Comps
+namespace Foundation.Comps
 {
     public class CompUsedGraphic : ThingComp
     {

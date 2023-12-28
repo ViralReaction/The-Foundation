@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_GOC_SFD</defName>
-		<description>The MkVII Standard Field Dress, or "Black Suit," is the latest iteration of the Global Occult Coalition's specialized garment for covert operations. Made of +1 Generation nanofiber, it features a form-fitting ballistic undergarment, integrated communications gear, an Augmented Reality system, a Personal Computing Device with a satellite connection, and miniaturized emergency toolkits and weapons.</description>
-		<label>Mk VII Standard Field Dress</label>
-		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
-			<displayPriority>208</displayPriority>
-		</recipeMaker>
-		<graphicData>
-			<texPath>Things/Apparel/Foundation/SCP_Dclass/SCP_Dclass</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<costStuffCount>45</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<thingCategories>
-			<li>ApparelMisc</li>
-		</thingCategories>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>2700</WorkToMake>
-			<Mass>0.3</Mass>
-			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>1.5</EquipDelay>
-		</statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Foundation/SCP_Dclass/SCP_Dclass</wornGraphicPath>
-			<layers>
-				<li>OnSkin</li>
-			</layers>
-			<tags>
-				<li>GOC_Basic</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-		</apparel>
-		<colorGenerator Class="ColorGenerator_StandardApparel"/>
-		<tradeTags>
-			<li>BasicClothing</li>
-			<li>SCP_Clothing</li>
-		</tradeTags>
-	</ThingDef>
+	<!-- <ThingDef ParentName="ApparelMakeableBase"> -->
+		<!-- <defName>Apparel_GOC__SFD</defName> -->
+		<!-- <description>The MkVII Standard Field Dress, or "Black Suit," is the latest iteration of the Global Occult Coalition's specialized garment for covert operations. Made of +1 Generation nanofiber, it features a form-fitting ballistic undergarment, integrated communications gear, an Augmented Reality system, a Personal Computing Device with a satellite connection, and miniaturized emergency toolkits and weapons.</description> -->
+		<!-- <label>Mk VII Standard Field Dress</label> -->
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>ComplexClothing</researchPrerequisite> -->
+			<!-- <displayPriority>208</displayPriority> -->
+		<!-- </recipeMaker> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Apparel/Foundation/SCP_Dclass/SCP_Dclass</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+		<!-- </graphicData> -->
+		<!-- <costStuffCount>45</costStuffCount> -->
+		<!-- <stuffCategories> -->
+			<!-- <li>Fabric</li> -->
+			<!-- <li>Leathery</li> -->
+		<!-- </stuffCategories> -->
+		<!-- <thingCategories> -->
+			<!-- <li>ApparelMisc</li> -->
+		<!-- </thingCategories> -->
+		<!-- <statBases> -->
+			<!-- <MaxHitPoints>100</MaxHitPoints> -->
+			<!-- <WorkToMake>2700</WorkToMake> -->
+			<!-- <Mass>0.3</Mass> -->
+			<!-- <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor> -->
+			<!-- <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold> -->
+			<!-- <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat> -->
+			<!-- <EquipDelay>1.5</EquipDelay> -->
+		<!-- </statBases> -->
+		<!-- <apparel> -->
+			<!-- <bodyPartGroups> -->
+				<!-- <li>Torso</li> -->
+				<!-- <li>Neck</li> -->
+				<!-- <li>Shoulders</li> -->
+				<!-- <li>Arms</li> -->
+				<!-- <li>Legs</li> -->
+			<!-- </bodyPartGroups> -->
+			<!-- <wornGraphicPath>Things/Apparel/Foundation/SCP_Dclass/SCP_Dclass</wornGraphicPath> -->
+			<!-- <layers> -->
+				<!-- <li>OnSkin</li> -->
+			<!-- </layers> -->
+			<!-- <tags> -->
+				<!-- <li>GOC_Basic</li> -->
+			<!-- </tags> -->
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Soldier</li> -->
+			<!-- </defaultOutfitTags> -->
+		<!-- </apparel> -->
+		<!-- <colorGenerator Class="ColorGenerator_StandardApparel"/> -->
+		<!-- <tradeTags> -->
+			<!-- <li>BasicClothing</li> -->
+			<!-- <li>SCP_Clothing</li> -->
+		<!-- </tradeTags> -->
+	<!-- </ThingDef> -->
 	  
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_GOCStaffShirt</defName>
+		<defName>Apparel_GOC_StaffShirt</defName>
 		<description>A white shirt and a blue tie worn by Coalition employees.</description>
 		<label>GOC Staff Shirt</label>
 		<recipeMaker>
@@ -117,7 +117,7 @@
 
 	<!-- GOC Formal Suit -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_GOCFormalSuit</defName>
+		<defName>Apparel_GOC_FormalSuit</defName>
 		<description>A gray formal suit worn by higher ups within the Coalition.</description>
 		<label>Formal Suit (GOC)</label>
 		<recipeMaker>
@@ -176,7 +176,7 @@
 
 	<!-- GOC Security Fatigues -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_GOCSecurityFatigues</defName>
+		<defName>Apparel_GOC_SecurityFatigues</defName>
 		<description>A gray pair of military fatigues worn by GOC security forces.</description>
 		<label>Security Fatigues (GOC)</label>
 		<recipeMaker>
@@ -237,7 +237,7 @@
 							
 	<!-- GOC ST UBAC -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_GOCStrikeTeamUbac</defName>
+		<defName>Apparel_GOC_StrikeTeamUbac</defName>
 		<description>A digital camo UBAC worn by the Coalition's elite Strike Team. The UBAC keeps the wearer comfortable and light, and proudly bears an Occult star-patch on each shoulder.</description>
 		<label>Strike Team UBAC (GOC)</label>
 		<recipeMaker>
@@ -297,7 +297,7 @@
   
 	<!-- GOC Parka -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_GOCParka</defName>
+		<defName>Apparel_GOC_Parka</defName>
 		<description>A digital camo Parka worn by GOC members in winter environments, designed by legendary clothing creator BajtMe industries.</description>
 		<label>Parka (GOC)</label>
 		<recipeMaker>
@@ -353,7 +353,7 @@
 	
 	<!-- GOC Security Armor -->
 	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>SCP_GOCSecurityArmor</defName>
+		<defName>Apparel_GOC_SecurityArmor</defName>
 		<label>Security Armor (GOC)</label>
 		<description>An Armored vest worn by GOC Security members.</description>
 		<techLevel>Industrial</techLevel>
@@ -420,7 +420,7 @@
 	
 	<!-- Strike Team MBAV -->
 	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>SCP_GOCStrikeTeamMBAV</defName>
+		<defName>Apparel_GOC_StrikeTeamMBAV</defName>
 		<label>Strike Team Armor (GOC)</label>
 		<description>A MBAV worn by Strike Team opperatives, fitted with a groin plate and various pouches.</description>
 		<techLevel>Industrial</techLevel>

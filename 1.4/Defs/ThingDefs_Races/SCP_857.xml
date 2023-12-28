@@ -3,7 +3,7 @@
 
 	<ThingDef Name="SCP_857Base" ParentName="AnimalThingBase" Abstract="True">
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

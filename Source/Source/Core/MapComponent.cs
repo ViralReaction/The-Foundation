@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class MapComponent_SCPManagement : MapComponent
     {

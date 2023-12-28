@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     [HarmonyPatch(typeof(ThoughtHandler), "GetSocialThoughts", new System.Type[] { typeof(Pawn), typeof(List<ISocialThought>) })]
     public static class SCP_Tools_Precept_Patch

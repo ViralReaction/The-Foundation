@@ -38,7 +38,7 @@
 				<canWakeUpFogged>false</canWakeUpFogged>
 			</li>
 			<li Class="CompProperties_WakeUpDormant"/>
-			<li Class="SCP.CompProperties_FleshHiveSpawner">
+			<li Class="Foundation.CompProperties_FleshHiveSpawner">
 				<spawnablePawnKinds>
 					<li>SCP_610B</li>
 					<li>SCP_610A</li>
@@ -58,7 +58,7 @@
 				<spawnMtbHours>4</spawnMtbHours>
 				<spawnRadius>5</spawnRadius>
 			</li>
-			<li Class="SCP.Comps.CompProperties_TerrainChanger">
+			<li Class="Foundation.Comps.CompProperties_TerrainChanger">
 				<radius>100</radius>
 				<cellsToChange>6</cellsToChange>
 				<fleshHateIntervalTicks>200</fleshHateIntervalTicks>

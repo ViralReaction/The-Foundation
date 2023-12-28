@@ -1,6 +1,6 @@
 ﻿using RimWorld;
-using SCP;
-using SCP.Cage;
+using Foundation;
+using Foundation.Cage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using UnityEngine.Diagnostics;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     public class SCP_Startup
     {

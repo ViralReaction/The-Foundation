@@ -2,7 +2,7 @@
 <Defs>
 			
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_CI_Jumpsuit</defName>
+		<defName>Apparel_CI_Jumpsuit</defName>
 		<description>A brown jump suit with simple camoflauge, worn by Chaos Insurgents, these suits are generally made to keep the wearer warm, as well as being practical (plenty of pockets), and durable (including fire retardant).</description>
 		<label>Insurgent Jumpsuit (CI)</label>
 		<recipeMaker>
@@ -68,7 +68,7 @@
   
 	<!-- ====================================== Insurgent Parka =========================================== -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_CI_Parka</defName>
+		<defName>Apparel_CI_Parka</defName>
 		<description>A woodland camo Parka worn by Chaos Insurgents, designed by legendary clothing creator BajtMe industries.</description>
 		<label>Parka (CI)</label>
 		<recipeMaker>
@@ -134,7 +134,7 @@
 	
 	 
 	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>SCP_CI_MBAV</defName>
+		<defName>Apparel_CI_MBAV</defName>
 		<label>Insurgent Armor (CI)</label>
 		<description>A basic MBAV worn by Chaos Insurgents.</description>
 		<techLevel>Industrial</techLevel>
@@ -204,7 +204,7 @@
  
 	<!-- ======================================= Insurgent LCE =======================================-->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>SCP_CI_LCE</defName>
+		<defName>Apparel_CI_LCE</defName>
 		<label>Insurgent LCE (CI)</label>
 		<description>A Carrier LCE worn by Chaos Insurgents.</description>
 		<techLevel>Industrial</techLevel>

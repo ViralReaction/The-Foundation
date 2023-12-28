@@ -9,7 +9,7 @@ Object Class: Safe
 			
 SCP-2228 refers to a series of identical boxed set of figurines and board labeled "SCP Foundation Containment Site Playset", with Dr. Wondertainment given as the items' manufacturer. Small items placed inside will gain anomalous properties, and will lose them upon leaving.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

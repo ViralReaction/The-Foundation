@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     public class Hediff_610_Infection : HediffWithComps
     {

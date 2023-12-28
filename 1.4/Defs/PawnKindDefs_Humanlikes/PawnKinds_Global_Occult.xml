@@ -265,7 +265,7 @@
 			<li>GOC_Staff</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCStaffShirt</li>
+			<li>Apparel_GOC_StaffShirt</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -323,8 +323,8 @@
 			<li>GOC_Staff</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCStaffShirt</li>
-			<li>SCP_Labcoat</li>
+			<li>Apparel_GOC_StaffShirt</li>
+			<li>Apparel_SCP_Labcoat</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -382,7 +382,7 @@
 			<li>GOC_Staff</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCFormalSuit</li>
+			<li>Apparel_GOC_FormalSuit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -440,7 +440,7 @@
 			<li>GOC_Staff</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCFormalSuit</li>
+			<li>Apparel_GOC_FormalSuit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -498,9 +498,9 @@
 			<li>GOC_Security</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCSecurityHelmet</li>
-			<li>SCP_GOCSecurityArmor</li>
-			<li>SCP_GOCSecurityFatigues</li>
+			<li>Apparel_GOC_SecurityHelmet</li>
+			<li>Apparel_GOC_SecurityArmor</li>
+			<li>Apparel_GOC_SecurityFatigues</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -561,9 +561,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCStrikeTeamHelmet</li>
-			<li>SCP_GOCStrikeTeamMBAV</li>
-			<li>SCP_GOCStrikeTeamUbac</li>
+			<li>Apparel_GOC_ST_Helmet</li>
+			<li>Apparel_GOC_StrikeTeamMBAV</li>
+			<li>Apparel_GOC_StrikeTeamUbac</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -621,9 +621,9 @@
 		</apparelTags>
 		<apparelRequired>
 			<li>Apparel_SmokepopBelt</li>
-			<li>SCP_GOCStrikeTeamHelmet</li>
-			<li>SCP_GOCStrikeTeamMBAV</li>
-			<li>SCP_GOCStrikeTeamUbac</li>
+			<li>Apparel_GOC_ST_Helmet</li>
+			<li>Apparel_GOC_StrikeTeamMBAV</li>
+			<li>Apparel_GOC_StrikeTeamUbac</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -681,9 +681,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCStrikeTeamHelmetMask</li>
-			<li>SCP_GOCStrikeTeamMBAV</li>
-			<li>SCP_GOCStrikeTeamUbac</li>
+			<li>Apparel_GOC_ST_HelmetMask</li>
+			<li>Apparel_GOC_StrikeTeamMBAV</li>
+			<li>Apparel_GOC_StrikeTeamUbac</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -733,9 +733,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCStrikeTeamBoonie</li>
-			<li>SCP_GOCStrikeTeamMBAV</li>
-			<li>SCP_GOCStrikeTeamUbac</li>
+			<li>Apparel_GOC_StrikeTeamBoonie</li>
+			<li>Apparel_GOC_StrikeTeamMBAV</li>
+			<li>Apparel_GOC_StrikeTeamUbac</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -786,9 +786,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCStrikeTeamHelmetGasmask</li>
-			<li>SCP_GOCStrikeTeamMBAV</li>
-			<li>SCP_GOCStrikeTeamUbac</li>
+			<li>Apparel_GOC_ST_HelmetGasmask</li>
+			<li>Apparel_GOC_StrikeTeamMBAV</li>
+			<li>Apparel_GOC_StrikeTeamUbac</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -852,9 +852,9 @@
 			<li>GOC_Coat</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GOCSecurityHelmet</li>
-			<li>SCP_GOCSecurityArmor</li>
-			<li>SCP_GOCFormalSuit</li>
+			<li>Apparel_GOC_SecurityHelmet</li>
+			<li>Apparel_GOC_SecurityArmor</li>
+			<li>Apparel_GOC_FormalSuit</li>
 		</apparelRequired>
 		<techHediffsChance>0.15</techHediffsChance>
 		<techHediffsMoney>

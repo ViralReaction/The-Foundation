@@ -56,7 +56,7 @@
 
 	<DamageDef ParentName="Flame">
 		<defName>SCP_Flame</defName>
-		<workerClass>SCP.DamageWorker_SCP_Flame</workerClass>
+		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
 		<label>fire</label>
 		<hasForcefulImpact>false</hasForcefulImpact>
 		<makesBlood>false</makesBlood>
@@ -78,10 +78,35 @@
 		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
 		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
 	</DamageDef>
+	
+	<DamageDef ParentName="Flame">
+		<defName>SCP_Acid</defName>
+		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
+		<label>acid</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has acid burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<isRanged>false</isRanged>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<!-- <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell> -->
+		<!-- <explosionCellFleck>BlastFlame</explosionCellFleck> -->
+		<!-- <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter> -->
+		<!-- <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge> -->
+		<!-- <soundExplosion>Explosion_Flame</soundExplosion> -->
+		<combatLogRules>Damage_Flame</combatLogRules>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
 
 	<DamageDef ParentName="Flame">
 		<defName>SCP_Electric</defName>
-		<workerClass>SCP.DamageWorker_SCP_Flame</workerClass>
+		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
 		<label>static electricity</label>
 		<hasForcefulImpact>false</hasForcefulImpact>
 		<makesBlood>false</makesBlood>

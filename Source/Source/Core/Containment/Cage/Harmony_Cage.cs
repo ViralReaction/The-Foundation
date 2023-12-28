@@ -12,7 +12,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace SCP.Cage
+namespace Foundation.Cage
 {
 
     [StaticConstructorOnStartup]

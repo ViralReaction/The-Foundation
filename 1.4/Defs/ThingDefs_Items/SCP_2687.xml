@@ -16,7 +16,7 @@
 			<HediffDef>SCP_2687_Poison</HediffDef>
 		</descriptionHyperlinks>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>
@@ -58,7 +58,7 @@
 		<label>SCP-2687-C</label>
 		<description>SCP-2687-C uses anomalous genetic material to modify cells surrounding a SCP-2687-B instance, creating specialized organelles capable of processing the polyethylene plastic excreted by SCP-2687-B instances during cellular replacement.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>
@@ -86,7 +86,7 @@
 		<ingestible>
 			<drugCategory>Medical</drugCategory>
 			<outcomeDoers>
-				<li Class="SCP.IngestionOutcomeDoer_RemoveHediff">
+				<li Class="Foundation.IngestionOutcomeDoer_RemoveHediff">
 					<hediffDef>SCP_2687_Poison</hediffDef>
 				</li>
 			</outcomeDoers>

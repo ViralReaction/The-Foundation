@@ -148,9 +148,9 @@
 			<max>1</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>SCP_CI_LCE</li>
-			<li>SCP_CI_Balaclava</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_LCE</li>
+			<li>Apparel_CI_Balaclava</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
@@ -208,9 +208,9 @@
 			<max>1</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>SCP_CI_HelmetMask</li>
-			<li>SCP_CI_MBAV</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_HelmetMask</li>
+			<li>Apparel_CI_MBAV</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
@@ -267,13 +267,13 @@
 			<max>1</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>SCP_CI_Helmet</li>
-			<li>SCP_CI_MBAV</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_Helmet</li>
+			<li>Apparel_CI_MBAV</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
-			<min>480</min>
+			<min>550</min>
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
@@ -326,9 +326,9 @@
 			<max>1</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>SCP_CI_Cap</li>
-			<li>SCP_CI_MBAV</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_Cap</li>
+			<li>Apparel_CI_MBAV</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
@@ -385,9 +385,9 @@
 			<max>1</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>SCP_CI_Boonie</li>
-			<li>SCP_CI_LCE</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_Boonie</li>
+			<li>Apparel_CI_LCE</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
@@ -444,9 +444,9 @@
 			<max>1</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>SCP_CI_HelmetGasmask</li>
-			<li>SCP_CI_MBAV</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_HelmetGasmask</li>
+			<li>Apparel_CI_MBAV</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
@@ -492,9 +492,9 @@
 			<max>1</max>
 		</gearHealthRange>
 		<apparelRequired>
-			<li>SCP_CI_Beret</li>
-			<li>SCP_CI_MBAV</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_Beret</li>
+			<li>Apparel_CI_MBAV</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
@@ -548,8 +548,8 @@
 			<max>1200</max>
 		</weaponMoney>
 		<apparelRequired>
-			<li>SCP_CI_Cap</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_Cap</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<techHediffsChance>0.15</techHediffsChance>
 		<techHediffsMoney>
@@ -574,10 +574,13 @@
 			<max>3</max>
 		</combatEnhancingDrugsCount>
 		<!-- <apparelMoney>400~700</apparelMoney> -->
-		<weaponMoney>500~700</weaponMoney>
+		<weaponMoney>
+			<min>220</min>
+			<max>600</max>
+		</weaponMoney>
 		<apparelRequired>
-			<li>SCP_CI_Cap</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_Cap</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
@@ -622,10 +625,13 @@
 			<max>3</max>
 		</combatEnhancingDrugsCount>
 		<!-- <apparelMoney>400~700</apparelMoney> -->
-		<weaponMoney>500~700</weaponMoney>
+		<weaponMoney>
+			<min>300</min>
+			<max>600</max>
+		</weaponMoney>
 		<apparelRequired>
-			<li>SCP_CI_Cap</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_Cap</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>Shortshots</li>
@@ -667,13 +673,17 @@
 		<apparelMoney>400~700</apparelMoney>
 		<weaponMoney>500~700</weaponMoney>
 		<apparelRequired>
-			<li>SCP_CI_HelmetMask</li>
-			<li>SCP_CI_MBAV</li>
-			<li>SCP_CI_Jumpsuit</li>
+			<li>Apparel_CI_HelmetMask</li>
+			<li>Apparel_CI_MBAV</li>
+			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<weaponTags>
 			<li>Gun</li>
 		</weaponTags>
+		<weaponMoney>
+			<min>480</min>
+			<max>1200</max>
+		</weaponMoney>
 		<techHediffsMoney>700~1200</techHediffsMoney>
 		<techHediffsChance>100</techHediffsChance>
 		<techHediffsTags>

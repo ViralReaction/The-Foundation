@@ -1,5 +1,5 @@
 ﻿using RimWorld;
-using SCP.Cage;
+using Foundation.Cage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     public class ThoughtWorker_Precept_SCP_Present : ThoughtWorker_Precept
     {

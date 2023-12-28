@@ -36,14 +36,14 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<modExtensions>
-			<li Class="SCP.Cage.CageExtension">
+			<li Class="Foundation.Cage.CageExtension">
 				<isCage>true</isCage>
 			</li>
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
-				<compClass>SCP.Cage.CompAssignableToPawn_Cage</compClass>
+				<compClass>Foundation.Cage.CompAssignableToPawn_Cage</compClass>
 			</li>
 		</comps>
 	</ThingDef>
@@ -83,14 +83,14 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<modExtensions>
-			<li Class="SCP.Cage.CageExtension">
+			<li Class="Foundation.Cage.CageExtension">
 				<isCage>true</isCage>
 			</li>
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
-				<compClass>SCP.Cage.CompAssignableToPawn_Cage</compClass>
+				<compClass>Foundation.Cage.CompAssignableToPawn_Cage</compClass>
 			</li>
 		</comps>
 	</ThingDef>
@@ -130,14 +130,14 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<modExtensions>
-			<li Class="SCP.Cage.CageExtension">
+			<li Class="Foundation.Cage.CageExtension">
 				<isCage>true</isCage>
 			</li>
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
-				<compClass>SCP.Cage.CompAssignableToPawn_Cage</compClass>
+				<compClass>Foundation.Cage.CompAssignableToPawn_Cage</compClass>
 			</li>
 		</comps>
 	</ThingDef>
@@ -215,7 +215,7 @@
 		<label>steel strengthened wall</label>
 		<description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCPs.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<containmentTier>1</containmentTier>
 			</li>
 		</modExtensions>
@@ -256,7 +256,7 @@
 		<label>plasteel reinforced wall</label>
 		<description>An impassable wall strengthened with plasteel. Capable of holding up a roof and keeping in SCPs.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<containmentTier>2</containmentTier>
 			</li>
 		</modExtensions>
@@ -303,7 +303,7 @@
 		<label>security door</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down, as well as keeping SCPs from passing through.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<containmentTier>1</containmentTier>
 			</li>
 		</modExtensions>
@@ -345,7 +345,7 @@
 		<label>blast door</label>
 		<description>Strong blast door that keeps SCPs inside, even when power is cut off. Powered operation allows people to move through the door without slowing down.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 
 				<containmentTier>2</containmentTier>
 	
@@ -390,7 +390,7 @@
         <defName>SCP_SRA</defName>
         <label>Scranton Reality Anchor</label>
         <description>A building which projects a psychic suppression field in a small area around it, lowering the psychic sensitivity of those nearby. They can be tuned to different intensities and radii, though it takes time for them to change to new targets.\n\nDue to the complex wave interactions, suppression fields do not stack.</description>
-        <thingClass>SCP.Building_PsychicSuppressionField</thingClass>
+        <thingClass>Foundation.Building_PsychicSuppressionField</thingClass>
         <graphicData>
             <texPath>Things/Building/Misc/MoisturePump</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -429,7 +429,7 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="SCP.CompProperties_PsychicSuppressionField">
+            <li Class="Foundation.CompProperties_PsychicSuppressionField">
                 <MinEffect>-2</MinEffect>
                 <MaxEffect>0</MaxEffect>
                 <EffectStep>0.1</EffectStep>
@@ -450,7 +450,7 @@
         <defName>SCP_RDM</defName>
         <label>Reality Disruption Matrix</label>
         <description>A building which projects a psychic suppression field in a small area around it, lowering the psychic sensitivity of those nearby. They can be tuned to different intensities and radii, though it takes time for them to change to new targets.\n\nDue to the complex wave interactions, suppression fields do not stack.</description>
-        <thingClass>SCP.Building_PsychicSuppressionField</thingClass>
+        <thingClass>Foundation.Building_PsychicSuppressionField</thingClass>
         <graphicData>
             <texPath>Things/Building/Furniture/PenMarker</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -487,7 +487,7 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="SCP.CompProperties_PsychicSuppressionField">
+            <li Class="Foundation.CompProperties_PsychicSuppressionField">
                 <MinEffect>0</MinEffect>
                 <MaxEffect>2</MaxEffect>
                 <EffectStep>0.1</EffectStep>

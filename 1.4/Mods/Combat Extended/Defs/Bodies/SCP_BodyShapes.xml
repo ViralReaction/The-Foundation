@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<CombatExtended.BodyShapeDef>
+		<defName>SCP_Snail</defName>
+		<width>0.5</width>
+		<widthLaying>0.5</widthLaying>
+		<height>0.125</height>
+		<heightLaying>0.125</heightLaying>
+	</CombatExtended.BodyShapeDef>
+	
+	<CombatExtended.BodyShapeDef>
+		<defName>SCP_RoundShort</defName>
+		<width>0.5</width>
+		<widthLaying>0.5</widthLaying>
+		<height>0.5</height>
+		<heightLaying>0.25</heightLaying>
+	</CombatExtended.BodyShapeDef>
+
+</Defs>

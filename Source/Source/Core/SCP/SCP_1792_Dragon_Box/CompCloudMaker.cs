@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
-using SCP;
+using Foundation;
 using Verse.AI;
 
-namespace SCP.Comps
+namespace Foundation.Comps
 {
     public class CompCloudMaker : ThingComp
     {

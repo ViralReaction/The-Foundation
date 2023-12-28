@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     public static class HarmonyPatch_PsychicSuppression
     {

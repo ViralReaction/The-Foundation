@@ -7,7 +7,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_ContainmentBreach</workerClass>
+		<workerClass>Foundation.IncidentWorker_ContainmentBreach</workerClass>
 		<baseChance>5.0</baseChance>
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>
@@ -21,7 +21,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_SCP131</workerClass>
+		<workerClass>Foundation.IncidentWorker_SCP131</workerClass>
 		<baseChance>0.5</baseChance>
 	</IncidentDef>
 
@@ -32,7 +32,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_SCP529</workerClass>
+		<workerClass>Foundation.IncidentWorker_SCP529_Josie</workerClass>
 		<baseChance>0.5</baseChance>
 	</IncidentDef>
 	
@@ -42,7 +42,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_SCP610_Local</workerClass>
+		<workerClass>Foundation.IncidentWorker_SCP610_Local</workerClass>
 		<baseChance>3</baseChance>
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>
@@ -57,7 +57,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_SCP848</workerClass>
+		<workerClass>Foundation.IncidentWorker_SCP848</workerClass>
 		<baseChance>0.5</baseChance>
 		<minRefireDays>30</minRefireDays>
 	</IncidentDef>
@@ -69,7 +69,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_SCP848_SpawnThing</workerClass>
+		<workerClass>Foundation.IncidentWorker_SCP848_SpawnThing</workerClass>
 		<baseChance>20</baseChance>
 		<minRefireDays>15</minRefireDays>
 	</IncidentDef>
@@ -80,7 +80,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_SCP939</workerClass>
+		<workerClass>Foundation.IncidentWorker_SCP939</workerClass>
 		<gameCondition>939WanderingTheArea</gameCondition>
 		<baseChance>2.0</baseChance>
 		<minRefireDays>20</minRefireDays>
@@ -99,7 +99,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_SCP2845</workerClass>
+		<workerClass>Foundation.IncidentWorker_SCP2845</workerClass>
 		<baseChance>1</baseChance>
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>
@@ -113,7 +113,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>SCP.IncidentWorker_SCP3199</workerClass>
+		<workerClass>Foundation.IncidentWorker_SCP3199</workerClass>
 		<baseChance>3</baseChance>
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AYOhim/Vl2Z56AHjOIZ6VrWzp6H7RtXRkF6IPHORrpYXKmklhzaovOqzHaAwL81OC35zNmN8fDXNgESF3OtYUw==",
+  "dgSpecHash": "9hwdVryZ93K/wgty+Fm/uxmp0NCKImyLpsH3GyasXJaTP5pMwBlIBlpVEDxvON55O6bSLoaU5FPeSX8dv4N+3A==",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SCPRW\\Source\\Source\\SCP.csproj",
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SCPRW\\Source\\Source\\Foundation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enurta\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512",
     "C:\\Users\\Enurta\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3901\\krafs.rimworld.ref.1.4.3901.nupkg.sha512"

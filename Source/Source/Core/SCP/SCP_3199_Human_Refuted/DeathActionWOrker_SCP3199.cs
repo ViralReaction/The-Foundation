@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class DeathActionWorker_SCP3199_SpawnEgg : DeathActionWorker
     {

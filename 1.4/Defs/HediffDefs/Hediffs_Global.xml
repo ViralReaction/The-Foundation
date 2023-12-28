@@ -3,7 +3,7 @@
 
 	<HediffDef ParentName="DiseaseBase">
 		<defName>SCP_TranqHediff</defName>
-		<hediffClass>SCP.Hediff_TranqDart</hediffClass>
+		<hediffClass>Foundation.Hediff_TranqDart</hediffClass>
 		<label>tranquilizer</label>
 		<description>Sleep drugs in the body delivered by a tranquilizer dart or a stun baton. Renders creatures unconscious after a time.
 \nNaturally recovers over time as the body filters it out.</description>

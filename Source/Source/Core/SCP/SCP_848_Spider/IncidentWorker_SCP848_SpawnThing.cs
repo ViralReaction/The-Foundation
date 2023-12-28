@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class IncidentWorker_SCP848_SpawnThing : IncidentWorker
     {

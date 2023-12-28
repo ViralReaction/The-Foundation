@@ -24,7 +24,7 @@ Object Class: Safe
 		
 SCP-127, upon first glance, appears to be a standard MP5K-PDW submachine gun. Tests have revealed that aside from the outer steel and polymer shell, the entirety of the firearm is organic and alive. The weapon's ammunition initially appeared to be human-like teeth. However, DNA testing of the "bullets" resulted in no match to any known species on Earth.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DVlam</li>

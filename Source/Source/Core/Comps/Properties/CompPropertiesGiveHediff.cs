@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP.Comps
+namespace Foundation.Comps
 {
     public class CompProperties_GiveHediffSeverity : CompProperties
     {

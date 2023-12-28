@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Verse.Sound;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class Building_SCP1695 : Building_CryptosleepCasket
     {

@@ -4,7 +4,7 @@
 	<ThoughtDef>
 		<defName>SCP_Anomaly_Respected_Opinion</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>SCP.ThoughtWorker_Precept_SCP_Social</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_SCP_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -17,7 +17,7 @@
 	<ThoughtDef>
 		<defName>SCP_Anomaly_Respected_AnomalyInColony</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>SCP.ThoughtWorker_Precept_SCP_InColony</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_SCP_InColony</workerClass>
 		<stages>
 			<li>
 				<label>no anomalies</label>
@@ -80,7 +80,7 @@
 	<ThoughtDef>
 		<defName>SCP_Anomaly_Despised_Opinion</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>SCP.ThoughtWorker_Precept_SCP_Social</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_SCP_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -107,7 +107,7 @@
 	<ThoughtDef>
 		<defName>SCP_AnomalySelfHatred_Despised</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>SCP.ThoughtWorker_Precept_SCP</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_SCP</workerClass>
 		<stages>
 			<li>
 				<label>anomaly self hatred</label>
@@ -120,7 +120,7 @@
 	<ThoughtDef>
 		<defName>SCP_AnomalyColonist_Despised</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>SCP.ThoughtWorker_Precept_SCP_Present</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_SCP_Present</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>

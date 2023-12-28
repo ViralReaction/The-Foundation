@@ -11,7 +11,7 @@ SCP-2845 is an extraterrestrial quadruped entity, terminating in a head with hum
 
 SCP-2845 is capable of instantaneous transmutation and reconstruction of matter, often converting living subjects into SCP-2845-1.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CKeter</li>
 					<li>SCP_DKeneq</li>
@@ -34,11 +34,11 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 		<race>
 			<!--deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass-->
 			<thinkTreeMain>SCP_AI</thinkTreeMain>
-			<body>QuadrupedAnimalWithHooves</body>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>false</herdAnimal>
-			<baseBodySize>2.5</baseBodySize>
-			<baseHungerRate>0.1</baseHungerRate>
-			<baseHealthScale>2.5</baseHealthScale>
+			<baseBodySize>4.0</baseBodySize>
+			<baseHungerRate>0</baseHungerRate>
+			<baseHealthScale>8.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Plain</leatherDef>
 			<useMeatFrom>Deer</useMeatFrom>
@@ -87,25 +87,35 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>13</power>
+				<power>28</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.5</chanceFactor>
 			</li>
 			<li>
-				<label>horns</label>
+				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
-					<li>Stab</li>
 				</capacities>
 				<power>17</power>
 				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
+			<li>
+				<label>antlers</label>
+				<capacities>
+				  <li>Scratch</li>
+				  <li>Stab</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			  </li>
 		</tools>
 		<comps>
-			<li Class="SCP.Comps.CompProperties_GiveHediffSeverity">
+			<li Class="Foundation.Comps.CompProperties_GiveHediffSeverity">
 				<hediff>SCP_2845_Transmute_Hediff</hediff>
 				<range>10</range>
 				<severityTick>0.1</severityTick>
@@ -153,7 +163,7 @@ SCP-2845-1 designates organisms that have been modified by SCP-2845. Instances o
 
 SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown that internal organs are likewise absent, save the brain, which now takes up the entirety of the column and contains the reconstituted mass of the other organs and some additional outside materials. It is unknown how SCP-2845-1 instances derive nutrients, or if any nutrition is required.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>
@@ -172,7 +182,7 @@ SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown
 			<LeatherAmount>0</LeatherAmount>
 			<ArmorRating_Sharp>0.69</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.69</ArmorRating_Blunt>
-			<ArmorRating_Heat>-.2</ArmorRating_Heat>
+			<ArmorRating_Heat>-0.2</ArmorRating_Heat>
 		</statBases>
 		<butcherProducts>
 			<Steel>15</Steel>
@@ -183,7 +193,7 @@ SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown
 			<body>SCP_PillarBod</body>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHungerRate>0.00000001</baseHungerRate>
+			<baseHungerRate>0</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Plain</leatherDef>
@@ -196,7 +206,7 @@ SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown
 			<manhunterOnDamageChance>10</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
-					<def>AnimalAdult</def>
+					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Elk_Wounded</soundWounded>
 					<soundDeath>Pawn_Elk_Death</soundDeath>

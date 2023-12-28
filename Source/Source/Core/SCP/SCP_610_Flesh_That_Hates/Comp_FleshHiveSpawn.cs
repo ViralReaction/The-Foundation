@@ -10,7 +10,7 @@ using Verse.Sound;
 using Verse;
 using UnityEngine;
 
-namespace SCP
+namespace Foundation
 {
     public class Comp_FleshHiveSpawn : ThingComp
     {

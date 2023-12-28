@@ -11,7 +11,7 @@ SCP-160 appears to be a quadriflyer unmanned aerial vehicle (UAV), similar to th
 
 SCP-160 operates continuously and completely autonomous from any identified control source, and exhibits behavior similar to that of predatory birds. It will actively hunt prey such as rodents and other small animals and, upon locating such prey, dive down at high speed and impale its prey with what appears to be a metallic proboscis.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DDark</li>

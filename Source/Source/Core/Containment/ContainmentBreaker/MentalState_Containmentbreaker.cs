@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
 
-namespace SCP.Containment
+namespace Foundation.Containment
 {
     public class MentalState_ContainmentBreaker : MentalState
     {

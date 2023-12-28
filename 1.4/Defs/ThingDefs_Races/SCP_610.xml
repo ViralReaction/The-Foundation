@@ -9,7 +9,7 @@ Object Class: Keter
 		
 SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CKeter</li>
 					<li>SCP_DKeneq</li>
@@ -182,7 +182,7 @@ Object Class: Keter
 		
 SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey. It is stronger than the other variants.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CKeter</li>
 					<li>SCP_DKeneq</li>

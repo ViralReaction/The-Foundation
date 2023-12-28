@@ -3,7 +3,7 @@
 	
 	<!-- SCP 2687 Plastic Organs -->
 	<HediffDef Name="SCP_2687BBase" ParentName="AddedBodyPartBase" Abstract="true">
-		<hediffClass>SCP.Hediff_SCP2687</hediffClass>
+		<hediffClass>Foundation.Hediff_SCP2687</hediffClass>
 		<descriptionHyperlinks>
 			<ThingDef>SCP2687A</ThingDef>
 		</descriptionHyperlinks>
@@ -66,7 +66,7 @@
 		<labelNoun>an SCP-3033-1</labelNoun>
 		<description>An installed SCP-3033-1 "Mike" unit implant.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>
@@ -111,7 +111,7 @@
 		<label>SCP-3033-1</label>
 		<description>SCP-3033-1 is a brain implant by the Chaos Insurgency to completely control a pawn via another pawn with an SCP-3033-2 "Controller" implant. This implant also gives an immunity to pain and reduces fine motor control, preventing numerous tasks from being done. It is completely inert when not installed.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>
@@ -138,7 +138,7 @@
 		<labelNoun>an SCP-3033-2</labelNoun>
 		<description>An installed SCP-3033-2 "Controller" unit implant.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>
@@ -162,7 +162,7 @@
 		<label>SCP-3033-2</label>
 		<description>SCP-3033-2 is a brain implant by the Chaos Insurgency to completely control pawns with an SCP-3033-1 "Mike" unit implant. This implant also gives an immunity to pain. It is completely inert when not installed.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>

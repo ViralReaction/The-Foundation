@@ -11,7 +11,7 @@ SCP-1762-1 is a plain, cardboard box. It is spray-painted silver on the interior
 
 SCP-1762-1 will infrequently open and initiate a release of SCP-1762-2. During this time, the box will briefly emit a large amount of black smoke that quickly dissipates; it takes an average of twenty seconds for SCP-1762-2 to emerge after the smoke clears.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>
@@ -56,7 +56,7 @@ SCP-1762-1 will infrequently open and initiate a release of SCP-1762-2. During t
 			<joyKind>JoyfulSCP</joyKind>
 		</building>
 		<comps>
-			<li Class="SCP.Comps.CompProperties_CloudMaker">
+			<li Class="Foundation.Comps.CompProperties_CloudMaker">
 				<sourceStreamEffect>SCP_EffecterSCP1762R</sourceStreamEffect>
 				<cloudRadius>2.1</cloudRadius>
 				<fleckScale>0.09</fleckScale>
@@ -64,7 +64,7 @@ SCP-1762-1 will infrequently open and initiate a release of SCP-1762-2. During t
 				<fleckSpawnMTB>35</fleckSpawnMTB>
 				<checkRadius>1</checkRadius>
 			</li>
-			<li Class="SCP.Comps.CompProperties_CloudMaker">
+			<li Class="Foundation.Comps.CompProperties_CloudMaker">
 				<sourceStreamEffect>SCP_EffecterSCP1762R</sourceStreamEffect>
 				<cloudRadius>2.1</cloudRadius>
 				<fleckScale>0.09</fleckScale>

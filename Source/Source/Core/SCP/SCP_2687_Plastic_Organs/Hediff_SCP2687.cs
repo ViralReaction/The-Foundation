@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     // Adds plastic poisoning for SCP2687 on adding Hediff with this class.
     public class Hediff_SCP2687 : Hediff_High

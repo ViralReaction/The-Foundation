@@ -11,7 +11,7 @@ SCP-113 resembles a small, polished piece of red jasper. Analysis shows that SCP
 
 When SCP-113 comes in direct contact with the flesh of an organism possessing sex chromosomes, the organism's physical characteristics associated with gender and biological sex are transformed (including genetics and secondary sexual characteristics), either reversed or altered.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>
@@ -54,7 +54,7 @@ When SCP-113 comes in direct contact with the flesh of an organism possessing se
 				<useDuration>60</useDuration>
 			</li>
 			<li Class="CompProperties_UseEffect">
-				<compClass>SCP.CompUseEffect_UseSCP113</compClass>
+				<compClass>Foundation.CompUseEffect_UseSCP113</compClass>
 			</li>
 		</comps>
 	</ThingDef>

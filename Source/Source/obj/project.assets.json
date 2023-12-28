@@ -627,9 +627,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SCPRW\\Source\\Source\\SCP.csproj",
-      "projectName": "SCP",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SCPRW\\Source\\Source\\SCP.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SCPRW\\Source\\Source\\Foundation.csproj",
+      "projectName": "Foundation",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SCPRW\\Source\\Source\\Foundation.csproj",
       "packagesPath": "C:\\Users\\Enurta\\.nuget\\packages\\",
       "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SCPRW\\Source\\Source\\obj\\",
       "projectStyle": "PackageReference",

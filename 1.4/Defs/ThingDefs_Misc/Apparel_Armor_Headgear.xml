@@ -4,7 +4,7 @@
 	<!-- Foundation Helmets -->
 	<!-- Guard Helmet -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_GuardHelmet</defName>
+		<defName>Apparel_SCP_GuardHelmet</defName>
 		<label>Foundation Guard Helmet</label>
 		<description>A black ACH Helmet with a riot visor worn by Foundation facility guards.</description>
 		<techLevel>Industrial</techLevel>
@@ -67,7 +67,7 @@
 
 	<!--  MTF Helmet -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_MobileTaskForceHelmet</defName>
+		<defName>Apparel_SCP_MTF_Helmet</defName>
 		<label>MTF Helmet</label>
 		<description>A black FAST equiped with quad NVGs worn by the elite Mobile Task Force.</description>
 		<techLevel>Industrial</techLevel>
@@ -129,7 +129,7 @@
   
 	<!--  MTF Helmet Ski Mask -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_MobileTaskForceHelmetMask</defName>
+		<defName>Apparel_SCP_MTF_HelmetMask</defName>
 		<label>MTF masked Helmet (SCP)</label>
 		<description>A black FAST equiped with quad NVGs and a black tactical mask, worn by the elite Mobile Task Force.</description>
 		<techLevel>Industrial</techLevel>
@@ -191,7 +191,7 @@
   
 	<!--  MTF Helmet M50 Gasmask -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_MobileTaskForceHelmetGasmask</defName>
+		<defName>Apparel_SCP_MTF_HelmetGasmask</defName>
 		<label>MTF Helmet Gasmask (SCP)</label>
 		<description>A black FAST equiped with quad NVGs and a M50 Gasmask, worn by Mobile Task Force units in toxic areas.</description>
 		<techLevel>Industrial</techLevel>
@@ -256,7 +256,7 @@
 	<!-- Global Occult Coalition Helmet -->
 	<!-- ================================== Security Helmet ====================================-->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_GOCSecurityHelmet</defName>
+		<defName>Apparel_GOC_SecurityHelmet</defName>
 		<label>Security Helmet (GOC)</label>
 		<description>An ACH Helmet with a blue UN cover and an Occult star on the front, worn by Coalition Security Forces.</description>
 		<techLevel>Industrial</techLevel>
@@ -319,7 +319,7 @@
 	<!-- ================================== Strike Team Helmet ====================================-->
   
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_GOCStrikeTeamHelmet</defName>
+		<defName>Apparel_GOC_ST_Helmet</defName>
 		<label>Strike Team Helmet (GOC)</label>
 		<description>A digital camo Felin helmet fitted with dual NVGs, worn by Coaliton Strike Teams.</description>
 		<techLevel>Industrial</techLevel>
@@ -382,7 +382,7 @@
 	<!-- ================================== Strike Team Helmet Ski Mask ====================================-->
   
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_GOCStrikeTeamHelmetMask</defName>
+		<defName>Apparel_GOC_ST_HelmetMask</defName>
 		<label>Strike Team masked Helmet (GOC)</label>
 		<description>A digital camo Felin helmet and tactical mask fitted with dual NVGs, worn by Coalition Strike Teams.</description>
 		<techLevel>Industrial</techLevel>
@@ -444,7 +444,7 @@
   
 	<!-- ================================== Strike Team Helmet M40 Gasmask ====================================-->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_GOCStrikeTeamHelmetGasmask</defName>
+		<defName>Apparel_GOC_ST_HelmetGasmask</defName>
 		<label>Strike Team Helmet Gasmask (GOC)</label>
 		<description>A digital camo Felin helmet and M40 Gasmask, fitted with dual NVGs, worn by Coalition Strike Teams.</description>
 		<techLevel>Industrial</techLevel>
@@ -510,7 +510,7 @@
 	<!-- Chaos Insurgency -->
 	<!-- Chaos Insurgency Helmet -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_CI_Helmet</defName>
+		<defName>Apparel_CI_Helmet</defName>
 		<label>Insurgent Helmet (CI)</label>
 		<description>A black ACH Helmet worn by Chaos Insurgents.</description>
 		<techLevel>Industrial</techLevel>
@@ -570,7 +570,7 @@
   
 	<!-- CI Helmet+Mask -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_CI_HelmetMask</defName>
+		<defName>Apparel_CI_HelmetMask</defName>
 		<label>Insurgent masked Helmet (CI)</label>
 		<description>A black ACH Helmet and skimask worn by Chaos Insurgents.</description>
 		<techLevel>Industrial</techLevel>
@@ -629,7 +629,7 @@
 
 	<!-- Insurgent Helmet Gasmask -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>SCP_CI_HelmetGasmask</defName>
+		<defName>Apparel_CI_HelmetGasmask</defName>
 		<label>Insurgent Helmet Gasmask (CI)</label>
 		<description>A black ACH helmet coupled with a S10 Gasmask, worn by Chaos Insurgents in hazardous area's.</description>
 		<techLevel>Industrial</techLevel>

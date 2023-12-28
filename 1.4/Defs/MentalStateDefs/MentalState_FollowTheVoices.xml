@@ -3,7 +3,7 @@
 <Defs>
 	<MentalStateDef ParentName="BaseMentalState">
 		<defName>FollowTheVoices</defName>
-		<stateClass>SCP.MentalState_Voices</stateClass>
+		<stateClass>Foundation.MentalState_Voices</stateClass>
 		<label>0...</label>
 		<category>Misc</category>
 		<moodRecoveryThought>Chitchat</moodRecoveryThought>

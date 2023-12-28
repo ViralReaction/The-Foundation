@@ -5,6 +5,11 @@
 		<defName>SCP_Flame</defName>
 		<label>fire</label>
 	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>SCP_Acid</defName>
+		<label>acid</label>
+	</ToolCapacityDef>
 
 	<ToolCapacityDef>
 		<defName>SCP_Electric</defName>

@@ -10,25 +10,26 @@ using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     [StaticConstructorOnStartup]
-    internal static class SCPHarmony
+    internal static class FoundationHarmony
     {
-        static SCPHarmony()
+        static FoundationHarmony()
         {
-            Harmony harmony = new Harmony("rimworld.scp");
+            Harmony harmony = new Harmony("rw.foundation");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP939_Starving"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(SCPHarmony), "SCP939_HumansOnlyAcceptablePrey"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(Pawn), "TicksPerMove"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP939_VoicesMovementSpeed"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(JobDriver_PredatorHunt), "CheckWarnPlayer"), new HarmonyMethod(typeof(SCPHarmony), "SCP939_DontWarnPlayerHunted"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(Pawn), "TickRare"), postfix: new HarmonyMethod(typeof(SCPHarmony), "TickMindstateLeaveDaylight"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(WorldPawns), "GetSituation"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SituationSCPEvent"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP1675_Starving"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(SCPHarmony), "SCP1675_GeeseOnlyAcceptablePrey"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP2584_AlwaysFull"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(SCPHarmony), "SCP2845_AlwaysFull"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP939_Starving"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(FoundationHarmony), "SCP939_HumansOnlyAcceptablePrey"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(Pawn), "TicksPerMove"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP939_VoicesMovementSpeed"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(JobDriver_PredatorHunt), "CheckWarnPlayer"), new HarmonyMethod(typeof(FoundationHarmony), "SCP939_DontWarnPlayerHunted"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(Pawn), "TickRare"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "TickMindstateLeaveDaylight"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(WorldPawns), "GetSituation"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SituationSCPEvent"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP1675_Starving"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(FoundationHarmony), "SCP1675_GeeseOnlyAcceptablePrey"));
+            //harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP2584_AlwaysFull"));
+            //harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP2845_AlwaysFull"));
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(ThingDef), "SpecialDisplayStats"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "StatDrawEntry_Patch"));
         }
 
         public static void SCP939_Starving(Need_Food __instance, Pawn ___pawn)
@@ -102,17 +103,40 @@ namespace SCP
                 __result = true;
             return false;
         }
-        public static void SCP2584_AlwaysFull(Need_Food __instance, Pawn ___pawn)
+        //public static void SCP2584_AlwaysFull(Need_Food __instance, Pawn ___pawn)
+        //{
+        //    if (!(___pawn.def.defName == "SCP_2584_Snake"))
+        //        return;
+        //    __instance.CurLevel = 1f;
+        //}
+        //public static void SCP2845_AlwaysFull(Need_Food __instance, Pawn ___pawn)
+        //{
+        //    if (!(___pawn.def.defName == "SCP_2845_Deer"))
+        //        return;
+        //    __instance.CurLevel = 1f;
+        //}
+        public static void StatDrawEntry_Patch(ThingDef __instance, ref IEnumerable<StatDrawEntry> __result)
         {
-            if (!(___pawn.def.defName == "SCP_2584_Snake"))
+            if (!__instance.IsSCP() || __instance.IsCorpse)
                 return;
-            __instance.CurLevel = 1f;
-        }
-        public static void SCP2845_AlwaysFull(Need_Food __instance, Pawn ___pawn)
-        {
-            if (!(___pawn.def.defName == "SCP_2845_Deer"))
-                return;
-            __instance.CurLevel = 1f;
+            StatCategoryDef category = StatCategoryDefOf.Basics;
+            if (__instance.IsWeapon)
+                category = StatCategoryDefOf.Weapon;
+            else if (__instance.IsApparel)
+                category = StatCategoryDefOf.Apparel;
+            else if (__instance.IsDrug)
+                category = StatCategoryDefOf.Drug;
+            else if (__instance.isTechHediff)
+                category = StatCategoryDefOf.Implant;
+            ContainmentExtension modExtension = __instance.GetModExtension<ContainmentExtension>();
+            if (modExtension.classRating.Count == 3)
+            {
+                    __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"SCP_Contain".Translate(), (string)modExtension.classRating[0].Translate(), (string)modExtension.FindDescription(0).Translate(), 1));
+                    __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"SCP_Disrupt".Translate(), (string)modExtension.classRating[1].Translate(), (string)modExtension.FindDescription(1).Translate(), 1));
+                    __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"SCP_Risk".Translate(), (string)modExtension.classRating[2].Translate(), (string)modExtension.FindDescription(2).Translate(), 1));
+            }
+            else
+                Log.Error("SCP Harmony Patching Error: " + __instance.defName + " Does not have correct number of containment procedures.");
         }
 
     }

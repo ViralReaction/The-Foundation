@@ -311,7 +311,7 @@
 			<li>SCP_Staff</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_Staff_Shirt</li>
+			<li>Apparel_SCP_Staff_Shirt</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -367,8 +367,8 @@
 			<li>SCP_Staff</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_Staff_Shirt</li>
-			<li>SCP_Labcoat</li>
+			<li>Apparel_SCP_Staff_Shirt</li>
+			<li>Apparel_SCP_Labcoat</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -426,7 +426,7 @@
 			<li>SCP_Staff</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_Manager_Suit</li>
+			<li>Apparel_SCP_Manager_Suit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -485,7 +485,7 @@
 			<li>SCP_Staff</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_Manager_Suit</li>
+			<li>Apparel_SCP_Manager_Suit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -543,9 +543,9 @@
 			<li>SCP_Guard</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_GuardHelmet</li>
-			<li>SCP_GuardArmor</li>
-			<li>SCP_Guard_Jumpsuit</li>
+			<li>Apparel_SCP_GuardHelmet</li>
+			<li>Apparel_SCP_GuardArmor</li>
+			<li>Apparel_SCP_Guard_Jumpsuit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -553,7 +553,7 @@
 		</apparelMoney>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
-			<min>370</min>
+			<min>440</min>
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
@@ -610,9 +610,9 @@
 			<li>SCP_STF</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_MobileTaskForceHelmet</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_Guard_Jacket</li>
+			<li>Apparel_SCP_MTF_Helmet</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_Guard_Jacket</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -676,9 +676,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_SecurityTaskForceCap</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_Guard_Jacket</li>
+			<li>Apparel_SCP_SecurityTaskForceCap</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_Guard_Jacket</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -741,9 +741,9 @@
 			<li>SCP_STF</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_MobileTaskForceHelmet</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_Guard_Jacket</li>
+			<li>Apparel_SCP_MTF_Helmet</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_Guard_Jacket</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -811,9 +811,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_MobileTaskForceHelmetMask</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_MTF_Jumpsuit</li>
+			<li>Apparel_SCP_MTF_HelmetMask</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_MTF_Jumpsuit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -878,9 +878,9 @@
 		</apparelTags>
 		<apparelRequired>
 			<li>Apparel_SmokepopBelt</li>
-			<li>SCP_MobileTaskForceHelmetMask</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_MTF_Jumpsuit</li>
+			<li>Apparel_SCP_MTF_HelmetMask</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_MTF_Jumpsuit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -946,9 +946,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_MobileTaskForceHelmetMask</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_MTF_Jumpsuit</li>
+			<li>Apparel_SCP_MTF_HelmetMask</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_MTF_Jumpsuit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -1012,9 +1012,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_MobileTaskForceHelmet</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_MTF_Jumpsuit</li>
+			<li>Apparel_SCP_MTF_Helmet</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_MTF_Jumpsuit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -1079,9 +1079,9 @@
 			<li>BeltDefensePop</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>SCP_MobileTaskForceHelmetGasmask</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_MTF_Jumpsuit</li>
+			<li>Apparel_SCP_MTF_HelmetGasmask</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_MTF_Jumpsuit</li>
 		</apparelRequired>
 		<apparelMoney>
 			<min>2000</min>
@@ -1163,9 +1163,9 @@
 		</apparelTags>
 		<apparelRequired>
 			<li>Apparel_SmokepopBelt</li>
-			<li>SCP_SecurityTaskForceCap</li>
-			<li>SCP_MobileTaskForce_CryeCage</li>
-			<li>SCP_MTF_Jumpsuit</li>
+			<li>Apparel_SCP_SecurityTaskForceCap</li>
+			<li>Apparel_SCP_MTF_CryeCage</li>
+			<li>Apparel_SCP_MTF_Jumpsuit</li>
 		</apparelRequired>
 		<techHediffsChance>0.15</techHediffsChance>
 		<techHediffsMoney>

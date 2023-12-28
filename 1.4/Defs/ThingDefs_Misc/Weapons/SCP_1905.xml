@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_SCP1905R</defName>
 		<label>0.577 Tyrannosaur round</label>
-		<thingClass>SCP.Projectile_DinoHunter</thingClass>
+		<thingClass>Foundation.Projectile_DinoHunter</thingClass>
 		<graphicData>
 		<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -27,7 +27,7 @@ SCP-1905 is a stopping rifle chambered for the .577 Tyrannosaur round. SCP-1905 
 
 When SCP-1905 is loaded and within 3 meters of an individual capable of firing it, an instance of SCP-1905-1 will spontaneously manifest relatively close to SCP-1905. SCP-1905 will misfire unless it is aimed directly at an instance of SCP-1905-1.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DKeneq</li>

@@ -10,7 +10,7 @@ Object Class: Safe
 SCP-2584 has no head or tail as its body forms a continuous closed loop. Otherwise, SCP-2584’s tissue and anatomy is completely normal, save for its circular spine, circulatory system, and digestive tract.
 As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is unknown. The digestive tract of SCP-2584 cycles the same matter continuously, but is somehow able to gain metabolic energy with each cycle without expending any of the nutrients.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>
@@ -52,7 +52,7 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 			<body>Snake</body>
 			<predator>false</predator>
 			<baseBodySize>0.25</baseBodySize>
-			<baseHungerRate>0.1</baseHungerRate>
+			<baseHungerRate>0.0</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Leather_Lizard</leatherDef>

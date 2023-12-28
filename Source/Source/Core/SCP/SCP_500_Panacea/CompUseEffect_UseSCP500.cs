@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class CompUseEffect_UseSCP500 : CompUseEffect
     {

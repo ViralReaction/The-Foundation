@@ -1,5 +1,5 @@
 ﻿using RimWorld;
-using SCP;
+using Foundation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine.Assertions.Must;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class IncidentWorker_ContainmentBreach : IncidentWorker
     {

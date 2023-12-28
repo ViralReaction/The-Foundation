@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     public class MentalState_Voices : MentalState
     {

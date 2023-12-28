@@ -52,7 +52,7 @@ Object Class: Euclid
 
 Isolated samples of SCP-1797 are contained at [REDACTED], under standard containment procedures for viral agents. These samples are easily ingestible, allowing for further testing of SCP-1797-A.</description>
 	    		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>

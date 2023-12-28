@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class CompHatcher : ThingComp
     {

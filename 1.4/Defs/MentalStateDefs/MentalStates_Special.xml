@@ -4,7 +4,7 @@
 	<MentalStateDef ParentName="BaseMentalState">
 		<defName>SCP_BreachContainment</defName>
 		<label>breaking containment</label>
-		<stateClass>SCP.MentalState_ContainmentBreach</stateClass>
+		<stateClass>Foundation.MentalState_ContainmentBreach</stateClass>
 		<category>Aggro</category>
 		<minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
 		<nameColor>(0.65, 0.9, 0.93)</nameColor>
@@ -21,8 +21,8 @@
 	</MentalBreakDef>
 	<MentalStateDef Name="SCP_ContainmentBreaker" ParentName="BaseMentalState">
 		<defName>SCP_ContainmentBreaker</defName>
-		<stateClass>SCP.Containment.MentalState_ContainmentBreaker</stateClass>
-		<workerClass>SCP.Containment.MentalStateWorker_ContainmentBreaker</workerClass>
+		<stateClass>Foundation.Containment.MentalState_ContainmentBreaker</stateClass>
+		<workerClass>Foundation.Containment.MentalStateWorker_ContainmentBreaker</workerClass>
 		<label>inducing a containment breach</label>
 		<category>Malicious</category>
 		<blockInteractionInitiationExcept>

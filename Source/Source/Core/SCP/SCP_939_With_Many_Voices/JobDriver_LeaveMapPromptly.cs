@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse.AI;
 
-namespace SCP
+namespace Foundation
 {
     public class JobDriver_LeaveMapPromptly : JobDriver
     {

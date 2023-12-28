@@ -8,7 +8,7 @@ Object Class: Safe
 		
 Te object constitutes a line of anomalous weaponry based on the RPO-A Shmel. SCP-095-UA can be distinguished from the non-anomalous weapons of the same type by the distinctive marking of its lid, which consists of three solid lines – of yellow, black, and yellow colour. SCP-095-UA is equipped with an extremely, unnaturally, accurate projectile. It has strange, likely sarkic symbols and blood on the inside of the barrel.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DKeneq</li>

@@ -9,7 +9,7 @@ Object Class: Safe
 			
 SCP-5185 are an unclassified subspecies of giant house spider. Each possesses the physical, psychological, and social needs of an average domesticated canine.Some SCP-5185 instances have been observed showing aggressive behaviour towards staff, charging at researchers while making high pitched noises similar to growling, biting the chain link fence, and lunging.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>
@@ -128,7 +128,7 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 					<!-- <color>(114,107,84)</color> -->
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5185/SCP_Dessicated_SCP5185</texPath>
+					<texPath>Things/Pawn/Animal/SCP_5185/Dessicated_SCP_5185</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -138,7 +138,7 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5185/Dessicated_SCP5185</texPath>
+					<texPath>Things/Pawn/Animal/SCP_5185/Dessicated_SCP_5185</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -152,7 +152,7 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5185/Dessicated_SCP5185</texPath>
+					<texPath>Things/Pawn/Animal/SCP_5185/Dessicated_SCP_5185</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

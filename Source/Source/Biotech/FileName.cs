@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP.Biotech
+namespace Foundation.Biotech
 {
     public class SCPGeneDef : GeneDef
     {

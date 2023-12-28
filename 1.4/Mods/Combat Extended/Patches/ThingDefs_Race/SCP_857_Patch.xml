@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<!-- SCP-857 Base -->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[@Name="SCP_857Base"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Serpentine</bodyShape>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- Add Statebase to all -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="SCP_857A" or 
+		defName="SCP_857B" or
+		defName="SCP_857C" or
+		defName="SCP_857E" or
+		defName="SCP_857G" or
+		defName="SCP_857H" or
+		defName="SCP_857I"]/statBases		</xpath>
+		<value>
+			<MeleeDodgeChance>0.28</MeleeDodgeChance>
+			<MeleeCritChance>0.02</MeleeCritChance>
+			<MeleeParryChance>0.02</MeleeParryChance>
+		</value>
+	</Operation>
+	
+	<!-- SCP-857 A -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SCP_857A"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>teeth</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					<chanceFactor>0.07</chanceFactor>
+					<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+					<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+					<armorPenetrationSharp>0.15</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>4.49</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<!-- SCP-857 B -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SCP_857B"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>vena cava</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>1.26</cooldownTime>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<!-- SCP-857 C -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SCP_857C"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>brain</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>1.26</cooldownTime>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<!-- SCP-857 E -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SCP_857E"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>vertebrate</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>1.26</cooldownTime>
+					<armorPenetrationSharp>0.5</armorPenetrationSharp>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<!-- SCP-857 G -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SCP_857G"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left protrusion</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+					<armorPenetrationSharp>1</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right protrusion</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+					<armorPenetrationSharp>1</armorPenetrationSharp>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<!-- SCP-857 E -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SCP_857H"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>vertebrosternal rib</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>1.4</cooldownTime>
+					<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+					<armorPenetrationSharp>0.5</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>vertebrochondral rib</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+					<armorPenetrationSharp>1</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>ribcage body slam</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	
+	<!-- SCP-857 E -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SCP_857I"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>1.26</cooldownTime>
+					<!-- <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup> -->
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>1.26</cooldownTime>
+					<!-- <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup> -->
+					<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>teeth</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>1</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					<chanceFactor>0.07</chanceFactor>
+					<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+					<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+					<armorPenetrationSharp>0.15</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>2</power>
+					<cooldownTime>4.49</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<chanceFactor>0.2</chanceFactor>
+					<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+</Patch>

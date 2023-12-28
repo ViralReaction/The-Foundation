@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Verse;
 using static UnityEngine.GraphicsBuffer;
 
-namespace SCP
+namespace Foundation
 {
     public class IngestionOutcomeDoer_IngestSCP578 : IngestionOutcomeDoer
     {

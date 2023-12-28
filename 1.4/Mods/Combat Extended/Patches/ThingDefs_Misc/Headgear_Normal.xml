@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Hats-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_GOC_StrikeTeamBoonie" or
+						defName="Apparel_SCP_SecurityTaskForceCap" or
+						defName="Apparel_CI_Cap" or
+						defName="Apparel_CI_Boonie" or
+						defName="Apparel_CI_Beret"
+						]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_CI_Balaclava"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<Bulk>0.5</Bulk>
+			<StuffEffectMultiplierArmor>1.5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_CI_Balaclava"]/apparel/layers</xpath>
+		<value>
+			<layers>
+				<li>OnHead</li>
+			</layers>
+		</value>
+	</Operation>
+
+	<!-- FAST Helmet -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_Helmet" or
+						defName="Apparel_SCP_MTF_HelmetMask" or
+						defName="Apparel_SCP_MTF_HelmetGasmask"
+						]/statBases</xpath>
+		<value>
+			<Bulk>3.5</Bulk>
+			<WornBulk>1</WornBulk>
+			<ArmorRating_Sharp>8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>16</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_Helmet" or
+						defName="Apparel_SCP_MTF_HelmetMask" or
+						defName="Apparel_SCP_MTF_HelmetGasmask"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- ACH Helmet -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apprel_CI_Helmet" or
+						defName="Apprel_CI_HelmetMask" or
+						defName="Apparel_CI_HelmetGasmask" or
+						defName="Apparel_SCP_GuardHelmet" or
+						defName="Apparel_GOC_SecurityHelmet"
+						]/statBases		</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+			<ArmorRating_Sharp>7</ArmorRating_Sharp>
+			<ArmorRating_Blunt>16</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apprel_CI_Helmet" or
+						defName="Apprel_CI_HelmetMask" or
+						defName="Apparel_CI_HelmetGasmask" or
+						defName="Apparel_SCP_GuardHelmet" or
+						defName="Apparel_GOC_SecurityHelmet"
+						]/statBases/StuffEffectMultiplierArmor		</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Felin Helmet -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_GOC_ST_Helmet" or
+						defName="Apparel_GOC_ST_HelmetMask" or
+						defName="Apparel_GOC_ST_HelmetGasmask"
+						]/statBases		</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+			<ArmorRating_Sharp>6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>14</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_GOC_ST_Helmet" or
+						defName="Apparel_GOC_ST_HelmetMask" or
+						defName="Apparel_GOC_ST_HelmetGasmask"
+						]/statBases/StuffEffectMultiplierArmor		</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Gas Mask -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_HelmetGasmask" or
+						defName="Apparel_GOC_ST_HelmetGasmask" or
+						defName="Apparel_CI_HelmetGasmask"]		</xpath>
+		<value>
+			<li Class="CombatExtended.ApparelHediffExtension">
+				<hediff>WearingGasMask</hediff>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

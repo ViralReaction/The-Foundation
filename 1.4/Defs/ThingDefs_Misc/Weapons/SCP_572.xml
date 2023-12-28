@@ -9,7 +9,7 @@ Object Class: Safe
 		
 SCP-572 is a sword of the [REDACTED] model manufactured by DATA EXPUNGED. However, the weapon has the unusual psychotropic quality of convincing any person who holds it of its "balance" and "cutting power", as well as conferring feelings of great strength and invincibility.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DVlam</li>

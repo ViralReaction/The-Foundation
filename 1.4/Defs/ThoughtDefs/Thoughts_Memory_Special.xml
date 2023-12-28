@@ -48,7 +48,7 @@
 
 	<ThoughtDef>
 		<defName>SCP_EquippedLivingWeapon</defName>
-		<workerClass>SCP.ThoughtWorker_LivingWeaponEquipped</workerClass>
+		<workerClass>Foundation.ThoughtWorker_LivingWeaponEquipped</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -61,7 +61,7 @@
 
 	<ThoughtDef>
 		<defName>SCP_EquippedLivingWeaponPsycho</defName>
-		<workerClass>SCP.ThoughtWorker_LivingWeaponEquippedPsycho</workerClass>
+		<workerClass>Foundation.ThoughtWorker_LivingWeaponEquippedPsycho</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<requiredTraits>
 			<li>Psychopath</li>
@@ -77,7 +77,7 @@
 
 	<ThoughtDef>
 		<defName>SCP_EquippedKatana</defName>
-		<workerClass>SCP.ThoughtWorker_EquippedKatana</workerClass>
+		<workerClass>Foundation.ThoughtWorker_EquippedKatana</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -90,7 +90,7 @@
 
 	<ThoughtDef>
 		<defName>SCP_Infected_SCP939</defName>
-		<workerClass>SCP.ThoughtWorker_SCP939</workerClass>
+		<workerClass>Foundation.ThoughtWorker_SCP939</workerClass>
 		<stages>
 			<li>
 				<label>SCP-939 nearby</label>
@@ -102,7 +102,7 @@
 
 	<ThoughtDef>
 		<defName>SCP_Infected_SCP1797_Flu</defName>
-		<workerClass>SCP.ThoughtWorker_KittenFlu</workerClass>
+		<workerClass>Foundation.ThoughtWorker_KittenFlu</workerClass>
 		<stages>
 			<li>
 				<label>Sick with Kitten Flu</label>
@@ -130,7 +130,7 @@
 	
 	<ThoughtDef>
 		<defName>SCP_TransmuteTime</defName>
-		<workerClass>SCP.ThoughtWorker_SCP2845</workerClass>
+		<workerClass>Foundation.ThoughtWorker_SCP2845</workerClass>
 		<stages>
 			<li>
 				<label>SCP-2845 Transmutation Aura</label>
@@ -142,7 +142,7 @@
 	
 	<ThoughtDef>
 		<defName>SCP_30333_MikeUnit</defName>
-		<workerClass>SCP.ThoughtWorker_SCP3033Mike</workerClass>
+		<workerClass>Foundation.ThoughtWorker_SCP3033Mike</workerClass>
 		<validWhileDespawned>false</validWhileDespawned>
 		<stages>
 			<li>
@@ -155,7 +155,7 @@
   
 	<ThoughtDef>
 		<defName>SCP_3033_MikeUnitIdle</defName>
-		<workerClass>SCP.ThoughtWorker_SCP3033MikeIdle</workerClass>
+		<workerClass>Foundation.ThoughtWorker_SCP3033MikeIdle</workerClass>
 		<stages>
 			<li>
 				<label>SCP-3033-1 implant</label>

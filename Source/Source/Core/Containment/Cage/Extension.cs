@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP.Cage
+namespace Foundation.Cage
 {
     internal class CageExtension : DefModExtension
     {

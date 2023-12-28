@@ -3,7 +3,7 @@
 
 	<JobDef>
 		<defName>LeaveMapDaylight</defName>
-		<driverClass>SCP.JobDriver_LeaveMapPromptly</driverClass>
+		<driverClass>Foundation.JobDriver_LeaveMapPromptly</driverClass>
 		<reportString>Fleeing sunlight.</reportString>
 		<suspendable>false</suspendable>
 		<playerInterruptible>false</playerInterruptible>
@@ -11,7 +11,7 @@
 
 	<JobDef>
 		<defName>InduceContaintmentBreak</defName>
-		<driverClass>SCP.Containment.JobDriver_ContainmentBreaker</driverClass>
+		<driverClass>Foundation.Containment.JobDriver_ContainmentBreaker</driverClass>
 		<reportString>inducing TargetA to escape.</reportString>
 	</JobDef>
 

@@ -8,7 +8,7 @@
 Object Class: Keter
 		
 A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance, and most life is infested with SCP-610. Don't let them touch you.\n\nWARNING: Difficult starting location due to sparse resources, wildlife hostility, and SCP-610's fatal disease.</description>
-		<workerClass>SCP.BiomeWorker_SCP610</workerClass>
+		<workerClass>Foundation.BiomeWorker_SCP610</workerClass>
 		<allowFarmingCamps>false</allowFarmingCamps>
 		<animalDensity>2</animalDensity>
 		<plantDensity>2</plantDensity>

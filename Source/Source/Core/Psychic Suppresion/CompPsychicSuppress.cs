@@ -24,7 +24,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace SCP
+namespace Foundation
 
 {
     public class CompPsychicSuppressionField : ThingComp

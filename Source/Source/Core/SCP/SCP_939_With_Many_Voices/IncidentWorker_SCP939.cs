@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     public class IncidentWorker_SCP939 : IncidentWorker_MakeGameCondition
     {

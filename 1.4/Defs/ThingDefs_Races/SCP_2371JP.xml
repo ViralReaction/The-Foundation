@@ -11,7 +11,7 @@ SCP-2371-JP is a leguminous plant with characteristics similar to those of domes
 
 After germination, SCP-2371-JP begins to take in nutrients by eating, and grows to the same height as a normal cow by feeding on soil and water containing SCP-2371-JP-1. When the part corresponding to papillae of a fully grown SCP-2371-JP are compressed, a fluid that is identical in composition to soymilk is discharged from that part.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

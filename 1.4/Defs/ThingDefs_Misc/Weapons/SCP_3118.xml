@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>SCP_Bullet_SCP3118R</defName>
 		<label>pistol bullet</label>
-		<thingClass>SCP.Projectile_LunchGun</thingClass>
+		<thingClass>Foundation.Projectile_LunchGun</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -26,7 +26,7 @@ SCP-3118 is a Beretta M9 pistol. Its anomalous effects activate only when it is 
 
 A bullet fired in this way will dematerialize upon contact with the cranium, and instead of an exit wound and ejecta, SCP-3118-1 will emerge from the far side of the cranium along the bullet's path. SCP-3118-1 is an exact recreation of something the subject has eaten for lunch at some point in their life, including containers and utensils used to consume the meal.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DVlam</li>

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine.SocialPlatforms;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     internal class Projectile_LunchGun : Bullet
     {

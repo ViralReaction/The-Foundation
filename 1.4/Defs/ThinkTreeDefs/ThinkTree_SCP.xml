@@ -365,7 +365,7 @@
   
 	<ThinkTreeDef>
 		<defName>TryContainmentBreach</defName>
-		<thinkRoot Class="SCP.ThinkNode_ContainmentBreach">
+		<thinkRoot Class="Foundation.ThinkNode_ContainmentBreach">
 			<tagToGive>InMentalState</tagToGive>
 			<subNodes>
 				<li Class="ThinkNode_Tagger">

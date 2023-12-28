@@ -36,9 +36,19 @@
 			<li>ConsciousnessSource</li>
 		</tags>
 	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>PillarBod</defName>
+		<label>Pillar</label>
+		<hitPoints>40</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	 </BodyPartDef>
 
 	<BodyPartDef>
-		<defName>SCP_857_Enchantment</defName>
+		<defName>SCP_Hume_Enchant</defName>
 		<label>anomalous enchantment</label>
 		<hitPoints>51</hitPoints>
 		<frostbiteVulnerability>0</frostbiteVulnerability>
@@ -65,6 +75,7 @@
 			<li>BreathingSource</li>
 			<li>BloodPumpingSource</li>
 			<li>BloodFiltrationSource</li>
+			<li>SightSource</li>
 		</tags>
 	</BodyPartDef>
 

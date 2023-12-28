@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     public class ThoughtWorker_Precept_SCP_Social : ThoughtWorker_Precept_Social
     {

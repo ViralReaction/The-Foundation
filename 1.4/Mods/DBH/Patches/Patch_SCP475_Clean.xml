@@ -14,7 +14,7 @@
 						<xpath>Defs/ThingDefs[defName="SCP475_Soap"]/comps</xpath>
 						<value>
 							<li Class="CompProperties_UseEffect">
-								<compClass>SCP.CompUseEffect_UseSCP475_Clean</compClass>
+								<compClass>Foundation.CompUseEffect_UseSCP475_Clean</compClass>
 							</li>
 						</value>
 					</match>

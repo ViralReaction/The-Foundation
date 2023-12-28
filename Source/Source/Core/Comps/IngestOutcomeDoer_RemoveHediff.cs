@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 { 
 // Removes Hediff specified between <hediff></hediff> in in the comp upon ingestion. Useful for antidotes and such.
 public class IngestionOutcomeDoer_RemoveHediff : IngestionOutcomeDoer

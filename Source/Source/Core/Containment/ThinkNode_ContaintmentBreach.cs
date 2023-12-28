@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
-using SCP;
+using Foundation;
 using UnityEngine.Assertions.Must;
 
-namespace SCP
+namespace Foundation
 {
     internal class ThinkNode_ContainmentBreach : ThinkNode_ConditionalMentalStates
     {

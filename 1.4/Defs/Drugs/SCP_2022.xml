@@ -12,7 +12,7 @@ SCP-2022 are [SR] gelatin capsules that compress and constantly emit electromagn
 Subjects taking the supplement have reported feeling a gentle tropical breeze, scents of sea water, faint sounds of crashing waves, and a pleasant warmth within their bodiesSCP-2022 is a glowing yellow gelatin pill that improves immune health and gives pleasant thoughts. 
 Overuse of the supplements increase this sensation, with the test group experiencing increased burning sensations in organs, development of photosensitivity, sunburn, inflammation, dim to intense bioluminescence, Hypervitaminosis D, vomiting, nausea, dehydration, decreased appetite, insomnia, constipation, fatigue, irritability, myasthenia, and metastatic calcification. Other severe cases have reported various forms of cancer, large kidney stones, hypercalcemia, xeroderma, actinic keratosis, polymorphous light eruption, cataracts, macular degeneration, immune suppression, abnormal vascular functionality, solar elastosis, 1st-3rd degree (internal and external) burns, invisibility from the visible spectrum, and [REDACTED].</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

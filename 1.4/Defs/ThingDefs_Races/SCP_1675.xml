@@ -11,7 +11,7 @@ Object Class: Safe
 SCP-1675 is a digitigrade bipedal automaton of unknown manufacture that is apparently capable of indefinite operation with no detectable external power source or need for fuel. Under normal circumstances, SCP-1675 is docile and harmless; left to its own devices, it will wander its containment area listlessly and does not pose a danger to any personnel.
 Whenever SCP-1675 is exposed to a specimen of genus Anser, Branta, or Chen, it will become highly aggressive and attempt to kill the specimen by any means possible. SCP-1675 is single-minded, efficient, and exhibits possible intelligence in its ability to operate tactically when need arises.Periodically and while attacking such specimens, SCP-1675 will emit audible speech from a speaker located near its head, generally consisting of anti-avian propaganda in French.</description>
 		<modExtensions>
-			<li Class="SCP.ContainmentExtension">
+			<li Class="Foundation.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>
@@ -42,7 +42,7 @@ Whenever SCP-1675 is exposed to a specimen of genus Anser, Branta, or Chen, it w
 			<thinkTreeMain>SCP_AI</thinkTreeMain>
 			<body>Scyther</body>
 			<predator>true</predator>
-			<baseHealthScale>0.72</baseHealthScale>
+			<baseHealthScale>1.3</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<wildness>0</wildness>
 			<roamMtbDays>2</roamMtbDays>
@@ -112,6 +112,8 @@ Whenever SCP-1675 is exposed to a specimen of genus Anser, Branta, or Chen, it w
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<comps>
+		</comps>
 	
 	</ThingDef>
 	<PawnKindDef Name="SCP_SCP1675R">

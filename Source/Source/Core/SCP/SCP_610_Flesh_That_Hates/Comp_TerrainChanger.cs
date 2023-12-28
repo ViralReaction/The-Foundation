@@ -1,5 +1,6 @@
-﻿using RimWorld;
-using SCP.Comps;
+﻿using Foundation.Comps;
+using RimWorld;
+using Foundation.Comps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using Verse;
 using Verse.Sound;
 using static HarmonyLib.Code;
 
-namespace SCP
+namespace Foundation
 {
     public class Comp_TerrainChanger : ThingComp
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP.Comps
+namespace Foundation.Comps
 {
     // Created due to how CompEmptyGraphics works. Checks opposite of CompEmpty, so SCP_1695 can work nicely
     public class CompProperties_TerrainChanger : CompProperties

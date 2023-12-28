@@ -1,5 +1,5 @@
 ﻿using RimWorld;
-using SCP.Cage;
+using Foundation.Cage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace SCP
+namespace Foundation
 {
     [StaticConstructorOnStartup]
     public static class Utils
@@ -16,6 +16,12 @@ namespace SCP
         public static bool IsSCP(this Pawn pawn)
         {
             if (pawn.def.GetModExtension<ContainmentExtension>() != null)
+                return true;
+            return false;
+        }
+        public static bool IsSCP(this ThingDef thing)
+        {
+            if (thing.GetModExtension<ContainmentExtension>() != null)
                 return true;
             return false;
         }

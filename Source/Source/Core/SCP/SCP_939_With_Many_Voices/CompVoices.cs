@@ -9,7 +9,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace SCP
+namespace Foundation
 {
     public class CompVoices : ThingComp
     {
