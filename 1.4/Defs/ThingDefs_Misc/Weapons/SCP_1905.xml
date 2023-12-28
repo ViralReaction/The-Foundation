@@ -6,7 +6,7 @@
 		<label>0.577 Tyrannosaur round</label>
 		<thingClass>Foundation.Projectile_DinoHunter</thingClass>
 		<graphicData>
-		<texPath>Things/Projectile/Bullet_Big</texPath>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
@@ -42,13 +42,13 @@ When SCP-1905 is loaded and within 3 meters of an individual capable of firing i
 			<texPath>Things/Item/Equipment/WeaponRanged/SCP_1905</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-    <soundInteract>Interact_Shotgun</soundInteract>
+		<soundInteract>Interact_Shotgun</soundInteract>
 		<weaponTags>
 			<li>SCP_</li>
 		</weaponTags>
 		<weaponClasses>
-		<li>LongShots</li>
-		<li>RangedHeavy</li>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
 		</weaponClasses>
 		<tradeTags>
 			<li>ExoticMisc</li>
@@ -59,11 +59,11 @@ When SCP-1905 is loaded and within 3 meters of an individual capable of firing i
 		</thingSetMakerTags>
 		<statBases>
 			<MarketValue>500</MarketValue>
-		<Mass>4</Mass>
-		<AccuracyTouch>0.50</AccuracyTouch>
-		<AccuracyShort>0.70</AccuracyShort>
-		<AccuracyMedium>0.86</AccuracyMedium>
-		<AccuracyLong>0.88</AccuracyLong>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
 			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
 		</statBases>
 		<thingCategories>
@@ -77,11 +77,30 @@ When SCP-1905 is loaded and within 3 meters of an individual capable of firing i
 				<defaultProjectile>Bullet_SCP1905R</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<range>42</range>
-        <soundCast>Shot_SniperRifle</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+				<soundCast>Shot_SniperRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
 	</ThingDef>
 
 </Defs>

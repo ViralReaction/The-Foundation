@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Foundation_Tranq</defName>
+		<label>tranq dart</label>
+		<ammoTypes>
+			<Ammo_Foundation_Tranq>Bullet_Foundation_Tranq</Ammo_Foundation_Tranq>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="762x51mmNATOBase">
+		<defName>Ammo_Foundation_Tranq</defName>
+		<label>tranq dart cartridge</label>
+		<graphicData>
+			<texPath>Things/Projectile/TranqDart</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.85</MarketValue>
+		</statBases>
+		<ammoClass>TranqNonLethal</ammoClass>
+		<cookOffProjectile>Bullet_Foundation_Tranq</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="Base762x51mmNATOBullet">
+		<defName>Bullet_Foundation_Tranq</defName>
+		<label>tranquilizer dart</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>SCP_TranqRanged</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<armorPenetrationSharp>1.85</armorPenetrationSharp>
+			<armorPenetrationBlunt>12.85</armorPenetrationBlunt>
+			<speed>43</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_Foundation_Tranq</defName>
+		<label>make tranq dart cartridge x200</label>
+		<description>Craft 200 tranq dart cartridges.</description>
+		<jobString>Making tranq dart cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Foundation_Tranq>200</Ammo_Foundation_Tranq>
+		</products>
+		<workAmount>3800</workAmount>
+	</RecipeDef>
+
+</Defs>

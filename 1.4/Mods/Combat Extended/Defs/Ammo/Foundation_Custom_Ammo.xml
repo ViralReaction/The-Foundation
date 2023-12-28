@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Teeth Bullets -->
+	<ThingDef ParentName="Base9x19mmParaBullet">
+		<defName>Bullet_Tooth</defName>
+		<label>tooth bullet</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationSharp>8</armorPenetrationSharp>
+			<armorPenetrationBlunt>9.66</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+</Defs>

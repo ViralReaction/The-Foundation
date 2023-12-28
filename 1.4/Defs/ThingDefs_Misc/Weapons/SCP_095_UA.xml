@@ -33,7 +33,7 @@ Te object constitutes a line of anomalous weaponry based on the RPO-A Shmel. SCP
 			<li>SCP</li>
 		</tradeTags>
 		<statBases>
-			<Mass>5</Mass>
+			<Mass>8</Mass>
 			<MarketValue>3000</MarketValue>
 			<AccuracyTouch>0.4</AccuracyTouch>
 			<AccuracyShort>2</AccuracyShort>
