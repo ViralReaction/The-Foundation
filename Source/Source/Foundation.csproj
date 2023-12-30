@@ -133,9 +133,9 @@
     <Compile Include="Core\Utilities\DefOf\SCPDefOf.cs" />
     <Compile Include="Core\Utilities\DefOf\ThingDefOf_SCP.cs" />
     <Compile Include="Core\Utilities\SCPRadius.cs" />
-    <Compile Include="FileName - Copy - Copy.cs" />
-    <Compile Include="FileName - Copy.cs" />
-    <Compile Include="FileName.cs" />
+    <Compile Include="Gizmo_HumeShield.cs" />
+    <Compile Include="Core\Comps\Properties\CompProperties_HumeShield.cs" />
+    <Compile Include="Core\Comps\CompHumeShield.cs" />
     <Compile Include="Ideology\Harmony.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_SCP.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_SCP_InColony.cs" />

@@ -10,6 +10,7 @@ Church of the Broken God: "Church of the Broken God Hub" by HammerMaiden, from t
 SCP	|
 ---	|	
 SCP-095-UA: "SCP-095-UA: by Comrade Xander, from the SCP Wiki. Source: http://scp-int.wikidot.com/scp-095-ua. Licensed under CC-BY-SA.	|
+SCP-106: "SCP-106" by Dr. Gears, from the SCP Wiki. Source: https://scpwiki.com/scp-106. Licensed under CC-BY-SA	|
 SCP-111: "SCP-111" by Adam Henderson, from the SCP Wiki. Source: https://scpwiki.com/scp-111. Licensed under CC-BY-SA.	|
 SCP-113: "SCP-113" by kabu, rewritten by Robin Sure and thedeadlymoose, from the SCP Wiki. Source: https://scpwiki.com/scp-113. Licensed under CC-BY-SA. |
 SCP-127: "SCP-127" by far2, from the SCP Wiki. Source: https://scpwiki.com/scp-127. Licensed under CC-BY-SA.	|
@@ -24,7 +25,6 @@ SCP-578: "SCP-578" by PaladinFoster, from the SCP Wiki. Source: https://scpwiki.
 SCP-594: "SCP-594" by V the Happy Lurker. Source: https://scpwiki.com/scp-594. Licensed under CC-BY-SA. |
 SCP-610: "SCP-610" by NekoChris, from the SCP Wiki. Source: https://scpwiki.com/scp-610. Licensed under CC-BY-SA.	|
 SCP-762: "SCP-762" by Agent Peters, from the SCP Wiki. Source: https://scpwiki.com/scp-762. Licensed under CC-BY-SA.	|
-SCP-857: "SCP-857" by Tanhony, from the SCP Wiki. Source: https://scpwiki.com/scp-857 . Licensed under CC-BY-SA.	|
 SCP-939: "SCP-939" by Adam Smascher and EchoFourDelta, from the SCP Wiki. Source: https://scpwiki.com/scp-939. Licensed under CC-BY-SA.	|
 SCP-1577: "SCP-1577" by General Harland, Voct, from the SCP Wiki. Source: https://scpwiki.com/scp-1577. Licensed under CC-BY-SA.	|
 SCP-1675: "SCP-1675" by Aelanna, from the SCP Wiki. Source: https://scpwiki.com/scp-1675. Licensed under CC-BY-SA.	|
@@ -63,7 +63,6 @@ SCP-250 Texture by DeeManiac: Source:https://steamcommunity.com/sharedfiles/file
 SCP-262 Texture by DeeManiac: Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627 . Licensed under CC-BY-SA.	|
 SCP-475 Texture by DeeManiac. Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627 . Licensed under CC-BY-SA.	|
 SCP-762 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Licensed under CC-BY-SA.	|
-SCP-857 Texture by DeeManiac. Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627 . Licensed under CC-BY-SA.	|
 SCP-939 Texture by Unknown Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2207934307 . Licensed under CC-BY-SA.	|
 SCP-1675 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Licensed under CC-BY-SA.	|
 SCP-1695 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Licensed under CC-BY-SA.	|
@@ -74,6 +73,7 @@ SCP-2845 Texture by DeeManiac. Source:https://steamcommunity.com/sharedfiles/fil
 SCP-3199 Texture by DeeManiac. Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627 . Licensed under CC-BY-SA.	|
 SCP-5185 Texture by DeeManiac. Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627 . Licensed under CC-BY-SA.	|
 SCP-5893 Texture by DeeManiac. Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627 . Licensed under CC-BY-SA.	|
+Auto-injector syringes by Viral Reaction. Licensed under CC-BY-SA.	|
 
 Code	|
 ---	|

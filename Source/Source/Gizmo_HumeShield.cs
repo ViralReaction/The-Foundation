@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-using Verse.Sound;
+using Foundation.Comps;
 using Verse;
 
 namespace Foundation

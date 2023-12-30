@@ -25,6 +25,7 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 			<FilthRate>0</FilthRate>
 			<MeatAmount>0</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
+			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<butcherProducts>
 			<Steel>16</Steel>
@@ -45,7 +46,7 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 			<baseHungerRate>0.9</baseHungerRate>
 			<baseHealthScale>5</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
-			<leatherDef>Human_Leather</leatherDef>
+			<leatherDef>Leather_Human</leatherDef>
 			<useMeatFrom>Human</useMeatFrom>
 			<wildness>10</wildness>
 			<trainability>Advanced</trainability>
@@ -53,7 +54,6 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 			<lifeExpectancy>500</lifeExpectancy>
 			<manhunterOnTameFailChance>10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>10</manhunterOnDamageChance>
-			<toxicResistance>1</toxicResistance>
 			<lifeStageAges Inherit="False">
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -122,7 +122,7 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 				<jumpRange>10</jumpRange>
 				<directAttackRange>3</directAttackRange>
 			</li>
-			<li Class="Foundation.CompProperties_HumeShield">
+			<li Class="Foundation.Comps.CompProperties_HumeShield">
 				<startingTicksToReset>600</startingTicksToReset>
 				<EnergyShieldEnergyMax>30</EnergyShieldEnergyMax>
 				<energyOnReset>60</energyOnReset>

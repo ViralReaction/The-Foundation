@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using Foundation.SRA;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,50 +20,72 @@ namespace Foundation
         private Pawn targetHunted;
         public Pawn oldMan => this.parent as Pawn;
         private CompProperties_OldMan Props => (CompProperties_OldMan)this.props;
-        private bool validTarget = false;
 
 
         public override void CompTick()
         {
             base.CompTick();
             ++tickCounter;
-            if (tickCounter > Props.tickInterval && !oldMan.Downed)
+            if (tickCounter > Props.tickInterval)
             {
-                validTarget = false;
-                if ((oldMan.CurJobDef == JobDefOf.PredatorHunt || oldMan.CurJob.def == JobDefOf.AttackMelee) && this.WithinJumpRange(oldMan.CurJob.targetA.Thing.Position))
+                if (!this.ScrantonCheck() && !oldMan.Downed)
                 {
+                    Log.Message("Tick Counter");
+                    if ((oldMan.CurJobDef == JobDefOf.PredatorHunt || oldMan.CurJob.def == JobDefOf.AttackMelee || oldMan.mindState.mentalStateHandler.InMentalState) && this.WithinJumpRange(oldMan.CurJob.targetA.Thing.Position))
+                    {
 
-                    this.targetHunted = this.oldMan?.CurJob?.targetA.Thing as Pawn;
-                }
-                else if (oldMan.mindState.mentalStateHandler.InMentalState || oldMan.GetRoom().Role == SCP_Startup.containmentRoom)
-                {
-                    List<Pawn> pawnList = SCPRadius.GetPawnsAround(oldMan.Position, Props.jumpRange, oldMan.MapHeld);
-                    for (int index = 0; index < pawnList.Count && !validTarget; index++)
-                    {
-                        this.targetHunted = pawnList[index];
-                        if (targetHunted != oldMan && !targetHunted.NonHumanlikeOrWildMan() && !this.TooCloseToJump())
-                            validTarget = true;
+                        this.targetHunted = this.oldMan?.CurJob?.targetA.Thing as Pawn;
                     }
-                }
-                if (!this.TooCloseToJump())
-                {
-                    List<Thing> source = new List<Thing>();
-                    source.Add(oldMan);
-                    IntVec3 pawnPos = targetHunted.Position;
-                    GenExplosion.DoExplosion(oldMan.Position, targetHunted.MapHeld, 1, SCPDefOf.SCP_106_Oldman_Scratch, oldMan, 1, 100, SoundDefOf.Corpse_Drop, postExplosionSpawnThingDef: ThingDefOf_SCP.Filth_OldMan, postExplosionSpawnChance: 1, postExplosionSpawnThingCount: 1, postExplosionGasType: null, applyDamageToExplosionCellsNeighbors: false, preExplosionSpawnThingDef: null, preExplosionSpawnChance: 0, preExplosionSpawnThingCount: 0, chanceToStartFire: 0, damageFalloff: false, ignoredThings: source, doVisualEffects: false, propagationSpeed: 1);
-                    GenExplosion.DoExplosion(pawnPos, targetHunted.MapHeld, 1, SCPDefOf.SCP_106_Oldman_Scratch, oldMan, 1, 100, SoundDefOf.Corpse_Drop, postExplosionSpawnThingDef: ThingDefOf_SCP.Filth_OldMan, postExplosionSpawnChance: 1, postExplosionSpawnThingCount: 1, postExplosionGasType: null, applyDamageToExplosionCellsNeighbors: false, preExplosionSpawnThingDef: null, preExplosionSpawnChance: 0, preExplosionSpawnThingCount: 0, chanceToStartFire: 0, damageFalloff: false, ignoredThings: source, doVisualEffects: false, propagationSpeed: 1);
-                    oldMan.pather.StopDead();
-                    oldMan.Position = pawnPos;
-                    oldMan.pather.ResetToCurrentPosition();
-                    if (oldMan.CurJobDef != JobDefOf.PredatorHunt || oldMan.CurJobDef != JobDefOf.AttackMelee || !oldMan.mindState.mentalStateHandler.InMentalState)
+                    else if (oldMan.CurJob.def == JobDefOf.GotoWander || oldMan.CurJob.def == JobDefOf.Wait_Wander || oldMan.CurJob.def == JobDefOf.Wait_MaintainPosture || oldMan.GetRoom().Role == SCP_Startup.containmentRoom)
                     {
-                        Job job = JobMaker.MakeJob(JobDefOf.PredatorHunt, (LocalTargetInfo)(Thing)targetHunted);
-                        oldMan.jobs.TryTakeOrderedJob(job);
+                        Log.Message("Check");
+                        List<Pawn> pawnList = SCPRadius.GetPawnsAround(oldMan.Position, Props.jumpRange, oldMan.MapHeld);
+                        for (int index = 0; index < pawnList.Count; index++)
+                        {
+                            this.targetHunted = pawnList[index];
+                            if (targetHunted != oldMan && !targetHunted.NonHumanlikeOrWildMan() && !this.TooCloseToJump())
+                            {
+                                goto label_19;
+                            }
+                        }
                     }
-                    oldMan.pather.StartPath(oldMan.CurJob.targetA.Cell, PathEndMode.ClosestTouch);
+                label_19:
+                    if (!this.TooCloseToJump() && !this.ScrantonStop())
+                    {
+                        List<Thing> source = new List<Thing>();
+                        source.Add(oldMan);
+                        IntVec3 pawnPos = targetHunted.Position;
+                        GenExplosion.DoExplosion(oldMan.Position, targetHunted.MapHeld, 1, SCPDefOf.SCP_106_Oldman_Scratch, oldMan, 1, 100, SoundDefOf.Corpse_Drop, postExplosionSpawnThingDef: ThingDefOf_SCP.Filth_OldMan, postExplosionSpawnChance: 1, postExplosionSpawnThingCount: 1, postExplosionGasType: null, applyDamageToExplosionCellsNeighbors: false, preExplosionSpawnThingDef: null, preExplosionSpawnChance: 0, preExplosionSpawnThingCount: 0, chanceToStartFire: 0, damageFalloff: false, ignoredThings: source, doVisualEffects: false, propagationSpeed: 1);
+                        GenExplosion.DoExplosion(pawnPos, targetHunted.MapHeld, 1, SCPDefOf.SCP_106_Oldman_Scratch, oldMan, 1, 100, SoundDefOf.Corpse_Drop, postExplosionSpawnThingDef: ThingDefOf_SCP.Filth_OldMan, postExplosionSpawnChance: 1, postExplosionSpawnThingCount: 1, postExplosionGasType: null, applyDamageToExplosionCellsNeighbors: false, preExplosionSpawnThingDef: null, preExplosionSpawnChance: 0, preExplosionSpawnThingCount: 0, chanceToStartFire: 0, damageFalloff: false, ignoredThings: source, doVisualEffects: false, propagationSpeed: 1);
+                        oldMan.pather.StopDead();
+                        oldMan.Position = pawnPos;
+                        oldMan.pather.ResetToCurrentPosition();
+                        if (oldMan.CurJobDef != JobDefOf.PredatorHunt || oldMan.CurJobDef != JobDefOf.AttackMelee || !oldMan.mindState.mentalStateHandler.InMentalState)
+                        {
+                            Job job = JobMaker.MakeJob(JobDefOf.PredatorHunt, (LocalTargetInfo)(Thing)targetHunted);
+                            oldMan.jobs.TryTakeOrderedJob(job);
+                        }
+                        oldMan.pather.StartPath(oldMan.CurJob.targetA.Cell, PathEndMode.ClosestTouch);
+                    }
                 }
                 tickCounter = 0;
             }
+        }
+        private bool ScrantonStop()
+        {
+            var field = SuppressionFieldAccessUtility.GetSuppressionFieldManager(targetHunted.Map)
+                            ?.GetEffectOnCell(targetHunted.Position) ?? 0f;
+            if (field != 0f)
+                return true;
+            return false;
+        }
+        private bool ScrantonCheck()
+        {
+            var field = SuppressionFieldAccessUtility.GetSuppressionFieldManager(oldMan.Map)
+                            ?.GetEffectOnCell(oldMan.Position) ?? 0f;
+            if (field != 0f)
+                return true;
+            return false;
         }
         private bool TooCloseToJump()
         {

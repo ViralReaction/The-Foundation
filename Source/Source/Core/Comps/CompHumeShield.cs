@@ -8,7 +8,7 @@ using UnityEngine;
 using Verse.Sound;
 using Verse;
 
-namespace Foundation
+namespace Foundation.Comps
 {
     [StaticConstructorOnStartup]
     public class CompHumeShield : ThingComp
