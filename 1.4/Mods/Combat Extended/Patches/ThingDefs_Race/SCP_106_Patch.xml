@@ -13,12 +13,12 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="SCP_106_Old_Man"]/statBases</xpath>
 		<value>
-			<MeleeDodgeChance>0.15</MeleeDodgeChance>
-			<MeleeCritChance>0.30</MeleeCritChance>
-			<MeleeParryChance>0.10</MeleeParryChance>
+			<MeleeDodgeChance>0.35</MeleeDodgeChance>
+			<MeleeCritChance>0.28</MeleeCritChance>
+			<MeleeParryChance>0.32</MeleeParryChance>
 			<SmokeSensitivity>0</SmokeSensitivity>
-			<ArmorRating_Blunt>16</ArmorRating_Blunt>
-			<ArmorRating_Sharp>8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>8</ArmorRating_Blunt>
+			<ArmorRating_Sharp>4</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
@@ -42,8 +42,8 @@
 							</li>
 						</extraMeleeDamages>
 					</surpriseAttack>
-					<armorPenetrationSharp>10.58</armorPenetrationSharp>
-					<armorPenetrationBlunt>5.29</armorPenetrationBlunt>
+					<armorPenetrationSharp>20</armorPenetrationSharp>
+					<armorPenetrationBlunt>10</armorPenetrationBlunt>
 				</li>
 				<li Class="CombatExtended.ToolCE">
 					<label>right claw</label>
@@ -61,8 +61,8 @@
 							</li>
 						</extraMeleeDamages>
 					</surpriseAttack>
-					<armorPenetrationSharp>10.58</armorPenetrationSharp>
-					<armorPenetrationBlunt>5.29</armorPenetrationBlunt>
+					<armorPenetrationSharp>20</armorPenetrationSharp>
+					<armorPenetrationBlunt>10</armorPenetrationBlunt>
 				</li>
 				<li Class="CombatExtended.ToolCE">
 					<label>head</label>

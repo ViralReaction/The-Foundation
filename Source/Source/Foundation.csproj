@@ -49,11 +49,15 @@
   <ItemGroup>
     <Compile Include="Biotech\FileName.cs" />
     <Compile Include="Core\Comps\CompGiveHediff.cs" />
+    <Compile Include="Core\Comps\Properties\CompProperties_ShyGuy.cs" />
     <Compile Include="Core\Comps\CompUsedGraphic.cs" />
+    <Compile Include="Core\Comps\Comp_AnomalyHeal.cs" />
+    <Compile Include="Core\Comps\CompShyGuy.cs" />
     <Compile Include="Core\Comps\Hatching Utility.cs" />
     <Compile Include="Core\Comps\IngestOutcomeDoer_RemoveHediff.cs" />
     <Compile Include="Core\Comps\Properties\CompPropertiesGiveHediff.cs" />
     <Compile Include="Core\Comps\Properties\CompPropertiesHatcher.cs" />
+    <Compile Include="Core\Comps\Properties\CompProperties_AnomalyHeal.cs" />
     <Compile Include="Core\Comps\Properties\CompProperties_UsedGraphic.cs" />
     <Compile Include="Core\Containment\Cage\CompAssignableToPawn_Containment.cs" />
     <Compile Include="Core\Containment\Cage\Extension.cs" />
@@ -82,7 +86,7 @@
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldManager.cs" />
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldUtility.cs" />
     <Compile Include="Core\SCP\SCP_106_Old_Man\Comp_OldMan.cs" />
-    <Compile Include="Core\SCP\SCP_106_Old_Man\SCP_106.cs" />
+    <Compile Include="Core\SCP\SCP_106_Old_Man\CompProperties_OldMan.cs" />
     <Compile Include="Core\SCP\SCP_113 Gender Stone\CompUseEffect_UseSCP113.cs" />
     <Compile Include="Core\SCP\SCP_131_Eye_Pod\IncidentWorker_SCP131.cs" />
     <Compile Include="Core\SCP\SCP_1577_Flare_Gun\CompUseEffect_UseSCP1577.cs" />
@@ -162,6 +166,7 @@
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="Core\Normal Stuff\" />
+    <Folder Include="Core\SCP\SCP_096_Shy_Guy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

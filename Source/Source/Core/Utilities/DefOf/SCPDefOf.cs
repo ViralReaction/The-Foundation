@@ -12,6 +12,8 @@ namespace Foundation
     public static class SCPDefOf
     {
         public static DamageDef SCP_106_Oldman_Scratch;
+        public static EffecterDef HumeShield_Break;
+        public static FleckDef ExplosionHumeFlash;
         public static HediffDef SCP_2687_Poison; // Plastic Organ Poisoning
         public static HediffDef SCP_939_Breath_Hediff; // With Many Voices Amneisa Breath
         public static HediffDef SCP_2845_Transmute_Hediff; // The Deer Transmute Aura

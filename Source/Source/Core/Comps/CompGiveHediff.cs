@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using Foundation.SRA;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace Foundation.Comps
     {
         public int tickCounter = 0;
         public Pawn thisPawn;
+        int num = 0;
         //List<Pawn> pawnList = new List<Pawn>();
 
         private CompProperties_GiveHediffSeverity Props => (CompProperties_GiveHediffSeverity)this.props;
@@ -24,8 +26,15 @@ namespace Foundation.Comps
             ++tickCounter;
             if (tickCounter > Props.tickInterval)
             {
-                
                 thisPawn = this.parent as Pawn;
+                if (Props.scrantonCheck)
+                {
+                    if (ScrantonCheck(thisPawn))
+                    {
+                        tickCounter = 0;
+                        return;
+                    }
+                }
                 if (thisPawn != null && thisPawn.Map != null && !thisPawn.Dead && !thisPawn.Downed)
                 {
                     List<Pawn> pawnsAround = SCPRadius.GetPawnsAround(thisPawn.Position, Props.range, thisPawn.Map);
@@ -57,6 +66,14 @@ namespace Foundation.Comps
                 }
                 tickCounter = 0;
             }
+        }
+        private bool ScrantonCheck(Pawn pawn)
+        {
+            var field = SuppressionFieldAccessUtility.GetSuppressionFieldManager(pawn.Map)
+                            ?.GetEffectOnCell(pawn.Position) ?? 0f;
+            if (field != 0f)
+                return true;
+            return false;
         }
     }
 }

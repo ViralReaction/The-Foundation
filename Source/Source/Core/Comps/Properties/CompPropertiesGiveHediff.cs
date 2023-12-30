@@ -16,6 +16,7 @@ namespace Foundation.Comps
         public int tickInterval = 300;
         public List<string> defNamesImmune = null;
         public bool psychicCheck = false;
+        public bool scrantonCheck = false;
 
         public CompProperties_GiveHediffSeverity() => this.compClass = typeof(CompGiveHediff);
     }

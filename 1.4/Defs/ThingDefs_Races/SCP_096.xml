@@ -2,24 +2,26 @@
 <Defs>
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>SCP_106_Old_Man</defName>
-		<label>SCP-106 "Old Man"</label>
-		<description>Item #: SCP-106
-Object Class: Keter
+		<defName>SCP_096_Shy_Guy</defName>
+		<label>SCP-096 "Shy Guy"</label>
+		<description>Item #: SCP-096
+Object Class: Euclid
 		
-SCP-106 appears to be an elderly humanoid, with a general appearance of advanced decomposition. It is not exceptionally agile, and will remain motionless for days at a time, waiting for prey. SCP-106 is capable of passing through solid matter, leaving behind a large patch of its corrosive mucus. SCP-106 is able to “vanish” inside solid matter, entering what is assumed to be a form of “pocket dimension”.</description>
+SCP-096 is a humanoid creature measuring approximately 2.38 meters in height. Subject shows very little muscle mass, with preliminary analysis of body mass suggesting mild malnutrition. Arms are grossly out of proportion with the rest of the subject's body, with an approximate length of 1.5 meters each.
+
+SCP-096 is normally extremely docile. However, when someone views SCP-096's face, whether it be directly, via video recording, or even a photograph, it will enter a stage of considerable emotional distress. Any and all photos, video, or recordings of SCP-096's likeness are strictly forbidden without approval from Dr. [REDACTED] and O5-[REDACTED].</description>
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CKeter</li>
-					<li>SCP_DVlam</li>
+					<li>SCP_CEuclid</li>
+					<li>SCP_DKeneq</li>
 					<li>SCP_RDanger</li>
 				</classRating>
 				<containmentTier>3</containmentTier>
 			</li>
 		</modExtensions>
 		<statBases>
-			<MoveSpeed>2.5</MoveSpeed>
+			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>500</MarketValue>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<FilthRate>0</FilthRate>
@@ -49,8 +51,8 @@ SCP-106 appears to be an elderly humanoid, with a general appearance of advanced
 			<trainability>Advanced</trainability>
 			<!-- <intelligence>Humanlike</intelligence> -->
 			<lifeExpectancy>500</lifeExpectancy>
-			<manhunterOnTameFailChance>10</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>10</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeStageAges Inherit="False">
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -68,7 +70,7 @@ SCP-106 appears to be an elderly humanoid, with a general appearance of advanced
 			<li>
 				<label>left claw</label>
 				<capacities>
-					<li>SCP_106_Oldman_Scratch</li>
+					<li>Demolish</li>
 				</capacities>
 				<power>15</power>
 				<cooldownTime>1</cooldownTime>
@@ -86,7 +88,7 @@ SCP-106 appears to be an elderly humanoid, with a general appearance of advanced
 			<li>
 				<label>right claw</label>
 				<capacities>
-					<li>SCP_106_Oldman_Scratch</li>
+					<li>Demolish</li>
 				</capacities>
 				<power>15</power>
 				<cooldownTime>1</cooldownTime>
@@ -114,10 +116,9 @@ SCP-106 appears to be an elderly humanoid, with a general appearance of advanced
 			</li>
 		</tools>
 		<comps>
-			<li Class="Foundation.CompProperties_OldMan">
+			<li Class="Foundation.Comps.CompProperties_ShyGuy">
 				<tickInterval>300</tickInterval>
-				<jumpRange>10</jumpRange>
-				<directAttackRange>3</directAttackRange>
+				<radius>10</radius>
 			</li>
 			<li Class="Foundation.Comps.CompProperties_HumeShield">
 				<startingTicksToReset>600</startingTicksToReset>
@@ -133,16 +134,16 @@ SCP-106 appears to be an elderly humanoid, with a general appearance of advanced
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_106_Old_Man</defName>
-		<label>SCP-106 "Old Man"</label>
-		<race>SCP_106_Old_Man</race>
+		<defName>SCP_096_Shy_Guy</defName>
+		<label>SCP-096 "Shy Guy"</label>
+		<race>SCP_096_Shy_Guy</race>
 		<combatPower>25</combatPower>
 		<lifeStages>
 			<li>
 				<labelMale>Old Man</labelMale>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_106/PlaceHolderOldManThin</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP131/Dessicated_SCP131a</texPath>

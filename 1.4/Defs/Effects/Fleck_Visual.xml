@@ -38,5 +38,49 @@
 			<texPath>Things/Mote/SCP_1762_2</texPath>
 		</graphicData>
 	</ThingDef>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>FlashHumeShieldBreak</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<thingClass>MoteAttached</thingClass>
+		<mote>
+			<fadeInTime>0.06</fadeInTime>
+			<solidTime>0.1</solidTime>
+			<fadeOutTime>0.5</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/ShieldBubble_BrokenFlash</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(236, 28, 36)</color>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>CracksHumeShieldBreak</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<thingClass>MoteAttached</thingClass>
+		<mote>
+			<fadeInTime>0.01</fadeInTime>
+			<solidTime>0.2</solidTime>
+			<fadeOutTime>0.03</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/ShieldBubble_BrokenCracks</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(236, 28, 36)</color>
+		</graphicData>
+	</ThingDef>
+	
+	<FleckDef ParentName="FleckBase">
+		<defName>ExplosionHumeFlash</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.05</solidTime>
+		<fadeOutTime>0.1</fadeOutTime>
+		<graphicData>
+			<texPath>Things/Mote/ExplosionFlash</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(236, 28, 36)</color>
+		</graphicData>
+	</FleckDef>
 
 </Defs>

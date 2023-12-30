@@ -21,7 +21,6 @@ namespace Foundation.Comps
         private const float MaxDamagedJitterDist = 0.05f;
         private const int JitterDurationTicks = 8;
         private int KeepDisplayingTicks = 1000;
-       // private float ApparelScorePerEnergyMax = 0.25f;
         private int energyLossPerDamage = 1;
         protected virtual Material BubbleMat => MaterialPool.MatFrom(Props.texPath, ShaderDatabase.Transparent, Props.shieldColor);
 
@@ -59,20 +58,11 @@ namespace Foundation.Comps
         {
             get
             {
-                if (this.parent is Apparel parent1)
-                    return parent1.Wearer;
                 return this.parent is Pawn parent2 ? parent2 : (Pawn)null;
             }
         }
 
         protected Material bubbleMat;
-
-
-        
-
-        public bool IsApparel => this.parent is Apparel;
-
-        private bool IsBuiltIn => !this.IsApparel;
 
         public override void PostExposeData()
         {
@@ -87,12 +77,6 @@ namespace Foundation.Comps
             foreach (Gizmo gizmo in base.CompGetWornGizmosExtra())
                 yield return gizmo;
             IEnumerator<Gizmo> enumerator = (IEnumerator<Gizmo>)null;
-            if (this.IsApparel)
-            {
-                foreach (Gizmo gizmo2 in this.GetGizmos())
-                    yield return gizmo2;
-                enumerator = (IEnumerator<Gizmo>)null;
-            }
             if (DebugSettings.ShowDevGizmos)
             {
                 Command_Action commandAction1 = new Command_Action();
@@ -114,24 +98,18 @@ namespace Foundation.Comps
             foreach (Gizmo gizmo in base.CompGetGizmosExtra())
                 yield return gizmo;
             IEnumerator<Gizmo> enumerator = (IEnumerator<Gizmo>)null;
-            if (this.IsBuiltIn)
-            {
-                foreach (Gizmo gizmo2 in this.GetGizmos())
+                  foreach (Gizmo gizmo2 in this.GetGizmos())
                     yield return gizmo2;
                 enumerator = (IEnumerator<Gizmo>)null;
-            }
         }
 
         private IEnumerable<Gizmo> GetGizmos()
         {
-            //if ((this.PawnOwner.Faction == Faction.OfPlayer || (this.parent is Pawn pawn && pawn.RaceProps.IsMechanoid) || (this.parent is Pawn pawn && pawn.IsSCP()) && Find.Selector.SingleSelectedThing == this.PawnOwner)
             yield return (Gizmo)new Gizmo_HumeShield()
             {
                 shield = this
             };
         }
-
-       // public override float CompGetSpecialApparelScoreOffset() => this.EnergyMax * this.ApparelScorePerEnergyMax;
 
         public override void CompTick()
         {
@@ -187,8 +165,8 @@ namespace Foundation.Comps
         private void Break()
         {
             float scale = Mathf.Lerp(this.Props.minDrawSize, this.Props.maxDrawSize, this.energy);
-            EffecterDefOf.Shield_Break.SpawnAttached((Thing)this.parent, this.parent.MapHeld, scale);
-            FleckMaker.Static(this.PawnOwner.TrueCenter(), this.PawnOwner.Map, FleckDefOf.ExplosionFlash, 12f);
+            SCPDefOf.HumeShield_Break.SpawnAttached((Thing)this.parent, this.parent.MapHeld, scale);
+            FleckMaker.Static(this.PawnOwner.TrueCenter(), this.PawnOwner.Map, SCPDefOf.ExplosionHumeFlash, 12f);
             for (int index = 0; index < 6; ++index)
                 FleckMaker.ThrowDustPuff(this.parent.TrueCenter() + Vector3Utility.HorizontalVectorFromAngle(Rand.Range(0, 360)) * Rand.Range(0.3f, 0.6f), this.parent.Map, Rand.Range(0.8f, 1.2f));
             this.energy = 0.0f;
@@ -206,19 +184,9 @@ namespace Foundation.Comps
             this.energy = this.Props.energyOnReset;
         }
 
-        public override void CompDrawWornExtras()
-        {
-            base.CompDrawWornExtras();
-            if (!this.IsApparel)
-                return;
-            this.Draw();
-        }
-
         public override void PostDraw()
         {
             base.PostDraw();
-            if (!this.IsBuiltIn)
-                return;
             this.Draw();
         }
 

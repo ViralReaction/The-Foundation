@@ -10,6 +10,7 @@ Church of the Broken God: "Church of the Broken God Hub" by HammerMaiden, from t
 SCP	|
 ---	|	
 SCP-095-UA: "SCP-095-UA: by Comrade Xander, from the SCP Wiki. Source: http://scp-int.wikidot.com/scp-095-ua. Licensed under CC-BY-SA.	|
+SCP-096: "SCP-096" by Dr Dan, from the SCP Wiki. Source: https://scpwiki.com/scp-096. Licensed under CC-BY-SA.	|
 SCP-106: "SCP-106" by Dr. Gears, from the SCP Wiki. Source: https://scpwiki.com/scp-106. Licensed under CC-BY-SA	|
 SCP-111: "SCP-111" by Adam Henderson, from the SCP Wiki. Source: https://scpwiki.com/scp-111. Licensed under CC-BY-SA.	|
 SCP-113: "SCP-113" by kabu, rewritten by Robin Sure and thedeadlymoose, from the SCP Wiki. Source: https://scpwiki.com/scp-113. Licensed under CC-BY-SA. |

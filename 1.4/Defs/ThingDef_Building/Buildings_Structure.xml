@@ -146,7 +146,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>SCP_SRA</defName>
         <label>Scranton Reality Anchor</label>
-        <description>A building which projects a psychic suppression field in a small area around it, lowering the psychic sensitivity of those nearby. They can be tuned to different intensities and radii, though it takes time for them to change to new targets.\n\nDue to the complex wave interactions, suppression fields do not stack.</description>
+        <description>A building which is designed to stabilize and counteract reality-altering effects. It functions by grounding and preventing the distortion of the fabric of reality within its vicinity. They can be tuned to different intensities and radii, though it takes time for them to change to new targets.\n\nDue to the complex wave interactions, anchor fields do not stack.</description>
         <thingClass>Foundation.SRA.Building_PsychicSuppressionField</thingClass>
         <graphicData>
             <texPath>Things/Building/Misc/MoisturePump</texPath>

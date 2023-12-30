@@ -11,6 +11,7 @@ namespace Foundation
     [DefOf]
     public static class PawnKindDefOf_SCP
     {
+        public static PawnKindDef SCP_096_Shy_Guy;
         public static PawnKindDef SCP_131_Eye_Pod;
         public static PawnKindDef SCP_610A;
         public static PawnKindDef SCP_610B;
