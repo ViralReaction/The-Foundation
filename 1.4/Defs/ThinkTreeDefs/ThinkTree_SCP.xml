@@ -365,7 +365,7 @@
   
 	<ThinkTreeDef>
 		<defName>TryContainmentBreach</defName>
-		<thinkRoot Class="Foundation.ThinkNode_ContainmentBreach">
+		<thinkRoot Class="Foundation.Containment.ThinkNode_ContainmentBreach">
 			<tagToGive>InMentalState</tagToGive>
 			<subNodes>
 				<li Class="ThinkNode_Tagger">

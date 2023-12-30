@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using Foundation.Containment;
 
 namespace Foundation
 {
@@ -14,7 +15,7 @@ namespace Foundation
         private float severe = 0.15f;
         public override void PostAdd(DamageInfo? dinfo)
         {
-            Hediff hediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(SCPDefOF.SCP_TranqHediff);
+            Hediff hediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(SCPDefOf.SCP_TranqHediff);
             if (this.pawn.IsSCP() && !this.pawn.def.GetModExtension<ContainmentExtension>().isTranqable || this.pawn.RaceProps.IsMechanoid)
             {
                 this.pawn.health.RemoveHediff(hediff);

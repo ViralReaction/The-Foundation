@@ -9,7 +9,7 @@ Object Class: Safe
 			
 SCP-1695-1 is a large mechanism constructed from a black metal alloy of unknown composition.When a pawn is placed inside, turns them into a worm-like creature from the waist up and reverted to normal when removed.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DVlam</li>

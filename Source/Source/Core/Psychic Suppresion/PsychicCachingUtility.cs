@@ -2,17 +2,17 @@
 using RimWorld;
 using Verse;
 
-namespace PsiTech.Utility
+namespace Foundation.SRA
 {
     [StaticConstructorOnStartup]
-    public static class PsiTechCachingUtility
+    public static class ScrantonCachingUtility
     {
 
         public static int _totalStatsInGame;
         private static bool[] _cachedAffectedStats;
         public static readonly List<ThingDef> CachedCryptosleepDefs = new List<ThingDef>();
 
-        static PsiTechCachingUtility()
+        static ScrantonCachingUtility()
         {
 
             // Initialize cache array

@@ -15,7 +15,7 @@ namespace Foundation
         private static ThingDef scp1905 = ThingDefOf_SCP.SCP_1905_Dino_Hunter;
         private int counter = 0;
         public bool isFirstLoad = true;
-
+        public List<Building_Bed> cages = new List<Building_Bed>(0);
         public MapComponent_SCPManagement(Map map)
           : base(map)
         {

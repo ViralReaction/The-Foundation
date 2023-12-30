@@ -22,7 +22,7 @@
 		<label>tranquilizer rifle</label>
 		<description>A specially crafted rifle that tranquilizes most biological SCPs.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/SCP_TranqRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>

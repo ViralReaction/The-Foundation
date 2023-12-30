@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using PsiTech.Utility;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -9,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Foundation
+namespace Foundation.SRA
 {
     public static class HarmonyPatch_PsychicSuppression
     {
@@ -22,7 +21,7 @@ namespace Foundation
 
             public static float Postfix(float __result, StatRequest req, StatDef ___stat)
             {
-                if (!PsiTechCachingUtility.EverAffectsStat(___stat) || !req.HasThing) return __result;
+                if (!ScrantonCachingUtility.EverAffectsStat(___stat) || !req.HasThing) return __result;
 
                 if (req.Thing is Pawn pawn)
                 {

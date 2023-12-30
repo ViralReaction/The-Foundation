@@ -1,5 +1,5 @@
 ﻿using RimWorld;
-using Foundation.Cage;
+using Foundation.Containment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +19,9 @@ namespace Foundation
                 return true;
             return false;
         }
-        public static bool IsSCP(this ThingDef thing)
+        public static bool IsSCP(this ThingDef thingdef)
         {
-            if (thing.GetModExtension<ContainmentExtension>() != null)
+            if (thingdef.GetModExtension<ContainmentExtension>() != null)
                 return true;
             return false;
         }

@@ -9,7 +9,7 @@ Object Class: Safe
 SCP-475 is an ornate sculpture of soap depicting an unidentified religious leader. It cleans the user and increases their ideoligious fervor towards their current ideoligion. When SCP-475 comes into contact with water and is applied to the skin, all accumulated foreign contaminants are removed. Tested materials include dead skin cells, perspiration, bodily parasites, mold, dirt, and detergents. Post test examinations have shown that 100% of foreign contaminants are removed, a statistical anomaly. 
 SCP-475's secondary anomalous effects manifest when it is used on a professing member of an organized religion. Subjects universally report greater mental clarity, show greater adherence and fervor towards church doctrine.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

@@ -7,7 +7,7 @@ Object Class: Safe
 			
 SCP-111 is an apparently artificial species of invertebrate vaguely resembling snails.SCP-111 specimens differ from ordinary snails in that they have a warm-blooded metabolism, complex eyes, small "horns" consisting of cartilage-ridged tentacles, apparently increased intelligence, and a complex vertebrate-type jaw structure; as well, specimens lay eggs possessing hardened shells.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

@@ -11,7 +11,7 @@ SCP-1905-1 instances are sentient beings physically resembling various animals o
 
 Instances of SCP-1905-1 are composed primarily of fiberglass and plaster; they show no abnormal resilience and cease function upon receiving sufficient amounts of damage to their infrastructure. A single shot from SCP-1905 will cause the immediate destruction of an instance of SCP-1905-1 regardless of where it makes contact with the object.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>

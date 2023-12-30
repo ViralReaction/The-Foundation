@@ -66,6 +66,72 @@
 		</stages>
 	</HediffDef>
 
+	<!-- SCP-939 Amnesic Breath -->
+	<HediffDef>
+		<defName>SCP_106_Ooze_Hediff</defName>
+		<label>SCP-106 ooze</label>
+		<description>A black, mucus-like substance that has corrosive effects.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.05</initialSeverity>
+		<lethalSeverity>1.2</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>initial</label>
+				<becomeVisible>true</becomeVisible>
+			</li>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>minor</label>
+				<capMods>
+				  <li>
+					<capacity>Manipulation</capacity>
+					<offset>-0.3</offset>
+				  </li>
+				  <li>
+					<capacity>Moving</capacity>
+					<offset>-0.3</offset>
+				  </li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>moderate</label>
+				<capMods>
+				  <li>
+					<capacity>Manipulation</capacity>
+					<offset>-0.45</offset>
+				  </li>
+				  <li>
+					<capacity>Moving</capacity>
+					<offset>-0.45</offset>
+				  </li>
+				</capMods>				
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>severe</label>
+				<capMods>
+				  <li>
+					<capacity>Manipulation</capacity>
+					<offset>-0.6</offset>
+				  </li>
+				  <li>
+					<capacity>Moving</capacity>
+					<offset>-0.6</offset>
+				  </li>
+				</capMods>				
+			</li>
+		</stages>
+	</HediffDef>
 
 	<!-- SCP-939 Amnesic Breath -->
 	<HediffDef ParentName="DiseaseBase">

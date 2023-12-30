@@ -9,7 +9,7 @@ Object Class: Safe
 			
 SCP-1577-1 is a flare gun, that shows minor wear and damage consistent with its apparent age. SCP-1577-1's properties become apparent when fired: any flare fired from SCP-1577-1 burns much hotter, brighter, and longer than would be expected. SCP-1577-1 is also capable of reliably firing in all circumstances, regardless of the condition of the loaded flare. When fired it summons handy survival gear depending on how much you need them.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

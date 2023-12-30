@@ -11,7 +11,7 @@ SCP-262 is a light brown, European military-style greatcoat from a period betwee
 
 SCP-262 is capable of manifesting numerous arms from within the dark inner lining. When worn, any subject wearing SCP-262 needs only to open the coat to materialize hands and arms which are somewhat under the subject's control.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DVlam</li>

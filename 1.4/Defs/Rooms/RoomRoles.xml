@@ -4,7 +4,7 @@
   <RoomRoleDef>
     <defName>SCP_ContainmentRoom</defName>
     <label>containment room</label>
-    <workerClass>Foundation.RoomRoleWorker_ContainmentRoom</workerClass>
+    <workerClass>Foundation.Containment.RoomRoleWorker_ContainmentRoom</workerClass>
     <relatedStats>
       <li>Cleanliness</li>
 	  <li>Space</li>

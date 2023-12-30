@@ -1,6 +1,6 @@
 ﻿using RimWorld;
 using Foundation;
-using Foundation.Cage;
+using Foundation.Containment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +12,7 @@ using Verse;
 
 namespace Foundation
 {
+    [StaticConstructorOnStartup]
     public class SCP_Startup
     {
         public static string version = "v0.0.1";

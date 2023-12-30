@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Verse;
 using DubsBadHygiene;
 
-namespace SCP
+namespace Foundation.DBHCompat
 {
 internal class CompUseEffect_UseSCP475_Clean : CompUseEffect
     {

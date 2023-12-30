@@ -15,10 +15,10 @@
 		<isRanged>true</isRanged>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<additionalHediffs>
-		  <li>
-			<hediff>SCP_TranqHediff</hediff>
-			<severityPerDamageDealt>0.01</severityPerDamageDealt>
-		  </li>
+			<li>
+				<hediff>SCP_TranqHediff</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
 		</additionalHediffs>
 	</DamageDef>
 
@@ -129,6 +129,28 @@
 		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
 	</DamageDef>
 	
+	<!-- SCP-106 Old Man -->
+	<DamageDef ParentName="Scratch">
+		<defName>SCP_106_Oldman_Scratch</defName>
+		<label>old man scratch</label>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been sliced to death.</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>SCP_106_Ooze_Hediff</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<defaultDamage>8</defaultDamage>
+		<isRanged>false</isRanged>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<impactSoundType>Toxic</impactSoundType>
+	</DamageDef>
+	
 	<!-- ===== SCP-610 Damage Def ===== -->
 	<DamageDef ParentName="Bite">
 		<defName>SCP_610_InfectingBite</defName>
@@ -139,8 +161,10 @@
 		<additionalHediffs>
 			<li>
 				<hediff>SCP_610_Infection</hediff>
-				<severityPerDamageDealt>0.00</severityPerDamageDealt>
+				<severityPerDamageDealt>0.004</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>
 		</additionalHediffs>
 		<defaultDamage>8</defaultDamage>

@@ -13,7 +13,7 @@ However, complete eradication has proven impossible difficult, as all instances 
 
 SCP-3199 are opportunistic hunters, engaging with live subjects within a currently unidentified radius within a radius of 0.6 kilometers surrounding hatchlings that have not yet reached full adolescence. Average speed is recorded at 25 km/h. Upon contact with human or animal subjects, SCP-3199 will proceed to [REDACTED], liquefying internal organs and bone structure. A suitable cadaver is then transferred within range of the closest hatchling.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CKeter</li>
 					<li>SCP_DKeneq</li>

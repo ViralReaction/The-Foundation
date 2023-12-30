@@ -9,8 +9,9 @@ using Verse;
 namespace Foundation
 {
     [DefOf]
-    public static class SCPDefOF
+    public static class SCPDefOf
     {
+        public static DamageDef SCP_106_Oldman_Scratch;
         public static HediffDef SCP_2687_Poison; // Plastic Organ Poisoning
         public static HediffDef SCP_939_Breath_Hediff; // With Many Voices Amneisa Breath
         public static HediffDef SCP_2845_Transmute_Hediff; // The Deer Transmute Aura
@@ -25,6 +26,9 @@ namespace Foundation
         public static JobDef LeaveMapDaylight;
         public static JobDef InduceContaintmentBreak;
         public static JobDef Play_SCP_1762R;
+        public static MentalStateDef FollowTheVoices;
+        public static MentalStateDef SCP_BreachContainment;
+        public static MentalStateDef SCP_ContainmentBreaker;
         [MayRequireIdeology]
         public static PreceptDef SCP_Tools;
         public static TerrainDef SCP_610_Fleshy_Gravel;
@@ -37,6 +41,6 @@ namespace Foundation
         public static ThoughtDef SCP_ES_019_BadThought;
         public static ThoughtDef SCP_1695_BadThought;
 
-        static SCPDefOF() => DefOfHelper.EnsureInitializedInCtor(typeof(SCPDefOF));
+        static SCPDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(SCPDefOf));
     }
 }

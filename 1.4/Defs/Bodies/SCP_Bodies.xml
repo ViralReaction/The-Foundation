@@ -1431,7 +1431,7 @@
           <!-- <depth>Inside</depth> -->
         <!-- </li> -->
 		<li>
-			<def>SCP_Hume_Enchant</def>
+			<def>SCP_Hume</def>
 			<depth>Inside</depth>
 			<height>Middle</height>
 			<coverage>0</coverage>

@@ -59,7 +59,7 @@ namespace Foundation
 
         private void BadThoughts(Pawn pawn)
         {
-            Thought_Memory newThought = (Thought_Memory)ThoughtMaker.MakeThought(SCPDefOF.SCP_ES_019_BadThought);
+            Thought_Memory newThought = (Thought_Memory)ThoughtMaker.MakeThought(SCPDefOf.SCP_ES_019_BadThought);
             pawn.needs.mood.thoughts.memories.TryGainMemory(newThought);
         }
 

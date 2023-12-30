@@ -25,5 +25,10 @@
 		<defName>SCP_610_InfectingScratch</defName>
 		<label>scratch</label>
 	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>SCP_106_Oldman_Scratch</defName>
+		<label>scratch</label>
+	</ToolCapacityDef>
 
 </Defs>

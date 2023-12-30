@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Foundation
+namespace Foundation.SRA
 {
     public class SuppressionFieldAccessUtility
     {

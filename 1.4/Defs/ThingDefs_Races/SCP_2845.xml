@@ -11,7 +11,7 @@ SCP-2845 is an extraterrestrial quadruped entity, terminating in a head with hum
 
 SCP-2845 is capable of instantaneous transmutation and reconstruction of matter, often converting living subjects into SCP-2845-1.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CKeter</li>
 					<li>SCP_DKeneq</li>
@@ -163,7 +163,7 @@ SCP-2845-1 designates organisms that have been modified by SCP-2845. Instances o
 
 SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown that internal organs are likewise absent, save the brain, which now takes up the entirety of the column and contains the reconstituted mass of the other organs and some additional outside materials. It is unknown how SCP-2845-1 instances derive nutrients, or if any nutrition is required.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DKeneq</li>

@@ -9,7 +9,7 @@ using Verse;
 using Foundation;
 using UnityEngine.Assertions.Must;
 
-namespace Foundation
+namespace Foundation.Containment
 {
     internal class ThinkNode_ContainmentBreach : ThinkNode_ConditionalMentalStates
     {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Foundation
+namespace Foundation.SRA
 { 
 public class SuppressionFieldSettingsWindow : Window
 {

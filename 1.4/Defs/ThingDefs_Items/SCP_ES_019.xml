@@ -11,7 +11,7 @@ SCP-ES-019 has the appearance of a pair of wireless headphones with AM/FM radio,
 
 A side effect of SCP-ES-019, displayed in approximately [REDACTED]% of the subjects who listen to the broadcasts for at least thirty seconds, is a conviction in and focus on avoiding said catastrophes by preventing the occurrence of preceding events by either: killing a person before their birth; destroying an artifact before it becomes a threat; or [DATA EXPUNGED].</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

@@ -20,7 +20,7 @@ namespace Foundation.Containment
             Pawn animal = ContainmentBreakerMentalStateUtility.FindSCP(pawn);
             if (animal == null || !pawn.CanReach((LocalTargetInfo)(Thing)animal, PathEndMode.Touch, Danger.Deadly))
                 return (Job)null;
-            Job job = JobMaker.MakeJob(SCPDefOF.InduceContaintmentBreak, (LocalTargetInfo)(Thing)animal);
+            Job job = JobMaker.MakeJob(SCPDefOf.InduceContaintmentBreak, (LocalTargetInfo)(Thing)animal);
             job.ignoreDesignations = true;
             return job;
         }

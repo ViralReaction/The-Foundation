@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
 
-namespace Foundation
+namespace Foundation.Containment
 {
     internal class MentalState_ContainmentBreach : MentalState
     {

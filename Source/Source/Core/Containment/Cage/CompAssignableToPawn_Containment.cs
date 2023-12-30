@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Foundation.Cage
+namespace Foundation.Containment
 {
     public class CompAssignableToPawn_Cage : CompAssignableToPawn
     {

@@ -12,7 +12,7 @@ namespace Foundation
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(SCPDefOF.SCP_939_Breath_Hediff);
+            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(SCPDefOf.SCP_939_Breath_Hediff);
             if (firstHediffOfDef == null || firstHediffOfDef.FullyImmune())
                 return (ThoughtState)false;
             if ((double)firstHediffOfDef.Severity >= 0.35)

@@ -38,6 +38,7 @@ namespace Foundation
         public static ThingDef SCP_1797Consume;
         public static ThingDef SCP_1905_Dino_Hunter;
         public static ThingDef SCP_610Hive;
+        public static ThingDef Filth_OldMan;
 
         static ThingDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf_SCP));
     }

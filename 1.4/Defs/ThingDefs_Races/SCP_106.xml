@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>SCP_106_Old_Man</defName>
+		<label>SCP-106 "Old Man"</label>
+		<description>Item #: SCP-106
+Object Class: Keter
+		
+SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) are a pair of teardrop-shaped creatures roughly 30 cm (1 ft) in height, with a single blue eye in the middle of their bodies. SCP-131-A is burnt orange in color while SCP-131-B is mustard yellow. The subjects seem to have the intelligence of common house cats and are insatiably curious. Most of the time they simply roll around the facility, observing personnel at work and catching peeks at other Safe class SCPs. The subjects seem to be able to communicate with each other via an untranslatable high-pitched babbling. The subjects seem to respond well to any affection given to them and will quickly bond to the giver of said affection, much in the same way a puppy bonds with a human being.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CKeter</li>
+					<li>SCP_DVlam</li>
+					<li>SCP_RDanger</li>
+				</classRating>
+				<containmentTier>3</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>2.5</MoveSpeed>
+			<MarketValue>500</MarketValue>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<FilthRate>0</FilthRate>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<butcherProducts>
+			<Steel>16</Steel>
+		</butcherProducts>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalPet</li>
+			<li>SCP</li>
+		</tradeTags>
+		<race>
+			<thinkTreeMain>SCP_AI</thinkTreeMain>
+			<body>Human</body>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<hasGenders>false</hasGenders>
+			<maxPreyBodySize>4.0</maxPreyBodySize>
+			<baseBodySize>1</baseBodySize>
+			<baseHungerRate>0.9</baseHungerRate>
+			<baseHealthScale>5</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<leatherDef>Human_Leather</leatherDef>
+			<useMeatFrom>Human</useMeatFrom>
+			<wildness>10</wildness>
+			<trainability>Advanced</trainability>
+			<!-- <intelligence>Humanlike</intelligence> -->
+			<lifeExpectancy>500</lifeExpectancy>
+			<manhunterOnTameFailChance>10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>10</manhunterOnDamageChance>
+			<toxicResistance>1</toxicResistance>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>70</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+		  </lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>SCP_106_Oldman_Scratch</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<chanceFactor>0.15</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>SCP_106_Oldman_Scratch</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<chanceFactor>0.15</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.01</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="Foundation.CompProperties_OldMan">
+				<tickInterval>300</tickInterval>
+				<jumpRange>10</jumpRange>
+				<directAttackRange>3</directAttackRange>
+			</li>
+			<li Class="Foundation.CompProperties_HumeShield">
+				<startingTicksToReset>600</startingTicksToReset>
+				<EnergyShieldEnergyMax>30</EnergyShieldEnergyMax>
+				<energyOnReset>60</energyOnReset>
+				<texPath>Other/HumeShield</texPath>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCP_106_Old_Man</defName>
+		<label>Old Man</label>
+		<race>SCP_106_Old_Man</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<labelMale>Old Man</labelMale>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_106/PlaceHolderOldManThin</texPath>
+					<drawSize>1.2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP131/Dessicated_SCP131a</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

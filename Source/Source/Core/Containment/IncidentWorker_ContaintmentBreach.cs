@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine.Assertions.Must;
 using Verse;
 
-namespace Foundation
+namespace Foundation.Containment
 {
     internal class IncidentWorker_ContainmentBreach : IncidentWorker
     {

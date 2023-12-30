@@ -11,7 +11,7 @@ SCP-4074-2 is an anomalous plant, superficially and genetically similar to an Or
 
 The orb will emit a steady output of light and heat for seven to ten days before it will begin to steadily and completely decrease both in output and activity, leaving behind a spherical pod of the same diameter, containing several seeds.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

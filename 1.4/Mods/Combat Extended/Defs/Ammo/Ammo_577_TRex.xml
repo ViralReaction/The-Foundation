@@ -141,7 +141,7 @@
 		<defName>Bullet_577TRex_AP</defName>
 		<label>.577 Tyrannosaur bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>40</damageAmountBase>
+			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationSharp>22</armorPenetrationSharp>
 			<armorPenetrationBlunt>283.02</armorPenetrationBlunt>
 		</projectile>

@@ -27,7 +27,7 @@ SCP-1905 is a stopping rifle chambered for the .577 Tyrannosaur round. SCP-1905 
 
 When SCP-1905 is loaded and within 3 meters of an individual capable of firing it, an instance of SCP-1905-1 will spontaneously manifest relatively close to SCP-1905. SCP-1905 will misfire unless it is aimed directly at an instance of SCP-1905-1.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DKeneq</li>
@@ -39,7 +39,7 @@ When SCP-1905 is loaded and within 3 meters of an individual capable of firing i
 		<smeltable>false</smeltable>
 		<burnableByRecipe>false</burnableByRecipe>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/SCP_1905</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Shotgun</soundInteract>

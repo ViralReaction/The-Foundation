@@ -30,7 +30,7 @@ namespace Foundation.Containment
             {
                 this.RecoverFromState();
             }
-            if (!this.pawn.IsHashIntervalTick(600) || animal != null || this.pawn.CurJob != null && this.pawn.CurJob.def == SCPDefOF.InduceContaintmentBreak)
+            if (!this.pawn.IsHashIntervalTick(600) || animal != null || this.pawn.CurJob != null && this.pawn.CurJob.def == SCPDefOf.InduceContaintmentBreak)
                 return;
             this.RecoverFromState();
         }

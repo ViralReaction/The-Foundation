@@ -36,14 +36,14 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<modExtensions>
-			<li Class="Foundation.Cage.CageExtension">
+			<li Class="Foundation.Containment.CageExtension">
 				<isCage>true</isCage>
 			</li>
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
-				<compClass>Foundation.Cage.CompAssignableToPawn_Cage</compClass>
+				<compClass>Foundation.Containment.CompAssignableToPawn_Cage</compClass>
 			</li>
 		</comps>
 	</ThingDef>
@@ -83,14 +83,14 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<modExtensions>
-			<li Class="Foundation.Cage.CageExtension">
+			<li Class="Foundation.Containment.CageExtension">
 				<isCage>true</isCage>
 			</li>
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
-				<compClass>Foundation.Cage.CompAssignableToPawn_Cage</compClass>
+				<compClass>Foundation.Containment.CompAssignableToPawn_Cage</compClass>
 			</li>
 		</comps>
 	</ThingDef>
@@ -130,259 +130,16 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<modExtensions>
-			<li Class="Foundation.Cage.CageExtension">
+			<li Class="Foundation.Containment.CageExtension">
 				<isCage>true</isCage>
 			</li>
 		</modExtensions>
 		<comps>
 			<li Class="CompProperties_AssignableToPawn">
 				<drawAssignmentOverlay>false</drawAssignmentOverlay>
-				<compClass>Foundation.Cage.CompAssignableToPawn_Cage</compClass>
+				<compClass>Foundation.Containment.CompAssignableToPawn_Cage</compClass>
 			</li>
 		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase" Name="SCP_Wall" Abstract="True">
-		<defName>SCP_Wall</defName>
-		<label>wall</label>
-		<description>An impassable wall. Capable of holding up a roof.</description>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
-		<graphicData>
-			<texPath>Things/Building/Linked/SCP_Wall</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-		<statBases>
-			<MaxHitPoints>600</MaxHitPoints>
-			<WorkToBuild>135</WorkToBuild>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<costStuffCount>5</costStuffCount>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<blockWind>true</blockWind>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<coversFloor>true</coversFloor>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<tickerType>Never</tickerType>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded><!-- Best affordance needed for stone -->
-		<holdsRoof>true</holdsRoof>
-		<designationCategory>Structure</designationCategory>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<canOverlapZones>false</canOverlapZones>
-		<fertility>0</fertility>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<!--researchPrerequisites Inherit="False">
-		<li>SCP_WallTier1</li>
-		</researchPrerequisites-->
-		<building>
-			<isInert>true</isInert>
-			<isPlaceOverableWall>true</isPlaceOverableWall>
-			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-			</blueprintGraphicData>
-		</building>
-	</ThingDef>
-
-	<ThingDef ParentName="SCP_Wall">
-		<defName>SCP_StrengthenedWall</defName>
-		<label>steel strengthened wall</label>
-		<description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCPs.</description>
-		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
-				<containmentTier>1</containmentTier>
-			</li>
-		</modExtensions>
-		<costList>
-			<Steel>2</Steel>
-		</costList>
-		<costStuffCount>5</costStuffCount>
-		<stuffCategories>
-			<li>Stony</li>
-			<li>Metallic</li>
-		</stuffCategories>
-
-		<building>
-			<relatedBuildCommands>
-				<li>SCP_Autodoor</li>
-			</relatedBuildCommands>
-		</building>
-	
-		<damageMultipliers>
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>2</multiplier>
-			</li>
-			<li>
-				<damageDef>Mining</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li>
-				<damageDef>Thump</damageDef>
-				<multiplier>2</multiplier>
-			</li>
-		</damageMultipliers>
-	
-	</ThingDef>
-
-	<ThingDef ParentName="SCP_Wall">
-		<defName>SCP_ReinforcedWall</defName>
-		<label>plasteel reinforced wall</label>
-		<description>An impassable wall strengthened with plasteel. Capable of holding up a roof and keeping in SCPs.</description>
-		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
-				<containmentTier>2</containmentTier>
-			</li>
-		</modExtensions>
-		<costList>
-			<Steel>1</Steel>
-			<Plasteel>1</Plasteel>
-			<!--  <ComponentIndustrial>6</ComponentIndustrial> -->
-		</costList>
-		<costStuffCount>5</costStuffCount>
-		<stuffCategories>
-			<li>Stony</li>
-			<li>Metallic</li>
-		</stuffCategories>
-		<!--researchPrerequisites Inherit="False">
-			<li>SCP_WallTier2</li>
-		</researchPrerequisites-->
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-		<building>
-			<relatedBuildCommands>
-				<li>SCP_AutoBlastdoor</li>
-			</relatedBuildCommands>
-		</building>
-		<damageMultipliers>
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>1.8</multiplier>
-			</li>
-			<li>
-				<damageDef>Mining</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li>
-				<damageDef>Thump</damageDef>
-				<multiplier>1.8</multiplier>
-			</li>
-		</damageMultipliers>
-	
-	</ThingDef>
-  
-	<!-- Doors -->
-
-	<ThingDef ParentName="DoorBase">
-		<defName>SCP_Autodoor</defName>
-		<label>security door</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down, as well as keeping SCPs from passing through.</description>
-		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
-				<containmentTier>1</containmentTier>
-			</li>
-		</modExtensions>
-		<statBases>
-			<WorkToBuild>1100</WorkToBuild>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Building/Door/Autodoor_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData>
-				<!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
-		<costList>
-			<Steel>30</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-		</costList>
-		<costStuffCount>25</costStuffCount>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>50</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Styleable"/>
-		</comps>
-		<!--researchPrerequisites>
-			<li>SCP_SecurityDoors</li>
-		</researchPrerequisites-->
-		<designationHotKey>Misc2</designationHotKey>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	</ThingDef>
-
-	<ThingDef ParentName="DoorBase">
-		<defName>SCP_AutoBlastdoor</defName>
-		<label>blast door</label>
-		<description>Strong blast door that keeps SCPs inside, even when power is cut off. Powered operation allows people to move through the door without slowing down.</description>
-		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
-
-				<containmentTier>2</containmentTier>
-	
-			</li>
-		</modExtensions>
-		<statBases>
-			<MaxHitPoints>2000</MaxHitPoints>
-			<WorkToBuild>1100</WorkToBuild>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Building/Door/Autodoor_Mover</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<damageData>
-				<!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
-				<enabled>false</enabled>
-			</damageData>
-		</graphicData>
-		<uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
-		<costList>
-			<Steel>120</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-		</costList>
-		<costStuffCount>25</costStuffCount>
-		<!--researchPrerequisites>
-			<li>SCP_BlastDoors</li>
-		</researchPrerequisites-->
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>50</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Breakdownable"/>
-			<li Class="CompProperties_Styleable"/>
-		</comps>
-		<designationHotKey>Misc2</designationHotKey>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
 	<!-- Psychic Suppression Field Projector -->
@@ -390,7 +147,7 @@
         <defName>SCP_SRA</defName>
         <label>Scranton Reality Anchor</label>
         <description>A building which projects a psychic suppression field in a small area around it, lowering the psychic sensitivity of those nearby. They can be tuned to different intensities and radii, though it takes time for them to change to new targets.\n\nDue to the complex wave interactions, suppression fields do not stack.</description>
-        <thingClass>Foundation.Building_PsychicSuppressionField</thingClass>
+        <thingClass>Foundation.SRA.Building_PsychicSuppressionField</thingClass>
         <graphicData>
             <texPath>Things/Building/Misc/MoisturePump</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -429,7 +186,7 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-            <li Class="Foundation.CompProperties_PsychicSuppressionField">
+            <li Class="Foundation.SRA.CompProperties_PsychicSuppressionField">
                 <MinEffect>-2</MinEffect>
                 <MaxEffect>0</MaxEffect>
                 <EffectStep>0.1</EffectStep>

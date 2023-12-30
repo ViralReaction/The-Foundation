@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Foundation
+namespace Foundation.Containment
 {
     internal class RoomRoleWorker_ContainmentRoom : RoomRoleWorker
     {

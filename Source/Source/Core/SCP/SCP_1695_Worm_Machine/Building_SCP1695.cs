@@ -40,7 +40,7 @@ namespace Foundation
                         DamageInfo dinfo = new DamageInfo(DamageDefOf.Cut, 1f);
                         pawn.TakeDamage(dinfo);
                     }
-                    Thought_Memory newThought = (Thought_Memory)ThoughtMaker.MakeThought(SCPDefOF.SCP_1695_BadThought);
+                    Thought_Memory newThought = (Thought_Memory)ThoughtMaker.MakeThought(SCPDefOf.SCP_1695_BadThought);
                     pawn.needs.mood.thoughts.memories.TryGainMemory(newThought);
                 }
             }

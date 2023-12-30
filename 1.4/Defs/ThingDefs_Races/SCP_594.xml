@@ -9,7 +9,7 @@ Object Class: Euclid
 		
 The sheep are highly aggressive and territorial in nature, and often attack unfamiliar personnel without warning or provocation. They will continue to behave in this manner until steps are taken to properly placate males, which is normally done by giving it “treats” such as tobacco or candies. The defining characteristic of the sheep is that they are able to generate a substantial amount of static electricity simply by the friction caused during daily activities.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DVlam</li>

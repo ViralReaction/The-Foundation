@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
+
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>SCP939_A</defName>
 		<label>SCP 939</label>
@@ -9,7 +9,7 @@ Object Class: Keter
 			
 SCP-939, known as "With Many Voices," are predatory, sapient creatures that appear as vaguely reptilian humanoids. They possess the ability to mimic voices to lure potential prey. SCP-939 are carnivorous and primarily hunt through acoustic mimicry, imitating voices of previous victims or sounds in their environment. They are contained in soundproofed cells to prevent their deceptive vocal tactics and minimize potential danger to personnel.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CKeter</li>
 					<li>SCP_DKeneq</li>

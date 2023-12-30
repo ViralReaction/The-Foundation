@@ -41,7 +41,7 @@ SCP-848-2 is the web created by SCP-848-1 and can be enormous and often times re
 
 Periodically, anomalous objects will be discovered ensnared in SCP-848-2. The frequency of these occurrences varies greatly, but typically occurs from once per week to up to a dozen in one day.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CEuclid</li>
 					<li>SCP_DVlam</li>

@@ -9,7 +9,7 @@ Object Class: Safe
 			
 SCP-5185 are an unclassified subspecies of giant house spider. Each possesses the physical, psychological, and social needs of an average domesticated canine.Some SCP-5185 instances have been observed showing aggressive behaviour towards staff, charging at researchers while making high pitched noises similar to growling, biting the chain link fence, and lunging.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CSafe</li>
 					<li>SCP_DDark</li>

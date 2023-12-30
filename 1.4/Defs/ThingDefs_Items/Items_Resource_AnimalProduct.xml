@@ -176,7 +176,7 @@ Object Class: Keter
 			
 Heat is a primary component in the growth and development of SCP-3199's eggs, and Foundation Researchers are particularly apprehensive towards the idea, believing it would almost certainly result in a second containment breach. Eggs have only been neutralized by extreme cold.</description>
 		<modExtensions>
-			<li Class="Foundation.ContainmentExtension">
+			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
 					<li>SCP_CKeter</li>
 					<li>SCP_DKeneq</li>

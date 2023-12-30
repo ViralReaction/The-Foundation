@@ -17,7 +17,7 @@ namespace Foundation
         public CompProperties_TerrainChanger Props => (CompProperties_TerrainChanger)this.props;
         private IntVec3 nextChangeCell = IntVec3.Invalid;
         private int terrainChangeProgressTicks;
-        private TerrainDef terrain = SCPDefOF.SCP_610_Fleshy_Soil;
+        private TerrainDef terrain = SCPDefOf.SCP_610_Fleshy_Soil;
         public override void CompTick()
         {
             base.CompTick();
@@ -36,16 +36,16 @@ namespace Foundation
             switch (new IntRange(0, 3).RandomInRange)
             {
                 case 0:
-                    terrain = SCPDefOF.SCP_610_Fleshy_Soil;
+                    terrain = SCPDefOf.SCP_610_Fleshy_Soil;
                     break;
                 case 1:
-                    terrain = SCPDefOF.SCP_610_Fleshy_Gravel;
+                    terrain = SCPDefOf.SCP_610_Fleshy_Gravel;
                     break;
                 case 2:
-                    terrain = SCPDefOF.SCP_610_Fleshy_Gravel;
+                    terrain = SCPDefOf.SCP_610_Fleshy_Gravel;
                     break;
                 case 4:
-                    terrain = SCPDefOF.SCP_610_Fleshy_Gravel;
+                    terrain = SCPDefOf.SCP_610_Fleshy_Gravel;
                     break;
             }
             for (int index = 0; index < num1; ++index)
@@ -62,7 +62,7 @@ namespace Foundation
             if (silent)
                 return;
         }
-        bool NextChangeCellValidator(IntVec3 cell) => cell.InBounds(this.parent.Map) && (cell.GetTerrain(this.parent.Map) != SCPDefOF.SCP_610_Fleshy_Soil && cell.GetTerrain(this.parent.Map) != SCPDefOF.SCP_610_Fleshy_Gravel);
+        bool NextChangeCellValidator(IntVec3 cell) => cell.InBounds(this.parent.Map) && (cell.GetTerrain(this.parent.Map) != SCPDefOf.SCP_610_Fleshy_Soil && cell.GetTerrain(this.parent.Map) != SCPDefOf.SCP_610_Fleshy_Gravel);
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Foundation.Cage
+namespace Foundation.Containment
 {
     internal class CageExtension : DefModExtension
     {

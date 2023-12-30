@@ -7,7 +7,7 @@
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>Foundation.IncidentWorker_ContainmentBreach</workerClass>
+		<workerClass>Foundation.Containment.IncidentWorker_ContainmentBreach</workerClass>
 		<baseChance>5.0</baseChance>
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>
