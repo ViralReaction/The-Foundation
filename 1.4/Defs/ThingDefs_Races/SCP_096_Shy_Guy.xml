@@ -41,7 +41,7 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 			<needsRest>true</needsRest>
 			<hasGenders>false</hasGenders>
 			<maxPreyBodySize>4.0</maxPreyBodySize>
-			<baseBodySize>2</baseBodySize>
+			<baseBodySize>3</baseBodySize>
 			<baseHungerRate>0.9</baseHungerRate>
 			<baseHealthScale>5</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>

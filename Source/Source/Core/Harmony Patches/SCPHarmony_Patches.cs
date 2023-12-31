@@ -22,6 +22,7 @@ namespace Foundation.HarmonyPatches
         {
             Harmony harmony = new Harmony("rw.foundation");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP096_Full"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP106_Starving"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(FoundationHarmony), "SCP106_HumansOnlyAcceptablePrey"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(JobDriver_PredatorHunt), "CheckWarnPlayer"), new HarmonyMethod(typeof(FoundationHarmony), "SCP106_DontWarnPlayerHunted"));
@@ -41,6 +42,13 @@ namespace Foundation.HarmonyPatches
             harmony.Patch(AccessTools.Method(typeof(BedInteractionCellSearchPattern), "BedCellOffsets"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "BedCellOffsets_Patch"));
             harmony.Patch(AccessTools.Method(typeof(RestUtility), "CanUseBedEver"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "CanUseBedEverPostfix"));
             harmony.Patch(AccessTools.Method(typeof(RestUtility), "IsValidBedFor"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "IsValidBedEverPostfix"));
+        }
+
+        public static void SCP096_Full(Need_Food __instance, Pawn ___pawn)
+        {
+            if (!(___pawn.def.defName == "SCP_096_Shy_Guy"))
+                return;
+            __instance.CurLevel = 1f;
         }
 
         public static void SCP106_Starving(Need_Food __instance, Pawn ___pawn)
