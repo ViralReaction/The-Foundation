@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
+using Foundation.Containment;
+using Foundation.Utilities;
 
 namespace Foundation
 {
@@ -15,9 +17,12 @@ namespace Foundation
         private static ThingDef scp1905 = ThingDefOf_SCP.SCP_1905_Dino_Hunter;
         private int counter = 0;
         public bool isFirstLoad = true;
-        public List<Building_Bed> cages = new List<Building_Bed>(0);
-        public MapComponent_SCPManagement(Map map)
-          : base(map)
+        private int tickCounter;
+
+        //public static Dictionary<Pawn, int> ContainmentBreakDict = new Dictionary<Pawn, int>();
+        //public static List<Pawn> CapturedSCP = new List<Pawn>();
+        //public static List<int> lastContainmentBreak = new List<int>();
+        public MapComponent_SCPManagement(Map map) : base(map)
         {
         }
 
@@ -25,13 +30,18 @@ namespace Foundation
         {
             base.ExposeData();
             Scribe_Values.Look<bool>(ref this.isFirstLoad, "isFirstLoad", true, true);
+            //Scribe_Collections.Look(ref lastContainmentBreak, "lastContainmentBreak", LookMode.Deep);
+            //Scribe_Collections.Look(ref CapturedSCP, "CapturedSCP", LookMode.Deep);
+            //Scribe_Collections.Look(ref ContainmentBreakDict, "ContainmentBreakDict", LookMode.Reference, LookMode.Value, ref CapturedSCP, ref lastContainmentBreak);
+            //ContainmentBreakDict.RemoveAll(entry => (entry.Key?.Destroyed ?? true) || (entry.Value.Equals(null)));
         }
 
         public override void FinalizeInit()
         {
             base.FinalizeInit();
-            if (!this.isFirstLoad || !(this.map.Biome.defName == "SCR_SCP610Biome"))
+            if (!this.isFirstLoad || !(this.map.Biome.defName == "SCP_610_Biome"))
                 return;
+            Log.Message("610 Biome");
             this.spawnSCP610Hive(Rand.Range(4, 8));
             this.isFirstLoad = false;
         }
@@ -43,9 +53,9 @@ namespace Foundation
                 if (counter <= 0)
                     break;
                 TerrainDef terrain = intVec3.GetTerrain(this.map);
-                if (terrain.IsSoil && (double)terrain.fertility < 0.5)
+                if (terrain.IsSoil && (double)terrain.fertility < 0.6)
                 {
-                    Thing newThing = ThingMaker.MakeThing(ThingDef.Named("SCR_SCP610Hive"));
+                    Thing newThing = ThingMaker.MakeThing(ThingDefOf_SCP.SCP_610Hive);
                     if (GenAdj.OccupiedRect(intVec3, newThing.Rotation, newThing.def.size).InBounds(this.map))
                     {
                         GenSpawn.Spawn(newThing, intVec3, this.map);
@@ -58,79 +68,121 @@ namespace Foundation
         public override void MapComponentTick()
         {
             base.MapComponentTick();
-            if (this.counter < 300)
-            {
-                ++this.counter;
-            }
-            else
-            {
-                this.counter = 0;
+            ++tickCounter;
+            if (tickCounter == 60000)
+            { 
                 if (this.map != null)
                 {
-                    this.SCP1905Management();
+                   // this.SCP1905Management();
+                    this.ContainmentBreak();
                 }
             }
         }
-
-        private void SCP1905Management()
+        private void ContainmentBreak()
         {
-            Thing[] array = this.map.listerThings.ThingsOfDef(MapComponent_SCPManagement.scp1905).ToArray();
-            bool flag1 = false;
-            bool flag2 = false;
-            Pawn pawn1 = (Pawn)null;
-            Thing thing = (Thing)null;
-            List<Pawn> allPawnsSpawned = this.map.mapPawns.AllPawnsSpawned;
-            foreach (Pawn pawn2 in allPawnsSpawned)
+            if (map.IsPlayerHome)
             {
-                if (pawn2.def.defName == MapComponent_SCPManagement.scp19051.defName && !pawn2.Downed)
-                    return;
-            }
-            if (array.Length >= 1)
-            {
-                foreach (Thing a in array)
+                List<Pawn> pawnList = map.mapPawns.AllPawnsSpawned;
+                for (int index = 0; index < pawnList.Count; index++)
                 {
-                    for (int index = 0; index < allPawnsSpawned.Count; index++)
+                    Pawn pawn = pawnList[index];
+                    if (pawn.IsCaptiveOf() && pawn.Faction == null)
                     {
-                        if (a.AdjacentTo8WayOrInside((Thing)allPawnsSpawned[index]) && !allPawnsSpawned[index].AnimalOrWildMan())
-                        {
-                            thing = a;
-                            flag1 = true;
-                            goto label_15;
-                        }
+                        Log.Message("Checking Prison Break MTB");
+                        float mtb = ContainmentBreakUtility.InitiatePrisonBreakMtbDays(pawn);
+                        FoundationComponent.ContainmentBreakDay(pawn);
+                        if ((double)mtb >= 0.0 && Rand.MTBEventOccurs(mtb, 60000f, 2500f))
+                        ContainmentBreakUtility.StartPrisonBreak(pawn);  
+
                     }
                 }
+                this.counter = 0;
             }
-        label_15:
-            if (!flag1)
-            {
-                foreach (Pawn p in allPawnsSpawned)
-                {
-                    if (!p.AnimalOrWildMan())
-                    {
-                        foreach (Thing orInventoryThing in p.EquippedWornOrInventoryThings)
-                        {
-                            if (orInventoryThing.def == MapComponent_SCPManagement.scp1905)
-                            {
-                                pawn1 = p;
-                                thing = orInventoryThing;
-                                flag2 = true;
-                                goto label_31;
-                            }
-                        }
-                    }
-                }
-            }
-        label_31:
-            if (!(flag1 | flag2) || thing == null)
-                return;
-            if (pawn1 != null)
-                this.SpawnAnimalManhunter(pawn1.Position, MapComponent_SCPManagement.scp19051);
-            else
-                this.SpawnAnimalManhunter(thing.Position, MapComponent_SCPManagement.scp19051);
-            this.counter -= 2500;
-            Messages.Message((string)"MessageSCP1905Spawn".Translate(), MessageTypeDefOf.NegativeEvent);
-            Find.TickManager.slower.SignalForceNormalSpeedShort();
         }
+        //public static int ContainmentBreakCheck(Pawn pawn)
+        //{
+        //    if (MapComponent_SCPManagement.ContainmentBreakDict.ContainsKey(pawn))
+        //    {
+        //        if (MapComponent_SCPManagement.ContainmentBreakDict.TryGetValue(pawn, out int value))
+        //        {
+        //           // MapComponent_SCPManagement.ContainmentBreakDict.Increment(pawn);
+        //            return value;
+        //        }
+        //        return 0;
+        //    }
+        //    else
+        //        MapComponent_SCPManagement.ContainmentBreakDict.Add(pawn, 0);
+        //    return 0;
+        //}
+        //public static void ContainmentBreakDay(Pawn pawn)
+        //{
+        //    if (MapComponent_SCPManagement.ContainmentBreakDict.ContainsKey(pawn))
+        //        MapComponent_SCPManagement.ContainmentBreakDict.Increment(pawn);
+        //}
+
+        //public static void ContainmentBreakOut(Pawn pawn)
+        //{
+        //    MapComponent_SCPManagement.ContainmentBreakDict.SetOrAdd(pawn, 0);
+        //}
+        //private void SCP1905Management()
+        //{
+        //    Thing[] array = this.map.listerThings.ThingsOfDef(MapComponent_SCPManagement.scp1905).ToArray();
+        //    bool flag1 = false;
+        //    bool flag2 = false;
+        //    Pawn pawn1 = (Pawn)null;
+        //    Thing thing = (Thing)null;
+        //    List<Pawn> allPawnsSpawned = this.map.mapPawns.AllPawnsSpawned;
+        //    foreach (Pawn pawn2 in allPawnsSpawned)
+        //    {
+        //        if (pawn2.def.defName == MapComponent_SCPManagement.scp19051.defName && !pawn2.Downed)
+        //            return;
+        //    }
+        //    if (array.Length >= 1)
+        //    {
+        //        foreach (Thing a in array)
+        //        {
+        //            for (int index = 0; index < allPawnsSpawned.Count; index++)
+        //            {
+        //                if (a.AdjacentTo8WayOrInside((Thing)allPawnsSpawned[index]) && !allPawnsSpawned[index].AnimalOrWildMan())
+        //                {
+        //                    thing = a;
+        //                    flag1 = true;
+        //                    goto label_15;
+        //                }
+        //            }
+        //        }
+        //    }
+        //label_15:
+        //    if (!flag1)
+        //    {
+        //        foreach (Pawn p in allPawnsSpawned)
+        //        {
+        //            if (!p.AnimalOrWildMan())
+        //            {
+        //                foreach (Thing orInventoryThing in p.EquippedWornOrInventoryThings)
+        //                {
+        //                    if (orInventoryThing.def == MapComponent_SCPManagement.scp1905)
+        //                    {
+        //                        pawn1 = p;
+        //                        thing = orInventoryThing;
+        //                        flag2 = true;
+        //                        goto label_31;
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //label_31:
+        //    if (!(flag1 | flag2) || thing == null)
+        //        return;
+        //    if (pawn1 != null)
+        //        this.SpawnAnimalManhunter(pawn1.Position, MapComponent_SCPManagement.scp19051);
+        //    else
+        //        this.SpawnAnimalManhunter(thing.Position, MapComponent_SCPManagement.scp19051);
+        //    //this.counter -= 2500;
+        //    Messages.Message((string)"MessageSCP1905Spawn".Translate(), MessageTypeDefOf.NegativeEvent);
+        //    Find.TickManager.slower.SignalForceNormalSpeedShort();
+        //}
 
         private void SpawnAnimalManhunter(IntVec3 location, PawnKindDef pawnKind, Gender? gender = null)
         {

@@ -71,7 +71,7 @@
 			<HediffDef>SCP_2687_Poison</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/Drug/Penoxycyline</texPath>
+			<texPath>Things/Item/Drug/SCP_2687_Cure</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>false</socialPropernessMatters>

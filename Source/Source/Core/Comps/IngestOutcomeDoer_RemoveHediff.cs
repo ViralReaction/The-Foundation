@@ -14,9 +14,11 @@ public class IngestionOutcomeDoer_RemoveHediff : IngestionOutcomeDoer
     public HediffDef hediffDef;
     protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
     {
-        if (!pawn.health.hediffSet.HasHediff(hediffDef))
-            return;
-        pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef).Severity *= 0.0f;
+            var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef);
+            if (hediff is null)
+                return;
+            hediff.Severity = 0f;
+
     }
 }
 }

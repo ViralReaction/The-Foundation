@@ -6,6 +6,62 @@
 		<label>SCP-610 hive</label>
 		<thingClass>Building</thingClass>
 		<description>A hive-like structure created by something infested by SCP-610. It causes the nearby area to be covered in a fleshy substance, as well as spawn more SCP-610 instances.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/SCP_610_Hive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(211,211,211))</color>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>5.0</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<killedLeavings>
+			<RawFungus>300</RawFungus>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_CanBeDormant">
+				<startsDormant>true</startsDormant>
+				<canWakeUpFogged>false</canWakeUpFogged>
+			</li>
+			<li Class="CompProperties_WakeUpDormant"/>
+			<li Class="Foundation.CompProperties_FleshHiveSpawner">
+				<spawnablePawnKinds>
+					<li>SCP_610B</li>
+					<li>SCP_610A</li>
+				</spawnablePawnKinds>
+				<spawnSound>Hive_Spawn</spawnSound>
+				<initialPawnCount>3</initialPawnCount>
+				<maxPawnCount>30</maxPawnCount>
+				<pawnSpawnIntervalDays>0.1~0.2</pawnSpawnIntervalDays>
+				<defendRadius>10</defendRadius>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>3000</ticksPerHeal><!-- 60k ticks = 1 day, 20 hp per day -->
+			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>Filth_Slime</filthDef>
+				<spawnCountOnSpawn>10</spawnCountOnSpawn>
+				<spawnMtbHours>4</spawnMtbHours>
+				<spawnRadius>5</spawnRadius>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>SCP_610Hive_Infestation</defName>
+		<label>SCP-610 hive</label>
+		<thingClass>Building</thingClass>
+		<description>A hive-like structure created by something infested by SCP-610. It causes the nearby area to be covered in a fleshy substance, as well as spawn more SCP-610 instances.</description>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<placeWorkers>
 		  <li>PlaceWorker_ShowPlantHarmRadius</li>

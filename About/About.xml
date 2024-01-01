@@ -6,7 +6,7 @@
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
-	<description>SCP</description>
+	<description>Strange thing's have been happening on the outer rim, unnatural anomalies, monsters stalking the night and secretive organizations ready for war.</description>
 	<modDependencies>
 	  <li>
 		<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>

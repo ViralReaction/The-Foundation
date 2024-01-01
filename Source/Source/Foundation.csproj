@@ -67,11 +67,14 @@
     <Compile Include="Core\Containment\ContainmentBreaker\JobGiver_ContainmentBreaker.cs" />
     <Compile Include="Core\Containment\ContainmentBreaker\MentalStateWorker_Containmentbreaker.cs" />
     <Compile Include="Core\Containment\ContainmentBreaker\MentalState_Containmentbreaker.cs" />
+    <Compile Include="Core\Containment\ContainmentBreak_Utility.cs" />
     <Compile Include="Core\Containment\ContainmentExtensions.cs" />
     <Compile Include="Core\Containment\IncidentWorker_ContaintmentBreach.cs" />
+    <Compile Include="Core\Containment\ITab_SCP.cs" />
     <Compile Include="Core\Containment\MentalState_ContainmentBreach.cs" />
     <Compile Include="Core\Containment\RoomRoleWorker_Containment.cs" />
     <Compile Include="Core\Containment\ThinkNode_ContaintmentBreach.cs" />
+    <Compile Include="Core\Containment\WorkGiver.cs" />
     <Compile Include="Core\Damage.cs" />
     <Compile Include="Core\Harmony Patches\SCPHarmony_Patches.cs" />
     <Compile Include="Core\MapComponent.cs" />
@@ -113,6 +116,7 @@
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Comp_FleshHiveSpawn.cs" />
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Comp_TerrainChanger.cs" />
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Hediff_610_Infection.cs" />
+    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\IncidentWorker_SCP610_Hive.cs" />
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\IncidentWorker_SCP610_Local.cs" />
     <Compile Include="Core\SCP\SCP_848_Spider\IncidentWorker_SCP848.cs" />
     <Compile Include="Core\SCP\SCP_848_Spider\IncidentWorker_SCP848_SpawnThing.cs" />
@@ -136,7 +140,9 @@
     <Compile Include="Core\Utilities\DefOf\PawnKindDefOf_SCP.cs" />
     <Compile Include="Core\Utilities\DefOf\SCPDefOf.cs" />
     <Compile Include="Core\Utilities\DefOf\ThingDefOf_SCP.cs" />
+    <Compile Include="Core\Utilities\GameComponent.cs" />
     <Compile Include="Core\Utilities\SCPRadius.cs" />
+    <Compile Include="Debug.cs" />
     <Compile Include="Gizmo_HumeShield.cs" />
     <Compile Include="Core\Comps\Properties\CompProperties_HumeShield.cs" />
     <Compile Include="Core\Comps\CompHumeShield.cs" />

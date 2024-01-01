@@ -12,6 +12,9 @@ using Verse;
 using Mono.Security;
 using UnityEngine;
 using Foundation.Containment;
+using System.Reflection.Emit;
+using Verse.Noise;
+using Foundation.Utilities;
 
 namespace Foundation.HarmonyPatches
 {
@@ -34,11 +37,7 @@ namespace Foundation.HarmonyPatches
             harmony.Patch((MethodBase)AccessTools.Method(typeof(WorldPawns), "GetSituation"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SituationSCPEvent"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP1675_Starving"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(FoundationHarmony), "SCP1675_GeeseOnlyAcceptablePrey"));
-            //harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP2584_AlwaysFull"));
-            //harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP2845_AlwaysFull"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(ThingDef), "SpecialDisplayStats"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "StatDrawEntry_Patch"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(WorkGiver_RescueDowned), "HasJobOnThing"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "HasJobOnThing_Patch"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(WorkGiver_RescueDowned), "ShouldSkip"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "ShouldSkip_Patch"));
             harmony.Patch(AccessTools.Method(typeof(BedInteractionCellSearchPattern), "BedCellOffsets"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "BedCellOffsets_Patch"));
             harmony.Patch(AccessTools.Method(typeof(RestUtility), "CanUseBedEver"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "CanUseBedEverPostfix"));
             harmony.Patch(AccessTools.Method(typeof(RestUtility), "IsValidBedFor"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "IsValidBedEverPostfix"));
@@ -140,18 +139,6 @@ namespace Foundation.HarmonyPatches
                 __result = true;
             return false;
         }
-        //public static void SCP2584_AlwaysFull(Need_Food __instance, Pawn ___pawn)
-        //{
-        //    if (!(___pawn.def.defName == "SCP_2584_Snake"))
-        //        return;
-        //    __instance.CurLevel = 1f;
-        //}
-        //public static void SCP2845_AlwaysFull(Need_Food __instance, Pawn ___pawn)
-        //{
-        //    if (!(___pawn.def.defName == "SCP_2845_Deer"))
-        //        return;
-        //    __instance.CurLevel = 1f;
-        //}
         public static void StatDrawEntry_Patch(ThingDef __instance, ref IEnumerable<StatDrawEntry> __result)
         {
             if (!__instance.IsSCP() || __instance.IsCorpse)
@@ -174,42 +161,6 @@ namespace Foundation.HarmonyPatches
             }
             else
                 Log.Error("SCP Harmony Patching Error: " + __instance.defName + " Does not have correct number of containment procedures.");
-        }
-
-        public static bool HasJobOnThing_Patch(Pawn pawn, Thing t, bool forced, ref bool __result)
-        {
-            int num = 0;
-            if (!(t is Pawn pawn1))
-            {
-                num = 1;
-            }
-            if (num != 0 || !t.def.IsSCP())
-                return true;
-            Pawn pawn2 = t as Pawn;
-            if (!pawn2.Downed || pawn2.InBed() || pawn.GetRoom().Role == SCP_Startup.containmentRoom || !pawn2.CanReserve((LocalTargetInfo)(Thing)pawn, ignoreOtherReservations: forced) || GenAI.EnemyIsNear(pawn2, 40f))
-            {
-                __result = false;
-                return false;
-            }
-            Building_Bed bedFor = RestUtility.FindBedFor(pawn2, pawn, false);
-            __result = bedFor != null && pawn.CanReserve((LocalTargetInfo)(Thing)bedFor);
-            return false;
-        }
-        public static void ShouldSkip_Patch(Pawn pawn, ref bool __result)
-        {
-            if (!__result)
-                return;
-            List<Pawn> pawnList = pawn.MapHeld.mapPawns.SpawnedDownedPawns;
-            for (int index = 0; index < pawnList.Count; index++)
-            //foreach (Pawn spawnedDownedPawn in pawn.Map.mapPawns.SpawnedDownedPawns)
-            {
-                Pawn spawnedDownedPawn = pawnList[index];
-                if (spawnedDownedPawn.IsSCP() && spawnedDownedPawn.GetRoom().Role != SCP_Startup.containmentRoom)
-                {
-                    __result = false;
-                    break;
-                }
-            }
         }
         public static bool BedCellOffsets_Patch(List<IntVec3> offsets, IntVec2 size, int slot)
         {
@@ -242,6 +193,29 @@ namespace Foundation.HarmonyPatches
             if (sleeper.IsSCP() && bedThing.GetRoom().Role != SCP_Startup.containmentRoom)
                 return false;
             return true;
+        }
+
+        [HarmonyPatch(typeof(TradeUtility), "AllSellableColonyPawns")]
+        class SellCapturedSCP_Patch
+        {
+            public static IEnumerable<Pawn> Postfix(IEnumerable<Pawn> values, Map map, bool checkAcceptableTemperatureOfAnimals)
+            {
+                foreach (Pawn pawn in map.mapPawns.AllPawnsSpawned)
+                {
+                    if (pawn.IsCaptiveOf() && pawn.HostFaction == null && !pawn.InMentalState && !pawn.Downed && (!checkAcceptableTemperatureOfAnimals || map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(pawn.def)))
+                        yield return pawn;
+                }
+            }
+        }
+        [HarmonyPatch(typeof(Pawn), "Kill")]
+        public class NotifyPawnDiedPatch
+        {
+
+            public static void Postfix(Pawn __instance)
+            {
+                Current.Game.GetComponent<FoundationComponent>().Notify_PawnDied(__instance);
+            }
+
         }
     }
 }

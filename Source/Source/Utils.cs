@@ -27,9 +27,7 @@ namespace Foundation
         }
         public static bool IsCaptiveOf(this Pawn pawn)
         {
-            if (!pawn.IsSCP())
-                return false;
-            if (pawn.GetRoom().Role == SCP_Startup.containmentRoom)
+            if (pawn.IsSCP() && pawn.GetRoom().Role == SCP_Startup.containmentRoom)
                 return true;
             return false;
         }

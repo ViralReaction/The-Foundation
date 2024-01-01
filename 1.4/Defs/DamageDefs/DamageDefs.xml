@@ -148,7 +148,6 @@
 		<isRanged>false</isRanged>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
-		<impactSoundType>Toxic</impactSoundType>
 	</DamageDef>
 	
 	<!-- ===== SCP-610 Damage Def ===== -->

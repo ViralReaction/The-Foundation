@@ -121,5 +121,27 @@
 		<minRefireDays>30</minRefireDays>
 	</IncidentDef>
 
+	<IncidentDef>
+		<defName>SCP_Incident_SCP610_Hive</defName>
+		<label>SCP-610 Flesh That Hates</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>Foundation.IncidentWorker_SCP610_Hive</workerClass>
+		<letterLabel>SCP-610 Hive Spawned</letterLabel>
+		<letterText>A large piece of an ancient ship has crashed nearby.\n\nIts mysterious influence will kill all plants in an expanding circle around itself.\n\nDestroy it as soon as possible. But beware - it will probably defend itself.</letterText>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>1.0</baseChance>
+		<baseChanceWithRoyalty>0.4</baseChanceWithRoyalty>
+		<minRefireDays>15</minRefireDays>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<minThreatPoints>400</minThreatPoints>
+		<mechClusterBuilding>SCP_610Hive_Infestation</mechClusterBuilding>
+		<tale>ShipPartCrash</tale>
+	</IncidentDef>
 
 </Defs>

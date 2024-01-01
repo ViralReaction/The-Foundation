@@ -92,4 +92,13 @@
 	<SCP_AssignSCP>Assign SCP(s)</SCP_AssignSCP>
 	<SCP_AssignSCPDesc>Assign scp(s) to capture and keep in the cage.</SCP_AssignSCPDesc>
 
+	<!-- Containment Stuff -->
+	<DaysinContainment>Days since last breached</DaysinContainment>
+	<SCPContainment>Containment</SCPContainment>
+	<TabSCPNeeds>Contain</TabSCPNeeds>
+	<ContainmentBreakMTBDays>Containment breach interval</ContainmentBreakMTBDays>
+	<CurrentlyContainmentBreaking>Currently breaking containment</CurrentlyContainmentBreaking>
+	<ContainmentBreakMTBDaysDescription>The average days awake between containment breaks. This is affected by mood, mobility, the number of containment doors, and time since the last containment break.\n\nNote that this does not include time spent asleep.</ContainmentBreakMTBDaysDescription>
+	<FoundationSellPrice>Sell Price</FoundationSellPrice>
+	<FoundationSellPriceDescription>The base market value of this SCP if sold.</FoundationSellPriceDescription>
 </LanguageData>

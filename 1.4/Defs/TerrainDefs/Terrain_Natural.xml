@@ -26,7 +26,7 @@
 			<li>Bridgeable</li>
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
-		<fertility>0.8</fertility>
+		<fertility>0.6</fertility>
 		<takeFootprints>false</takeFootprints>
 		<tools>
 			<li>

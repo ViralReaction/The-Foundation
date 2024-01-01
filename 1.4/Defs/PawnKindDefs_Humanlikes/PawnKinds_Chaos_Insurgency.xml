@@ -671,7 +671,6 @@
 		<label>SCP-3033-2 Mike Commander</label>
 		<combatPower>150</combatPower>
 		<apparelMoney>400~700</apparelMoney>
-		<weaponMoney>500~700</weaponMoney>
 		<apparelRequired>
 			<li>Apparel_CI_HelmetMask</li>
 			<li>Apparel_CI_MBAV</li>
