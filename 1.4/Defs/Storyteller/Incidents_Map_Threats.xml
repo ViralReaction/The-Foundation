@@ -124,12 +124,9 @@
 	<IncidentDef>
 		<defName>SCP_Incident_SCP610_Hive</defName>
 		<label>SCP-610 Flesh That Hates</label>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
 		<workerClass>Foundation.IncidentWorker_SCP610_Hive</workerClass>
 		<letterLabel>SCP-610 Hive Spawned</letterLabel>
-		<letterText>A large piece of an ancient ship has crashed nearby.\n\nIts mysterious influence will kill all plants in an expanding circle around itself.\n\nDestroy it as soon as possible. But beware - it will probably defend itself.</letterText>
+		<letterText>A large infected mass has formed in your area.\n\nThis mass of flesh will transform the local fauna and spawn more instances of SCP-610.\n\nIf you don't want the SCPs to infest the whole area, destroy the mass. But beware - they will defend this foothold.</letterText>
 		<letterDef>ThreatSmall</letterDef>
 		<baseChance>1.0</baseChance>
 		<baseChanceWithRoyalty>0.4</baseChanceWithRoyalty>
