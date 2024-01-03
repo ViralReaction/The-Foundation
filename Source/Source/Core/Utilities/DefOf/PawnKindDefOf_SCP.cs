@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Foundation
+namespace Foundation.Utilities
 {
     [DefOf]
     public static class PawnKindDefOf_SCP

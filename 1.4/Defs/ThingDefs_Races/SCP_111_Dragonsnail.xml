@@ -59,7 +59,7 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
-			 <thinkTreeMain>SCP_AI</thinkTreeMain>
+			<thinkTreeMain>SCP_AI</thinkTreeMain>
 			<body>DragonSnailBody</body>
 			<baseBodySize>0.3</baseBodySize>
 			<baseHungerRate>0.27</baseHungerRate>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Foundation
+namespace Foundation.Utilities
 {
     public static class SPMultiCell
     {

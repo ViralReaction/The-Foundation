@@ -13,6 +13,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 using static UnityEngine.GraphicsBuffer;
+using Foundation.Utilities;
 
 namespace Foundation.HarmonyPatches
 {

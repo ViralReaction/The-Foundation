@@ -6,16 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using Foundation.Utilities;
 
 namespace Foundation
 {
     [HarmonyPatch(typeof(ThoughtHandler), "GetSocialThoughts", new System.Type[] { typeof(Pawn), typeof(List<ISocialThought>) })]
     public static class SCP_Tools_Precept_Patch
     {
-        public static bool Prefix(
-          Pawn otherPawn,
-          List<ISocialThought> outThoughts,
-          ThoughtHandler __instance)
+        public static bool Prefix(Pawn otherPawn, List<ISocialThought> outThoughts, ThoughtHandler __instance)
         {
             if (!__instance.pawn.IsSCP())
             {

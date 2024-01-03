@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
+	<!-- Remove Negative Move Speed -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+		defName="Apparel_SCP_GuardArmor" or
+		defName="Apparel_SCP_MTF_CryeCage" or
+		defName="Apparel_GOC_SecurityArmor" or
+		defName="Apparel_GOC_StrikeTeamMBAV" or
+		defName="Apparel_CI_MBAV" or
+		defName="Apparel_CI_LCE"
+		]/equippedStatOffsets/MoveSpeed</xpath>
+	</Operation>
 
 	<!-- Clothing -->
 	<Operation Class="PatchOperationReplace">
@@ -71,7 +83,6 @@
 	</Operation>
 
 	<!-- SCP Guard/GOC Security Armor -->
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_SCP_GuardArmor" or defName="Apparel_GOC_SecurityArmor"]/statBases</xpath>
 		<value>
@@ -90,7 +101,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_SCP_GuardArmor" or defName="Apparel_GOC_SecurityArmor"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
-			<ArmorRating_Blunt>21</ArmorRating_Blunt>
+			<ArmorRating_Blunt>24</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
@@ -113,7 +124,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_CryeCage"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>15</ArmorRating_Sharp>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
 		</value>
 	</Operation>
 

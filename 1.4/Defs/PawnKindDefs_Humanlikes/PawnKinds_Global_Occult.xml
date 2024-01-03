@@ -33,6 +33,17 @@
 				<max>4</max>
 			</countRange>
 		</inventoryOptions>
+				<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<only>(0.10, 0.10, 0.20)</only>
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="GlobalOccultCoalition_Base" Name="GOC_StaffBase" Abstract="True">
@@ -277,7 +288,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SimpleGun</li>
+			<li>Foundation_GOC_Pistol</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -336,7 +347,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SimpleGun</li>
+			<li>Foundation_GOC_Pistol</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -394,7 +405,8 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SimpleGun</li>
+			<li>Foundation_GOC_Pistol</li>
+			<li>Foundation_US_BigIron</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -452,7 +464,8 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SimpleGun</li>
+			<li>Foundation_GOC_Pistol</li>
+			<li>Foundation_US_BigIron</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -512,8 +525,8 @@
 			<max>1550</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>AssaultRifle</li>
-			<li>ShortShots</li>
+			<li>Foundation_GOC_Shotgun</li>
+			<li>Foundation_GOC_SMG</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -575,7 +588,7 @@
 			<max>950</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>AssaultRifle</li>
+			<li>Foundation_GOC_AR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -631,11 +644,11 @@
 		</apparelMoney>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
-			<min>480</min>
-			<max>850</max>
+			<min>555</min>
+			<max>1050</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>IndustrialGunAdvaned</li>
+			<li>Foundation_GOC_MG</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -695,7 +708,7 @@
 			<max>950</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SniperRifle</li>
+			<li>Foundation_GOC_DMR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -747,7 +760,7 @@
 			<max>1050</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SniperRifle</li>
+			<li>Foundation_GOC_DMR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -800,7 +813,11 @@
 			<max>2050</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>GunSpacer</li>
+			<li>Foundation_GOC_MG</li>
+			<li>Foundation_GOC_Launcher</li>
+			<li>Foundation_GOC_Explosive</li>
+			<li>Foundation_Flamethrower</li>
+			<li>Foundation_GOC_Elite_Spacer</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -837,10 +854,10 @@
 		</gearHealthRange>
 		<itemQuality>Superior</itemQuality>
 		<weaponTags>
-			<li>Gun_HeavySMG</li>
+			<li>Foundation_GOC_AR</li>
 		</weaponTags>
 		<weaponMoney>
-			<min>480</min>
+			<min>550</min>
 			<max>1200</max>
 		</weaponMoney>
 		<apparelMoney>

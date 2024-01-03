@@ -7,8 +7,10 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using Verse.Noise;
+using System.Reflection;
 
-namespace Foundation
+namespace Foundation.Utilities
 {
     [StaticConstructorOnStartup]
     public static class Utils

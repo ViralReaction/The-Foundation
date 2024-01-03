@@ -18,7 +18,7 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 			</li>
 		</modExtensions>
 		<statBases>
-			<MoveSpeed>50</MoveSpeed>
+			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>500</MarketValue>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<FilthRate>0</FilthRate>

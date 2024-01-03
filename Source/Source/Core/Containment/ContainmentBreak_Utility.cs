@@ -42,12 +42,15 @@ namespace Foundation.Containment
 
         public static float InitiatePrisonBreakMtbDays(Pawn pawn, StringBuilder sb = null, bool ignoreAsleep = false)
         {
+            //Check if can containment break
             if (!ignoreAsleep && !pawn.Awake() || !ContainmentBreakUtility.CanParticipateInContainmentBreak(pawn))
                 return -1f;
+            // Check if room is containment room
             Room room = pawn.GetRoom();
             if (room == null || room.Role != SCP_Startup.containmentRoom)
                 return -1f;
-            float num1 = 60f/ (1+pawn.def.GetModExtension<ContainmentExtension>().containmentTier);
+            //Do the math
+            float num1 = (60f/* - FoundationComponent.ContainmentBreakCheck(pawn)*/) / (1+pawn.def.GetModExtension<ContainmentExtension>().containmentTier);
             float f = Mathf.Clamp(pawn.health.capacities.GetLevel(PawnCapacityDefOf.Moving), 0.01f, 1f);
             float num2 = num1 / f;
             if (sb != null && (double)f != 1.0)
@@ -55,6 +58,7 @@ namespace Foundation.Containment
                 sb.AppendLineIfNotEmpty();
                 sb.Append((string)("FactorForMovement".Translate() + ": " + f.ToStringPercent()));
             }
+            //Checking number of doors
             float num3 = 0.0f;
             ContainmentBreakUtility.tmpRegions.Clear();
             List<Region> regionList = room.Regions;
@@ -91,9 +95,6 @@ namespace Foundation.Containment
                     sb.Append((string)("FactorForDoorCount".Translate() + ": " + (1f / num3).ToStringPercent()));
                 }
             }
-            //int value = FoundationComponent.ContainmentBreakCheck(pawn);
-            //float x = (float)(60);
-            //num2 *= ContainmentBreakUtility.PrisonBreakMTBFactorForDaysSincePrisonBreak.Evaluate(x);
             return num2;
         }
 
@@ -140,12 +141,9 @@ namespace Foundation.Containment
             ContainmentBreakUtility.allEscapingPrisoners.Clear();
             foreach (Room participatingRoom in ContainmentBreakUtility.participatingRooms)
             {
-                //Log.Message("Firing Break");
-                //ContainmentBreakUtility.StartPrisonBreakIn(participatingRoom, ContainmentBreakUtility.allEscapingPrisoners, ContainmentBreakUtility.participatingRooms);
                 List<Thing> adjacentList = participatingRoom.ContainedAndAdjacentThings;
                 for (int index = 0; index < adjacentList.Count; index++)
                 {
-                    //Log.Message("Are we getting here");
                     Thing thing = adjacentList[index];
                     if (thing is Pawn pawn && ContainmentBreakUtility.CanParticipateInContainmentBreak(pawn))
                     {
@@ -162,8 +160,8 @@ namespace Foundation.Containment
                 StringBuilder stringBuilder = new StringBuilder();
                 for (int index = 0; index < ContainmentBreakUtility.allEscapingPrisoners.Count; ++index)
                     stringBuilder.AppendLine("  - " + ContainmentBreakUtility.allEscapingPrisoners[index].NameShortColored.Resolve());
-                letterText = (string)"LetterPrisonBreak".Translate((NamedArgument)stringBuilder.ToString().TrimEndNewlines());
-                letterLabel = (string)"LetterLabelPrisonBreak".Translate();
+                letterText = (string)"LetterContainmentBreach".Translate((NamedArgument)stringBuilder.ToString().TrimEndNewlines());
+                letterLabel = (string)"LetterLabelContainmentBreach".Translate();
                 letterDef = LetterDefOf.ThreatBig;
                 ContainmentBreakUtility.allEscapingPrisoners.Clear();
             }
@@ -211,50 +209,5 @@ namespace Foundation.Containment
                 participatingRooms.Remove(ContainmentBreakUtility.tmpToRemove[index]);
             ContainmentBreakUtility.tmpToRemove.Clear();
         }
-
-        //private static void StartPrisonBreakIn(
-        //  Room room,
-        //  List<Pawn> outAllEscapingPrisoners,
-        //  HashSet<Room> participatingRooms)
-        //{
-        //    ContainmentBreakUtility.escapingPrisonersGroup.Clear();
-        //    List<Thing> adjacentList = room.ContainedAndAdjacentThings;
-        //    for (int index = 0; index < adjacentList.Count; index++)
-        //    {
-        //        Log.Message("Are we getting here");
-        //        Thing thing = adjacentList[index];
-        //        if (thing is Pawn pawn && ContainmentBreakUtility.CanParticipateInContainmentBreak(pawn))
-        //        {
-        //            pawn.mindState.mentalStateHandler.TryStartMentalState(SCP_Startup.containBreachState, forceWake: true, transitionSilently: true);
-        //        }
-
-        //    }
-        //    ContainmentBreakUtility.escapingPrisonersGroup.Clear();
-        //}
-
-        //private static void AddPrisonersFrom(Room room)
-        //{
-        //    List<Thing> adjacentList = room.ContainedAndAdjacentThings;
-        //    for (int index = 0; index < adjacentList.Count; index++)
-        //    {
-        //        Log.Message("Are we getting here");
-        //        Thing thing = adjacentList[index];
-        //        if (thing is Pawn pawn && ContainmentBreakUtility.CanParticipateInContainmentBreak(pawn))
-        //        {
-        //            pawn.mindState.mentalStateHandler.TryStartMentalState(SCP_Startup.containBreachState, forceWake: true, transitionSilently: true);
-        //        }
-
-        //    }
-        //}
-
-        //private static bool RoomsAreCloseToEachOther(Room a, Room b)
-        //{
-        //    IntVec3 anyCell1 = a.FirstRegion.AnyCell;
-        //    IntVec3 anyCell2 = b.FirstRegion.AnyCell;
-        //    if (a.Map != b.Map || !anyCell1.WithinRegions(anyCell2, a.Map, 18, TraverseParms.For(TraverseMode.PassDoors)))
-        //        return false;
-        //    using (PawnPath path = a.Map.pathFinder.FindPath(anyCell1, (LocalTargetInfo)anyCell2, TraverseParms.For(TraverseMode.PassDoors)))
-        //        return path.Found && path.NodesLeftCount < 24;
-        //}
     }
 }

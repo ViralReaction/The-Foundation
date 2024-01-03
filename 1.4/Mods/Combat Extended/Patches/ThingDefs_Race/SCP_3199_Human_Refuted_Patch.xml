@@ -78,21 +78,19 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="SCP_3199R"]</xpath>
+		<xpath>Defs/ThingDef[defName="SCP_3199R"]/comps</xpath>
 		<value>
-			<comps>
-				<li Class="CombatExtended.CompProperties_ArmorDurability">
-					<Durability>600</Durability>
-					<Regenerates>true</Regenerates>
-					<RegenInterval>1250</RegenInterval>
-					<RegenValue>5</RegenValue>
-					<RepairTime>300</RepairTime>
-					<RepairValue>200</RepairValue>
-					<CanOverHeal>true</CanOverHeal>
-					<MaxOverHeal>116</MaxOverHeal>
-					<MinArmorPct>0.5</MinArmorPct>
-				</li>
-			</comps>
+			<li Class="CombatExtended.CompProperties_ArmorDurability">
+				<Durability>600</Durability>
+				<Regenerates>true</Regenerates>
+				<RegenInterval>1250</RegenInterval>
+				<RegenValue>5</RegenValue>
+				<RepairTime>300</RepairTime>
+				<RepairValue>200</RepairValue>
+				<CanOverHeal>true</CanOverHeal>
+				<MaxOverHeal>116</MaxOverHeal>
+				<MinArmorPct>0.5</MinArmorPct>
+			</li>
 		</value>
 	</Operation>
 

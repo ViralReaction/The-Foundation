@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
+using Foundation.Utilities;
 
 namespace Foundation.Containment
 {

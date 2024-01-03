@@ -101,4 +101,10 @@
 	<ContainmentBreakMTBDaysDescription>The average days awake between containment breaks. This is affected by mood, mobility, the number of containment doors, and time since the last containment break.\n\nNote that this does not include time spent asleep.</ContainmentBreakMTBDaysDescription>
 	<FoundationSellPrice>Sell Price</FoundationSellPrice>
 	<FoundationSellPriceDescription>The base market value of this SCP if sold.</FoundationSellPriceDescription>
+
+	<!-- Precept Stuff -->
+	<CurrentTotalAnomalyPerColonist>Current total anomalies per colonist</CurrentTotalAnomalyPerColonist>
+  	<AnomalyPerColonist>total anomalies per colonist</AnomalyPerColonist>
+  	<MinAnomalyPerColonist>Expecting at least {0} anomalies per colonist.</MinAnomalyPerColonist>
+
 </LanguageData>

@@ -16,21 +16,25 @@
 
 	<!-- Precepts -->
 	<PreceptDef>
-		<defName>SCP_Respected</defName>
+		<defName>SCP_Reverence</defName>
 		<issue>SCP_Issue</issue>
-		<label>respected</label>
-		<description>Insert Description</description>
+		<label>reverence</label>
+		<description>We must contain as many anomalies as possible.</description>
 		<impact>Medium</impact>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>SCP_Anomaly_Respected_Opinion</thought>
+				<thought>SCP_Anomaly_Reverence_Opinion</thought>
 				<description>Anomaly</description>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>SCP_Anomaly_Respected_AnomalyInColony</thought>
+				<thought>SCP_Anomaly_Reverence_AnomalyInColony</thought>
 				<thoughtStageDescriptions>
-					<li>No anomaly</li>
-					<li>Anomalies in colony (+1 per each anomaly, up to +10)</li>
+					<li>No anomalies {STAGE0}</li>
+					<li>Few anomalies  {STAGE1}</li>
+					<li>Some anomalies {STAGE2}</li>
+					<li>Lots of anomalies {STAGE4}</li>
+					<li>Tons of anomalies {STAGE5}</li>
+					<li>Surround by anomalies</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -75,7 +79,7 @@
 		<defName>SCP_Tools</defName>
 		<issue>SCP_Issue</issue>
 		<label>tools</label>
-		<description>Currently same as equal</description>
+		<description>We see anomalies as nothing, but tools. We have no more thought for anomalies than a hammer or a pen.</description>
 		<impact>Medium</impact>
 		<comps>
 		</comps>

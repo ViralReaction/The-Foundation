@@ -38,6 +38,17 @@
 			<li>IndustrialMilitaryBasic</li>
 		</apparelTags>
 		<initialWillRange>3~5</initialWillRange>
+		<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<only>(0.34, 0.29, 0.28)</only>
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ChaosInsurgency_Base" Name="CI_InsurgentBase" Abstract="True">
@@ -154,11 +165,12 @@
 		</apparelRequired>
 		<apparelAllowHeadgearChance>2</apparelAllowHeadgearChance>
 		<weaponMoney>
-			<min>220</min>
+			<min>300</min>
 			<max>600</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>ShortShots</li>
+			<li>Foundation_Combloc_ShotGun</li>
+			<li>Foundation_Combloc_SMG</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -218,7 +230,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>AssaultRifle</li>
+			<li>Foundation_Combloc_AK</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -277,7 +289,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>Foundation_Combloc_MG</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -336,8 +348,7 @@
 			<max>1550</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>Gun_BoltActionRifle</li>
-			<li>SniperRifle</li>
+			<li>Foundation_Combloc_DMR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -395,7 +406,7 @@
 			<max>2550</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SniperRifle</li>
+			<li>Foundation_Combloc_DMR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -454,8 +465,10 @@
 			<max>3550</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>AssaultRifle</li>
-			<li>SpacerGun</li>
+			<li>Foundation_Combloc_AK</li>
+			<li>Foundation_Combloc_Launcher</li>
+			<li>Foundation_Combloc_Elite_Spacer</li>
+			<li>Foundation_Combloc_Explosive</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -502,7 +515,9 @@
 			<max>2050</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SpacerGun</li>
+			<li>Foundation_Combloc_Launcher</li>
+			<li>Foundation_Combloc_Elite_Spacer</li>
+			<li>Foundation_Combloc_Explosive</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -541,7 +556,7 @@
 		</gearHealthRange>
 		<itemQuality>Superior</itemQuality>
 		<weaponTags>
-			<li>AssaultRifle</li>
+			<li>Foundation_Combloc_AK</li>
 		</weaponTags>
 		<weaponMoney>
 			<min>480</min>
@@ -634,7 +649,57 @@
 			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<weaponTags>
-			<li>Shortshots</li>
+			<li>Foundation_Combloc_SMG</li>
+			<li>Foundation_Combloc_Pistol</li>
+		</weaponTags>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsChance>100</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>SCP_30331R</li>
+		</techHediffsRequired>
+		<disallowedTraits>
+			<li>Wimp</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~20</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.97</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialResistanceRange>19~29</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CI_InsurgentBase">
+		<defName>CI_30331_Mike_Grenade</defName>
+		<label>SCP-3033-1 Mike</label>
+		<combatPower>30</combatPower>
+		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>
+			<min>1</min>
+			<max>3</max>
+		</combatEnhancingDrugsCount>
+		<!-- <apparelMoney>400~700</apparelMoney> -->
+		<weaponMoney>
+			<min>300</min>
+			<max>600</max>
+		</weaponMoney>
+		<apparelRequired>
+			<li>Apparel_CI_Cap</li>
+			<li>Apparel_CI_Jumpsuit</li>
+		</apparelRequired>
+		<weaponTags>
 			<li>GrenadeDestructive</li>
 		</weaponTags>
 		<techHediffsMoney>700~1200</techHediffsMoney>
@@ -664,7 +729,7 @@
 			</subOptionsChooseOne>
 		</inventoryOptions>
 		<initialResistanceRange>19~29</initialResistanceRange>
-	</PawnKindDef>	
+	</PawnKindDef>
 
 	<PawnKindDef ParentName="CI_InsurgentEliteTierBase">
 		<defName>CI_30332_Controller</defName>
@@ -677,7 +742,7 @@
 			<li>Apparel_CI_Jumpsuit</li>
 		</apparelRequired>
 		<weaponTags>
-			<li>Gun</li>
+			<li>Foundation_Combloc_AK</li>
 		</weaponTags>
 		<weaponMoney>
 			<min>480</min>

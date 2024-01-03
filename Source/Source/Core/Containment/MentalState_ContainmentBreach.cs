@@ -149,7 +149,6 @@ namespace Foundation.Containment
             else
             {
                 this.pawn.mindState.mentalStateHandler.Reset();
-                this.pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter, transitionSilently: true);
                 this.pawn.mindState.exitMapAfterTick = 0;
             }
         }

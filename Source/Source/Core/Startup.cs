@@ -66,16 +66,7 @@ namespace Foundation
                 num = 0;
             return num != 0 || thing.def.HasModExtension<ContainmentExtension>() && thing.def.GetModExtension<ContainmentExtension>().containmentTier >= 1;
         }
- 
-        //[MethodImpl(MethodImplOptions.AggressiveInlining)]
-        //public static bool IsSCP(this Pawn p)
-        //{
-        //    if (p.def.GetModExtension<ContainmentExtension>() != null)
-        //        return true;
-        //    return false;
-        //}
 
-        //public static bool IsCage(ThingDef thing) => thing.GetModExtension<CageExtension>().isCage = true;
         public static bool isCage(string defName)
         {
             switch (defName)

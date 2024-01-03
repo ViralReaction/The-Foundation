@@ -138,7 +138,6 @@
 		<pointsScaleable>true</pointsScaleable>
 		<minThreatPoints>400</minThreatPoints>
 		<mechClusterBuilding>SCP_610Hive_Infestation</mechClusterBuilding>
-		<tale>ShipPartCrash</tale>
 	</IncidentDef>
 
 </Defs>

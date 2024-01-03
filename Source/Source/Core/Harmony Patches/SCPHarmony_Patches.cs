@@ -210,7 +210,6 @@ namespace Foundation.HarmonyPatches
         [HarmonyPatch(typeof(Pawn), "Kill")]
         public class NotifyPawnDiedPatch
         {
-
             public static void Postfix(Pawn __instance)
             {
                 Current.Game.GetComponent<FoundationComponent>().Notify_PawnDied(__instance);

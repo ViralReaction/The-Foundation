@@ -33,6 +33,17 @@
 				<max>4</max>
 			</countRange>
 		</inventoryOptions>
+		<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<only>(0.20, 0.20, 0.20)</only>
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
 	</PawnKindDef>
 
 	<!-- Staff Base -->
@@ -323,7 +334,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SimpleGun</li>
+			<li>Foundation_US_Pistol</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -380,7 +391,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SimpleGun</li>
+			<li>Foundation_US_Pistol</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -438,7 +449,8 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SimpleGun</li>
+			<li>Foundation_US_Pistol</li>
+			<li>Foundation_US_BigIron</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -497,7 +509,8 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SimpleGun</li>
+			<li>Foundation_US_Pistol</li>
+			<li>Foundation_US_BigIron</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -557,7 +570,8 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>ShortShots</li>
+			<li>Foundation_US_ShotGun</li>
+			<li>Foundation_US_SMG</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -624,7 +638,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>AssaultRifle</li>
+			<li>Foundation_US_AR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -690,7 +704,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SniperRifle</li>
+			<li>Foundation_US_DMR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -755,7 +769,7 @@
 			<max>1500</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>Foundation_US_MG</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -825,7 +839,8 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>AssaultRifle</li>
+			<li>Foundation_US_AR</li>
+			<li>Foundation_US_BR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -892,8 +907,7 @@
 			<max>2000</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>Minigun</li>
-			<li>IndustrialGunAdvanced</li>
+			<li>Foundation_US_MG</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -960,7 +974,7 @@
 			<max>650</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SniperRifle</li>
+			<li>Foundation_US_DMR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -1026,7 +1040,7 @@
 			<max>1050</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>SniperRifle</li>
+			<li>Foundation_US_DMR</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -1093,9 +1107,10 @@
 			<max>2550</max>
 		</weaponMoney>
 		<weaponTags>
-			<li>Gun_IncendiaryLauncher</li>
-			<li>IndustrialGunAdvanced</li>
-			<li>SpacerGun</li>
+			<li>Foundation_US_BR</li>
+			<li>Foundation_US_Elite_Spacer</li>
+			<li>Foundation_US_Launcher</li>
+			<li>Foundation_US_AntiMaterial</li>
 		</weaponTags>
 		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>
@@ -1146,7 +1161,7 @@
 		</gearHealthRange>
 		<itemQuality>Superior</itemQuality>
 		<weaponTags>
-			<li>AssaultRifle</li>
+			<li>Foundation_US_AR</li>
 		</weaponTags>
 		<weaponMoney>
 			<min>480</min>
