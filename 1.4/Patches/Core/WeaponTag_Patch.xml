@@ -18,15 +18,6 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]/weaponTags</xpath>
-					<value>
-						<li>Foundation_Combloc_Explosive</li>
-						<li>Foundation_US_Explosive</li>
-						<li>Foundation_GOC_Explosive</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/weaponTags</xpath>
 					<value>
 						<li>Foundation_Combloc_ShotGun</li>
@@ -96,6 +87,27 @@
 		<value>
 			<li>Foundation_Combloc_ShotGun</li>
 		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]/weaponTags</xpath>
+		<match Class="PatchOperationAdd">
+			<value>
+				<li>Foundation_Combloc_Explosive</li>
+				<li>Foundation_US_Explosive</li>
+				<li>Foundation_GOC_Explosive</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]</xpath>
+			<value>
+				<weaponTags>
+					<li>Foundation_Combloc_Explosive</li>
+					<li>Foundation_US_Explosive</li>
+					<li>Foundation_GOC_Explosive</li>
+				</weaponTags>
+			</value>
+		</nomatch>
 	</Operation>
 
 </Patch>
