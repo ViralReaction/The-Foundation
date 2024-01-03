@@ -23,7 +23,7 @@ namespace Foundation
                 return ThoughtState.Inactive;
             int colonistNum = 0;
             int scpNum = 0;
-            int stageIndex = 1;
+            int stageIndex = 0;
             List<Pawn> pawnList = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_OfPlayerFaction;
             for (int index = 0; index < pawnList.Count; index++)
             {
@@ -42,15 +42,7 @@ namespace Foundation
                     ++scpNum;
                 }
             }
-            if (colonistNum < 1)
-            {
-                if (GenTicks.TicksAbs < 900000)
-                {
-                    return ThoughtState.Inactive;
-                }
-                return ThoughtState.ActiveAtStage(0);
-            }
-            int scpDensity = scpNum / colonistNum;
+            float scpDensity = scpNum / colonistNum;
             Density = scpDensity.ToString();
             for (int index = 0; index < scpDensity; index++)
             {

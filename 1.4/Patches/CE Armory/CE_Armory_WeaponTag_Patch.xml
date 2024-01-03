@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended Armory</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Shotguns -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="CE_Gun_KSTwentyThree"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_ShotGun</li>
+					</value>
+				</li>
+
+				<!-- SMG -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_AKSSeventyFourU"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_SMG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_PNinety"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_SMG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_PNinety"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_GOC_SMG</li>
+					</value>
+				</li>
+
+				<!-- AK -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_AKSSeventyFourU" or
+						defName="CE_Gun_AK74GL" or
+						defName="CE_Gun_AVB" or
+						defName="CE_Gun_AKSSeventyFourU"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_AK</li>
+					</value>
+				</li>
+
+				<!-- AR -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_FightLiteMCR" or
+						defName="CE_Gun_MSeven"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_AR</li>
+					</value>
+				</li>
+
+				<!-- Machine Gun -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_DPtwentySeven" or
+						defName="CE_Gun_KordPortable" or
+						defName="CE_Gun_RPKSixteen"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_MG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_MTwoFifty" or
+						defName="CE_Gun_MGThreeThreeEight"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_MG</li>
+					</value>
+				</li>
+
+				<!-- DMR -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_SRTweintyFive" or
+						defName="CE_Gun_SRS"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_DMR</li>
+					</value>
+				</li>
+
+				<!-- Launchers -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_ATFour"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_US_Launcher</li>
+						<li>Foundation_GOC_Launcher</li>
+					</value>
+				</li>
+
+				<!-- Handgun -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_SigMCX"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_Pistol</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_FNFiveSeven"
+						]/weaponTags
+						</xpath>
+					<value>
+						<li>Foundation_GOC_Pistol</li>
+					</value>
+				</li>
+
+				<!-- Big Irons -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="CE_Gun_Deagke" or
+					defName="CE_Gun_TaurusJudge"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_BigIron</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="CE_Gun_TacFifty"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_US_AntiMaterial</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -12,7 +12,7 @@
 			<speed>90</speed>
 		</projectile>
 		<graphicData>
-			<texPath>Things/Projectile/TranqDart</texPath>
+			<texPath>Things/Projectile/Needle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingDef>

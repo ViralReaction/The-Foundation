@@ -18,6 +18,8 @@
 		<defName>SCP_Anomaly_Reverence_AnomalyInColony</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<workerClass>Foundation.ThoughtWorker_Precept_SCP_InColony</workerClass>
+		<minExpectationForNegativeThought>Low</minExpectationForNegativeThought>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 			<li>
 				<label>no anomalies</label>

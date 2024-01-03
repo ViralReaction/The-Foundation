@@ -29,11 +29,11 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>SCP_Anomaly_Reverence_AnomalyInColony</thought>
 				<thoughtStageDescriptions>
-					<li>No anomalies {STAGE0}</li>
-					<li>Few anomalies  {STAGE1}</li>
-					<li>Some anomalies {STAGE2}</li>
-					<li>Lots of anomalies {STAGE4}</li>
-					<li>Tons of anomalies {STAGE5}</li>
+					<li>No anomalies </li>
+					<li>Few anomalies </li>
+					<li>Some anomalies </li>
+					<li>Lots of anomalies </li>
+					<li>Tons of anomalies </li>
 					<li>Surround by anomalies</li>
 				</thoughtStageDescriptions>
 			</li>

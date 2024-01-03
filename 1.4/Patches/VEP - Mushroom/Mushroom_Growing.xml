@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Patch>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Plants Expanded - Mushrooms</li>
@@ -7,19 +8,17 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				
-				<li Class="PatchOperationConditional">
+				<li Class="PatchOperationAdd">
 					<xpath>Defs/VanillaPlantsExpandedMushrooms.MushroomGrowZoneTerrainsDef[defName="VPE_MushroomGrowZoneTerrains"]/allowedTerrains</xpath>
-					<match Class="PatchOperationAdd">
-						<xpath>Defs/VanillaPlantsExpandedMushrooms.MushroomGrowZoneTerrainsDef[defName="VPE_MushroomGrowZoneTerrains"]/allowedTerrains</xpath>
-						<value>
-							<li>SCP_610_Fleshy_Gravel</li>
-							<li>SCP_610_Fleshy_Soil</li>
-						</value>
-					</match>
+					<value>
+						<li>SCP_610_Fleshy_Gravel</li>
+						<li>SCP_610_Fleshy_Soil</li>
+					</value>
 				</li>
 				
 			</operations>
 		
 		</match>
 	</Operation>
+
 </Patch>

@@ -23,7 +23,7 @@ namespace Foundation.Containment
             for (int index = 0; index < allPawnsSpawned.Count; index++)
             {
                 Pawn pawn1 = allPawnsSpawned[index];
-                if (pawn1.IsSCP() && pawn1.GetRoom().Role == SCP_Startup.containmentRoom && pawn1.RaceProps.Animal && pawn1 != pawn && !pawn1.IsBurning() && pawn.CanReserveAndReach((LocalTargetInfo)(Thing)pawn1, PathEndMode.Touch, Danger.Deadly))
+                if (pawn1.IsCaptiveOf() && pawn1.RaceProps.Animal && pawn1 != pawn && !pawn1.IsBurning() && pawn.CanReserveAndReach((LocalTargetInfo)(Thing)pawn1, PathEndMode.Touch, Danger.Deadly))
                     ContainmentBreakerMentalStateUtility.tmpAnimals.Add(pawn1);
             }
             if (!ContainmentBreakerMentalStateUtility.tmpAnimals.Any<Pawn>())

@@ -36,6 +36,8 @@ namespace Foundation.Containment
                         return;
                     else
                     target.mindState.mentalStateHandler.TryStartMentalState(SCP_Startup.containBreachState, forceWake: true, transitionSilently: true);
+                    this.pawn.MentalState.Notify_SlaughteredAnimal();
+
                 }
             };
         }
