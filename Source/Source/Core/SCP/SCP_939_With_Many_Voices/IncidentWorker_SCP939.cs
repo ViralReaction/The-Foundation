@@ -24,7 +24,7 @@ namespace Foundation
         {
             if ((double)parms.points > 0.0)
                 return;
-            Log.Error("RaidEnemy is resolving raid points. They should always be set before initiating the incident.", false);
+            Log.Error("RaidEnemy is resolving raid points. They should always be set before initiating the incident.");
             parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
         }
 

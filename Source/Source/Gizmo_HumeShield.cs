@@ -29,7 +29,7 @@ namespace Foundation
             Rect rect3 = rect2;
             rect3.height = rect.height / 2f;
             Text.Font = GameFont.Tiny;
-            Widgets.Label(rect3, shield.parent.LabelCap);
+            Widgets.Label(rect3, shield.parent.LabelCap); //Should I rename to Hume Shield in game??
             Rect rect4 = rect2;
             rect4.yMin = rect2.y + rect2.height / 2f;
             float fillPercent = shield.Energy / shield.EnergyMax;

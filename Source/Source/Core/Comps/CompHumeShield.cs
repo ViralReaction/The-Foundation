@@ -75,9 +75,9 @@ namespace Foundation.Comps
 
         public override IEnumerable<Gizmo> CompGetWornGizmosExtra()
         {
-            foreach (Gizmo gizmo in base.CompGetWornGizmosExtra())
+            CompHumeShield compShield = this;
+            foreach (Gizmo gizmo in compShield.CompGetWornGizmosExtra())
                 yield return gizmo;
-            IEnumerator<Gizmo> enumerator = (IEnumerator<Gizmo>)null;
             if (DebugSettings.ShowDevGizmos)
             {
                 Command_Action commandAction1 = new Command_Action();
@@ -98,10 +98,8 @@ namespace Foundation.Comps
         {
             foreach (Gizmo gizmo in base.CompGetGizmosExtra())
                 yield return gizmo;
-            IEnumerator<Gizmo> enumerator = (IEnumerator<Gizmo>)null;
                   foreach (Gizmo gizmo2 in this.GetGizmos())
                     yield return gizmo2;
-                enumerator = (IEnumerator<Gizmo>)null;
         }
 
         private IEnumerable<Gizmo> GetGizmos()

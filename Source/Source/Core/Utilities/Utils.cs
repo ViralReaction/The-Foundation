@@ -35,7 +35,7 @@ namespace Foundation.Utilities
         }
         public static bool IsCage(this ThingDef thing)
         {
-            if (thing.GetModExtension<CageExtension>().isCage != null)
+            if (thing.GetModExtension<CageExtension>().isCage == true)
                 return true;
             return false;
         }

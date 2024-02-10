@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>SCP_035_Mask</defName>
+		<label>SCP-035 The Mask</label>
+		<description>Item #: SCP-035\n\nObject Class: Keter\n\nSCP-035 appears to be a white porcelain comedy mask, although, at times, it will change to tragedy. A highly corrosive and degenerative viscous liquid constantly seeps from the eye and mouth holes of SCP-035.\n\nSubjects within 1.5 to 2 meters (5-6 feet) of SCP-035, or in visual contact with it, experience a strong urge to put it on. When SCP-035 is placed on the face of an individual, an alternate brain wave pattern from SCP-035 overlaps that of the original host, effectively snuffing it out and causing brain death to the subject.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CKeter</li>
+					<li>SCP_DVlam</li>
+					<li>SCP_RCritical</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Apparel/Headgear/Anomalous/SCP_35_Mask/SCP_35_Mask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>false</useHitPoints>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>ExoticMisc</li>
+			<li>SCP</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<Mass>0.001</Mass>
+			<MarketValue>1000</MarketValue>
+			<Beauty>6</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Touch</useLabel>
+				<useDuration>60</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>Foundation.CompUseEffect_UseSCP35</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

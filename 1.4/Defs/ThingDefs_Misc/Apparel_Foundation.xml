@@ -11,9 +11,10 @@
 			<displayPriority>208</displayPriority>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Apparel/Foundation/SCP_Dclass/SCP_Dclass</texPath>
+			<texPath>Things/Apparel/Foundation/DClass/DClass</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2.0</drawSize>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<costStuffCount>80</costStuffCount>
@@ -48,7 +49,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Foundation/SCP_Dclass/SCP_Dclass</wornGraphicPath>
+			<wornGraphicPath>Things/Apparel/Foundation/DClass/DClass</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -58,11 +59,13 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
 			<li>BasicClothing</li>
 			<li>Apparel_SCP_Clothing</li>
 		</tradeTags>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
 	<!-- Research Staff -->

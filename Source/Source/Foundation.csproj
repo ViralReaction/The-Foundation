@@ -37,14 +37,11 @@
     <Reference Include="0Harmony">
       <HintPath>..\..\..\..\..\..\..\..\..\Games\Rimworld C# Packages\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Biotech\FileName.cs" />
@@ -88,6 +85,7 @@
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldInterface.cs" />
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldManager.cs" />
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldUtility.cs" />
+    <Compile Include="Core\SCP\SCP_035_Mask\CompUseEffect_UseSCP35.cs" />
     <Compile Include="Core\SCP\SCP_106_Old_Man\Comp_OldMan.cs" />
     <Compile Include="Core\SCP\SCP_106_Old_Man\CompProperties_OldMan.cs" />
     <Compile Include="Core\SCP\SCP_113 Gender Stone\CompUseEffect_UseSCP113.cs" />

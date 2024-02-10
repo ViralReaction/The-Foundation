@@ -141,27 +141,27 @@ SCP-250 emulates what are presumed to have been the standard daily activities of
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCP250/SCP250</texPath>
+          <texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
           <drawSize>1</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCP250/SCP250</texPath>
+          <texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
           <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCP250/SCP250</texPath>
+          <texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
           <drawSize>2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCP250/SCP250</texPath>
+          <texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
           <drawSize>2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCP250/SCP250</texPath>
+          <texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
           <drawSize>3</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
@@ -169,7 +169,7 @@ SCP-250 emulates what are presumed to have been the standard daily activities of
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCP250/SCP250</texPath>
+          <texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
           <drawSize>3</drawSize>
         </dessicatedBodyGraphicData>
       </li>

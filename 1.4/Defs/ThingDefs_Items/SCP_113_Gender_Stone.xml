@@ -30,7 +30,7 @@ When SCP-113 comes in direct contact with the flesh of an organism possessing se
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<useHitPoints>false</useHitPoints>
-		<techLevel>Ultra</techLevel>
+		<techLevel>Industrial</techLevel>
 		<thingCategories>
 			<li>SCPObjects</li>
 		</thingCategories>

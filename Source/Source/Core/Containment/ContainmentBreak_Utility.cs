@@ -44,13 +44,23 @@ namespace Foundation.Containment
         {
             //Check if can containment break
             if (!ignoreAsleep && !pawn.Awake() || !ContainmentBreakUtility.CanParticipateInContainmentBreak(pawn))
+            {
                 return -1f;
+            }
             // Check if room is containment room
             Room room = pawn.GetRoom();
             if (room == null || room.Role != SCP_Startup.containmentRoom)
+            {
+                Log.Message("Null Room");
                 return -1f;
+            }
             //Do the math
-            float num1 = (60f/* - FoundationComponent.ContainmentBreakCheck(pawn)*/) / (1+pawn.def.GetModExtension<ContainmentExtension>().containmentTier);
+            int containmentTier = pawn.def.GetModExtension<ContainmentExtension>().containmentTier;
+            if (containmentTier == 0)
+            {
+                return -1f;
+            }
+            float num1 = (60f - FoundationComponent.ContainmentBreakCheck(pawn)) / (containmentTier);
             float f = Mathf.Clamp(pawn.health.capacities.GetLevel(PawnCapacityDefOf.Moving), 0.01f, 1f);
             float num2 = num1 / f;
             if (sb != null && (double)f != 1.0)
@@ -95,7 +105,7 @@ namespace Foundation.Containment
                     sb.Append((string)("FactorForDoorCount".Translate() + ": " + (1f / num3).ToStringPercent()));
                 }
             }
-            return num2;
+            return num1;
         }
 
         public static bool CanParticipateInContainmentBreak(Pawn pawn) => !pawn.Downed && pawn.IsSCP() && !ContainmentBreakUtility.IsPrisonBreaking(pawn);
@@ -147,7 +157,7 @@ namespace Foundation.Containment
                     Thing thing = adjacentList[index];
                     if (thing is Pawn pawn && ContainmentBreakUtility.CanParticipateInContainmentBreak(pawn))
                     {
-                        pawn.mindState.mentalStateHandler.TryStartMentalState(SCP_Startup.containBreachState, forceWake: true, transitionSilently: true);
+                        pawn.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.SCP_BreachContainment, forceWake: true, transitionSilently: true);
                         FoundationComponent.ContainmentBreakDict.SetOrAdd(pawn, 0);
                         allEscapingPrisoners.Add(pawn);
                     }

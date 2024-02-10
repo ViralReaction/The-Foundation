@@ -9,6 +9,6 @@ namespace Foundation.Containment
 {
     internal class CageExtension : DefModExtension
     {
-        public bool isCage = false;
+        public bool isCage = true;
     }
 }

@@ -17,7 +17,7 @@ namespace Foundation
         public int nextPawnSpawnTick = -1;
         public bool aggressive = true;
         public bool canSpawnPawns = true;
-        private CompCanBeDormant dormancyCompCached;
+        //private CompCanBeDormant dormancyCompCached;
 
         private CompProperties_FleshHiveSpawner Props => (CompProperties_FleshHiveSpawner)this.props;
 

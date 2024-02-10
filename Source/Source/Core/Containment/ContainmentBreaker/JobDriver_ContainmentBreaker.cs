@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
+using Foundation.Utilities;
 
 namespace Foundation.Containment
 {
@@ -35,7 +36,7 @@ namespace Foundation.Containment
                     if (target.InMentalState)
                         return;
                     else
-                    target.mindState.mentalStateHandler.TryStartMentalState(SCP_Startup.containBreachState, forceWake: true, transitionSilently: true);
+                    target.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.SCP_BreachContainment, forceWake: true, transitionSilently: true);
                     this.pawn.MentalState.Notify_SlaughteredAnimal();
 
                 }

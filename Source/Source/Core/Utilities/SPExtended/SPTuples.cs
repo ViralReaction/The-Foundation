@@ -117,7 +117,7 @@ namespace Foundation.Utilities
                 {
                     if ((object)value != null)
                         this.first = value;
-                    Log.Error("Tried to assign value of different type to Tuple of type " + (object)typeof(T1), false);
+                    Log.Error("Tried to assign value of different type to Tuple of type " + (object)typeof(T1));
                 }
             }
 
@@ -128,7 +128,7 @@ namespace Foundation.Utilities
                 {
                     if ((object)value != null)
                         this.second = value;
-                    Log.Error("Tried to assign value of different type to Tuple of type " + (object)typeof(T2), false);
+                    Log.Error("Tried to assign value of different type to Tuple of type " + (object)typeof(T2));
                 }
             }
 

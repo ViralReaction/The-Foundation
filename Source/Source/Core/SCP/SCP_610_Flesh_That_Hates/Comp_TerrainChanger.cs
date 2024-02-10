@@ -1,6 +1,5 @@
 ﻿using Foundation.Comps;
 using RimWorld;
-using Foundation.Comps;
 using System;
 using System.Collections.Generic;
 using System.Linq;

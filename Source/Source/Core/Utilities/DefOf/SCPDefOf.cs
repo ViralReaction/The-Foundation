@@ -23,6 +23,7 @@ namespace Foundation.Utilities
         public static HediffDef SCP_30331R;
         public static HediffDef SCP_30332R;
         public static HediffDef SCP_610_Infection;
+        public static IncidentDef SCP_Incident_ContainBreach;
         [MayRequireIdeology]
         public static HistoryEventDef SCP_Died;
         public static JobDef LeaveMapDaylight;
@@ -33,6 +34,7 @@ namespace Foundation.Utilities
         public static MentalStateDef SCP_ContainmentBreaker;
         [MayRequireIdeology]
         public static PreceptDef SCP_Tools;
+        //public static RoomRoleDef SCP_ContainmentRoom;
         public static TerrainDef SCP_610_Fleshy_Gravel;
         public static TerrainDef SCP_610_Fleshy_Soil;
         public static TerrainDef SCP_610_EvilWater_Shallow;

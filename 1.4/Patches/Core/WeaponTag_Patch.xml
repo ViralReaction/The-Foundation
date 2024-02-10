@@ -9,59 +9,6 @@
 			<operations>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Gun_Revolver"]/weaponTags</xpath>
-					<value>
-						<li>Foundation_Combloc_Pistol</li>
-						<li>Foundation_US_Pistol</li>
-						<li>Foundation_GOC_Pistol</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/weaponTags</xpath>
-					<value>
-						<li>Foundation_Combloc_ShotGun</li>
-						<li>Foundation_US_ShotGun</li>
-						<li>Foundation_GOC_Shotgun</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/weaponTags</xpath>
-					<value>
-						<li>Foundation_US_ShotGun</li>
-						<li>Foundation_GOC_Shotgun</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
-					<value>
-						<li>Foundation_Combloc_SMG</li>
-						<li>Foundation_US_SMG</li>
-						<li>Foundation_GOC_SMG</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Gun_LMG"]/weaponTags</xpath>
-					<value>
-						<li>Foundation_Combloc_MG</li>
-						<li>Foundation_US_MG</li>
-						<li>Foundation_GOC_MG</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/weaponTags</xpath>
-					<value>
-						<li>Foundation_Combloc_AK</li>
-						<li>Foundation_US_AR</li>
-						<li>Foundation_GOC_AR</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/weaponTags</xpath>
 					<value>
 						<li>Foundation_Combloc_DMR</li>
@@ -89,7 +36,7 @@
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationConditional">
+	<!--Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Gun_IncendiaryLauncher"]/weaponTags</xpath>
 		<match Class="PatchOperationAdd">
 			<value>
@@ -108,6 +55,6 @@
 				</weaponTags>
 			</value>
 		</nomatch>
-	</Operation>
+	</Operation-->
 
 </Patch>

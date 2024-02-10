@@ -41,21 +41,22 @@ namespace Foundation.Containment
             }
             Map target = (Map)parms.target;
             List<Pawn> list = new List<Pawn>();
-            foreach (Pawn pawn in target.mapPawns.AllPawnsSpawned)
+            List<Pawn> targetList = target.mapPawns.AllPawnsSpawned;
+            for (int index = 0; index < targetList.Count; index++)
             {
-                if (pawn.IsSCP() && pawn.GetRoom().Role == SCP_Startup.containmentRoom)
-                {
+                Pawn pawn = targetList[index];
+                if (pawn.IsCaptiveOf())
                     list.Add(pawn);
-                }
             }
             if (!list.NullOrEmpty<Pawn>())
             {
                 int index = Rand.Range(0, list.Count);
                 Pawn controllerPawn = list[index];
-                if (parms.controllerPawn != null && parms.controllerPawn.IsSCP() && parms.controllerPawn.GetRoom().Role == SCP_Startup.containmentRoom)
+                if (parms.controllerPawn != null)
                 {
-                    foreach (Pawn pawn in list)
+                    for (int index2 = 0; index2 < list.Count; index2++)
                     {
+                        Pawn pawn = list[index2];
                         if (parms.controllerPawn == pawn)
                         {
                             controllerPawn = parms.controllerPawn;
@@ -65,19 +66,21 @@ namespace Foundation.Containment
                 }
                 List<Pawn> pawnList = new List<Pawn>();
                 pawnList.Add(controllerPawn);
-                foreach (Pawn thing in list)
+                for (int index3 = 0; index3 < list.Count; index3++)
                 {
+                    Pawn thing = list[index3];
                     if (thing != controllerPawn && thing.GetRoom() == controllerPawn.GetRoom())
                         pawnList.Add(thing);
                 }
-                foreach (Pawn pawn in pawnList)
+                for (int index4 = 0; index4 < pawnList.Count; index4++)
                 {
-                    pawn.mindState.mentalStateHandler.TryStartMentalState(SCP_Startup.containBreachState, forceWake: true, transitionSilently: true);
+                    Pawn pawn = pawnList[index4];
+                    pawn.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.SCP_BreachContainment, forceWake: true, transitionSilently: true);
                     FoundationComponent.ContainmentBreakDict.SetOrAdd(pawn, 0);
                 }
-                        this.SendStandardLetter("LetterLabelContainmentBreach".Translate((NamedArgument)controllerPawn.def.label.CapitalizeFirst()), "LetterContainmentBreach".Translate((NamedArgument)controllerPawn.def.label), LetterDefOf.ThreatBig, parms, (LookTargets)(Thing)pawnList[0]);
-                        Find.TickManager.slower.SignalForceNormalSpeedShort();
-                        return true;
+                this.SendStandardLetter("LetterLabelContainmentBreach".Translate((NamedArgument)controllerPawn.def.label.CapitalizeFirst()), "LetterContainmentBreach".Translate((NamedArgument)controllerPawn.def.label), LetterDefOf.ThreatBig, parms, (LookTargets)(Thing)pawnList[0]);
+                Find.TickManager.slower.SignalForceNormalSpeedShort();
+                return true;
             }
             Log.Error("SCP error: Tried to find SCP to cause containment breach but found none.");
             return false;

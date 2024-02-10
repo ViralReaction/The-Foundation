@@ -228,7 +228,7 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<useHitPoints>false</useHitPoints>
-		<techLevel>Ultra</techLevel>
+		<techLevel>Industrial</techLevel>
 		<thingCategories>
 			<li>SCPObjects</li>
 		</thingCategories>

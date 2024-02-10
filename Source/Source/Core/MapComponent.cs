@@ -15,9 +15,8 @@ namespace Foundation
     {
         private static PawnKindDef scp19051 = PawnKindDefOf_SCP.SCP_19051R;
         private static ThingDef scp1905 = ThingDefOf_SCP.SCP_1905_Dino_Hunter;
-        private int counter = 0;
         public bool isFirstLoad = true;
-        private int tickCounter;
+        private int tickCounter = 0;
 
         //public static Dictionary<Pawn, int> ContainmentBreakDict = new Dictionary<Pawn, int>();
         //public static List<Pawn> CapturedSCP = new List<Pawn>();
@@ -92,7 +91,7 @@ namespace Foundation
                         Log.Message("Checking Prison Break MTB");
                         float mtb = ContainmentBreakUtility.InitiatePrisonBreakMtbDays(pawn);
                         FoundationComponent.ContainmentBreakDay(pawn);
-                        if ((double)mtb >= 0.0 && Rand.MTBEventOccurs(mtb, 60000f, 2500f))
+                        if ((double)mtb >= 0.0 && Rand.MTBEventOccurs(mtb, 1f, 2500f))
                         ContainmentBreakUtility.StartPrisonBreak(pawn);  
 
                     }

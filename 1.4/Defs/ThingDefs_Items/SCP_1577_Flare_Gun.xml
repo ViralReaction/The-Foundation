@@ -29,7 +29,7 @@ SCP-1577-1 is a flare gun, that shows minor wear and damage consistent with its 
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<useHitPoints>false</useHitPoints>
-		<techLevel>Ultra</techLevel>
+		<techLevel>Industrial</techLevel>
 		<thingCategories>
 			<li>SCPObjects</li>
 		</thingCategories>

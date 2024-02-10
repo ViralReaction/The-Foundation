@@ -147,11 +147,11 @@ Instances of SCP-1905-1 are composed primarily of fiberglass and plaster; they s
 					<drawSize>1.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>1.5</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
@@ -165,11 +165,11 @@ Instances of SCP-1905-1 are composed primarily of fiberglass and plaster; they s
 					<drawSize>2.4</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>2.4</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>

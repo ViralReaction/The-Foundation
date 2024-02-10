@@ -141,11 +141,11 @@ SCP-106 appears to be an elderly humanoid, with a general appearance of advanced
 			<li>
 				<labelMale>Old Man</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_106/PlaceHolderOldManThin</texPath>
+					<texPath>Things/Pawn/Animal/SCP_106/SCP_106</texPath>
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP131/Dessicated_SCP131a</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

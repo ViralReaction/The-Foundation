@@ -142,11 +142,11 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 			<li>
 				<labelMale>Old Man</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_106/PlaceHolderOldManThin</texPath>
+					<texPath>Things/Pawn/Animal/SCP_096/SCP_096_cr</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP131/Dessicated_SCP131a</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

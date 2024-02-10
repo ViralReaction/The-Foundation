@@ -46,7 +46,7 @@
 		<tradeTags>
 			<li>SCP</li>
 		</tradeTags>
-		<techLevel>Ultra</techLevel>
+		<techLevel>Industrial</techLevel>
 		<burnableByRecipe>false</burnableByRecipe>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<minRewardCount>2</minRewardCount>

@@ -15,8 +15,6 @@ namespace Foundation.Comps
     {
         public int tickCounter = 0;
         public Pawn thisPawn;
-        int num = 0;
-        //List<Pawn> pawnList = new List<Pawn>();
 
         private CompProperties_GiveHediffSeverity Props => (CompProperties_GiveHediffSeverity)this.props;
 
@@ -27,13 +25,10 @@ namespace Foundation.Comps
             if (tickCounter > Props.tickInterval)
             {
                 thisPawn = this.parent as Pawn;
-                if (Props.scrantonCheck)
+                if (Props.scrantonCheck && ScrantonCheck(thisPawn))
                 {
-                    if (ScrantonCheck(thisPawn))
-                    {
                         tickCounter = 0;
                         return;
-                    }
                 }
                 if (thisPawn != null && thisPawn.Map != null && !thisPawn.Dead && !thisPawn.Downed)
                 {

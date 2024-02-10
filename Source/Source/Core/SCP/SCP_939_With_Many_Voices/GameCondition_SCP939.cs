@@ -66,7 +66,7 @@ namespace Foundation
                 if (!RCellFinder.TryFindRandomPawnEntryCell(out result, this.SingleMap, CellFinder.EdgeRoadChance_Animal))
                     return;
                 GenSpawn.Spawn((Thing)this.scp939Generated.Pop<Pawn>(), result, this.SingleMap);
-                Log.Message("SCP SPAWNED - Left: " + (object)this.scp939Generated.Count, false);
+                Log.Message("SCP SPAWNED - Left: " + (object)this.scp939Generated.Count);
             }
             if (this.scp939_GeneratedTotal < this.scp939Count)
             {

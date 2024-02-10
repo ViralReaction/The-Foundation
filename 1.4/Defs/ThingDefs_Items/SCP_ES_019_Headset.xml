@@ -31,7 +31,7 @@ A side effect of SCP-ES-019, displayed in approximately [REDACTED]% of the subje
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<useHitPoints>false</useHitPoints>
-		<techLevel>Ultra</techLevel>
+		<techLevel>Industrial</techLevel>
 		<thingCategories>
 			<li>SCPObjects</li>
 		</thingCategories>
