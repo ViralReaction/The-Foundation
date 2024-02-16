@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_5893R</defName>
 		<label>SCP-5893</label>
 		<description>Item #: SCP-5893
@@ -31,6 +31,9 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>2</ArmorRating_Heat>
 		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -48,7 +51,6 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 		</comps>
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
-			<thinkTreeMain>SCP_AI</thinkTreeMain>
 			<body>SCP_BipedalQuad</body>
 			<predator>false</predator>
 			<baseBodySize>1.2</baseBodySize>
@@ -103,11 +105,6 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-			<li>SCP</li>
-		</tradeTags>
 		<tools>
 			<li>
 				<label>head</label>

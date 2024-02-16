@@ -32,10 +32,10 @@ namespace Foundation.Comps
                         {
                             if (!shyGuy.InMentalState)
                             {
-                                
                                 goto label_19;
                             }
                         }
+                        this.targetHunted = null;
                     }
                 }
                 if (shyGuy.CurJobDef == JobDefOf.AttackMelee)

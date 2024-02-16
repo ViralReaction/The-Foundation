@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_131_Eye_Pod</defName>
 		<label>SCP-131 "Eye Pods"</label>
 		<description>Item #: SCP-131
@@ -29,8 +29,6 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 			<Steel>16</Steel>
 		</butcherProducts>
 		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalPet</li>
 			<li>SCP</li>
 		</tradeTags>
 		<race>
@@ -61,7 +59,7 @@ SCP-131-A and SCP-131-B (affectionately nicknamed the "Eye Pods" by personnel) a
 					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
 					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
 				</li>
-		  </lifeStageAges>
+			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>

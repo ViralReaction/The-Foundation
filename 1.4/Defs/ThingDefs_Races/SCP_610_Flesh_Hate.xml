@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_610A</defName>
 		<label>SCP-610-A</label>
 		<description>Item #: SCP-610-A
@@ -30,8 +30,10 @@ SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610.
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 			<Flammability>10</Flammability>
 		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
 		<race>
-			<thinkTreeMain>SCP_AI</thinkTreeMain>
 			<animalType>Canine</animalType>
 			<body>Human</body>
 			<predator>true</predator>
@@ -253,6 +255,8 @@ SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-61
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<hediffGiverSets Inherit="false">
+			</hediffGiverSets>
 		</race>
 		<tools>
 			<li>

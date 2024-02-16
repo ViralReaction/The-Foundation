@@ -32,7 +32,6 @@ SCP-160 operates continuously and completely autonomous from any identified cont
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tradeTags>
-			<li>AnimalRare</li>
 			<li>SCP</li>
 		</tradeTags>
 		<butcherProducts>

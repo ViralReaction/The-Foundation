@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_096_Shy_Guy</defName>
 		<label>SCP-096 "Shy Guy"</label>
 		<description>Item #: SCP-096
@@ -30,12 +29,9 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 			<ToxicResistance>1</ToxicResistance>
 		</statBases>
 		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>AnimalPet</li>
 			<li>SCP</li>
 		</tradeTags>
 		<race>
-			<thinkTreeMain>SCP_AI</thinkTreeMain>
 			<body>Human</body>
 			<predator>true</predator>
 			<needsRest>true</needsRest>
@@ -50,7 +46,7 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 			<wildness>10</wildness>
 			<trainability>Advanced</trainability>
 			<!-- <intelligence>Humanlike</intelligence> -->
-			<lifeExpectancy>500</lifeExpectancy>
+			<lifeExpectancy>5000</lifeExpectancy>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<lifeStageAges Inherit="False">
@@ -61,7 +57,7 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
 					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
 				</li>
-		  </lifeStageAges>
+			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -132,7 +128,6 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 			</li>
 		</comps>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCP_096_Shy_Guy</defName>
 		<label>SCP-096 "Shy Guy"</label>
@@ -140,9 +135,8 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 		<combatPower>25</combatPower>
 		<lifeStages>
 			<li>
-				<labelMale>Old Man</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_096/SCP_096_cr</texPath>
+					<texPath>Things/Pawn/Animal/SCP_096/SCP_096_mad</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -152,5 +146,4 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 </Defs>

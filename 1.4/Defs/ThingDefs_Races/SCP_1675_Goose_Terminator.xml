@@ -32,6 +32,9 @@ Whenever SCP-1675 is exposed to a specimen of genus Anser, Branta, or Chen, it w
 			<MeatAmount>0</MeatAmount>
 			<ArmorRating_Heat>2.00</ArmorRating_Heat>
 		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
 		<butcherProducts>
 			<Steel>30</Steel>
 		</butcherProducts>
@@ -76,10 +79,6 @@ Whenever SCP-1675 is exposed to a specimen of genus Anser, Branta, or Chen, it w
 			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
 		</race>
-		<tradeTags>
-			<li>AnimalExotic</li>
-			<li>SCP</li>
-		</tradeTags>
 		<tools>
 			<li>
 				<label>left grabber</label>

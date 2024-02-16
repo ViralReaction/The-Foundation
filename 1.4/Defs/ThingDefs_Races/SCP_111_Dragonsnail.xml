@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Abstract Bases -->
-	<ThingDef Name="SCP_111Base" ParentName="AnimalThingBase" Abstract="true">
+	<ThingDef Name="SCP_111Base" ParentName="AnomalyBase" Abstract="true">
 		<description>Item #: SCP-111
 Object Class: Safe
 			
@@ -27,6 +27,9 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 			<LeatherAmount>0</LeatherAmount>
 			<CarryingCapacity>75</CarryingCapacity>
 		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
 		<tools>
 			<li>
 				<label>horn</label>
@@ -59,7 +62,6 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
-			<thinkTreeMain>SCP_AI</thinkTreeMain>
 			<body>DragonSnailBody</body>
 			<baseBodySize>0.3</baseBodySize>
 			<baseHungerRate>0.27</baseHungerRate>
@@ -90,9 +92,6 @@ SCP-111 is an apparently artificial species of invertebrate vaguely resembling s
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-		<tradeTags>
-			<li>AnimalFarm</li>
-		</tradeTags>
 	</ThingDef>
 
 	<!-- Slimybellies -->

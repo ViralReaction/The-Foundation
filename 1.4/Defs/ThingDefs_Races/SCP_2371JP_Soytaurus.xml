@@ -26,6 +26,9 @@ After germination, SCP-2371-JP begins to take in nutrients by eating, and grows 
 			<MarketValue>300</MarketValue>
 			<FilthRate>14</FilthRate>
 		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
@@ -76,9 +79,6 @@ After germination, SCP-2371-JP begins to take in nutrients by eating, and grows 
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<tradeTags>
-			<li>AnimalFarm</li>
-		</tradeTags>
 		<tools>
 			<li>
 				<capacities>

@@ -25,6 +25,9 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 			<MarketValue>450</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
 		<uiIconScale>2</uiIconScale>
 		<tools>
 			<li>
@@ -105,12 +108,6 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-		<tradeTags>
-			<li>AnimalInsect</li>
-			<li>AnimalCommon</li>
-			<li>AnimalPet</li>
-			<li>SCP</li>
-		</tradeTags>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -128,7 +125,7 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 					<!-- <color>(114,107,84)</color> -->
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5185/Dessicated_SCP_5185</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -138,7 +135,7 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5185/Dessicated_SCP_5185</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -152,7 +149,7 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5185/Dessicated_SCP_5185</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

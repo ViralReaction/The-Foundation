@@ -79,9 +79,7 @@ SCP-1797 is an anomalous strain of influenza, primarily transmitted through cont
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>AnimalCommon</li>
-			<li>AnimalPet</li>
-			<li>AnimalExotic</li>
+			<li>SCP</li>
 		</tradeTags>
 		<tools>
 			<li>

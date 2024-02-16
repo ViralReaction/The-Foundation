@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_3199R</defName>
 		<label>SCP-3199</label>
 		<description>Item #: SCP-3199
@@ -30,6 +30,9 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 			<ComfyTemperatureMax>300</ComfyTemperatureMax>
 			<FilthRate>18</FilthRate>
 		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>SCP_3199_Egg</eggUnfertilizedDef>
@@ -41,7 +44,6 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>SCP_AI</thinkTreeMain>
 			<deathActionWorkerClass>Foundation.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>
 			<body>SCP_Neck</body>
 			<herdAnimal>true</herdAnimal>
@@ -123,7 +125,7 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 					<color>(219, 219, 206)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_3199/Dessicated_SCP_3199</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -137,7 +139,7 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_3199/Dessicated_SCP_3199</texPath>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

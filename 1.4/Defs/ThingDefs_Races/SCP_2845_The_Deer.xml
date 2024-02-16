@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_2845_Deer</defName>
 		<label>SCP-2845 "The Deer"</label>
 		<description>Item #: SCP-2845
@@ -30,10 +30,11 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
 		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
 		<uiIconScale>1.6</uiIconScale>
 		<race>
-			<!--deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass-->
-			<thinkTreeMain>SCP_AI</thinkTreeMain>
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>4.0</baseBodySize>
