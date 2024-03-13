@@ -28,7 +28,6 @@ namespace Foundation.Utilities
         public static PawnKindDef SCP_111_Blobworm;
         public static PawnKindDef SCP_111_Glowdrake;
         public static PawnKindDef SCP_111_Gunkwyvern;
-        public static PawnKindDef SCP_160_Predator_Drone;
         public static PawnKindDef SCP_5893R;
         public static PawnKindDef SCP_2584_Snake;
         public static PawnKindDef SCP_529_Josie;

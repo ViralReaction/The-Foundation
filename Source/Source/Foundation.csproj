@@ -116,8 +116,6 @@
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Hediff_610_Infection.cs" />
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\IncidentWorker_SCP610_Hive.cs" />
     <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\IncidentWorker_SCP610_Local.cs" />
-    <Compile Include="Core\SCP\SCP_848_Spider\IncidentWorker_SCP848.cs" />
-    <Compile Include="Core\SCP\SCP_848_Spider\IncidentWorker_SCP848_SpawnThing.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompProperties_Voices.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompVoices.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\GameCondition_SCP939.cs" />

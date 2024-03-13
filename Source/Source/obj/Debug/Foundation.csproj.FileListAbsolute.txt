@@ -5,3 +5,10 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\Foundation.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\Foundation.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SCPRW\Source\Source\obj\Debug\Foundation.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\Source\Source\obj\Debug\Foundation.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\Source\Source\obj\Debug\Foundation.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\Source\Source\obj\Debug\Foundation.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\Source\Source\obj\Debug\Foundation.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\1.4\Assemblies\Foundation.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\1.4\Assemblies\Foundation.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\Source\Source\obj\Debug\Foundation.csproj.CopyComplete

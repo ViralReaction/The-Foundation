@@ -23,7 +23,6 @@ namespace Foundation.Utilities
         public static ThingDef Apparel_Jacket;
         public static ThingDef Gun_BoltActionRifle;
         public static ThingDef Synthread;
-        public static ThingDef SCP_848R;
         public static ThingDef SCP_113_Stone;
         [MayRequireIdeology]
         public static ThingDef SCP_475_Soap;
