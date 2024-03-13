@@ -162,6 +162,7 @@ namespace Foundation.HarmonyPatches
             else
                 Log.Error("SCP Harmony Patching Error: " + __instance.defName + " Does not have correct number of containment procedures.");
         }
+
         public static bool BedCellOffsets_Patch(List<IntVec3> offsets, IntVec2 size, int slot)
         {
             if (size.z < 2)
@@ -207,6 +208,7 @@ namespace Foundation.HarmonyPatches
                 }
             }
         }
+
         [HarmonyPatch(typeof(Pawn), "Kill")]
         public class NotifyPawnDiedPatch
         {

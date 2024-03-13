@@ -86,6 +86,7 @@
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldManager.cs" />
     <Compile Include="Core\Psychic Suppresion\SuppressionFieldUtility.cs" />
     <Compile Include="Core\SCP\SCP_035_Mask\CompUseEffect_UseSCP35.cs" />
+    <Compile Include="Core\SCP\SCP_096_Shy_Guy\IncidentWorker_SCP096.cs" />
     <Compile Include="Core\SCP\SCP_106_Old_Man\Comp_OldMan.cs" />
     <Compile Include="Core\SCP\SCP_106_Old_Man\CompProperties_OldMan.cs" />
     <Compile Include="Core\SCP\SCP_113 Gender Stone\CompUseEffect_UseSCP113.cs" />
@@ -168,7 +169,6 @@
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="Core\Normal Stuff\" />
-    <Folder Include="Core\SCP\SCP_096_Shy_Guy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

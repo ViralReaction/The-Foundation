@@ -13,7 +13,21 @@
 		<pointsScaleable>true</pointsScaleable>
 		<tale>Raid</tale>
 	</IncidentDef>
-	
+
+	<IncidentDef>
+		<defName>SCP_Incident_SCP096_Hunt</defName>
+		<label>SCP-096/label></label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>Foundation.IncidentWorker_SCP096</workerClass>
+		<baseChance>1</baseChance>
+		<category>ThreatSmall</category>
+		<pointsScaleable>false</pointsScaleable>
+		<!--tale>ManhunterPack</tale-->
+		<minRefireDays>35</minRefireDays>
+	</IncidentDef>
+
 	<IncidentDef>
 		<defName>SCP_Incident_SCP131Join</defName>
 		<label>pair of SCP-131s join</label>
