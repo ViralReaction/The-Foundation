@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ModMetaData>
     <name>The Foundation</name>
-	<packageId>VR.SCP.Foundation</packageId>
+	<packageId>VR.Foundation</packageId>
 	<author>Viral Reaction</author>
 	<supportedVersions>
 		<li>1.4</li>

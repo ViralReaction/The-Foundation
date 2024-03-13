@@ -15,6 +15,7 @@ namespace Foundation.Utilities
         public static PawnKindDef SCP_131_Eye_Pod;
         public static PawnKindDef SCP_610A;
         public static PawnKindDef SCP_610B;
+        public static PawnKindDef SCP_682_Reptile;
         public static PawnKindDef SCP_939_Normal;
         public static PawnKindDef SCP_939_Incident;
         public static PawnKindDef SCP_19051R;

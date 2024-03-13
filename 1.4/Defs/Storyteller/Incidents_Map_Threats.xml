@@ -16,7 +16,7 @@
 
 	<IncidentDef>
 		<defName>SCP_Incident_SCP096_Hunt</defName>
-		<label>SCP-096/label></label>
+		<label>SCP-096</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
@@ -62,6 +62,20 @@
 		<pointsScaleable>true</pointsScaleable>
 		<tale>ManhunterPack</tale>
 		<minRefireDays>20</minRefireDays>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>SCP_Incident_SCP682_Hunt</defName>
+		<label>SCP-682 Sighted</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>Foundation.IncidentWorker_682</workerClass>
+		<baseChance>1</baseChance>
+		<category>ThreatBig</category>
+		<pointsScaleable>false</pointsScaleable>
+		<!--tale>ManhunterPack</tale-->
+		<minRefireDays>35</minRefireDays>
 	</IncidentDef>
 
 	<IncidentDef>
