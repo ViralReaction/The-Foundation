@@ -48,7 +48,8 @@ Scranton Reality Anchor  |
 --  |
 Scranton Reality Anchor: "An FAQ; Or, What The Hell Is A Hume?" by Jekeled, from the SCP Wiki. Source: https://scpwiki.com/and-this-one-explains-humes. Licensed under CC-BY-SA. |
 
-### Art
+Art
+---	|
 SCP Foundation Logo: from the SCP Wiki. Source: https://scp-wiki.wikidot.com/. Licensed under CC-BY-SA.	|
 Chaos Insurgency Logo: CI-Main.png, from the SCP Wiki. Source: https://scp-wiki.wikidot.com/chaos-insurgency-hub. Licensed under CC-BY-SA.  |
 Global Occult Coalition Logo: GOC-Logo-v4.png by Aelanna, from the SCP Wiki. Source: https://scpwiki.com/goc-hub-page. Licensed under CC-BY-SA.  |
@@ -59,7 +60,6 @@ SCP-ES-019 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Lice
 SCP-095-UA Texture by by Immortalus Licensed under CC-BY-SA.	|
 SCP-111 Textures by Tigersblut. Source: https://steamcommunity.com/sharedfiles/filedetails/?id=1541255910. Licensed under CC-BY-SA.	|
 SCP-131 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Licensed under CC-BY-SA.	|
-SCP-160 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-250 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-262 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-475 Texture by DeeManiac. Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627 . Licensed under CC-BY-SA.	|
@@ -73,7 +73,6 @@ SCP-2584 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-2845 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-3199 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-5185 Texture by Immortalus Licensed under CC-BY-SA.	|
-SCP-5893 Texture by Immortalus Licensed under CC-BY-SA.	|
 Auto-injector syringes Textures by Viral Reaction. Licensed under CC-BY-SA.	|
 
 Code	|
