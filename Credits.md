@@ -1,6 +1,5 @@
 ## Credits:
 
-###SCP Wiki
 Groups of Interest  |
 --  |
 Chaos Insurgency: "Chaos Insurgency Hub", from SCP Wiki. Source: https://scp-wiki.wikidot.com/chaos-insurgency-hub. Licensed under CC-BY-SA.  |
@@ -64,7 +63,7 @@ SCP-250 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-262 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-475 Texture by DeeManiac. Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627 . Licensed under CC-BY-SA.	|
 SCP-762 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Licensed under CC-BY-SA.	|
-SCP-939 Texture by Immortalus Source:https://steamcommunity.com/sharedfiles/filedetails/?id=2207934307 . Licensed under CC-BY-SA.	|
+SCP-939 Texture by Immortalus Licensed under CC-BY-SA.	|
 SCP-1675 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Licensed under CC-BY-SA.	|
 SCP-1695 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Licensed under CC-BY-SA.	|
 SCP-1762 Texture by Monti. Source:https://steamcommunity.com/id/montyi/ . Licensed under CC-BY-SA.	|
