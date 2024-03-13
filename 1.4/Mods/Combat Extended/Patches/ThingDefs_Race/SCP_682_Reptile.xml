@@ -5,7 +5,7 @@
 		<xpath>Defs/ThingDef[defName="SCP_682_Reptile"]</xpath>
 		<value>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
-				<bodyShape>Humanoid</bodyShape>
+				<bodyShape>Quadruped</bodyShape>
 			</li>
 		</value>
 	</Operation>

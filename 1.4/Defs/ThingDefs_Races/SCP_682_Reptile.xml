@@ -151,7 +151,7 @@ SCP-682 has always been observed to have extremely high strength, speed, and ref
 				<labelMale>Reptile</labelMale>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_682/SCP_682</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
