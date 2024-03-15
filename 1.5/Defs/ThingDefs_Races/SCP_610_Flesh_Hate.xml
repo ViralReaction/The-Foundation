@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnomalyBase">
+		<defName>SCP_610A</defName>
+		<label>SCP-610-A</label>
+		<description>Item #: SCP-610-A
+Object Class: Keter
+		
+SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CKeter</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+				<willManhuntAfterBreach>true</willManhuntAfterBreach>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>5.0</MoveSpeed>
+			<MarketValue>450</MarketValue>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>33</ComfyTemperatureMax>
+			<FilthRate>8</FilthRate>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<Flammability>10</Flammability>
+		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
+		<race>
+			<animalType>Canine</animalType>
+			<body>Human</body>
+			<predator>true</predator>
+			<petness>0</petness>
+			<baseBodySize>1</baseBodySize>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseHealthScale>1</baseHealthScale>
+			<maxPreyBodySize>1.1</maxPreyBodySize>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<leatherDef>Leather_Patch</leatherDef>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<nameOnTameChance>0</nameOnTameChance>
+			<trainability>None</trainability>
+			<wildness>10</wildness>
+			<manhunterOnTameFailChance>2.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>2.0</manhunterOnDamageChance>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(2.5, 0.7)</li>
+					<li>(3, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>15</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Warg_Wounded</soundWounded>
+					<soundDeath>Pawn_Warg_Death</soundDeath>
+					<soundCall>Pawn_Warg_Call</soundCall>
+					<soundAngry>Pawn_Warg_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>SCP_610_InfectingScratch</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>SCP_610_InfectingScratch</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>SCP_610_InfectingBite</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+		</tools>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+  
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCP_610A</defName>
+		<label>SCP-610-A</label>
+		<race>SCP_610A</race>
+		<combatPower>200</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>small SCP-610-A</label>
+				<labelPlural>small SCP-610-As</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_610/SCP_610B</texPath>
+					<drawSize>1</drawSize>
+					<color>(123,104,89)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_610/SCP_610B</texPath>
+					<drawSize>1</drawSize>
+					<color>(123,104,89)</color>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_610/SCP_610B</texPath>
+					<drawSize>1.7</drawSize>
+					<color>(123,104,89)</color>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- monstrosity -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>SCP_610B</defName>
+		<label>SCP-610-B</label>
+		<description>Item #: SCP-610-B
+Object Class: Keter
+		
+SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey. It is stronger than the other variants.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CKeter</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+				<willManhuntAfterBreach>true</willManhuntAfterBreach>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>3.0</MoveSpeed>
+			<MarketValue>650</MarketValue>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>33</ComfyTemperatureMax>
+			<FilthRate>8</FilthRate>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<Flammability>10</Flammability>
+		</statBases>
+		<race>
+			<thinkTreeMain>SCP_AI</thinkTreeMain>
+			<animalType>Canine</animalType>
+			<body>Human</body>
+			<predator>true</predator>
+			<petness>0</petness>
+			<baseBodySize>2</baseBodySize>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseHealthScale>1.2</baseHealthScale>
+			<maxPreyBodySize>2</maxPreyBodySize>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<leatherDef>Leather_Patch</leatherDef>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<nameOnTameChance>0</nameOnTameChance>
+			<trainability>None</trainability>
+			<wildness>10</wildness>
+			<manhunterOnTameFailChance>2.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>2.0</manhunterOnDamageChance>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(2.5, 0.7)</li>
+					<li>(3, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>40</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Warg_Wounded</soundWounded>
+					<soundDeath>Pawn_Warg_Death</soundDeath>
+					<soundCall>Pawn_Warg_Call</soundCall>
+					<soundAngry>Pawn_Warg_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<hediffGiverSets Inherit="false">
+			</hediffGiverSets>
+		</race>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>SCP_610_InfectingScratch</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>SCP_610_InfectingScratch</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>4</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>SCP_610_InfectingBite</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+		</tools>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+  
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCP_610B</defName>
+		<label>SCP-610-B</label>
+		<race>SCP_610B</race>
+		<combatPower>350</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>small SCP-610-B</label>
+				<labelPlural>small SCP-610-Bs</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_610/SCP_610A</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(123,104,89)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_610/SCP_610A</texPath>
+					<drawSize>1.7</drawSize>
+					<color>(123,104,89)</color>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_610/SCP_610A</texPath>
+					<drawSize>2</drawSize>
+					<color>(123,104,89)</color>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+</Defs>

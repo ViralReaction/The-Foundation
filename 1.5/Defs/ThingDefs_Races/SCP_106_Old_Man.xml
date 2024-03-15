@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnomalyBase">
+		<defName>SCP_106_Old_Man</defName>
+		<label>SCP-106 "Old Man"</label>
+		<description>Item #: SCP-106
+Object Class: Keter
+		
+SCP-106 appears to be an elderly humanoid, with a general appearance of advanced decomposition. It is not exceptionally agile, and will remain motionless for days at a time, waiting for prey. SCP-106 is capable of passing through solid matter, leaving behind a large patch of its corrosive mucus. SCP-106 is able to “vanish” inside solid matter, entering what is assumed to be a form of “pocket dimension”.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CKeter</li>
+					<li>SCP_DVlam</li>
+					<li>SCP_RDanger</li>
+				</classRating>
+				<containmentTier>3</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>2.5</MoveSpeed>
+			<MarketValue>500</MarketValue>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<FilthRate>0</FilthRate>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<ToxicResistance>1</ToxicResistance>
+		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
+		<race>
+			<body>Human</body>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<hasGenders>false</hasGenders>
+			<maxPreyBodySize>4.0</maxPreyBodySize>
+			<baseBodySize>2</baseBodySize>
+			<baseHungerRate>0.9</baseHungerRate>
+			<baseHealthScale>5</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<leatherDef>Leather_Human</leatherDef>
+			<useMeatFrom>Human</useMeatFrom>
+			<wildness>10</wildness>
+			<trainability>Advanced</trainability>
+			<!-- <intelligence>Humanlike</intelligence> -->
+			<lifeExpectancy>500</lifeExpectancy>
+			<manhunterOnTameFailChance>10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>10</manhunterOnDamageChance>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>70</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>SCP_106_Oldman_Scratch</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<chanceFactor>0.15</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>SCP_106_Oldman_Scratch</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<chanceFactor>0.15</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.01</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="Foundation.CompProperties_OldMan">
+				<tickInterval>300</tickInterval>
+				<jumpRange>10</jumpRange>
+				<directAttackRange>3</directAttackRange>
+			</li>
+			<li Class="Foundation.Comps.CompProperties_HumeShield">
+				<startingTicksToReset>600</startingTicksToReset>
+				<EnergyShieldEnergyMax>45</EnergyShieldEnergyMax>
+				<energyOnReset>60</energyOnReset>
+				<texPath>Other/HumeShield</texPath>
+			</li>
+			<li Class="Foundation.Comps.CompProperties_AnomalyHeal">
+				<tickInterval>3000</tickInterval>
+				<healAmount>10</healAmount>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCP_106_Old_Man</defName>
+		<label>SCP-106 "Old Man"</label>
+		<race>SCP_106_Old_Man</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<labelMale>Old Man</labelMale>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_106/SCP_106</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

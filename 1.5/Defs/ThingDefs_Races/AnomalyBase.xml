@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase" Name="AnomalyBase" Abstract="True">
+		<race>
+			<thinkTreeMain>SCP_AI</thinkTreeMain>
+			<hediffGiverSets Inherit="false">
+				<li>AnomalyStandard</li>
+			</hediffGiverSets>
+		</race>
+	</ThingDef>
+
+</Defs>

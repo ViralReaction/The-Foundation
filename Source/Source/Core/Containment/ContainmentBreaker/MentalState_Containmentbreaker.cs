@@ -34,7 +34,7 @@ namespace Foundation.Containment
                 return;
             this.RecoverFromState();
         }
-        public override void Notify_SlaughteredAnimal()
+        public override void Notify_SlaughteredTarget()
         {
             this.lastContainmentBreachTicks = Find.TickManager.TicksGame;
             ++this.anomaliesBreach;

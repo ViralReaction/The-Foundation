@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Foundation Cap -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Apparel_SCP_SecurityTaskForceCap</defName>
+		<label>Foundation Baseball Cap</label>
+		<description>A baseball cap with a stitched on SCP patch, worn by Security Task Force members.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Headgear/Foundation/SCP_STFCap/SCP_STFCap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.07</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.12</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.02</ShootingAccuracyPawn>
+			<SocialImpact>0.05</SocialImpact>
+			<TradePriceImprovement>0.02</TradePriceImprovement>
+			<NegotiationAbility>0.02</NegotiationAbility>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Headgear/Foundation/SCP_STFCap/SCP_STFCap</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Apparel_SCP_STF</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Apparel_SCP_Hats</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- GOC Hat -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Apparel_GOC_StrikeTeamBoonie</defName>
+		<label>Boonie Hat</label>
+		<description>A boonie hat with a digital camoflauge pattern, worn by GOC Strike team members.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Headgear/GOC/GOC_Boonie/GOC_StrikeTeamBoonie</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.07</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Headgear/GOC/GOC_Boonie/GOC_StrikeTeamBoonie</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>GOC_StrikeTeam</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Apparel_SCP_Hats</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Chaos Insurgency Headgear -->
+	<!-- CI Cap -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Apparel_CI_Cap</defName>
+		<label>Insurgent cap (CI)</label>
+		<description>A black military cap worn by Insurgent members.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Headgear/CI/CI_Cap/CI_Cap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.07</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.12</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.02</ShootingAccuracyPawn>
+			<SocialImpact>0.05</SocialImpact>
+			<TradePriceImprovement>0.02</TradePriceImprovement>
+			<NegotiationAbility>0.02</NegotiationAbility>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Headgear/CI/CI_Cap/CI_Cap</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>CI_Insurgent</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Apparel_SCP_Hats</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- CI Boonie -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Apparel_CI_Boonie</defName>
+		<label>Boonie Hat</label>
+		<description>A boonie hat with a black facemask, worn by Chaos Insurgents.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Headgear/CI/CI_Boonie/CI_Boonie</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.07</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Headgear/CI/CI_Boonie/CI_Boonie</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>CI_Insurgent</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Apparel_SCP_Hats</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<!-- CI Beret -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Apparel_CI_Beret</defName>
+		<label>Beret</label>
+		<description>A military Beret typically worn by Insurgent squad leaders and other higher ups.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Headgear/CI/CI_Beret/CI_Beret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.07</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.12</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.02</ShootingAccuracyPawn>
+			<SocialImpact>0.10</SocialImpact>
+			<TradePriceImprovement>0.05</TradePriceImprovement>
+			<NegotiationAbility>0.05</NegotiationAbility>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Headgear/CI/CI_Beret/CI_Beret</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>CI_Insurgent</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Apparel_SCP_Hats</li>
+		</tradeTags>
+	</ThingDef>
+  
+  
+	<!-- CI Balaclava -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Apparel_CI_Balaclava</defName>
+		<label>Balaclava</label>
+		<description>A black three holed balaclava worn by Insurgency members.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Headgear/CI/CI_Balaclava/CI_Balaclava</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.07</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.02</ShootingAccuracyPawn>
+			<SocialImpact>0.10</SocialImpact>
+			<TradePriceImprovement>0.05</TradePriceImprovement>
+			<NegotiationAbility>0.05</NegotiationAbility>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Headgear/CI/CI_Balaclava/CI_Balaclava</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>CI_Insurgent</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Apparel_SCP_Hats</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

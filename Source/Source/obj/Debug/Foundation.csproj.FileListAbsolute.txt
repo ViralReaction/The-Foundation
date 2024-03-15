@@ -12,3 +12,5 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\Sourc
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\1.4\Assemblies\Foundation.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\1.4\Assemblies\Foundation.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\Source\Source\obj\Debug\Foundation.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\1.5\Assemblies\Foundation.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The-Foundation\1.5\Assemblies\Foundation.pdb

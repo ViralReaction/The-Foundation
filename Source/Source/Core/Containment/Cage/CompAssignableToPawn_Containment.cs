@@ -18,10 +18,10 @@ namespace Foundation.Containment
                 var cage = this.parent as Building_Bed;
                 return !(cage?.Spawned is true)
                     ? Enumerable.Empty<Pawn>()
-                    : this.parent.Map.mapPawns.AllPawnsSpawned.FindAll(pawn =>
+                    : this.parent.Map.mapPawns.AllPawnsSpawned.Where<Pawn>((Func<Pawn, bool>)(pawn =>
                         pawn.BodySize <= this.parent.def.building.bed_maxBodySize &&
                         pawn.AnimalOrWildMan() != this.parent.def.building.bed_humanlike &&
-                        pawn.IsSCP());
+                        pawn.IsSCP()));
             }
         }
         public override void TryAssignPawn(Pawn pawn)

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="SCP_ApparelNoColorBase">
+		<defName>SCP_262R</defName>
+		<label>SCP-262</label>
+		<description>Item #: SCP-262
+Object Class: Euclid
+			
+SCP-262 is a light brown, European military-style greatcoat from a period between the late 1500s to the early 1900s. It is without any specific designations or markings, leading researchers to believe it was an original archetype sample, intended to be submitted to military officials for approval as part of a new uniform design.
+
+SCP-262 is capable of manifesting numerous arms from within the dark inner lining. When worn, any subject wearing SCP-262 needs only to open the coat to materialize hands and arms which are somewhat under the subject's control.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CEuclid</li>
+					<li>SCP_DVlam</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Apparel/SCP_262/SCP_262</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>SCPApparel</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<Mass>4.0</Mass>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<Insulation_Cold>20</Insulation_Cold>
+			<Insulation_Heat>-10</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>+0.5</MoveSpeed>
+			<WorkSpeedGlobal>+0.75</WorkSpeedGlobal>
+			<MeleeHitChance>0.3</MeleeHitChance>
+			<MeleeDodgeChance>+.1</MeleeDodgeChance>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/SCP_262/SCP_262</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+
+
+</Defs>
+

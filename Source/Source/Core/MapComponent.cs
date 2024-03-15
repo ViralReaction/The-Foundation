@@ -82,7 +82,7 @@ namespace Foundation
         {
             if (map.IsPlayerHome)
             {
-                List<Pawn> pawnList = map.mapPawns.AllPawnsSpawned;
+                IReadOnlyList<Pawn> pawnList = map.mapPawns.AllPawnsSpawned;
                 for (int index = 0; index < pawnList.Count; index++)
                 {
                     Pawn pawn = pawnList[index];
@@ -106,7 +106,7 @@ namespace Foundation
             bool flag2 = false;
             Pawn pawn1 = (Pawn)null;
             Thing thing = (Thing)null;
-            List<Pawn> allPawnsSpawned = this.map.mapPawns.AllPawnsSpawned;
+            IReadOnlyList<Pawn> allPawnsSpawned = this.map.mapPawns.AllPawnsSpawned;
             foreach (Pawn pawn2 in allPawnsSpawned)
             {
                 if (pawn2.def.defName == MapComponent_SCPManagement.scp19051.defName && !pawn2.Downed)

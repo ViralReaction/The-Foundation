@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<!-- Remove Negative Move Speed -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+		defName="Apparel_SCP_GuardArmor" or
+		defName="Apparel_SCP_MTF_CryeCage" or
+		defName="Apparel_GOC_SecurityArmor" or
+		defName="Apparel_GOC_StrikeTeamMBAV" or
+		defName="Apparel_CI_MBAV" or
+		defName="Apparel_CI_LCE"
+		]/equippedStatOffsets/MoveSpeed</xpath>
+	</Operation>
+
+	<!-- Clothing -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_D_Class"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<Bulk>8</Bulk>
+			<WornBulk>2</WornBulk>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_Staff_Shirt" or defName="Apparel_GOC_StaffShirt"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_Labcoat"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>1.5</WornBulk>
+			<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_Manager_Suit" or defName="Apparel_GOC_FormalSuit"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>2</WornBulk>
+			<StuffEffectMultiplierArmor>6</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_Guard_Jumpsuit" or defName="Apparel_GOC_SecurityFatigues" or defName="Apparel_CI__Jumpsuit"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<Bulk>8</Bulk>
+			<WornBulk>2</WornBulk>
+			<StuffEffectMultiplierArmor>8</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_Guard_Jacket"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>1</WornBulk>
+			<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_Jumpsuit" or defName="Apparel_GOC_StrikeTeamUbac"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_Parka" or defName="Apparel_GOC_Parka" or defName="Apparel_CI__Parka"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<Bulk>10</Bulk>
+			<WornBulk>5</WornBulk>
+		</value>
+	</Operation>
+
+	<!-- SCP Guard/GOC Security Armor -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_GuardArmor" or defName="Apparel_GOC_SecurityArmor"]/statBases</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>3</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_GuardArmor" or defName="Apparel_GOC_SecurityArmor"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>14</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_GuardArmor" or defName="Apparel_GOC_SecurityArmor"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>24</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<!-- MTF Crye CAGE Armor -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_CryeCage"]/statBases</xpath>
+		<value>
+			<Bulk>7.5</Bulk>
+			<WornBulk>5</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_CryeCage"]/equippedStatOffsets</xpath>
+		<value>
+			<CarryBulk>10</CarryBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_CryeCage"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_CryeCage"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>31</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_SCP_MTF_CryeCage"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>0.36</ArmorRating_Heat>
+		</value>
+	</Operation>
+
+	<!-- MBAV Armor -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_GOC_StrikeTeamMBAV" or defName="Apparel_CI_MBAV"]/statBases</xpath>
+		<value>
+			<Bulk>8</Bulk>
+			<WornBulk>5.5</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_GOC_StrikeTeamMBAV" or defName="Apparel_CI_MBAV"]/equippedStatOffsets</xpath>
+		<value>
+			<CarryBulk>10</CarryBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_GOC_StrikeTeamMBAV" or defName="Apparel_CI_MBAV"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>14.5</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_GOC_StrikeTeamMBAV" or defName="Apparel_CI_MBAV"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>28</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<!-- LCE Carrier -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_CI_LCE"]/statBases</xpath>
+		<value>
+			<Bulk>10</Bulk>
+			<WornBulk>5</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_CI_LCE"]/equippedStatOffsets</xpath>
+		<value>
+			<CarryBulk>30</CarryBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_CI_LCE"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_CI_LCE"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+</Patch>

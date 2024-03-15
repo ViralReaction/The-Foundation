@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using Foundation.Utilities;
+using Verse.AI.Group;
 
 namespace Foundation
 {
     internal class DeathActionWorker_SCP3199_SpawnEgg : DeathActionWorker
     {
-        public override void PawnDied(Corpse corpse)
+        public override void PawnDied(Corpse corpse, Lord prevLord)
         {
             if (corpse.Map == null)
                 return;

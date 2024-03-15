@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using Foundation.Utilities;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
@@ -42,7 +43,7 @@ namespace Foundation
             int num = 1;
             if (p.IsWildMan())
             {
-                def = ThingDefOf.RawBerries;
+                def = ThingDefOf_SCP.RawBerries;
                 num = 10;
             }
             else if (p.Faction.def == FactionDefOf.Empire)
@@ -56,7 +57,7 @@ namespace Foundation
                 def = ThingDefOf.Pemmican;
                 num = 10;
             }
-            if (p.story.traits.HasTrait(TraitDefOf.Cannibal))
+            if (p.story.traits.HasTrait(ThingDefOf_SCP.Cannibal))
             {
                 def = ThingDefOf.Meat_Human;
                 num = 10;

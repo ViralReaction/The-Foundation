@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RH2] Rimmu-Nation² - Weapons</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Shotguns -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="RNGun_Saiga12_Shotgun" or
+					RNGun_PancorJackhammer_Shotgun]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_ShotGun</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_AA12_Shotgun" or
+						defName="RNGun_Remington870MCS_Shotgun" or
+						defName="RNGun_M1014_Shotgun"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_ShotGun</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_USAS12_Shotgun" or
+						defName="RNGun_BenelliMontefeltro_Shotgun"]/weaponTags					</xpath>
+					<value>
+						<li>Foundation_GOC_Shotgun</li>
+					</value>
+				</li>
+
+				<!-- SMG -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_AK74U_SMG" or
+						defName="RNGun_SkorpionVZ61_SMG" or
+						defName="RNGun_PPSh41_SMG" or
+						defName="RNGun_PP19_SMG"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_SMG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_P90_PDW" or
+						defName="RNGun_MP5A2_SMG"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_SMG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_P90_PDW" or
+						defName="RNGun_MP7A1_PDW" or
+						defName="RNGun_UMP45_SMG"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_GOC_SMG</li>
+					</value>
+				</li>
+
+				<!-- AK -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_AK47_Rifle" or
+						defName="RNGun_AK74_Rifle" or
+						defName="RNGun_ASVAL_Rifle" or
+						defName="RNGun_AK103_Rifle" or
+						defName="RNGun_AK74U_SMG"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_AK</li>
+					</value>
+				</li>
+
+				<!-- AR -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_DDM4V11_Rifle" or
+						defName="RNGun_M4A1_Rifle" or
+						defName="RNGun_HK416_Rifle"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_AR</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_HK416_Rifle" or
+						defName="RNGun_G3A2_Rifle" or
+						defName="RNGun_G36K_Rifle" or
+						defName="RNGun_FAMAS_Rifle"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_GOC_AR</li>
+					</value>
+				</li>
+
+				<!-- Machine Gun -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_PKM_GPMG" or
+						defName="RNGun_RPD_LMG" or
+						defName="RNGun_RPK_LMG"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_MG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_M249_LMG" or
+						defName="RNGun_M60_GPMG"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_MG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_MG42_GPMG" or
+						defName="RNGun_FNMAG_GPMG"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_GOC_MG</li>
+					</value>
+				</li>
+
+				<!-- DMR -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_PSL54_DMR" or
+						defName="RNGun_SVU_DMR" or
+						defName="RNGun_DragunovSVD_DMR"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_DMR</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_M14_DMR" or
+						defName="RNGun_Mk14Mod0_DMR" or
+						defName="RNGun_DesertTechSRS_DMR"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_DMR</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_L96A1_Sniper" or
+						defName="RNGun_PSG1_DMR" or
+						defName="RNGun_GOLMagnum_Sniper" or
+						defName="RNGun_G28_DMR"]/weaponTags					</xpath>
+					<value>
+						<li>Foundation_GOC_DMR</li>
+					</value>
+				</li>
+
+				<!-- Launchers -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RNGun_RPG7_RocketLauncher"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_Combloc_Launcher</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RNGun_M72LAW_RocketLauncher"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_US_Launcher</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RNGun_NLAW_RocketLauncher"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_US_Launcher</li>
+						<li>Foundation_GOC_Launcher</li>
+					</value>
+				</li>
+
+				<!-- Handgun -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_MP412REX_Revolver" or
+						defName="RNGun_Makarov_Pistol"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_Pistol</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_M1911_Pistol" or
+						defName="RNGun_Glock17_Pistol" or
+						defName="RNGun_M9A1_Pistol"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_Pistol</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RNGun_Glock17_Pistol" or
+						defName="RNGun_Glock18_Pistol" or
+						defName="RNGun_P320_Pistol" or
+						defName="RNGun_P226_Pistol" or
+						defName="RNGun_FiveSeven_Pistol" or
+						defName="RNGun_USP45_Pistol"
+						]/weaponTags					</xpath>
+					<value>
+						<li>Foundation_GOC_Pistol</li>
+					</value>
+				</li>
+
+				<!-- Big Irons -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="RNGun_ColtCobra_Revolver" or
+					defName="RNGun_ColtPython_Revolver" or
+					defName="RNGun_DesertEagle_Pistol"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_BigIron</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Containment_Zone_Small</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>Containment Zone - Small</label>
+		<description>Designates a spot on the ground where SCP should sleep.</description>
+		<size>(1,1)</size>
+		<passability>Standable</passability>
+		<designationCategory>Furniture</designationCategory>
+		<designatorDropdown>Containment_Zone</designatorDropdown>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ContainmentZone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconScale>0.80</uiIconScale>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+			<BedRestEffectiveness>0.7</BedRestEffectiveness>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<modExtensions>
+			<li Class="Foundation.Containment.CageExtension">
+				<isCage>true</isCage>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>Foundation.Containment.CompAssignableToPawn_Cage</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Containment_Zone_Medium</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>Containment Zone - Medium</label>
+		<description>Designates a spot on the ground where SCP should sleep.</description>
+		<size>(3,3)</size>
+		<passability>Standable</passability>
+		<designationCategory>Furniture</designationCategory>
+		<designatorDropdown>Containment_Zone</designatorDropdown>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ContainmentZone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconScale>0.80</uiIconScale>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+			<BedRestEffectiveness>0.7</BedRestEffectiveness>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<modExtensions>
+			<li Class="Foundation.Containment.CageExtension">
+				<isCage>true</isCage>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>Foundation.Containment.CompAssignableToPawn_Cage</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Containment_Zone_Large</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>Containment Zone - Large</label>
+		<description>Designates a spot on the ground where SCP should sleep.</description>
+		<size>(5,5)</size>
+		<passability>Standable</passability>
+		<designationCategory>Furniture</designationCategory>
+		<designatorDropdown>Containment_Zone</designatorDropdown>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>False</useHitPoints>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ContainmentZone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<uiIconScale>0.80</uiIconScale>
+		<statBases>
+			<WorkToBuild>900</WorkToBuild>
+			<SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+			<BedRestEffectiveness>0.7</BedRestEffectiveness>
+		</statBases>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<modExtensions>
+			<li Class="Foundation.Containment.CageExtension">
+				<isCage>true</isCage>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>Foundation.Containment.CompAssignableToPawn_Cage</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Psychic Suppression Field Projector -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>SCP_SRA</defName>
+        <label>Scranton Reality Anchor</label>
+        <description>A building which is designed to stabilize and counteract reality-altering effects. It functions by grounding and preventing the distortion of the fabric of reality within its vicinity. They can be tuned to different intensities and radii, though it takes time for them to change to new targets.\n\nDue to the complex wave interactions, anchor fields do not stack.</description>
+        <thingClass>Foundation.SRA.Building_PsychicSuppressionField</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Misc/MoisturePump</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+			<color>(3, 227, 252)</color>
+        </graphicData>
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <designationCategory>Misc</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <canOverlapZones>false</canOverlapZones>
+        <surfaceType>Item</surfaceType>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>2000</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <Gold>10</Gold>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <!-- Note this power consumption is overwritten by the suppression field comp and doesn't matter -->
+                <basePowerConsumption>50</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="Foundation.SRA.CompProperties_PsychicSuppressionField">
+                <MinEffect>-2</MinEffect>
+                <MaxEffect>0</MaxEffect>
+                <EffectStep>0.1</EffectStep>
+                <EffectChangeSpeedPerSecond>0.02</EffectChangeSpeedPerSecond>
+                <MinRadius>1</MinRadius>
+                <MaxRadius>5</MaxRadius>
+                <RadiusChangeSpeedPerSecond>0.04</RadiusChangeSpeedPerSecond>
+                <BasePowerConsumption>50</BasePowerConsumption>
+                <PowerPerCellEffect>1</PowerPerCellEffect>
+            </li>
+        </comps>
+        <constructEffect>ConstructMetal</constructEffect>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    </ThingDef>
+	
+	<!-- Reality Disruption Matrix -->
+    <!--ThingDef ParentName="BuildingBase">
+        <defName>SCP_RDM</defName>
+        <label>Reality Disruption Matrix</label>
+        <description>A building which projects a psychic suppression field in a small area around it, lowering the psychic sensitivity of those nearby. They can be tuned to different intensities and radii, though it takes time for them to change to new targets.\n\nDue to the complex wave interactions, suppression fields do not stack.</description>
+        <thingClass>Foundation.Building_PsychicSuppressionField</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/PenMarker</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <designationCategory>Misc</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <canOverlapZones>false</canOverlapZones>
+        <surfaceType>Item</surfaceType>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>2000</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <Gold>10</Gold>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>50</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="Foundation.CompProperties_PsychicSuppressionField">
+                <MinEffect>0</MinEffect>
+                <MaxEffect>2</MaxEffect>
+                <EffectStep>0.1</EffectStep>
+                <EffectChangeSpeedPerSecond>0.02</EffectChangeSpeedPerSecond>
+                <MinRadius>1</MinRadius>
+                <MaxRadius>5</MaxRadius>
+                <RadiusChangeSpeedPerSecond>0.04</RadiusChangeSpeedPerSecond>
+                <BasePowerConsumption>50</BasePowerConsumption>
+                <PowerPerCellEffect>1</PowerPerCellEffect>
+            </li>
+        </comps>
+        <constructEffect>ConstructMetal</constructEffect>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    </ThingDef-->
+
+</Defs>

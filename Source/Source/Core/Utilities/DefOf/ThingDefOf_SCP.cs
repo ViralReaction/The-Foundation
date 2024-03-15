@@ -39,6 +39,9 @@ namespace Foundation.Utilities
         public static ThingDef SCP_610Hive;
         public static ThingDef SCP_610Hive_Infestation;
         public static ThingDef Filth_OldMan;
+        public static TraitDef Cannibal;
+        public static ThingDef RawBerries;
+        public static SoundDef Hive_Spawn;
 
         static ThingDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf_SCP));
     }

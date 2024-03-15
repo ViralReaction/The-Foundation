@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnomalyBase">
+		<defName>SCP_5893R</defName>
+		<label>SCP-5893</label>
+		<description>Item #: SCP-5893
+Object Class: Euclid
+			
+Although normally peaceful, SCP-5893 specimens can ignite their body without the use of incendiary compounds or chemicals to reach temperatures of up to 3,500 °C when they are threatened or stressed. SCP-5893 specimens primarily employ this property as a self-defense mechanism although they have been seen to engage in aggressive behavior against their attacker(s) in rare instances.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CEuclid</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RDanger</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+				<hatesRoofs>true</hatesRoofs>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>6</MoveSpeed>
+			<MarketValue>600</MarketValue>
+			<ComfyTemperatureMax>800</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<FilthRate>7</FilthRate>
+			<MeatAmount>30</MeatAmount>
+			<LeatherAmount>25</LeatherAmount>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>2</ArmorRating_Heat>
+		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>20</heatPerSecond>
+				<heatPushMinTemperature>-1000</heatPushMinTemperature>
+				<heatPushMaxTemperature>38</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>SCP_5893_Egg</eggFertilizedDef>
+				<eggFertilizationCountMax>4</eggFertilizationCountMax>
+				<eggLayIntervalDays>20</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~4</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<deathAction>
+				<workerClass>DeathActionWorker_BigExplosion</workerClass>
+			</deathAction>
+			<body>SCP_BipedalQuad</body>
+			<predator>false</predator>
+			<baseBodySize>1.2</baseBodySize>
+			<baseHungerRate>0.325</baseHungerRate>
+			<baseHealthScale>1.9</baseHealthScale>
+			<foodType>CarnivoreAnimal, VegetarianRoughAnimal, OvivoreAnimal</foodType>
+			<wildness>0.8</wildness>
+			<roamMtbDays>2</roamMtbDays>
+			<trainability>Advanced</trainability>
+			<leatherDef>Leather_Light</leatherDef>
+			<manhunterOnTameFailChance>0.7</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<wildBiomes>
+				<AridShrubland>0.2</AridShrubland>
+				<BorealForest>0.1</BorealForest>
+				<ColdBog>0.2</ColdBog>
+				<TemperateForest>0.1</TemperateForest>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<TropicalSwamp>0.1</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0.2</Tundra>
+				<Desert>0.2</Desert>
+				<ExtremeDesert>0.2</ExtremeDesert>
+			</wildBiomes>
+			<mateMtbHours>8</mateMtbHours>
+			<lifeExpectancy>25</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Chick_Call</soundWounded>
+					<soundDeath>Pawn_Chick_Call</soundDeath>
+					<soundCall>Pawn_Chick_Call</soundCall>
+					<soundAngry>Pawn_Chick_Call</soundAngry>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.5</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.75</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>SCP_Flame</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+					<li>SCP_Flame</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		
+
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCP_5893R</defName>
+		<label>SCP-5893</label>
+		<race>SCP_5893R</race>
+		<combatPower>100</combatPower>
+		<wildGroupSize>4~8</wildGroupSize>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<canArriveManhunter>true</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_5893/SCP_5893</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP_5893</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_5893/SCP_5893</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP_5893</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_5893/SCP_5893</texPath>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_5893/Dessicated_SCP_5893</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

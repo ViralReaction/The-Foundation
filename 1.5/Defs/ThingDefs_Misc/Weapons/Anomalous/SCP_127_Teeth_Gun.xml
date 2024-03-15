@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>SCP_Bullet_SCP127R</defName>
+		<label>tooth bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>SCP_127R</defName>
+		<label>SCP-127</label>
+		<description>Item #: SCP-127
+Object Class: Safe
+		
+SCP-127, upon first glance, appears to be a standard MP5K-PDW submachine gun. Tests have revealed that aside from the outer steel and polymer shell, the entirety of the firearm is organic and alive. The weapon's ammunition initially appeared to be human-like teeth. However, DNA testing of the "bullets" resulted in no match to any known species on Earth.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CSafe</li>
+					<li>SCP_DVlam</li>
+					<li>SCP_RCaution</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+			</li>
+		</modExtensions>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/HeavySMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<weaponTags>
+			<li>SCP_</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>SCP</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.91</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.32</AccuracyLong>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SCPWeapons</li>
+		</thingCategories>
+		<relicChance>2</relicChance>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SCP_Bullet_SCP127R</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>23</range>
+				<soundCast>Shot_MachinePistol</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

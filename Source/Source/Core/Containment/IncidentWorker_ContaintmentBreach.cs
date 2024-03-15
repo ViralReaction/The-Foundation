@@ -41,7 +41,7 @@ namespace Foundation.Containment
             }
             Map target = (Map)parms.target;
             List<Pawn> list = new List<Pawn>();
-            List<Pawn> targetList = target.mapPawns.AllPawnsSpawned;
+            IReadOnlyList<Pawn> targetList = target.mapPawns.AllPawnsSpawned;
             for (int index = 0; index < targetList.Count; index++)
             {
                 Pawn pawn = targetList[index];

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+	<IssueDef>
+		<defName>SCP_Issue</defName>
+		<label>SCP</label>
+		<iconPath>UI/Issues/SCP</iconPath>
+	</IssueDef>
+
+	<!-- History events -->
+	<HistoryEventDef>
+		<defName>SCP_Died</defName>
+		<label>anomaly died</label>
+	</HistoryEventDef>
+
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>SCP_Reverence</defName>
+		<issue>SCP_Issue</issue>
+		<label>reverence</label>
+		<description>We must contain as many anomalies as possible.</description>
+		<impact>Medium</impact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>SCP_Anomaly_Reverence_Opinion</thought>
+				<description>Anomaly</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>SCP_Anomaly_Reverence_AnomalyInColony</thought>
+				<thoughtStageDescriptions>
+					<li>No anomalies </li>
+					<li>Few anomalies </li>
+					<li>Some anomalies </li>
+					<li>Lots of anomalies </li>
+					<li>Tons of anomalies </li>
+					<li>Surround by anomalies</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>SCP_Equal</defName>
+		<issue>SCP_Issue</issue>
+		<label>equal</label>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<description>We adhere to the principle of equal treatment and coexistence with SCPs and reject the notion that anomalies should be feared or oppressed due to their differences.</description>
+		<impact>Low</impact>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>SCP_Despised</defName>
+		<issue>SCP_Issue</issue>
+		<label>despised</label>
+		<description>These anomalies bring nothing but chaos, endangering the delicate balance of our existence.</description>
+		<impact>Medium</impact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>SCP_Anomaly_Despised_Opinion</thought>
+				<description>Anomaly</description>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>SCP_Died</eventDef>
+				<thought>SCP_AnomalyDied_Despised</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>SCP_AnomalySelfHatred_Despised</thought>
+				<description>Anomaly self hatred</description>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>SCP_AnomalyColonist_Despised</thought>
+				<description>Anomaly among us</description>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>SCP_Tools</defName>
+		<issue>SCP_Issue</issue>
+		<label>tools</label>
+		<description>We see anomalies as nothing, but tools. We have no more thought for anomalies than a hammer or a pen.</description>
+		<impact>Medium</impact>
+		<comps>
+		</comps>
+	</PreceptDef>
+
+</Defs>

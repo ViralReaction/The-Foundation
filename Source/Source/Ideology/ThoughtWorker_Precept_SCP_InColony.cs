@@ -33,7 +33,7 @@ namespace Foundation
                 if (pawn.IsSCP())
                     ++scpNum;
             }
-            List<Pawn> scpList = p.MapHeld.mapPawns.AllPawnsSpawned;
+            IReadOnlyList<Pawn> scpList = p.MapHeld.mapPawns.AllPawnsSpawned;
             for (int index = 0; index < scpList.Count; index++)
             {
                 Pawn pawn = scpList[index];

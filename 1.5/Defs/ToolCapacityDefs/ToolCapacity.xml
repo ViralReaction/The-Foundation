@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ToolCapacityDef>
+		<defName>SCP_Flame</defName>
+		<label>fire</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>SCP_Acid</defName>
+		<label>acid</label>
+	</ToolCapacityDef>
+
+	<ToolCapacityDef>
+		<defName>SCP_Electric</defName>
+		<label>static electricity</label>
+	</ToolCapacityDef>
+
+	<ToolCapacityDef>
+		<defName>SCP_610_InfectingBite</defName>
+		<label>bite</label>
+	</ToolCapacityDef>
+
+	<ToolCapacityDef>
+		<defName>SCP_610_InfectingScratch</defName>
+		<label>scratch</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>SCP_106_Oldman_Scratch</defName>
+		<label>scratch</label>
+	</ToolCapacityDef>
+
+</Defs>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- SCP 2687 Plastic Organs -->
+	<HediffDef Name="SCP_2687BBase" ParentName="AddedBodyPartBase" Abstract="true">
+		<hediffClass>Foundation.Hediff_SCP2687</hediffClass>
+		<descriptionHyperlinks>
+			<ThingDef>SCP2687A</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+		<spawnThingOnRemoved>Plasteel</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!-- SCP 2687 Plastic Organs -->
+	<HediffDef ParentName="SCP_2687BBase">
+		<defName>SCP_2687B_Eye</defName>
+		<label>Plastic Eye</label>
+		<description>An installed anomalous eye.</description>
+		<labelNoun>an anomalous eye</labelNoun>
+	</HediffDef>
+	
+	<HediffDef ParentName="SCP_2687BBase">
+		<defName>SCP_2687B_Heart</defName>
+		<label>Plastic Heart</label>
+		<description>An installed anomalous Heart.</description>
+		<labelNoun>an anomalous Heart</labelNoun>
+	</HediffDef>
+	
+	<HediffDef ParentName="SCP_2687BBase">
+		<defName>SCP_2687B_Lung</defName>
+		<label>Plastic Lung</label>
+		<description>An installed anomalous Lung.</description>
+		<labelNoun>an anomalous Lung</labelNoun>
+	</HediffDef>
+	
+	<HediffDef ParentName="SCP_2687BBase">
+		<defName>SCP_2687B_Stomach</defName>
+		<label>Plastic Stomach</label>
+		<description>An installed anomalous Stomach.</description>
+		<labelNoun>an anomalous Stomach</labelNoun>
+	</HediffDef>
+	
+	<HediffDef ParentName="SCP_2687BBase">
+		<defName>SCP_2687B_Kidney</defName>
+		<label>Plastic Kidney</label>
+		<description>An installed anomalous Kidney.</description>
+		<labelNoun>an anomalous Kidney</labelNoun>
+	</HediffDef>
+	
+	<HediffDef ParentName="SCP_2687BBase">
+		<defName>SCP_2687B_Liver</defName>
+		<label>Plastic Liver</label>
+		<description>An installed anomalous liver.</description>
+		<labelNoun>an anomalous liver</labelNoun>
+	</HediffDef>
+	
+	<!-- SCP-30331 Mike -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>SCP_30331R</defName>
+		<label>SCP-3033-1</label>
+		<labelNoun>an SCP-3033-1</labelNoun>
+		<description>An installed SCP-3033-1 "Mike" unit implant.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CEuclid</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+				<isTranqable>false</isTranqable>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks><ThingDef>SCP_30331R</ThingDef></descriptionHyperlinks>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<restFallFactor>0.1</restFallFactor>
+				<hungerRateFactor>0.1</hungerRateFactor>
+				<disabledWorkTags>
+					<li>Caring</li>
+					<li>Animals</li>
+					<li>Intellectual</li>
+					<li>ManualSkilled</li>
+					<li>Cooking</li>
+					<li>PlantWork</li>
+				</disabledWorkTags>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.75</setMax>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>SCP_30331R</spawnThingOnRemoved>
+	</HediffDef>
+
+	<!-- object on ground -->
+	<ThingDef ParentName="BodyPartBase">
+		<defName>SCP_30331R</defName>
+		<label>SCP-3033-1</label>
+		<description>SCP-3033-1 is a brain implant by the Chaos Insurgency to completely control a pawn via another pawn with an SCP-3033-2 "Controller" implant. This implant also gives an immunity to pain and reduces fine motor control, preventing numerous tasks from being done. It is completely inert when not installed.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CEuclid</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+				<isTranqable>false</isTranqable>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<RecipeDef>SCP_InstallSCP30331R</RecipeDef>
+			<ThingDef>SCP_30332R</ThingDef>
+		</descriptionHyperlinks>
+		<techHediffsTags>
+			<li>Spacer</li>
+		</techHediffsTags>
+	</ThingDef>
+ 
+	<!-- SCP-3033-2 -->
+ 
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>SCP_30332R</defName>
+		<label>SCP-3033-2</label>
+		<labelNoun>an SCP-3033-2</labelNoun>
+		<description>An installed SCP-3033-2 "Controller" unit implant.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CEuclid</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+				<isTranqable>false</isTranqable>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks><ThingDef>SCP_30332R</ThingDef></descriptionHyperlinks>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>SCP_30332R</spawnThingOnRemoved>
+	</HediffDef>
+ 
+	<ThingDef ParentName="BodyPartBase">
+		<defName>SCP_30332R</defName>
+		<label>SCP-3033-2</label>
+		<description>SCP-3033-2 is a brain implant by the Chaos Insurgency to completely control pawns with an SCP-3033-1 "Mike" unit implant. This implant also gives an immunity to pain. It is completely inert when not installed.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CEuclid</li>
+					<li>SCP_DKeneq</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+				<isTranqable>false</isTranqable>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<RecipeDef>SCP_InstallSCP30332R</RecipeDef>
+			<ThingDef>SCP_30331R</ThingDef>
+		</descriptionHyperlinks>
+		<techHediffsTags>
+			<li>Spacer</li>
+		</techHediffsTags>
+	</ThingDef>
+
+</Defs>

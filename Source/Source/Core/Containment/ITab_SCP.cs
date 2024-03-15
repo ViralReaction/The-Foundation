@@ -75,7 +75,7 @@ namespace Foundation.Containment
             {
                 bool isHealthy;
                 bool isInMentalState;
-                int adjustedGoodwillChange = this.SelPawn.Faction.CalculateAdjustedGoodwillChange(Faction.OfPlayer, this.SelPawn.Faction.GetGoodwillGainForPrisonerRelease(this.SelPawn, out isHealthy, out isInMentalState));
+                int adjustedGoodwillChange = this.SelPawn.Faction.CalculateAdjustedGoodwillChange(Faction.OfPlayer, this.SelPawn.Faction.GetGoodwillGainForExit(this.SelPawn, true, out isHealthy, out isInMentalState));
                 taggedString1 = !isHealthy || isInMentalState ? (isHealthy ? (!isInMentalState ? "None".Translate() : "None".Translate() + " (" + this.SelPawn.MentalState.InspectLine + ")") : "None".Translate() + " (" + "UntendedInjury".Translate().ToLower() + ")") : this.SelPawn.Faction.NameColored + " " + adjustedGoodwillChange.ToStringWithSign();
             }
             this.ContainmentDays(listing, this.SelPawn);

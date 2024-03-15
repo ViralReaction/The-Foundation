@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- <ThingDef ParentName="ApparelMakeableBase"> -->
+		<!-- <defName>Apparel_GOC__SFD</defName> -->
+		<!-- <description>The MkVII Standard Field Dress, or "Black Suit," is the latest iteration of the Global Occult Coalition's specialized garment for covert operations. Made of +1 Generation nanofiber, it features a form-fitting ballistic undergarment, integrated communications gear, an Augmented Reality system, a Personal Computing Device with a satellite connection, and miniaturized emergency toolkits and weapons.</description> -->
+		<!-- <label>Mk VII Standard Field Dress</label> -->
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>ComplexClothing</researchPrerequisite> -->
+			<!-- <displayPriority>208</displayPriority> -->
+		<!-- </recipeMaker> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Apparel/Foundation/SCP_Dclass/SCP_Dclass</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+		<!-- </graphicData> -->
+		<!-- <costStuffCount>45</costStuffCount> -->
+		<!-- <stuffCategories> -->
+			<!-- <li>Fabric</li> -->
+			<!-- <li>Leathery</li> -->
+		<!-- </stuffCategories> -->
+		<!-- <thingCategories> -->
+			<!-- <li>ApparelMisc</li> -->
+		<!-- </thingCategories> -->
+		<!-- <statBases> -->
+			<!-- <MaxHitPoints>100</MaxHitPoints> -->
+			<!-- <WorkToMake>2700</WorkToMake> -->
+			<!-- <Mass>0.3</Mass> -->
+			<!-- <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor> -->
+			<!-- <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold> -->
+			<!-- <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat> -->
+			<!-- <EquipDelay>1.5</EquipDelay> -->
+		<!-- </statBases> -->
+		<!-- <apparel> -->
+			<!-- <bodyPartGroups> -->
+				<!-- <li>Torso</li> -->
+				<!-- <li>Neck</li> -->
+				<!-- <li>Shoulders</li> -->
+				<!-- <li>Arms</li> -->
+				<!-- <li>Legs</li> -->
+			<!-- </bodyPartGroups> -->
+			<!-- <wornGraphicPath>Things/Apparel/Foundation/SCP_Dclass/SCP_Dclass</wornGraphicPath> -->
+			<!-- <layers> -->
+				<!-- <li>OnSkin</li> -->
+			<!-- </layers> -->
+			<!-- <tags> -->
+				<!-- <li>GOC_Basic</li> -->
+			<!-- </tags> -->
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Soldier</li> -->
+			<!-- </defaultOutfitTags> -->
+		<!-- </apparel> -->
+		<!-- <colorGenerator Class="ColorGenerator_StandardApparel"/> -->
+		<!-- <tradeTags> -->
+			<!-- <li>BasicClothing</li> -->
+			<!-- <li>SCP_Clothing</li> -->
+		<!-- </tradeTags> -->
+	<!-- </ThingDef> -->
+	  
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_GOC_StaffShirt</defName>
+		<description>A white shirt and a blue tie worn by Coalition employees.</description>
+		<label>GOC Staff Shirt</label>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GOC/GOC_Staff/GOC_StaffShirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<costStuffCount>95</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2700</WorkToMake>
+			<Mass>0.3</Mass>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.05</NegotiationAbility>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/GOC/GOC_Staff/GOC_StaffShirt</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>GOC_Staff</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>SCP_Clothing</li>
+		</tradeTags>
+	</ThingDef>
+
+
+	<!-- GOC Formal Suit -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_GOC_FormalSuit</defName>
+		<description>A gray formal suit worn by higher ups within the Coalition.</description>
+		<label>Formal Suit (GOC)</label>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GOC/GOC_Manager/GOC_FormalSuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>110</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/GOC/GOC_Manager/GOC_FormalSuit</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>GOC_Staff</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>SCP_Clothing</li>
+		</tradeTags>
+	</ThingDef>
+							
+
+	<!-- GOC Security Fatigues -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_GOC_SecurityFatigues</defName>
+		<description>A gray pair of military fatigues worn by GOC security forces.</description>
+		<label>Security Fatigues (GOC)</label>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GOC/GOC_Security/GOC_SecurityFatigues</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>2700</WorkToMake>
+			<Mass>0.4</Mass>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<Flammability>-1.0</Flammability>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+			<ShootingAccuracyPawn>0.01</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/GOC/GOC_Security/GOC_SecurityFatigues</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>GOC_Security</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>SCP_Clothing</li>
+		</tradeTags>
+	</ThingDef>
+							
+
+							
+	<!-- GOC ST UBAC -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_GOC_StrikeTeamUbac</defName>
+		<description>A digital camo UBAC worn by the Coalition's elite Strike Team. The UBAC keeps the wearer comfortable and light, and proudly bears an Occult star-patch on each shoulder.</description>
+		<label>Strike Team UBAC (GOC)</label>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GOC/GOC_Strike/GOC_StrikeTeamUbac</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>0.35</Mass>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<MoveSpeed>0.05</MoveSpeed>
+			<ShootingAccuracyPawn>0.01</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/GOC/GOC_Strike/GOC_StrikeTeamUbac</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>GOC_Striketeam</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>Armor</li>
+			<li>SPC_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+  
+	<!-- GOC Parka -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_GOC_Parka</defName>
+		<description>A digital camo Parka worn by GOC members in winter environments, designed by legendary clothing creator BajtMe industries.</description>
+		<label>Parka (GOC)</label>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GOC/GOC_Parka/GOC_Parka</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/GOC/GOC_Parka/GOC_Parka</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>GOC_Coat</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>BasicClothing</li>
+			<li>SCP_Clothing</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- GOC Security Armor -->
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>Apparel_GOC_SecurityArmor</defName>
+		<label>Security Armor (GOC)</label>
+		<description>An Armored vest worn by GOC Security members.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GOC/GOC_SecurityArmor/GOC_SecurityArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>4.0</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<EquipDelay>5.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<costList>
+			<Cloth>20</Cloth>
+			<Steel>75</Steel>
+		</costList>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/GOC/GOC_SecurityArmor/GOC_SecurityArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<!--<li>IndustrialMilitaryBasic</li>-->
+				<li>GOC_Security</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Armor</li>
+			<li>SPC_Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Strike Team MBAV -->
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>Apparel_GOC_StrikeTeamMBAV</defName>
+		<label>Strike Team Armor (GOC)</label>
+		<description>A MBAV worn by Strike Team opperatives, fitted with a groin plate and various pouches.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/GOC/GOC_STArmor/GOC_STArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>270</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<Flammability>0.6</Flammability>
+			<ArmorRating_Sharp>1.02</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<EquipDelay>4.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.08</MoveSpeed>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<costList>
+			<Cloth>30</Cloth>
+			<Steel>60</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/GOC/GOC_STArmor/GOC_STArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<!--<li>IndustrialMilitaryBasic</li>-->
+				<li>GOC_StrikeTeam</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<tradeTags>
+			<li>Armor</li>
+			<li>SPC_Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

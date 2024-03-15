@@ -7,4 +7,12 @@
 		<li IfModActive="ceteam.combatextended">1.4/Mods/Combat Extended</li>
 		<!--li IfModActive="CP.RimmuNation.2.Weapons">1.4/Mods/Rimmunation</li-->
 	</v1.4>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Mods/Ideology</li>
+		<li IfModActive="dubwise.dubsbadhygiene">1.5/Mods/DBH</li>
+		<li IfModActive="ceteam.combatextended">1.5/Mods/Combat Extended</li>
+		<!--li IfModActive="CP.RimmuNation.2.Weapons">1.5/Mods/Rimmunation</li-->
+	</v1.5>
 </loadFolders>

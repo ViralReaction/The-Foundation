@@ -20,7 +20,7 @@ namespace Foundation
             GenExplosion.DoExplosion(explosion.instigator.Position, explosion.Map, 2f, DamageDefOf.Bomb, explosion.instigator);
             if (this.def != DamageDefOf.Flame || !Rand.Chance(FireUtility.ChanceToStartFireIn(c, explosion.Map)))
                 return;
-            FireUtility.TryStartFireIn(c, explosion.Map, Rand.Range(0.2f, 0.6f));
+            FireUtility.TryStartFireIn(c, explosion.Map, Rand.Range(0.2f, 0.6f), explosion.instigator);
         }
     }
 }

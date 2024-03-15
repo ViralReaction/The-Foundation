@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- SCP-610 -->
+	<HediffDef ParentName="InfectionBase">
+		<hediffClass>Foundation.Hediff_610_Infection</hediffClass>
+		<defName>SCP_610_Infection</defName>
+		<label>SCP-610 infection</label>
+		<labelNoun>an SCP-610 infection</labelNoun>
+		<description>SCP-610 infection. A fatal infection inflicted by a creature infested with SCP-610. Even with treatment, this illness can cause large growths of scar tissue and boils. After death, the body will reanimate after some time.</description>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1</lethalSeverity>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>12</baseTendDurationHours>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.84</severityPerDayNotImmune>
+				<immunityPerDaySick>0.6441</immunityPerDaySick>
+				<severityPerDayImmune>-0.70</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.40</immunityPerDayNotSick>
+			</li>
+			<li Class="HediffCompProperties_Discoverable">
+				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+				<letterType>NegativeEvent</letterType>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.08</painOffset>
+				<lifeThreatening>true</lifeThreatening>
+			</li>
+			<li>
+				<minSeverity>0.33</minSeverity>
+				<label>major</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.08</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.78</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.12</painOffset>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.87</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.85</painOffset>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Plastic Blood Poisoning -->
+	<HediffDef ParentName="InfectionBase">
+		<defName>SCP_2687_Poison</defName>
+		<label>Microplastic Poisoning</label>
+		<description>The organs derived from SCP-2687 can cause acute poisoning of the blood. Without a supply of SCP-2687-C, this will most likely result in death.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCP_2687_C</ThingDef>
+		</descriptionHyperlinks>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1</lethalSeverity>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.2488</severityPerDayNotImmune>
+				<immunityPerDaySick>0.2388</immunityPerDaySick>
+				<severityPerDayImmune>-0.4947</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.666</minSeverity>
+				<label>major</label>
+				<vomitMtbDays>1.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.833</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<vomitMtbDays>0.75</vomitMtbDays>
+				<painOffset>0.05</painOffset>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- SCP 1797 Kitten Flu -->
+	<HediffDef ParentName="InfectionBase">
+    <defName>SCP_1797_Flu</defName>
+    <label>Kitten Flu</label>
+    <description>Item #: SCP-1797
+
+SCP-1797 is an anomalous strain of influenza, primarily transmitted through contact with SCP-1797-A. Apart from its anomalous properties, SCP-1797 is similar to other influenza strains: the virus causes symptoms such as fever, coughing, and fatigue, can be treated with antiviral medications or overcome naturally by the host's immune system.
+
+Two days after infection, several large tumors will begin to grow on the host's body. Typically, from 5 to 8 tumors will develop at a time. The tumors will continue to grow for several days, reaching 12-20 cm in size and gradually taking the shape of an instance of SCP-1797-A. Once fully grown, SCP-1797-A will animate and detach from the host's body. The process will repeat for as long as the host is infected with SCP-1797.</description>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>1</lethalSeverity>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>12</baseTendDurationHours>
+        <severityPerDayTended>-0.0773</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.2488</severityPerDayNotImmune>
+        <immunityPerDaySick>0.2388</immunityPerDaySick>
+        <severityPerDayImmune>-0.4947</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
+      </li>
+	  <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.666</minSeverity>
+        <label>major</label>
+        <vomitMtbDays>1.5</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.833</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <painOffset>0.05</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.6</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

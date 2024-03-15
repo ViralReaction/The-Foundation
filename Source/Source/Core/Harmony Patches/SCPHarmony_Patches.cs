@@ -85,7 +85,7 @@ namespace Foundation.HarmonyPatches
             return false;
         }
 
-        public static void SCP939_VoicesMovementSpeed(bool diagonal, Pawn __instance, ref int __result)
+        public static void SCP939_VoicesMovementSpeed(bool diagonal, Pawn __instance, ref float __result)
         {
             if (__instance.TryGetComp<CompVoices>() == null)
                 return;

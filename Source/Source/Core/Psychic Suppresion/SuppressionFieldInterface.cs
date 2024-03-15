@@ -65,9 +65,9 @@ public class SuppressionFieldSettingsWindow : Window
         // Draw effect slider. All these various negative signs and other strangeness are to make the slider value
         // positive, since apparently having a negative slider value broke in 1.4.
         var effectRect = new Rect(xAnchor, yAnchor, drawBox.width, 22f);
-        var tempTargetEffect = Widgets.HorizontalSlider_NewTemp(effectRect, -comp.TargetEffect, comp.Props.MaxEffect,
+        var tempTargetEffect = Widgets.HorizontalSlider(effectRect, -comp.TargetEffect, comp.Props.MaxEffect,
             -comp.Props.MinEffect, false, null, null, null, comp.Props.EffectStep);
-        comp.TargetEffect = -tempTargetEffect;
+        comp.TargetEffect = -tempTargetEffect; //HorizontalSlider_NewTemp
         yAnchor += 22f + 2 * YSeparation;
 
         // Draw current radius label
@@ -77,7 +77,7 @@ public class SuppressionFieldSettingsWindow : Window
 
         // Draw radius slider
         var radiusRect = new Rect(xAnchor, yAnchor, drawBox.width, 22f);
-        comp.TargetRadius = Widgets.HorizontalSlider_NewTemp(radiusRect, comp.TargetRadius, comp.Props.MinRadius,
+        comp.TargetRadius = Widgets.HorizontalSlider(radiusRect, comp.TargetRadius, comp.Props.MinRadius,
             comp.Props.MaxRadius, false, null, null, null, 0.5f);
         yAnchor += 22f + 2 * YSeparation;
 

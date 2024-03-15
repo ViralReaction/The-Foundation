@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<DamageDef ParentName="Bullet">
+		<defName>SCP_TranqRanged</defName>
+		<label>tranqed</label>
+		<hediff>Gunshot</hediff>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been tranqed to death.</deathMessage>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<additionalHediffs>
+			<li>
+				<hediff>SCP_TranqHediff</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	<DamageDef ParentName="Bullet">
+		<defName>SCP_BluntRanged</defName>
+		<label>blunt</label>
+		<workerClass>DamageWorker_Blunt</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been bludgeoned to death.</deathMessage>
+		<hediff>SCP_BeanBag_Crush</hediff>
+		<hediffSkin>SCP_BeanBag_Bruise</hediffSkin>
+		<hediffSolid>SCP_BeanBag_Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<buildingDamageFactor>0.0</buildingDamageFactor>
+		<bluntStunDuration>2.0</bluntStunDuration>
+		<bluntInnerHitChance>0.4</bluntInnerHitChance>
+		<bluntInnerHitDamageFractionToConvert>0.1~0.2</bluntInnerHitDamageFractionToConvert>
+		<bluntInnerHitDamageFractionToAdd>0.2~0.35</bluntInnerHitDamageFractionToAdd>
+		<bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+			<points>
+				<li>(0.04, 0.20)</li>
+				<li>(0.5, 1)</li>
+			</points>
+		</bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+		<bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+			<points>
+				<li>(0.4, 0)</li>
+				<li>(0.9, 0.15)</li>
+			</points>
+		</bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+	</DamageDef>
+
+	<DamageDef ParentName="Flame">
+		<defName>SCP_Flame</defName>
+		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
+		<label>fire</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<isRanged>false</isRanged>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastFlame</explosionCellFleck>
+		<explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+		<explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+		<soundExplosion>Explosion_Flame</soundExplosion>
+		<combatLogRules>Damage_Flame</combatLogRules>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
+	
+	<DamageDef ParentName="Flame">
+		<defName>SCP_Acid</defName>
+		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
+		<label>acid</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has acid burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<isRanged>false</isRanged>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<!-- <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell> -->
+		<!-- <explosionCellFleck>BlastFlame</explosionCellFleck> -->
+		<!-- <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter> -->
+		<!-- <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge> -->
+		<!-- <soundExplosion>Explosion_Flame</soundExplosion> -->
+		<combatLogRules>Damage_Flame</combatLogRules>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
+
+	<DamageDef ParentName="Flame">
+		<defName>SCP_Electric</defName>
+		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
+		<label>static electricity</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>true</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} was electrocuted to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<isRanged>false</isRanged>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastFlame</explosionCellFleck>
+		<explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+		<explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+		<soundExplosion>Explosion_Flame</soundExplosion>
+		<combatLogRules>Damage_Flame</combatLogRules>
+		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
+	
+	<!-- SCP-106 Old Man -->
+	<DamageDef ParentName="Scratch">
+		<defName>SCP_106_Oldman_Scratch</defName>
+		<label>old man scratch</label>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been sliced to death.</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>SCP_106_Ooze_Hediff</hediff>
+				<severityPerDamageDealt>0.015</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<defaultDamage>8</defaultDamage>
+		<isRanged>false</isRanged>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	
+	<!-- ===== SCP-610 Damage Def ===== -->
+	<DamageDef ParentName="Bite">
+		<defName>SCP_610_InfectingBite</defName>
+		<label>bite</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been bitten to death.</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>SCP_610_Infection</hediff>
+				<severityPerDamageDealt>0.004</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<defaultDamage>8</defaultDamage>
+		<isRanged>false</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+
+	<DamageDef Parent="Scratch">
+		<defName>SCP_610_InfectingScratch</defName>
+		<label>scratch</label>
+		<workerClass>DamageWorker_Scratch</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been torn to death.</deathMessage>
+		<hediff>Scratch</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>SCP_610_Infection</hediff>
+				<severityPerDamageDealt>0.004</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<defaultDamage>5</defaultDamage>
+		<isRanged>false</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<scratchSplitPercentage>0.67</scratchSplitPercentage>
+	</DamageDef>
+
+</Defs>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AnomalyBase">
+		<defName>SCP_682_Reptile</defName>
+		<label>SCP-682 "Reptile"</label>
+		<description>Item #: SCP-0682
+Object Class: Keter
+		
+SCP-682 is a large, vaguely reptile-like creature of unknown origin. It appears to be extremely intelligent, and was observed to engage in complex communication.
+
+SCP-682 has always been observed to have extremely high strength, speed, and reflexes, though exact levels vary with its form. SCP-682's physical body grows and changes very quickly, growing or decreasing in size as it consumes or sheds material. SCP-682 gains energy from anything it ingests, organic or inorganic. In case of containment breach, SCP-682 is to be tracked and re-captured by all available Mobile Task Forces, and no teams with fewer than seven (7) members are cleared to engage it.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CKeter</li>
+					<li>SCP_DVlam</li>
+					<li>SCP_RDanger</li>
+				</classRating>
+				<containmentTier>3</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>6</MoveSpeed>
+			<MarketValue>500</MarketValue>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<FilthRate>0</FilthRate>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<ToxicResistance>1</ToxicResistance>
+		</statBases>
+		<tradeTags>
+			<li>SCP</li>
+		</tradeTags>
+		<race>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<hasGenders>false</hasGenders>
+			<maxPreyBodySize>4.0</maxPreyBodySize>
+			<baseBodySize>3</baseBodySize>
+			<baseHungerRate>0.9</baseHungerRate>
+			<baseHealthScale>5</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<leatherDef>Leather_Human</leatherDef>
+			<useMeatFrom>Human</useMeatFrom>
+			<wildness>10</wildness>
+			<trainability>Advanced</trainability>	
+			<lifeExpectancy>5000</lifeExpectancy>
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>70</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<chanceFactor>0.15</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<chanceFactor>0.15</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.7</chanceFactor>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>14</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<comps>
+			<li Class="Foundation.Comps.CompProperties_HumeShield">
+				<startingTicksToReset>600</startingTicksToReset>
+				<EnergyShieldEnergyMax>45</EnergyShieldEnergyMax>
+				<energyOnReset>60</energyOnReset>
+				<texPath>Other/HumeShield</texPath>
+			</li>
+			<li Class="Foundation.Comps.CompProperties_AnomalyHeal">
+				<tickInterval>300</tickInterval>
+				<healAmount>10</healAmount>
+			</li>
+		</comps>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCP_682_Reptile</defName>
+		<label>SCP-682 "Reptile"</label>
+		<race>SCP_682_Reptile</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<labelMale>Reptile</labelMale>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCP_682/SCP_682</texPath>
+					<drawSize>5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

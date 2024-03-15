@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- <ThingDef ParentName="BodyPartBase"> -->
+	<!-- <defName>SCP_578_Bloodstone_Maker</defName> -->
+	<!-- <label>SCP-578 Blood Opal Catalyst</label> -->
+	<!-- <description>Item #: SCP-578-1 -->
+	<!-- Object Class: Safe -->
+		
+	<!-- SCP-578 is a colorless, odorless liquid consisting of a solution of water, silicon, and a previously unknown and uncharacterized enzyme. SCP-578's anomalous properties manifest when it is brought into contact with human blood, solidifing into a beautiful gemstone known as SCP-578-1.</description> -->
+	<!-- <modExtensions> -->
+	<!-- <li Class="Foundation.Containment.ContainmentExtension"> -->
+	<!-- <classRating> -->
+	<!-- <li>SCP_CSafe</li> -->
+	<!-- <li>SCP_DDark</li> -->
+	<!-- <li>SCP_RNotice</li> -->
+	<!-- </classRating> -->
+	<!-- <containmentTier>0</containmentTier> -->
+	<!-- </li> -->
+	<!-- </modExtensions> -->
+	<!-- <graphicData> -->
+	<!-- <texPath>Things/Item/Special/SCP_578</texPath> -->
+	<!-- <graphicClass>Graphic_Single</graphicClass> -->
+	<!-- <drawSize>0.5</drawSize> -->
+	<!-- </graphicData> -->
+	<!-- <thingClass>ThingWithComps</thingClass> -->
+	<!-- <resourceReadoutPriority>Middle</resourceReadoutPriority> -->
+	<!-- <stackLimit>1</stackLimit> -->
+	<!-- <tradeNeverStack>true</tradeNeverStack> -->
+	<!-- <useHitPoints>true</useHitPoints> -->
+	<!-- <techLevel>Industrial</techLevel> -->
+	<!-- <statBases> -->
+	<!-- <MaxHitPoints>50</MaxHitPoints> -->
+	<!-- <Flammability>0.3</Flammability> -->
+	<!-- <DeteriorationRate>1</DeteriorationRate> -->
+	<!-- <Beauty>0</Beauty> -->
+	<!-- <MarketValue>1000</MarketValue> -->
+	<!-- <Mass>0.3</Mass> -->
+	<!-- </statBases> -->
+	<!-- <thingCategories> -->
+	<!-- <li>SCPObjects</li> -->
+	<!-- </thingCategories> -->
+	<!-- <tradeTags> -->
+	<!-- <li>Artifact</li> -->
+	<!-- <li>ExoticMisc</li> -->
+	<!-- <li>SCP</li> -->
+	<!-- </tradeTags> -->
+	<!-- <thingSetMakerTags> -->
+	<!-- <li>RewardStandardHighFreq</li> -->
+	<!-- </thingSetMakerTags> -->
+	<!-- <ingestible> -->
+	<!-- <foodType>Processed</foodType> -->
+	<!-- <preferability>NeverForNutrition</preferability> -->
+	<!-- <drugCategory>Any</drugCategory> -->
+	<!-- <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan> -->
+	<!-- <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce> -->
+	<!-- <chairSearchRadius>8</chairSearchRadius> -->
+	<!-- <ingestSound>Ingest_Pill</ingestSound> -->
+	<!-- <ingestHoldUsesTable>false</ingestHoldUsesTable> -->
+	<!-- <ingestCommandString>Take {0}</ingestCommandString> -->
+	<!-- <ingestReportString>Taking {0}.</ingestReportString> -->
+	<!-- <outcomeDoers> -->
+	<!-- <li Class="IngestionOutcomeDoer_GiveHediff"> -->
+	<!-- <hediffDef>SCP_1797_Flu</hediffDef> -->
+	<!-- <severity>0.05</severity> -->
+	<!-- </li> -->
+	<!-- </outcomeDoers> -->
+	<!-- </ingestible> -->
+	<!-- <orderedTakeGroup>Drug</orderedTakeGroup> -->
+	<!-- <comps> -->
+	<!-- <li Class="CompProperties_Forbiddable"/> -->
+	<!-- </comps> -->
+	<!-- </ThingDef> -->
+	
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>SCP_578_Bloodstone_Maker</defName>
+		<label>SCP-578 Blood Opal Catalyst</label>
+		<description>Item #: SCP-578-1
+Object Class: Safe
+		
+SCP-578 is a colorless, odorless liquid consisting of a solution of water, silicon, and a previously unknown and uncharacterized enzyme. SCP-578's anomalous properties manifest when it is brought into contact with human blood, solidifing into a beautiful gemstone known as SCP-578-1.</description>
+		<descriptionHyperlinks>
+			<HediffDef>GoJuiceHigh</HediffDef>
+			<HediffDef>GoJuiceAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/SCP_578</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>53</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="Foundation.IngestionOutcomeDoer_IngestSCP578"></li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>GoJuiceProduction</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<costList>
+			<Neutroamine>2</Neutroamine>
+			<Yayo>1</Yayo>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<!-- <chemical>GoJuice</chemical> -->
+				<!-- <addictiveness>0.026</addictiveness> -->
+				<!-- <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset> -->
+				<!-- <needLevelOffset>0.9</needLevelOffset> -->
+				<!-- <isCombatEnhancingDrug>true</isCombatEnhancingDrug> -->
+				<!-- <listOrder>200</listOrder> -->
+				<!-- <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset> -->
+				<!-- <largeOverdoseChance>0.005</largeOverdoseChance> -->
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>SCP_578_1_Bloodstone</defName>
+		<label>SCP-578-1 "Blood Opal"</label>
+		<description>Item #: SCP-578-1
+Object Class: Safe
+	
+SCP-578 and several hundred instances of SCP-578-1 were initially discovered during a Foundation raid on a Marshall, Carter, and Dark Ltd. facility. The facility had been used as a production site for various items made of SCP-578-1. The exact process MCD used to create SCP-578 is unknown.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CSafe</li>
+					<li>SCP_DDark</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Resource/Jade</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(255, 7, 7)</color>
+		</graphicData>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<statBases>
+			<MarketValue>7</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<!--   <deepCommonality>0.5</deepCommonality>
+    <deepCountPerPortion>15</deepCountPerPortion>
+    <deepLumpSizeRange>1~4</deepLumpSizeRange> -->
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Stony</li>
+			</categories>
+			<commonality>0.01</commonality>
+			<color>(115, 7, 7)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.5</MaxHitPoints>
+				<WorkToMake>1.4</WorkToMake>
+				<WorkToBuild>5.0</WorkToBuild>
+				<Beauty>2.5</Beauty>
+				<Flammability>0</Flammability>
+				<MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
+</Defs>

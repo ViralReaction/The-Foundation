@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>SCP_Bullet_SCP3118R</defName>
+		<label>pistol bullet</label>
+		<thingClass>Foundation.Projectile_LunchGun</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>SCP_3118R</defName> <!-- fat fingered the name of this boi, label is correct -->
+		<label>SCP-3118</label>
+		<description>Item #: SCP-3118
+Object Class: Safe
+			
+SCP-3118 is a Beretta M9 pistol. Its anomalous effects activate only when it is used to fire a bullet at the cranium of a human being. Using the object to fire a bullet into other parts of the body will result in standard gun-inflicted trauma and not activate its effects unless the bullet also passes through any portion of the cranium.
+
+A bullet fired in this way will dematerialize upon contact with the cranium, and instead of an exit wound and ejecta, SCP-3118-1 will emerge from the far side of the cranium along the bullet's path. SCP-3118-1 is an exact recreation of something the subject has eaten for lunch at some point in their life, including containers and utensils used to consume the meal.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CSafe</li>
+					<li>SCP_DVlam</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+			</li>
+		</modExtensions>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/AutoPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>SCPWeapons</li>
+		</thingCategories>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>SCP_</li>
+		</weaponTags>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>SCP</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>2</relicChance>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SCP_Bullet_SCP3118R</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>25.9</range>
+				<soundCast>Shot_Autopistol</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

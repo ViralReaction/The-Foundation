@@ -73,7 +73,7 @@ namespace Foundation
                             if (this.hatcheeParent != null)
                             {
                                 if (pawn.playerSettings != null && this.hatcheeParent.playerSettings != null && this.hatcheeParent.Faction == this.hatcheeFaction)
-                                    pawn.playerSettings.AreaRestriction = this.hatcheeParent.playerSettings.AreaRestriction;
+                                    pawn.playerSettings.AreaRestrictionInPawnCurrentMap = this.hatcheeParent.playerSettings.AreaRestrictionInPawnCurrentMap;
                                 if (pawn.RaceProps.IsFlesh)
                                     pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, this.hatcheeParent);
                             }

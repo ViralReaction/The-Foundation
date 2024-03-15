@@ -132,7 +132,7 @@ namespace Foundation.Comps
             }
         }
 
-        public override void PostPreApplyDamage(DamageInfo dinfo, out bool absorbed)
+        public void PostPreApplyDamage(DamageInfo dinfo, out bool absorbed)
         {
             absorbed = false;
             if (this.ShieldState != 0 || !dinfo.Def.isRanged && !dinfo.Def.isExplosive)

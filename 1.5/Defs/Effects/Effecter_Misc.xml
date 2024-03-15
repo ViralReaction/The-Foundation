@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <EffecterDef>
+    <defName>SCP_EffecterSCP1762R</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <scale>0.000001</scale>
+        <chancePerTick>0.0001</chancePerTick>
+        <positionRadius>10</positionRadius>
+        <moteDef>SCP_MoteSCP1762R</moteDef>
+        <speed>1~1</speed>
+        <angle>10~80</angle>
+      </li>
+    </children>
+  </EffecterDef>
+  
+    <EffecterDef>
+    <defName>HumeShield_Break</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <soundDef>EnergyShield_Broken</soundDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>FlashHumeShieldBreak</moteDef>
+        <scale>2</scale>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+        <attachToSpawnThing>true</attachToSpawnThing>
+		<color>(236, 28, 36)</color>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>CracksHumeShieldBreak</moteDef>
+        <scale>2</scale>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+        <attachToSpawnThing>true</attachToSpawnThing>
+      </li>
+    </children>
+  </EffecterDef>
+
+
+</Defs>

@@ -19,7 +19,7 @@ namespace Foundation.Containment
             if (!pawn.Spawned)
                 return (Pawn)null;
             ContainmentBreakerMentalStateUtility.tmpAnimals.Clear();
-            List<Pawn> allPawnsSpawned = pawn.Map.mapPawns.AllPawnsSpawned;
+            IReadOnlyList<Pawn> allPawnsSpawned = pawn.MapHeld.mapPawns.AllPawnsSpawned;
             for (int index = 0; index < allPawnsSpawned.Count; index++)
             {
                 Pawn pawn1 = allPawnsSpawned[index];

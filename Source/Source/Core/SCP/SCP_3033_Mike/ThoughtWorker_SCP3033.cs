@@ -16,7 +16,7 @@ namespace Foundation
         {
             if (p.health.hediffSet.GetFirstHediffOfDef(SCPDefOf.SCP_30331R) != null)
             {
-                List<Pawn> allPawn = p.MapHeld.mapPawns.AllPawnsSpawned;
+                IReadOnlyList<Pawn> allPawn = p.MapHeld.mapPawns.AllPawnsSpawned;
                 for (int index = 0; index < allPawn.Count; index++)
                 {
                     Pawn pawnCheck = allPawn[index];

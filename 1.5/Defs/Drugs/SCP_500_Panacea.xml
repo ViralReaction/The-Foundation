@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MechSerumBase">
+		<defName>SCP_500_Panacea</defName>
+		<label>SCP-500 Panacea Pill</label>
+		<description>Item #: SCP-500
+Object Class: Safe
+			
+SCP-500 is a small red pill that when taken orally, effectively cures the subject of all diseases within two hours, exact time depending on the severity and amount of the subject's conditions. Despite extensive trials, all attempts at synthesizing more of what is thought to be the active ingredient of the pills have been unsuccessful.</description>
+		<modExtensions>
+			<li Class="Foundation.Containment.ContainmentExtension">
+				<classRating>
+					<li>SCP_CSafe</li>
+					<li>SCP_DDark</li>
+					<li>SCP_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Drug/Penoxycyline</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(200, 0, 0)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>consume a SCP-500 pill</useLabel>
+				<useDuration>100</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>Foundation.CompUseEffect_UseSCP500</compClass>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>Ingest_Pill</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+		</comps>
+	</ThingDef>
+  
+	<RecipeDef>
+		<defName>Administer_SCP500R</defName>
+		<label>administer SCP-500</label>
+		<description>Administer a SCP-500 panacea pill to cure any and all diseases.</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Administering SCP-500.</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>100</workAmount>
+		<dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCP_500_Panacea</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCP_500_Panacea</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+  
+</Defs>

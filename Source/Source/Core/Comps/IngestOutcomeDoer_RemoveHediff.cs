@@ -12,7 +12,7 @@ namespace Foundation
 public class IngestionOutcomeDoer_RemoveHediff : IngestionOutcomeDoer
 {
     public HediffDef hediffDef;
-    protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)
+    protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
     {
             var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef);
             if (hediff is null)

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended Guns</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Shotguns -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_USASTwelve"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_GOC_Shotgun</li>
+					</value>
+				</li>
+
+				<!-- SMG -->
+
+				<!-- AK -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_AKM"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_Combloc_AK</li>
+					</value>
+				</li>
+
+				<!-- AR -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_FNFAL"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_GOC_AR</li>
+					</value>
+				</li>
+
+				<!-- Machine Gun -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="CE_Gun_RPD" or
+					defName="CE_Gun_PKM"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_Combloc_MG</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="CE_Gun_MTwoFourNine" or
+						defName="CE_Gun_MSixty"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_MG</li>
+					</value>
+				</li>
+
+				<!-- DMR -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_SVD"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_Combloc_DMR</li>
+					</value>
+				</li>
+
+				<!-- Launchers -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_RPGSeven"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_Combloc_Launcher</li>
+					</value>
+				</li>
+
+				<!-- Handgun -->
+
+				<!-- Big Irons -->
+
+				<!-- Anti Material -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="CE_Gun_HecateTwo" or
+					defName="CE_Gun_PTRS"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_AntiMaterial</li>
+					</value>
+				</li>
+				
+				<!-- Explosives -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_MilkorMGL"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_Combloc_Explosive</li>
+					</value>
+				</li>
+				
+				<!-- Spacer -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="CE_Gun_ChargeShotgun"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_Combloc_Elite_Spacer</li>
+						<li>Foundation_US_Elite_Spacer</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="CE_Gun_ChargeSniperRifle" or
+					defName="CE_Gun_ChargeLMG" or
+					defName="CE_Gun_ChargeAMR"]/weaponTags
+					</xpath>
+					<value>
+						<li>Foundation_US_Elite_Spacer</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+					defName="CE_Gun_Flamethrower"]/weaponTags</xpath>
+					<value>
+						<li>Foundation_Flamethrower</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
