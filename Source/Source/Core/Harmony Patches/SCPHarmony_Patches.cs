@@ -100,7 +100,7 @@ namespace Foundation.HarmonyPatches
         public static void TickMindstateLeaveDaylight(Pawn __instance)
         {
             IntVec3 result;
-            if (__instance?.kindDef != PawnKindDefOf_SCP.SCP_939_Incident || !__instance.Spawned || GenLocalDate.HourOfDay(__instance.Map) < 5 || GenLocalDate.HourOfDay(__instance.Map) >= 19 || !CellFinder.TryFindRandomPawnExitCell(__instance, out result))
+            if (__instance?.kindDef != PawnKindDefOf_SCP.SCP_939_Incident || !__instance.Spawned || GenLocalDate.HourOfDay(__instance.Map) < 5 || GenLocalDate.HourOfDay(__instance.Map) >= 19 || !CellFinder.TryFindRandomPawnExitCell(__instance, out result) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.Eclipse) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.VolcanicWinter) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.UnnaturalDarkness))
                 return;
             Job job = new Job(SCPDefOf.LeaveMapDaylight, (LocalTargetInfo)result);
             __instance.jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
@@ -113,12 +113,10 @@ namespace Foundation.HarmonyPatches
         {
             if (__result != WorldPawnSituation.Free || p.kindDef != PawnKindDefOf_SCP.SCP_939_Incident)
                 return;
-            Log.Message("Checking " + p.LabelShort);
             foreach (Map map in Find.Maps)
             {
                 if (map.GameConditionManager.ActiveConditions.Any<GameCondition>((Predicate<GameCondition>)(x => x is GameCondition_SCP939 && (x as GameCondition_SCP939).ActiveSCPInArea.Contains(p))))
                 {
-                    Log.Message("Result Changed ");
                     __result = WorldPawnSituation.InTravelingTransportPod;
                     break;
                 }

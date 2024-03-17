@@ -1,77 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- <ThingDef ParentName="BodyPartBase"> -->
-	<!-- <defName>SCP_578_Bloodstone_Maker</defName> -->
-	<!-- <label>SCP-578 Blood Opal Catalyst</label> -->
-	<!-- <description>Item #: SCP-578-1 -->
-	<!-- Object Class: Safe -->
-		
-	<!-- SCP-578 is a colorless, odorless liquid consisting of a solution of water, silicon, and a previously unknown and uncharacterized enzyme. SCP-578's anomalous properties manifest when it is brought into contact with human blood, solidifing into a beautiful gemstone known as SCP-578-1.</description> -->
-	<!-- <modExtensions> -->
-	<!-- <li Class="Foundation.Containment.ContainmentExtension"> -->
-	<!-- <classRating> -->
-	<!-- <li>SCP_CSafe</li> -->
-	<!-- <li>SCP_DDark</li> -->
-	<!-- <li>SCP_RNotice</li> -->
-	<!-- </classRating> -->
-	<!-- <containmentTier>0</containmentTier> -->
-	<!-- </li> -->
-	<!-- </modExtensions> -->
-	<!-- <graphicData> -->
-	<!-- <texPath>Things/Item/Special/SCP_578</texPath> -->
-	<!-- <graphicClass>Graphic_Single</graphicClass> -->
-	<!-- <drawSize>0.5</drawSize> -->
-	<!-- </graphicData> -->
-	<!-- <thingClass>ThingWithComps</thingClass> -->
-	<!-- <resourceReadoutPriority>Middle</resourceReadoutPriority> -->
-	<!-- <stackLimit>1</stackLimit> -->
-	<!-- <tradeNeverStack>true</tradeNeverStack> -->
-	<!-- <useHitPoints>true</useHitPoints> -->
-	<!-- <techLevel>Industrial</techLevel> -->
-	<!-- <statBases> -->
-	<!-- <MaxHitPoints>50</MaxHitPoints> -->
-	<!-- <Flammability>0.3</Flammability> -->
-	<!-- <DeteriorationRate>1</DeteriorationRate> -->
-	<!-- <Beauty>0</Beauty> -->
-	<!-- <MarketValue>1000</MarketValue> -->
-	<!-- <Mass>0.3</Mass> -->
-	<!-- </statBases> -->
-	<!-- <thingCategories> -->
-	<!-- <li>SCPObjects</li> -->
-	<!-- </thingCategories> -->
-	<!-- <tradeTags> -->
-	<!-- <li>Artifact</li> -->
-	<!-- <li>ExoticMisc</li> -->
-	<!-- <li>SCP</li> -->
-	<!-- </tradeTags> -->
-	<!-- <thingSetMakerTags> -->
-	<!-- <li>RewardStandardHighFreq</li> -->
-	<!-- </thingSetMakerTags> -->
-	<!-- <ingestible> -->
-	<!-- <foodType>Processed</foodType> -->
-	<!-- <preferability>NeverForNutrition</preferability> -->
-	<!-- <drugCategory>Any</drugCategory> -->
-	<!-- <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan> -->
-	<!-- <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce> -->
-	<!-- <chairSearchRadius>8</chairSearchRadius> -->
-	<!-- <ingestSound>Ingest_Pill</ingestSound> -->
-	<!-- <ingestHoldUsesTable>false</ingestHoldUsesTable> -->
-	<!-- <ingestCommandString>Take {0}</ingestCommandString> -->
-	<!-- <ingestReportString>Taking {0}.</ingestReportString> -->
-	<!-- <outcomeDoers> -->
-	<!-- <li Class="IngestionOutcomeDoer_GiveHediff"> -->
-	<!-- <hediffDef>SCP_1797_Flu</hediffDef> -->
-	<!-- <severity>0.05</severity> -->
-	<!-- </li> -->
-	<!-- </outcomeDoers> -->
-	<!-- </ingestible> -->
-	<!-- <orderedTakeGroup>Drug</orderedTakeGroup> -->
-	<!-- <comps> -->
-	<!-- <li Class="CompProperties_Forbiddable"/> -->
-	<!-- </comps> -->
-	<!-- </ThingDef> -->
-	
 	<ThingDef ParentName="MakeableDrugBase">
 		<defName>SCP_578_Bloodstone_Maker</defName>
 		<label>SCP-578 Blood Opal Catalyst</label>
@@ -139,7 +68,7 @@ SCP-578 is a colorless, odorless liquid consisting of a solution of water, silic
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCP_578_1_Bloodstone</defName>
-		<label>SCP-578-1 "Blood Opal"</label>
+		<label>Blood Opal</label>
 		<description>Item #: SCP-578-1
 Object Class: Safe
 	

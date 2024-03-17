@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_131_Eye_Pod</defName>
-		<label>SCP-131 "Eye Pods"</label>
+		<label>Eye Pod</label>
 		<description>Item #: SCP-131
 Object Class: Safe
 		

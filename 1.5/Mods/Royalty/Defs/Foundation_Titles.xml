@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Base -->
+	<RoyalTitleDef Abstract="True" Name="BaseFoundationTitle">
+		<tags>
+			<li>Foundation_Title</li>
+		</tags>
+		<awardThought>Foundation_GainedTitle</awardThought>
+		<lostThought>Foundation_LostTitle</lostThought>
+		<canBeInherited>false</canBeInherited>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+	</RoyalTitleDef>
+
+	<!-- Titles -->
+	<RoyalTitleDef ParentName="BaseFoundationTitle">
+		<defName>Foundation_Security</defName>
+		<label>security</label>
+		<description>No longer AS disposable as a D-Class, security personnel are responsible for maintaining the security and integrity of Foundation facilities.tasked with containing breaches, protecting sensitive information, and ensuring the safety of Foundation personnel.</description>
+		<seniority>0</seniority>
+		<favorCost>1</favorCost>
+		<commonality>1</commonality>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BaseFoundationTitle">
+		<defName>Foundation_Analyst</defName>
+		<label>analyst</label>
+		<description>Analysts gather and analyze information related to anomalous phenomena, potential threats, and other relevant data. They provide intelligence reports to decision-makers within the Foundation and assist in identifying patterns or trends in anomalous activity.</description>
+		<seniority>100</seniority>
+		<favorCost>6</favorCost>
+		<allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+		<awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BaseFoundationTitle">
+		<defName>Foundation_Research</defName>
+		<label>researcher</label>
+		<description>Research personnel are scientists, researchers, and analysts who study SCP objects and phenomena. They are responsible for understanding the properties and behaviors of SCPs, developing containment procedures, and conducting experiments to further the Foundation's knowledge.</description>
+		<seniority>200</seniority>
+		<favorCost>8</favorCost>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+		<commonality>1</commonality>
+	</RoyalTitleDef>
+
+	<!-- Title Managerial -->
+	<RoyalTitleDef Abstract="True" Name="BaseFoundationTitlePlus" ParentName="BaseFoundationTitle">
+		<permits>
+			<li>TradeSettlement</li>
+			<li>TradeCaravan</li>
+		</permits>
+		<minExpectation>Moderate</minExpectation>
+		<disabledWorkTags>
+			<li>Cleaning</li>
+		</disabledWorkTags>
+	</RoyalTitleDef>
+	
+	<RoyalTitleDef ParentName="BaseFoundationTitlePlus">
+		<defName>Foundation_Research_Lead</defName>
+		<label>research lead</label>
+		<description>Leads are responsible for overseeing all research activities of their small 3-5 member team. Coordinates their research team, sets research objectives, and ensures that experiments adhere to Foundation protocols and safety guidelines.</description>
+		<seniority>300</seniority>
+		<favorCost>10</favorCost>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+		<commonality>1</commonality>
+	</RoyalTitleDef>
+	
+	<RoyalTitleDef ParentName="BaseFoundationTitlePlus">
+		<defName>Foundation_Research_Senior</defName>
+		<label>senior researcher</label>
+		<description>Senior Researcher are responsible for overseeing all research activities of several teams. Coordinates their research teams, sets research objectives, and ensures that experiments adhere to Foundation protocols and safety guidelines.</description>
+		<seniority>400</seniority>
+		<favorCost>12</favorCost>
+		<changeHeirQuestPoints>1000</changeHeirQuestPoints>
+		<commonality>1</commonality>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef Abstract="True" Name="BaseFoundTitlePlusWithRoomReq" ParentName="BaseFoundationTitlePlus">
+		<changeHeirQuestPoints>1200</changeHeirQuestPoints>
+		<bedroomRequirements>
+			<li Class="RoomRequirement_Area">
+				<area>20</area>
+			</li>
+			<li Class="RoomRequirement_TerrainWithTags">
+				<labelKey>RoomRequirementAllFloored</labelKey>
+				<tags>
+					<li>Floor</li>
+					<li>FineFloor</li>
+				</tags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+				<buildingTags><li>Biotech</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+				<buildingTags><li>Anomaly</li></buildingTags>
+			</li>
+		</bedroomRequirements>
+	</RoyalTitleDef>
+
+	<RoyalTitleDef ParentName="BaseFoundTitlePlusWithRoomReq">
+		<defName>Foundation_Research_Head</defName>
+		<label>head researcher</label>
+		<description>Head Researcher are responsible for overseeing entire departments and coordinating priorities and ensures that experiments adhere to Foundation protocols and safety guidelines.</description>
+		<seniority>500</seniority>
+		<favorCost>14</favorCost>
+		<commonality>1</commonality>
+	</RoyalTitleDef>
+	
+	<RoyalTitleDef Abstract="True" Name="BaseFoundTitlePlusWithFoodThroneReq" ParentName="BaseFoundTitlePlusWithRoomReq">
+		<minExpectation>High</minExpectation>
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+		<changeHeirQuestPoints>1500</changeHeirQuestPoints>
+		<foodRequirement>
+			<minQuality>MealSimple</minQuality>
+			<allowedTypes>Processed, Liquor</allowedTypes>
+			<allowedDefs>
+				<li>Ambrosia</li>
+				<li>Milk</li>
+				<li>RawBerries</li>
+			</allowedDefs>
+		</foodRequirement>
+		<throneRoomRequirements>
+			<li Class="RoomRequirement_HasAssignedThroneAnyOf">
+				<things>
+					<li>Throne</li>
+					<li>GrandThrone</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_Area">
+				<area>24</area>
+			</li>
+			<li Class="RoomRequirement_TerrainWithTags">
+				<labelKey>RoomRequirementAllFloored</labelKey>
+				<tags>
+					<li>Floor</li>
+					<li>FineFloor</li>
+				</tags>
+			</li>
+			<li Class="RoomRequirement_ThingAnyOfCount">
+				<things>
+					<li>Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+				</things>
+				<count>2</count>
+			</li>
+			<li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+				<labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+				<things>
+					<li>Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+				</things>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoProductionFacilities</labelKey>
+				<buildingTags><li>Production</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings">
+				<labelKey>RoomRequirementNoBeds</labelKey>
+				<buildingTags><li>Bed</li></buildingTags>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+				<labelKey>RoomRequirementNoAltars</labelKey>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+				<labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+				<buildingTags><li>Biotech</li></buildingTags>
+			</li>
+			<li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+				<labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+				<buildingTags><li>Anomaly</li></buildingTags>
+			</li>
+		</throneRoomRequirements>
+	</RoyalTitleDef>
+	
+	<RoyalTitleDef ParentName="BaseFoundTitlePlusWithFoodThroneReq">
+		<defName>Foundation_Director</defName>
+		<label>site director</label>
+		<description>Site Directors are responsible for the overall management and administration of Foundation sites under their jurisdiction.</description>
+		<seniority>600</seniority>
+		<favorCost>16</favorCost>
+		<commonality>1</commonality>
+		<permitPointsAwarded>2</permitPointsAwarded>
+	</RoyalTitleDef>
+
+</Defs>

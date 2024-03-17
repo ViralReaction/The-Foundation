@@ -111,6 +111,7 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 			<li>
 				<label>head</label>
 				<capacities>
+					<li>Blunt</li>
 					<li>SCP_Flame</li>
 				</capacities>
 				<power>12</power>

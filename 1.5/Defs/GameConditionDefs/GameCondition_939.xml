@@ -4,8 +4,15 @@
 	<GameConditionDef>
 		<defName>939WanderingTheArea</defName>
 		<conditionClass>Foundation.GameCondition_SCP939</conditionClass>
-		<label>SCP939 In The Area</label>
+		<label>SCP-939 Pack</label>
 		<description>A group of SCP939 have been spotted in the area. Be on the alert.</description>
 		<endMessage>The pack no longer seems to be in the area.</endMessage>
+		<letterText>A pack of of SCP-939 have been spotted in the area. They will only come out during the dark.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+		<allowUnderground>true</allowUnderground>
+		<silencedByConditions>
+		  <li>Aurora</li>
+		</silencedByConditions>
 	</GameConditionDef>
 </Defs>

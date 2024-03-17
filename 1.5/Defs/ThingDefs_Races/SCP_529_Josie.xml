@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_529_Josie</defName>
-		<label>SCP-529</label>
+		<label>Cat</label>
 		<description>Item #: SCP-529
 Object Class: Safe
 			
@@ -172,7 +172,7 @@ In spite of this, the animal has no health problems, and moves about as if its h
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_529/SCP_529</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_529/Dessicated_SCP_529</texPath>
@@ -182,7 +182,7 @@ In spite of this, the animal has no health problems, and moves about as if its h
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_529/SCP_529</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_529/Dessicated_SCP_529</texPath>
@@ -192,7 +192,7 @@ In spite of this, the animal has no health problems, and moves about as if its h
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_529/SCP_529</texPath>
-					<drawSize>1.1</drawSize>
+					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>

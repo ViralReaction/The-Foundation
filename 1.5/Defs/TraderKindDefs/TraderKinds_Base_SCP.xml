@@ -60,7 +60,6 @@
 				<countRange>10~15</countRange>
 			</li>
 
-
 			<!-- END OF FACTION THINGDEFS -->
 
 			<li Class="StockGenerator_SingleDef">
@@ -223,7 +222,6 @@
 					<li>AnimalPet</li>
 				</tradeTagsBuy>
 			</li>
-
 
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple"/>

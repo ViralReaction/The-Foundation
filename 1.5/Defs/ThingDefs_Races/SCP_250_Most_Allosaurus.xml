@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_250_Allosaurus</defName>
-		<label>SCP-250</label>
+		<label>Most Allosaurus</label>
 		<description>Item #: SCP-250
 Object Class: Euclid
 		

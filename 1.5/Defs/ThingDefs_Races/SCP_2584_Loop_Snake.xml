@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_2584_Snake</defName>
-		<label>SCP-2584 "Loop Snake"</label>
+		<label>Loop Snake</label>
 		<description>Item #: SCP-2584
 Object Class: Safe
 			

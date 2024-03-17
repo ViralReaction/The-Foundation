@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="BaseInsect">
 		<defName>SCP_5185R</defName>
-		<label>SCP-5185</label>
+		<label>Doglike Spider</label>
 		<description>Item #: SCP-5185
 Object Class: Safe
 			

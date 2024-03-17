@@ -89,7 +89,6 @@
     <Compile Include="Core\Containment\RoomRoleWorker_Containment.cs" />
     <Compile Include="Core\Containment\ThinkNode_ContaintmentBreach.cs" />
     <Compile Include="Core\Containment\WorkGiver.cs" />
-    <Compile Include="Core\Damage.cs" />
     <Compile Include="Core\Harmony Patches\SCPHarmony_Patches.cs" />
     <Compile Include="Core\MapComponent.cs" />
     <Compile Include="Core\Projectiles\Projectile_DinoHunter.cs" />

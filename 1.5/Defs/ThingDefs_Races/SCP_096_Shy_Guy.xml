@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_096_Shy_Guy</defName>
-		<label>SCP-096 "Shy Guy"</label>
+		<label>Shy Guy</label>
 		<description>Item #: SCP-096
 Object Class: Euclid
 		

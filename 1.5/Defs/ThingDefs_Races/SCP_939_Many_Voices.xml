@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>SCP939_A</defName>
-		<label>SCP 939</label>
+		<label>SCP-939</label>
 		<description>Item #: SCP-939
 Object Class: Keter
 			

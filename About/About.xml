@@ -10,10 +10,10 @@
 	<description>Strange thing's have been happening on the outer rim, unnatural anomalies, monsters stalking the night and secretive organizations ready for war.</description>
 	<modDependencies>
 	  <li>
-		<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
-		<displayName>Vanilla Expanded Framework</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
-		<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+		<packageId>brrainz.harmony</packageId>
+		<displayName>Harmony</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld</downloadUrl>
 	  </li>
 	</modDependencies>
 	<loadAfter>
@@ -24,4 +24,5 @@
 		<li>ceteam.combatextended</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 	</loadAfter>
+	<modIconPath>UI/Issues/SCP</modIconPath>
 </ModMetaData>	

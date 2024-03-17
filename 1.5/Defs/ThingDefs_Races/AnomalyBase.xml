@@ -7,6 +7,7 @@
 			<hediffGiverSets Inherit="false">
 				<li>AnomalyStandard</li>
 			</hediffGiverSets>
+			<fleshType MayRequire="Ludeon.RimWorld.Anomaly">EntityFlesh</fleshType>
 		</race>
 	</ThingDef>
 

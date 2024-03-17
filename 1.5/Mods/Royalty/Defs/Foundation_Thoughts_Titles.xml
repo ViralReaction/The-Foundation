@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ============================= Thoughts related to royal titles ============================= -->
+	<ThoughtDef>
+		<defName>Foundation_GainedTitle</defName>
+		<durationDays>7</durationDays>
+		<thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
+		<nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+		<stages>
+			<li>
+				<label>Received {TITLE} title</label>
+				<description>I have been promoted to {TITLE}. I love the recognition!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Foundation_LostTitle</defName>
+		<durationDays>7</durationDays>
+		<thoughtClass>Thought_MemoryRoyalTitle</thoughtClass>
+		<nullifyingTraits><li>Ascetic</li></nullifyingTraits>
+		<stages>
+			<li>
+				<label>Lost {TITLE} title</label>
+				<description>I have been demoted.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

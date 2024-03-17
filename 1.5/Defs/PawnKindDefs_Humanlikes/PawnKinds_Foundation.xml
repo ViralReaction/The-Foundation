@@ -484,6 +484,7 @@
  
 	<PawnKindDef ParentName="SCP_StaffBase">
 		<defName>SCP_Staff_SiteHead</defName>
+		<!--titleRequired MayRequire="Ludeon.RimWorld.Royalty">Foundation_Director</titleRequired-->
 		<initialResistanceRange>6~10</initialResistanceRange>
 		<label>Site Overseer</label>
 		<factionLeader>true</factionLeader>

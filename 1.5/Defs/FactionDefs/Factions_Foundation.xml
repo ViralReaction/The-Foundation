@@ -42,24 +42,19 @@ Their mission is three-fold: Secure, Contain and Protect.</description>
 				<li>Plasteel</li>
 			</thingDefs>
 		</apparelStuffFilter>
-	
 		<caravanTraderKinds>
 			<li>SCPCaravan_Trader</li>
 		</caravanTraderKinds>
-	
 		<visitorTraderKinds>
 			<li>SCPVisitor_Standard</li>
 		</visitorTraderKinds>
-    
 		<baseTraderKinds>
 			<li>SCPBase_Standard</li>
 		</baseTraderKinds>
-    
 		<allowedArrivalTemperatureRange>
 			<min>-40</min>
 			<max>45</max>
 		</allowedArrivalTemperatureRange>
-	
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
 				<li>(0,35)</li>
@@ -69,7 +64,6 @@ Their mission is three-fold: Secure, Contain and Protect.</description>
 				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
-	
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(100,  0)</li>
@@ -79,7 +73,6 @@ Their mission is three-fold: Secure, Contain and Protect.</description>
 				<li>(3800, 2.5)</li>
 			</points>
 		</raidCommonalityFromPointsCurve>
-	
 		<raidLootValueFromPointsCurve>
 			<points>
 				<li>(35,     8)</li>
@@ -89,7 +82,6 @@ Their mission is three-fold: Secure, Contain and Protect.</description>
 				<li>(4000, 500)</li>
 			</points>
 		</raidLootValueFromPointsCurve>
-	
 		<!-- Ideology dlc stuff -->
 		<allowedCultures><li>Astropolitan</li></allowedCultures>
 		<requiredMemes>
@@ -110,9 +102,15 @@ Their mission is three-fold: Secure, Contain and Protect.</description>
 		<disallowedPrecepts>
 			<li MayRequire="Ludeon.RimWorld.Ideology">SCP_Despised</li>
 		</disallowedPrecepts>
-	
-	
-	
+
+		<!-- Royalt DLC Stuff -->
+		<royalTitleTags MayRequire="Ludeon.RimWorld.Royalty" Inherit="False">
+			<li>Foundation_Title</li>
+		</royalTitleTags>
+		<fixedLeaderKinds>
+		  <li>SCP_Staff_SiteHead</li>
+		</fixedLeaderKinds>
+
 		<pawnGroupMakers>
 	
 			<li>

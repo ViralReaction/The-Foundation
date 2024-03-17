@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+
 	<DamageDef ParentName="Bullet">
 		<defName>SCP_TranqRanged</defName>
 		<label>tranqed</label>
@@ -56,7 +56,7 @@
 
 	<DamageDef ParentName="Flame">
 		<defName>SCP_Flame</defName>
-		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<label>fire</label>
 		<hasForcefulImpact>false</hasForcefulImpact>
 		<makesBlood>false</makesBlood>
@@ -79,34 +79,27 @@
 		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
 	</DamageDef>
 	
-	<DamageDef ParentName="Flame">
+	<DamageDef>
 		<defName>SCP_Acid</defName>
-		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<label>acid</label>
-		<hasForcefulImpact>false</hasForcefulImpact>
-		<makesBlood>false</makesBlood>
-		<canInterruptJobs>false</canInterruptJobs>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has acid burned to death.</deathMessage>
-		<hediff>Burn</hediff>
-		<armorCategory>Heat</armorCategory>
+		<hediff>VEF_AcidBurn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
 		<isRanged>false</isRanged>
-		<minDamageToFragment>15</minDamageToFragment>
-		<defaultDamage>10</defaultDamage>
-		<defaultArmorPenetration>0</defaultArmorPenetration>
-		<!-- <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell> -->
-		<!-- <explosionCellFleck>BlastFlame</explosionCellFleck> -->
-		<!-- <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter> -->
-		<!-- <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge> -->
-		<!-- <soundExplosion>Explosion_Flame</soundExplosion> -->
-		<combatLogRules>Damage_Flame</combatLogRules>
-		<overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
-		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
 	</DamageDef>
 
 	<DamageDef ParentName="Flame">
 		<defName>SCP_Electric</defName>
-		<workerClass>Foundation.DamageWorker_SCP_Flame</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<label>static electricity</label>
 		<hasForcefulImpact>false</hasForcefulImpact>
 		<makesBlood>false</makesBlood>

@@ -88,7 +88,7 @@ namespace Foundation
                     Pawn pawn = pawnList[index];
                     if (pawn.IsCaptiveOf() && pawn.Faction == null)
                     {
-                        Log.Message("Checking Prison Break MTB");
+                        //Log.Message("Checking Prison Break MTB");
                         float mtb = ContainmentBreakUtility.InitiatePrisonBreakMtbDays(pawn);
                         FoundationComponent.ContainmentBreakDay(pawn);
                         if ((double)mtb >= 0.0 && Rand.MTBEventOccurs(mtb, 1f, 2500f))
@@ -100,7 +100,7 @@ namespace Foundation
         }
         private void SCP1905Management()
         {
-            Log.Message("Firing Dino");
+            //Log.Message("Firing Dino");
             Thing[] array = this.map.listerThings.ThingsOfDef(MapComponent_SCPManagement.scp1905).ToArray();
             bool flag1 = false;
             bool flag2 = false;

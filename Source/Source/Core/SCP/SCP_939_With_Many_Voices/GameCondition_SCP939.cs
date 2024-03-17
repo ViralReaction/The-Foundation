@@ -6,12 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using Foundation.Utilities;
+using UnityEngine;
 
 namespace Foundation
 {
     public class GameCondition_SCP939 : GameCondition
     {
-        public int scp939Count;
+        public int scp939Count = Rand.RangeInclusive(1, 6);
         private const int TickCheckSpawn = 1000;
         private const int TickGeneratePawn = 2000;
         private int scp939_GeneratedTotal;
@@ -28,6 +29,11 @@ namespace Foundation
         {
             get
             {
+                if (gameConditionManager.ConditionIsActive(GameConditionDefOf.Eclipse))
+                {
+                    Log.Message("Eclipse");
+                    return true;
+                }
                 int num = GenLocalDate.HourOfDay(this.SingleMap);
                 return num >= 20 || num < 4;
             }
@@ -40,6 +46,11 @@ namespace Foundation
             get
             {
                 int num = GenLocalDate.HourOfDay(this.SingleMap);
+                if (gameConditionManager.ConditionIsActive(GameConditionDefOf.Eclipse))
+                {
+                    Log.Message("Eclipse");
+                    return num = 12;
+                }
                 return num <= 6 ? 6 - num : 24 - num + 6;
             }
         }
@@ -59,14 +70,16 @@ namespace Foundation
         {
             base.GameConditionTick();
             if (Find.TickManager.TicksGame % 1000 != 0)
+            {
                 return;
+            }
             if (this.CanProbeMap)
             {
                 IntVec3 result;
                 if (!RCellFinder.TryFindRandomPawnEntryCell(out result, this.SingleMap, CellFinder.EdgeRoadChance_Animal))
                     return;
                 GenSpawn.Spawn((Thing)this.scp939Generated.Pop<Pawn>(), result, this.SingleMap);
-                Log.Message("SCP SPAWNED - Left: " + (object)this.scp939Generated.Count);
+                //Log.Message("SCP SPAWNED - Left: " + (object)this.scp939Generated.Count);
             }
             if (this.scp939_GeneratedTotal < this.scp939Count)
             {

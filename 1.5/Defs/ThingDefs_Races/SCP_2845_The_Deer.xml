@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnomalyBase">
 		<defName>SCP_2845_Deer</defName>
-		<label>SCP-2845 "The Deer"</label>
+		<label>The Deer</label>
 		<description>Item #: SCP-2845
 Object Class: Keter
 		
