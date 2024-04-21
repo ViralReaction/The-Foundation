@@ -2,17 +2,6 @@
 <Defs>
 
 	<BodyPartDef>
-		<defName>SCP_Foot</defName>
-		<label>foot</label>
-		<hitPoints>35</hitPoints>
-		<frostbiteVulnerability>0</frostbiteVulnerability>
-		<skinCovered>true</skinCovered>
-		<tags>
-			<li>MovingLimbCore</li>
-		</tags>
-	</BodyPartDef>
-
-	<BodyPartDef>
 		<defName>PillarBod</defName>
 		<label>Pillar</label>
 		<hitPoints>40</hitPoints>

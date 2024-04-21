@@ -49,20 +49,6 @@
 		<workerClass>Foundation.IncidentWorker_SCP529_Josie</workerClass>
 		<baseChance>0.5</baseChance>
 	</IncidentDef>
-	
-	<IncidentDef>
-		<defName>SCP_Incident_SCP610Form</defName>
-		<label>SCP-610 formation</label>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
-		<workerClass>Foundation.IncidentWorker_SCP610_Local</workerClass>
-		<baseChance>3</baseChance>
-		<category>ThreatBig</category>
-		<pointsScaleable>true</pointsScaleable>
-		<tale>ManhunterPack</tale>
-		<minRefireDays>20</minRefireDays>
-	</IncidentDef>
 
 	<IncidentDef>
 		<defName>SCP_Incident_SCP682_Hunt</defName>
@@ -123,25 +109,6 @@
 		<pointsScaleable>true</pointsScaleable>
 		<tale>ManhunterPack</tale>
 		<minRefireDays>30</minRefireDays>
-	</IncidentDef>
-
-	<IncidentDef>
-		<defName>SCP_Incident_SCP610_Hive</defName>
-		<label>SCP-610 Flesh That Hates</label>
-		<workerClass>Foundation.IncidentWorker_SCP610_Hive</workerClass>
-		<letterLabel>SCP-610 Hive Spawned</letterLabel>
-		<letterText>A large infected mass has formed in your area.\n\nThis mass of flesh will transform the local fauna and spawn more instances of SCP-610.\n\nIf you don't want the SCPs to infest the whole area, destroy the mass. But beware - they will defend this foothold.</letterText>
-		<letterDef>ThreatSmall</letterDef>
-		<baseChance>1.0</baseChance>
-		<baseChanceWithRoyalty>0.4</baseChanceWithRoyalty>
-		<minRefireDays>15</minRefireDays>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
-		<category>ThreatBig</category>
-		<pointsScaleable>true</pointsScaleable>
-		<minThreatPoints>400</minThreatPoints>
-		<mechClusterBuilding>SCP_610Hive_Infestation</mechClusterBuilding>
 	</IncidentDef>
 
 </Defs>
