@@ -74,7 +74,7 @@
 	
 	<IncidentDef>
 		<defName>Foundation_Incident_SCP2845_Hunt</defName>
-		<label>SCP-2845 and minions</label>
+		<label>The Deer and minions</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
@@ -88,7 +88,7 @@
 	
 	<IncidentDef>
 		<defName>Foundation_Incident_Refuted_Hunt</defName>
-		<label>SCP-Refuted flock</label>
+		<label>Human Refuted flock</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
