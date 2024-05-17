@@ -71,5 +71,33 @@
       <li>Foundation_LoopSnake</li>
     </linkedThings>
   </EntityCodexEntryDef>
+  
+  <EntityCodexEntryDef>
+    <defName>Foundation_Deer</defName>
+    <label>SCP-2845 "The Deer"</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_Deer</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP2845/SCP2845_east</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>0</orderInCategory>
+    <linkedThings>
+      <li>Foundation_Deer</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+  
+  <EntityCodexEntryDef>
+    <defName>Foundation_Deer</defName>
+    <label>SCP-2845 "The Deer"</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_Deer</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP2845/SCP2845_east</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>0</orderInCategory>
+    <linkedThings>
+      <li>Foundation_Deer</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
 
 </Defs>

@@ -2,25 +2,9 @@
 <Defs>
 
 	<ThingDef ParentName="AnomalyBase">
-		<defName>Foundation_2845_Deer</defName>
+		<defName>Foundation_Deer</defName>
 		<label>The Deer</label>
-		<description>Item #: SCP-2845
-Object Class: Keter
-		
-SCP-2845 is an extraterrestrial quadruped entity, terminating in a head with humanoid facial features. SCP-2845 possesses antlers that are white with black marbling in coloration, and have not been observed to shed.
-
-SCP-2845 is capable of instantaneous transmutation and reconstruction of matter, often converting living subjects into SCP-2845-1.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CKeter</li>
-					<li>Foundation_DKeneq</li>
-					<li>Foundation_RDanger</li>
-				</classRating>
-				<containmentTier>2</containmentTier>
-				<willManhuntAfterBreach>true</willManhuntAfterBreach>
-			</li>
-		</modExtensions>
+		<description>Item #: SCP-2845\n\nObject Class: Keter\n\nSCP-2845 is an extraterrestrial quadruped entity, terminating in a head with humanoid facial features. SCP-2845 possesses antlers that are white with black marbling in coloration, and have not been observed to shed.\n\nSCP-2845 is capable of instantaneous transmutation and reconstruction of matter, often converting living subjects into SCP-2845-1.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<MarketValue>3000</MarketValue>
@@ -29,30 +13,29 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<MinimumContainmentStrength>80</MinimumContainmentStrength>
+			<StaggerDurationFactor>0</StaggerDurationFactor>
 		</statBases>
-		<tradeTags>
-			<li>SCP</li>
-		</tradeTags>
-		<uiIconScale>1.6</uiIconScale>
+		<uiIconPath>Things/Pawn/Animal/SCP2845/SCP2845_east_Silhouette</uiIconPath>
+		<tradeability>None</tradeability>
+		<hideStats>true</hideStats>
+		<onlyShowInspectString>true</onlyShowInspectString>
+		<hideMainDesc>true</hideMainDesc>
 		<race>
+			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
-			<herdAnimal>false</herdAnimal>
 			<baseBodySize>4.0</baseBodySize>
 			<baseHungerRate>0</baseHungerRate>
 			<baseHealthScale>8.0</baseHealthScale>
+			<fleshType>EntityFlesh</fleshType>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<leatherDef>Leather_Plain</leatherDef>
-			<useMeatFrom>Deer</useMeatFrom>
+			<hasCorpse>false</hasCorpse>
 			<wildness>1</wildness>
-			<gestationPeriodDays>6.66</gestationPeriodDays>
 			<lifeExpectancy>100</lifeExpectancy>
 			<trainability>None</trainability>
-			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>10</manhunterOnDamageChance>
 			<lifeStageAges>
 				<li>
-					<def>AnimalAdult</def>
-					<minAge>0</minAge>
+					<def>EntityFullyFormed</def>
 					<soundWounded>Pawn_Elk_Wounded</soundWounded>
 					<soundDeath>Pawn_Elk_Death</soundDeath>
 					<soundCall>Pawn_Elk_Call</soundCall>
@@ -68,7 +51,6 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 				<label>left hoof</label>
 				<capacities>
 					<li>Blunt</li>
-					<li>Poke</li>
 				</capacities>
 				<power>13</power>
 				<cooldownTime>2</cooldownTime>
@@ -78,7 +60,6 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 				<label>right hoof</label>
 				<capacities>
 					<li>Blunt</li>
-					<li>Poke</li>
 				</capacities>
 				<power>13</power>
 				<cooldownTime>2</cooldownTime>
@@ -107,7 +88,6 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 			<li>
 				<label>antlers</label>
 				<capacities>
-				  <li>Scratch</li>
 				  <li>Stab</li>
 				</capacities>
 				<power>23</power>
@@ -116,6 +96,37 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 			  </li>
 		</tools>
 		<comps>
+			<li Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+				<lookForTargetOnEscape>false</lookForTargetOnEscape>
+			</li>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.4, 0, 0.30)</offset>
+						<type>PlatformRestraint0</type>
+					  </li>
+					  <li>
+						<offset>(.4, 0, 0.30)</offset>
+						<type>PlatformRestraint1</type>
+					  </li>
+					  <li>
+						<offset>(.3, 0, -.5)</offset>
+						<type>PlatformRestraint2</type>
+					  </li>
+					  <li>
+						<offset>(-.3, 0, -.5)</offset>
+						<type>PlatformRestraint3</type>
+					  </li>
+				</points>
+			</li>
+			<li Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory>SCP</knowledgeCategory>
+				<anomalyKnowledge>3</anomalyKnowledge>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresHoldingPlatform>true</requiresHoldingPlatform>
+			</li>
 			<li Class="Foundation.Comps.CompProperties_GiveHediffSeverity">
 				<hediff>Foundation_2845_Transmute_Hediff</hediff>
 				<range>10</range>
@@ -130,9 +141,9 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Foundation_2845_Deer</defName>
+		<defName>Foundation_Deer</defName>
 		<label>The Deer</label>
-		<race>Foundation_2845_Deer</race>
+		<race>Foundation_Deer</race>
 		<combatPower>1100</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
