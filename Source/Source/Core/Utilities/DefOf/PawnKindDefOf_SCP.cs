@@ -19,7 +19,6 @@ namespace Foundation.Utilities
         public static PawnKindDef Foundation_28451R;
         public static PawnKindDef Foundation_3199R;
         public static PawnKindDef Foundation_5893R;
-        public static PawnKindDef Foundation_2584_Snake;
         public static PawnKindDef Foundation_529_Josie;
         public static PawnKindDef Foundation_5185R;
         public static PawnKindDef Rat;

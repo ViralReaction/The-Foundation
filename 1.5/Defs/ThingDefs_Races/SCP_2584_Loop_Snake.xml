@@ -13,7 +13,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MinimumContainmentStrength>80</MinimumContainmentStrength>
 		</statBases>
-		<uiIconPath>Things/Pawn/Animal/SCP2584/SCP2584_Silhouette</uiIconPath>
+		<uiIconPath>Things/Pawn/Animal/SCP2584/SCP2584_south_Silhouette</uiIconPath>
 		<tradeability>None</tradeability>
 		<hideStats>true</hideStats>
 		<onlyShowInspectString>true</onlyShowInspectString>
@@ -68,7 +68,7 @@
 				<customString>Binary Fission in: </customString>
 				<isGreenGoo>true</isGreenGoo>
 				<GreenGooLimit>15</GreenGooLimit>
-				<GreenGooTarget>Foundation_2584_Snake</GreenGooTarget>
+				<GreenGooTarget>Foundation_LoopSnake</GreenGooTarget>
 			</li>		
 		</comps>
 		<race>
