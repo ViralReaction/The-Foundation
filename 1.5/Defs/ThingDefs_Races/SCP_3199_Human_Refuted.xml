@@ -2,41 +2,57 @@
 <Defs>
 
 	<ThingDef ParentName="AnomalyBase">
-		<defName>Foundation_3199R</defName>
+		<defName>Foundation_Refuted</defName>
 		<label>Human Refuted</label>
-		<description>Item #: SCP-3199
-Object Class: Keter
-			
-SCP-3199 denotes a species of sapient Category-5 biological entities of currently indeterminable origin, though tissue samples indicate the presence of Silkie chicken, chimpanzee, stoat, mussel, adder, and human DNA. They will produce large eggs of an off-white coloration and rubbery appearance. There is no known limit to the number of eggs SCP-3199 is capable of producing, and the standing theory is as follows: given enough time, a single instance could singlehandedly perform an LK-Class species transmutation scenario.
-
-However, complete eradication has proven impossible difficult, as all instances of SCP-3199 (regardless of age) carry one egg within a specialized stomach-like organ upon birth, assuring that one living instance will persist through even ordinary means of constant and lethal assault. This biological phenomena is presumed to be, in itself, anomalous in origin.
-
-SCP-3199 are opportunistic hunters, engaging with live subjects within a currently unidentified radius within a radius of 0.6 kilometers surrounding hatchlings that have not yet reached full adolescence. Average speed is recorded at 25 km/h. Upon contact with human or animal subjects, SCP-3199 will proceed to [REDACTED], liquefying internal organs and bone structure. A suitable cadaver is then transferred within range of the closest hatchling.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CKeter</li>
-					<li>Foundation_DKeneq</li>
-					<li>Foundation_RNotice</li>
-				</classRating>
-				<containmentTier>2</containmentTier>
-				<willManhuntAfterBreach>true</willManhuntAfterBreach>
-			</li>
-		</modExtensions>
+		<description>Item #: SCP-3199\n\nObject Class: Keter\n\nSCP-3199 denotes a species of sapient Category-5 biological entities of currently indeterminable origin, though tissue samples indicate the presence of Silkie chicken, chimpanzee, stoat, mussel, adder, and human DNA. They will produce large eggs of an off-white coloration and rubbery appearance. There is no known limit to the number of eggs SCP-3199 is capable of producing, and the standing theory is as follows: given enough time, a single instance could singlehandedly perform an LK-Class species transmutation scenario.\n\nHowever, complete eradication has proven impossible difficult, as all instances of SCP-3199 (regardless of age) carry one egg within a specialized stomach-like organ upon birth, assuring that one living instance will persist through even ordinary means of constant and lethal assault. This biological phenomena is presumed to be, in itself, anomalous in origin.\n\nSCP-3199 are opportunistic hunters, engaging with live subjects within a currently unidentified radius within a radius of 0.6 kilometers surrounding hatchlings that have not yet reached full adolescence. Average speed is recorded at 25 km/h. Upon contact with human or animal subjects, SCP-3199 will proceed to [REDACTED], liquefying internal organs and bone structure. A suitable cadaver is then transferred within range of the closest hatchling.</description>
 		<statBases>
 			<MoveSpeed>6.9</MoveSpeed>
 			<MarketValue>300</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>300</ComfyTemperatureMax>
-			<FilthRate>18</FilthRate>
+			<ToxicResistance>1</ToxicResistance>
+			<MinimumContainmentStrength>80</MinimumContainmentStrength>
 		</statBases>
-		<tradeTags>
-			<li>SCP</li>
-		</tradeTags>
+		<uiIconPath>Things/Pawn/Animal/SCP_3199/SCP_3199_east_Silhouette</uiIconPath>
+		<tradeability>None</tradeability>
+		<hideStats>true</hideStats>
+		<onlyShowInspectString>true</onlyShowInspectString>
+		<hideMainDesc>true</hideMainDesc>
 		<comps>
+			<li Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+				<lookForTargetOnEscape>false</lookForTargetOnEscape>
+			</li>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.4, 0, 0.30)</offset>
+						<type>PlatformRestraint0</type>
+					  </li>
+					  <li>
+						<offset>(.4, 0, 0.30)</offset>
+						<type>PlatformRestraint1</type>
+					  </li>
+					  <li>
+						<offset>(.3, 0, -.5)</offset>
+						<type>PlatformRestraint2</type>
+					  </li>
+					  <li>
+						<offset>(-.3, 0, -.5)</offset>
+						<type>PlatformRestraint3</type>
+					  </li>
+				</points>
+			</li>
+			<li Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory>SCP</knowledgeCategory>
+				<anomalyKnowledge>3</anomalyKnowledge>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresHoldingPlatform>true</requiresHoldingPlatform>
+			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>Foundation_3199_Egg</eggUnfertilizedDef>
-				<eggFertilizedDef>Foundation_3199_Egg</eggFertilizedDef>
+				<eggUnfertilizedDef>Foundation_Refuted_Egg</eggUnfertilizedDef>
+				<eggFertilizedDef>Foundation_Refuted_Egg</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1.5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
@@ -45,7 +61,7 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 		</comps>
 		<race>
 			<deathAction>
-				<workerClass>Foundation.DeathActionWorker_SCP3199_SpawnEgg</workerClass>
+				<workerClass>Foundation.DeathActionWorker_Refuted_SpawnEgg</workerClass>
 			</deathAction>
 			<body>Foundation_Neck</body>
 			<herdAnimal>true</herdAnimal>
@@ -56,7 +72,7 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 			<baseHealthScale>1.8</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<leatherDef>Leather_Patch</leatherDef>
-			<specificMeatDef>Foundation_3199_Meat</specificMeatDef>
+			<specificMeatDef>Meat_Twisted</specificMeatDef>
 			<wildness>0.9</wildness>
 			<trainability>None</trainability>
 			<gestationPeriodDays>10</gestationPeriodDays>
@@ -81,6 +97,9 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<hediffGiverSets>
+				<li>AnomalyEntity</li>
+			</hediffGiverSets>
 		</race>
 		<tools>
 			<li>
@@ -115,9 +134,9 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Foundation_3199R</defName>
-		<label>SCP-3199</label>
-		<race>Foundation_3199R</race>
+		<defName>Foundation_Refuted</defName>
+		<label>Human Refuted</label>
+		<race>Foundation_Refuted</race>
 		<combatPower>200</combatPower>
 		<lifeStages>
 			<li>

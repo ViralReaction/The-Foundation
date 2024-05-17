@@ -87,16 +87,16 @@
   </EntityCodexEntryDef>
   
   <EntityCodexEntryDef>
-    <defName>Foundation_Deer</defName>
-    <label>SCP-2845 "The Deer"</label>
+    <defName>Foundation_Refuted</defName>
+    <label>SCP-3199 "Human Refuted"</label>
     <category>SCP</category>
-    <useDescriptionFrom>Foundation_Deer</useDescriptionFrom>
-    <uiIconPath>Things/Pawn/Animal/SCP2845/SCP2845_east</uiIconPath>
+    <useDescriptionFrom>Foundation_Refuted</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP_3199/SCP_3199_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
     <orderInCategory>0</orderInCategory>
     <linkedThings>
-      <li>Foundation_Deer</li>
+      <li>Foundation_Refuted</li>
     </linkedThings>
   </EntityCodexEntryDef>
 

@@ -31,81 +31,40 @@
 	</ThingDef>
 	
 	<!-- ====== Eggs ====== -->
-	<ThingDef ParentName="SCP_EggBase">
-		<defName>Foundation_3199_Egg</defName>
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Foundation_Refuted_Egg</defName>
 		<label>SCP-3199 egg (fert.)</label>
-		<description>Item #: SCP-3199-1
-Object Class: Keter
-			
-Heat is a primary component in the growth and development of SCP-3199's eggs, and Foundation Researchers are particularly apprehensive towards the idea, believing it would almost certainly result in a second containment breach. Eggs have only been neutralized by extreme cold.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CKeter</li>
-					<li>Foundation_DKeneq</li>
-					<li>Foundation_RNotice</li>
-				</classRating>
-				<containmentTier>2</containmentTier>
-			</li>
-		</modExtensions>
+		<description>Item #: SCP-3199-1\n\nObject Class: Keter\n\nHeat is a primary component in the growth and development of SCP-3199's eggs, and Foundation Researchers are particularly apprehensive towards the idea, believing it would almost certainly result in a second containment breach. Eggs have only been neutralized by extreme cold.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
 			<drawSize>1.5</drawSize>
-			<color>(219, 219, 206)</color>
+			<color>(245,245,245)</color>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>500</MarketValue>
+		</statBases>
 		<thingCategories>
 			<li>SCPObjects</li>
 		</thingCategories>
 		<useHitPoints>false</useHitPoints>
 		<stackLimit>1</stackLimit>
 		<comps>
-			<li Class="Foundation.CompProperties_Hatcher">
-				<hatcherDaystoHatch>2</hatcherDaystoHatch>
-				<hatcherPawn>Foundation_3199R</hatcherPawn>
-				<ruinedEgg>Foundation_3199_Egg_Ruined</ruinedEgg>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherPawn>Foundation_Refuted</hatcherPawn>
 			</li>
 			<li Class="CompProperties_TemperatureRuinable">
 				<minSafeTemperature>-60</minSafeTemperature>
-				<maxSafeTemperature>3000</maxSafeTemperature>
+				<maxSafeTemperature>500</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 			</li>
 		</comps>
+		<tickerType>Normal</tickerType>
 	</ThingDef>
-	
-	<ThingDef ParentName="ResourceBase">
-		<defName>Foundation_3199_Egg_Ruined</defName>
-		<label>neutralized SCP-3199 egg</label>
-		<description>Item #: SCP-3199-2
-Object Class: Safe
-			
-An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of plasteel.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
-			<drawSize>1.5</drawSize>
-			<color>(219, 219, 206)</color>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<thingClass>ThingWithComps</thingClass>
-		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<stackLimit>1</stackLimit>
-		<tradeNeverStack>true</tradeNeverStack>
-		<useHitPoints>false</useHitPoints>
-		<techLevel>Industrial</techLevel>
-		<thingCategories>
-			<li>SCPObjects</li>
-		</thingCategories>
-		<tradeTags>
-			<li>Artifact</li>
-			<li>ExoticMisc</li>
-		</tradeTags>
-		<statBases>
-			<Mass>0.001</Mass>
-			<MarketValue>6</MarketValue>
-			<Beauty>-6</Beauty>
-		</statBases>
-	</ThingDef>
-	
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>Foundation_5893_Egg</defName>
 		<label>SCP-5893 egg (fert.)</label>
@@ -237,50 +196,6 @@ An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of
 			<li>PlantFoodRaw</li>
 		</thingCategories>
 		<allowedArchonexusCount>5000</allowedArchonexusCount>
-	</ThingDef>
-	
-	<ThingDef ParentName="OrganicProductBase">
-		<defName>Foundation_3199_Meat</defName>
-		<label>SCP-3199 meat</label>
-		<description>Meat from SCP-3199. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the humanlike-taste.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<statBases>
-			<MarketValue>0.7</MarketValue><!-- Can be used like meat in recipes -->
-			<Mass>0.045</Mass>
-			<MaxHitPoints>60</MaxHitPoints>
-			<Flammability>0.2</Flammability>
-			<Nutrition>0.025</Nutrition>
-			<FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>14</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<ingestible>
-			<preferability>RawBad</preferability>
-			<tasteThought>Foundation_Ate3199MeatRaw</tasteThought>
-			<foodType>Meat, CarnivoreAnimalStrict</foodType>
-			<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>ToxicBuildup</hediffDef>
-				<severity>0.03</severity>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>FoodPoisoning</hediffDef>
-				<severity>0.3</severity>
-			</li>
-		</outcomeDoers>
-		</ingestible>
-		<thingCategories>
-			<li>SCPMeat</li>
-		</thingCategories>
-		<allowedArchonexusCount>0</allowedArchonexusCount>
 	</ThingDef>
 
 </Defs>

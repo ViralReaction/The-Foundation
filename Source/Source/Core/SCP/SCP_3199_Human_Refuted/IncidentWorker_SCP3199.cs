@@ -9,36 +9,12 @@ using Foundation.Utilities;
 
 namespace Foundation
 {
-    public class IncidentWorker_SCP3199 : IncidentWorker_AggressiveAnimals
+    public class IncidentWorker_Refuted : IncidentWorker_AggressiveAnimals
     {
-        //protected override bool TryExecuteWorker(IncidentParms parms)
-        //{
-        //    Map target = (Map)parms.target;
-        //    PawnKindDef animalKind = PawnKindDefOf_SCP.Foundation_3199R;
-        //    IntVec3 result = parms.spawnCenter;
-        //    if (!result.IsValid && !RCellFinder.TryFindRandomPawnEntryCell(out result, target, CellFinder.EdgeRoadChance_Animal))
-        //        return false;
-        //    List<Pawn> animals = ManhunterPackGenStepUtility.GenerateAnimals(animalKind, target.Tile, parms.points * 1.4f, parms.pawnCount);
-        //    Rot4 rot = Rot4.FromAngleFlat((target.Center - result).AngleFlat);
-        //    for (int index = 0; index < animals.Count; ++index)
-        //    {
-        //        Pawn newThing = animals[index];
-        //        IntVec3 loc = CellFinder.RandomClosewalkCellNear(result, target, 10);
-        //        QuestUtility.AddQuestTag((object)GenSpawn.Spawn((Thing)newThing, loc, target, rot), parms.questTag);
-        //        newThing.gender = Gender.Female;
-        //        newThing.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter);
-        //        newThing.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(100000, 200000);
-        //    }
-        //    this.SendStandardLetter("LetterLabelSCP3199Attack".Translate((NamedArgument)animalKind.label.CapitalizeFirst()), "LetterSCP3199Attack".Translate((NamedArgument)animalKind.label), LetterDefOf.ThreatBig, parms, (LookTargets)(Thing)animals[0]);
-        //    Find.TickManager.slower.SignalForceNormalSpeedShort();
-        //    LessonAutoActivator.TeachOpportunity(ConceptDefOf.ForbiddingDoors, OpportunityType.Critical);
-        //    LessonAutoActivator.TeachOpportunity(ConceptDefOf.AllowedAreas, OpportunityType.Important);
-        //    return true;
-        //}
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map target = (Map)parms.target;
-            PawnKindDef animalKind = PawnKindDefOf_SCP.Foundation_3199R;
+            PawnKindDef animalKind = PawnKindDefOf_SCP.Foundation_Refuted;
             if (animalKind == null && !AggressiveAnimalIncidentUtility.TryFindAggressiveAnimalKind(parms.points, target, out animalKind) || AggressiveAnimalIncidentUtility.GetAnimalsCount(animalKind, parms.points) == 0)
                 return false;
             IntVec3 result = parms.spawnCenter;

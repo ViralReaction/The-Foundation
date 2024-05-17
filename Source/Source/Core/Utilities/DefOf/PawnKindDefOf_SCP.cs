@@ -17,7 +17,7 @@ namespace Foundation.Utilities
         public static PawnKindDef Foundation_ManyVoices_Incident;
         public static PawnKindDef Foundation_Deer;
         public static PawnKindDef Foundation_28451R;
-        public static PawnKindDef Foundation_3199R;
+        public static PawnKindDef Foundation_Refuted;
         public static PawnKindDef Foundation_5893R;
         public static PawnKindDef Foundation_529_Josie;
         public static PawnKindDef Foundation_5185R;

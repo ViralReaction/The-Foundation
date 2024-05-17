@@ -9,13 +9,13 @@ using Verse.AI.Group;
 
 namespace Foundation
 {
-    internal class DeathActionWorker_SCP3199_SpawnEgg : DeathActionWorker
+    internal class DeathActionWorker_Refuted_SpawnEgg : DeathActionWorker
     {
         public override void PawnDied(Corpse corpse, Lord prevLord)
         {
             if (corpse.Map == null)
                 return;
-            GenPlace.TryPlaceThing(ThingMaker.MakeThing(ThingDefOf_SCP.Foundation_3199_Egg), corpse.Position, corpse.Map, ThingPlaceMode.Near);
+            GenPlace.TryPlaceThing(ThingMaker.MakeThing(ThingDefOf_SCP.Foundation_Refuted_Egg), corpse.Position, corpse.Map, ThingPlaceMode.Near);
         }
     }
 }

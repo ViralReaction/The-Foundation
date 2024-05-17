@@ -87,12 +87,12 @@
 	</IncidentDef>
 	
 	<IncidentDef>
-		<defName>Foundation_Incident_SCP3199_Hunt</defName>
-		<label>SCP-3199 flock</label>
+		<defName>Foundation_Incident_Refuted_Hunt</defName>
+		<label>SCP-Refuted flock</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>Foundation.IncidentWorker_SCP3199</workerClass>
+		<workerClass>Foundation.IncidentWorker_Refuted</workerClass>
 		<baseChance>3</baseChance>
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>

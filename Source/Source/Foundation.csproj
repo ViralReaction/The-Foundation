@@ -77,7 +77,7 @@
     <Compile Include="Core\SCP\SCP_2687_Plastic_Organs\Hediff_SCP2687.cs" />
     <Compile Include="Core\SCP\SCP_2845_Deer\IncidentWorker_2845.cs" />
     <Compile Include="Core\SCP\SCP_2845_Deer\ThoughtWorker_SCP2845.cs" />
-    <Compile Include="Core\SCP\SCP_3199_Human_Refuted\DeathActionWOrker_SCP3199.cs" />
+    <Compile Include="Core\SCP\SCP_3199_Human_Refuted\DeathActionWorker_Refuted_SpawnEgg.cs" />
     <Compile Include="Core\SCP\SCP_3199_Human_Refuted\IncidentWorker_SCP3199.cs" />
     <Compile Include="Core\SCP\SCP_475_Pope_Soap\CompUseEffect_UseSCP475.cs" />
     <Compile Include="Core\SCP\SCP_500_Panacea\CompUseEffect_UseSCP500.cs" />
