@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BaseInsect">
-		<defName>SCP_5185R</defName>
+		<defName>Foundation_5185R</defName>
 		<label>Doglike Spider</label>
 		<description>Item #: SCP-5185
 Object Class: Safe
@@ -11,9 +11,9 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CSafe</li>
-					<li>SCP_DDark</li>
-					<li>SCP_RNotice</li>
+					<li>Foundation_CSafe</li>
+					<li>Foundation_DDark</li>
+					<li>Foundation_RNotice</li>
 				</classRating>
 			</li>
 		</modExtensions>
@@ -111,9 +111,9 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_5185R</defName>
+		<defName>Foundation_5185R</defName>
 		<label>SCP-5185</label>
-		<race>SCP_5185R</race>
+		<race>Foundation_5185R</race>
 		<combatPower>70</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.15</ecoSystemWeight>

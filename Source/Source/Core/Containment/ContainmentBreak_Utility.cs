@@ -49,7 +49,7 @@ namespace Foundation.Containment
             }
             // Check if room is containment room
             Room room = pawn.GetRoom();
-            if (room == null || room.Role != SCP_Startup.containmentRoom)
+            if (room == null || room.Role != Foundation_Startup.containmentRoom)
             {
                 Log.Message("Null Room");
                 return -1f;
@@ -157,7 +157,7 @@ namespace Foundation.Containment
                     Thing thing = adjacentList[index];
                     if (thing is Pawn pawn && ContainmentBreakUtility.CanParticipateInContainmentBreak(pawn))
                     {
-                        pawn.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.SCP_BreachContainment, forceWake: true, transitionSilently: true);
+                        pawn.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.Foundation_BreachContainment, forceWake: true, transitionSilently: true);
                         FoundationComponent.ContainmentBreakDict.SetOrAdd(pawn, 0);
                         allEscapingPrisoners.Add(pawn);
                     }
@@ -187,7 +187,7 @@ namespace Foundation.Containment
 
         private static bool IsOrCanBePrisonCell(Room room)
         {
-            if (room.Role == SCP_Startup.containmentRoom)
+            if (room.Role == Foundation_Startup.containmentRoom)
             {
                 return true;
             }

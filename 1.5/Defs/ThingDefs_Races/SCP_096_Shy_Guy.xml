@@ -1,67 +1,101 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="AnomalyBase">
-		<defName>SCP_096_Shy_Guy</defName>
+	
+	<ThingDef ParentName="BasePawn">
+		<defName>Foundation_ShyGuy</defName>
 		<label>Shy Guy</label>
-		<description>Item #: SCP-096
-Object Class: Euclid
-		
-SCP-096 is a humanoid creature measuring approximately 2.38 meters in height. Subject shows very little muscle mass, with preliminary analysis of body mass suggesting mild malnutrition. Arms are grossly out of proportion with the rest of the subject's body, with an approximate length of 1.5 meters each.
-
-SCP-096 is normally extremely docile. However, when someone views SCP-096's face, whether it be directly, via video recording, or even a photograph, it will enter a stage of considerable emotional distress. Any and all photos, video, or recordings of SCP-096's likeness are strictly forbidden without approval from Dr. [REDACTED] and O5-[REDACTED].</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>SCP_CEuclid</li>
-					<li>SCP_DKeneq</li>
-					<li>SCP_RDanger</li>
-				</classRating>
-				<containmentTier>3</containmentTier>
-			</li>
-		</modExtensions>
+		<description>Item #: SCP-096\n\nObject Class: Euclid\n\nSCP-096 is a humanoid creature measuring approximately 2.38 meters in height. Subject shows very little muscle mass, with preliminary analysis of body mass suggesting mild malnutrition. Arms are grossly out of proportion with the rest of the subject's body, with an approximate length of 1.5 meters each.\n\nSCP-096 is normally extremely docile. However, when someone views SCP-096's face, whether it be directly, via video recording, or even a photograph, it will enter a stage of considerable emotional distress. Any and all photos, video, or recordings of SCP-096's likeness are strictly forbidden without approval from Dr. [REDACTED] and O5-[REDACTED].</description>
+		<hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>500</MarketValue>
+			<Mass>250</Mass>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<FilthRate>0</FilthRate>
 			<MeatAmount>0</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
 			<ToxicResistance>1</ToxicResistance>
+			<MinimumContainmentStrength>80</MinimumContainmentStrength>
+			<StaggerDurationFactor>0</StaggerDurationFactor>
 		</statBases>
-		<tradeTags>
-			<li>SCP</li>
-		</tradeTags>
+		<uiIconPath>Things/Pawn/Animal/SCP_096/SCP_096_cr_east</uiIconPath>
+		<tradeability>None</tradeability>
+		<hideStats>true</hideStats>
+		<onlyShowInspectString>true</onlyShowInspectString>
+		<hideMainDesc>true</hideMainDesc>
 		<race>
+			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>Human</body>
-			<predator>true</predator>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>5</baseHealthScale>
+			<intelligence>ToolUser</intelligence>
 			<needsRest>true</needsRest>
 			<hasGenders>false</hasGenders>
-			<maxPreyBodySize>4.0</maxPreyBodySize>
-			<baseBodySize>3</baseBodySize>
+			<fleshType>EntityFlesh</fleshType>
 			<baseHungerRate>0.9</baseHungerRate>
-			<baseHealthScale>5</baseHealthScale>
+			<predator>true</predator>
+			<maxPreyBodySize>4.0</maxPreyBodySize>
 			<foodType>CarnivoreAnimalStrict</foodType>
-			<leatherDef>Leather_Human</leatherDef>
-			<useMeatFrom>Human</useMeatFrom>
-			<wildness>10</wildness>
-			<trainability>Advanced</trainability>
-			<!-- <intelligence>Humanlike</intelligence> -->
-			<lifeExpectancy>5000</lifeExpectancy>
-			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0</manhunterOnDamageChance>
-			<lifeStageAges Inherit="False">
+			<hasCorpse>false</hasCorpse>
+			<lifeExpectancy>1000</lifeExpectancy>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<renderTree>Misc</renderTree>
+			<soundCallIntervalRange>120~240</soundCallIntervalRange>
+			<disableIgniteVerb>true</disableIgniteVerb>
+			<trainability>None</trainability>
+			<lifeStageAges>
 				<li>
-					<def>MechanoidFullyFormed</def>
-					<minAge>70</minAge>
-					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+					<def>EntityFullyFormed</def>
+					<soundCall>Pawn_Revenant_Call</soundCall>
+					<soundWounded>Pawn_Revenant_Wounded</soundWounded>
+					<soundDeath>Pawn_Revenant_Death</soundDeath>
 				</li>
 			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<hediffGiverSets>
+				<li>AnomalyEntity</li>
+			</hediffGiverSets>
 		</race>
+		<comps>
+			<li Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+				<lookForTargetOnEscape>false</lookForTargetOnEscape>
+			</li>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.4, 0, 0.30)</offset>
+						<type>PlatformRestraint0</type>
+					  </li>
+					  <li>
+						<offset>(.4, 0, 0.30)</offset>
+						<type>PlatformRestraint1</type>
+					  </li>
+					  <li>
+						<offset>(.3, 0, -.5)</offset>
+						<type>PlatformRestraint2</type>
+					  </li>
+					  <li>
+						<offset>(-.3, 0, -.5)</offset>
+						<type>PlatformRestraint3</type>
+					  </li>
+				</points>
+			</li>
+			<li Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory>SCP</knowledgeCategory>
+				<anomalyKnowledge>3</anomalyKnowledge>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresHoldingPlatform>true</requiresHoldingPlatform>
+			</li>
+			<li Class="Foundation.Comps.CompProperties_ShyGuy">
+				<tickInterval>300</tickInterval>
+				<radius>10</radius>
+			</li>
+			<li Class="Foundation.Comps.CompProperties_AnomalyHeal">
+				<tickInterval>300</tickInterval>
+				<healAmount>30</healAmount>
+			</li>
+		</comps>
 		<tools>
 			<li>
 				<label>left claw</label>
@@ -100,6 +134,24 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 				</surpriseAttack>
 			</li>
 			<li>
+				<label>razorfangs</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>16</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
@@ -111,27 +163,14 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 				<chanceFactor>0.01</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="Foundation.Comps.CompProperties_ShyGuy">
-				<tickInterval>300</tickInterval>
-				<radius>10</radius>
-			</li>
-			<li Class="Foundation.Comps.CompProperties_HumeShield">
-				<startingTicksToReset>600</startingTicksToReset>
-				<EnergyShieldEnergyMax>45</EnergyShieldEnergyMax>
-				<energyOnReset>60</energyOnReset>
-				<texPath>Other/HumeShield</texPath>
-			</li>
-			<li Class="Foundation.Comps.CompProperties_AnomalyHeal">
-				<tickInterval>3000</tickInterval>
-				<healAmount>10</healAmount>
-			</li>
-		</comps>
+		<modExtensions>
+		</modExtensions>
 	</ThingDef>
+
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_096_Shy_Guy</defName>
-		<label>SCP-096 "Shy Guy"</label>
-		<race>SCP_096_Shy_Guy</race>
+		<defName>Foundation_ShyGuy</defName>
+		<label>Shy Guy</label>
+		<race>Foundation_ShyGuy</race>
 		<combatPower>25</combatPower>
 		<lifeStages>
 			<li>
@@ -146,4 +185,5 @@ SCP-096 is normally extremely docile. However, when someone views SCP-096's face
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+
 </Defs>

@@ -5,8 +5,8 @@
 		<xpath>Defs/MemeDef[defName="HumanPrimacy"]/requireOne</xpath>
 			<value>
 				<li>
-					<li>SCP_Tools</li>
-					<li>SCP_Despised</li>
+					<li>Foundation_Tools</li>
+					<li>Foundation_Despised</li>
 				</li>
 			</value>
 	</Operation>

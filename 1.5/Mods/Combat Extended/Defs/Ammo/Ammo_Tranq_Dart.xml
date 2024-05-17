@@ -33,7 +33,7 @@
 		<defName>Bullet_Foundation_Tranq</defName>
 		<label>tranquilizer dart</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>SCP_TranqRanged</damageDef>
+			<damageDef>Foundation_TranqRanged</damageDef>
 			<damageAmountBase>2</damageAmountBase>
 			<armorPenetrationSharp>1.85</armorPenetrationSharp>
 			<armorPenetrationBlunt>12.85</armorPenetrationBlunt>

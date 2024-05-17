@@ -1,180 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
-	<!-- SCP-111 -->
+
 	<BodyDef>
-		<defName>DragonSnailBody</defName>
-		<label>Dragon Snail</label>
-		<corePart>
-			<def>TurtleShell</def>
-			<height>Middle</height>
-			<depth>Outside</depth>
-			<parts>
-				<li>
-					<def>Stomach</def>
-					<coverage>0.05</coverage>
-					<depth>Inside</depth>
-				</li>
-				<li>
-					<def>Heart</def>
-					<coverage>0.03</coverage>
-					<depth>Inside</depth>
-				</li>
-				<li>
-					<def>Lung</def>
-					<customLabel>left lung</customLabel>
-					<coverage>0.03</coverage>
-					<depth>Inside</depth>
-				</li>
-				<li>
-					<def>Lung</def>
-					<customLabel>right lung</customLabel>
-					<coverage>0.03</coverage>
-					<depth>Inside</depth>
-				</li>
-				<li>
-					<def>Kidney</def>
-					<customLabel>left kidney</customLabel>
-					<coverage>0.03</coverage>
-					<depth>Inside</depth>
-				</li>
-				<li>
-					<def>Kidney</def>
-					<customLabel>right kidney</customLabel>
-					<coverage>0.03</coverage>
-					<depth>Inside</depth>
-				</li>
-				<li>
-					<def>Liver</def>
-					<coverage>0.05</coverage>
-					<depth>Inside</depth>
-				</li>
-				<li>
-					<def>SnakeHead</def>
-					<coverage>0.20</coverage>
-					<groups>
-						<li>HeadAttackTool</li>
-					</groups>
-					<parts>
-						<li>
-							<def>Skull</def>
-							<coverage>0.30</coverage>
-							<depth>Inside</depth>
-							<parts>
-								<li>
-									<def>Brain</def>
-									<coverage>0.50</coverage>
-									<depth>Inside</depth>
-								</li>
-							</parts>
-						</li>
-						<li>
-							<def>Horn</def>
-							<coverage>0.10</coverage>
-							<groups>
-								<li>HornAttackTool</li>
-							</groups>
-						</li>
-						<li>
-							<def>Eye</def>
-							<customLabel>left eye</customLabel>
-							<coverage>0.10</coverage>
-						</li>
-						<li>
-							<def>Eye</def>
-							<customLabel>right eye</customLabel>
-							<coverage>0.10</coverage>
-						</li>
-						<li>
-							<def>Nose</def>
-							<coverage>0.15</coverage>
-						</li>
-						<li>
-							<def>SnakeMouth</def>
-							<coverage>0.15</coverage>
-							<groups>
-								<li>Mouth</li>
-							</groups>
-						</li>
-					</parts>
-				</li>
-				<li>
-					<def>SCP_Foot</def>
-					<coverage>0.20</coverage>
-					<height>Bottom</height>
-				</li>
-			</parts>
-		</corePart>
-	</BodyDef>
-  
-	<!-- Bipedal body with a large eye. For now, SCP-131 -->
-	<BodyDef>
-		<defName>SCP_Round</defName>
-		<label>round</label>
-		<corePart>
-			<def>Body</def>
-			<height>Middle</height>
-			<depth>Outside</depth>
-			<parts>
-				<li>
-					<def>Tail</def>
-					<customLabel>head protrusion</customLabel>
-					<coverage>0.1</coverage>
-				</li>
-				<li>
-					<def>Head</def>
-					<coverage>0.2</coverage>
-					 <groups>
-						<li>UpperHead</li>
-						<li>FullHead</li>
-						<li>HeadAttackTool</li>
-					</groups>
-					<parts>
-						<li>
-							<def>Eye</def>
-							<coverage>0.5</coverage>
-						</li>
-					</parts>
-				</li>
-				<li>
-					<def>Leg</def>
-					<customLabel>left locomotion organ</customLabel>
-					<coverage>0.15</coverage>
-					<height>Bottom</height>
-					<parts>
-						<li>
-							<def>Foot</def>
-							<customLabel>left locomotion organ</customLabel>
-							<coverage>0.5</coverage>
-							<groups>
-								<li>Feet</li>
-							</groups>
-						</li>
-					</parts>
-				</li>
-				<li>
-					<def>Leg</def>
-					<customLabel>right locomotion organ</customLabel>
-					<coverage>0.15</coverage>
-					<height>Bottom</height>
-					<parts>
-						<li>
-							<def>Foot</def>
-							<customLabel>right locomotion organ</customLabel>
-							<coverage>0.5</coverage>
-							<groups>
-								<li>Feet</li>
-							</groups>
-						</li>
-					</parts>
-				</li>
-			</parts>
-		</corePart>
-	</BodyDef>
-	
-	<!-- Bipedal with no organs. For now, SCP-250 -->
-	<BodyDef>
-		<defName>SCP_BipedalBoney</defName>
+		<defName>Foundation_BipedalBoney</defName>
 		<label>bipedal skeleton</label>
 		<corePart>
 			<def>Body</def>
@@ -258,7 +86,7 @@
 	
 	<!-- Essentially QuadrupedAnimalWithPawsAndTail, but without the tail and back leggys. Just	SCP-529-->
 	<BodyDef>
-		<defName>SCP_BipedalQuad</defName>
+		<defName>Foundation_BipedalQuad</defName>
 		<label>quadruped animal</label>
 		<corePart>
 			<def>Body</def>
@@ -583,7 +411,7 @@
 	
 	<!-- solid body with brain as internals. SCP-2845-1 -->
 	<BodyDef>
-		<defName>SCP_PillarBod</defName>
+		<defName>Foundation_PillarBod</defName>
 		<label>Pillar</label>
 		<corePart>
 			<def>PillarBod</def>
@@ -646,7 +474,7 @@
 	</BodyDef>
 
 	<!-- <BodyDef> -->
-		<!-- <defName>SCP_PillarBod</defName> -->
+		<!-- <defName>Foundation_PillarBod</defName> -->
 		<!-- <label>pillar</label> -->
 		<!-- <corePart> -->
 			<!-- <def>Torso</def> -->
@@ -1241,7 +1069,7 @@
 	
 	<!-- Essentially Bird, but without birdy parts and beak. stretchy necky. SCP-3199-->
 	<BodyDef>
-		<defName>SCP_Neck</defName>
+		<defName>Foundation_Neck</defName>
 		<label>biped animal</label>
 		<corePart>
 			<def>Body</def>
@@ -1431,7 +1259,7 @@
           <!-- <depth>Inside</depth> -->
         <!-- </li> -->
 		<li>
-			<def>SCP_Hume</def>
+			<def>Foundation_Hume</def>
 			<depth>Inside</depth>
 			<height>Middle</height>
 			<coverage>0</coverage>

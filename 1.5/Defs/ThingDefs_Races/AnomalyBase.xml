@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnimalThingBase" Name="AnomalyBase" Abstract="True">
 		<race>
-			<thinkTreeMain>SCP_AI</thinkTreeMain>
+			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<hediffGiverSets Inherit="false">
 				<li>AnomalyStandard</li>
 			</hediffGiverSets>

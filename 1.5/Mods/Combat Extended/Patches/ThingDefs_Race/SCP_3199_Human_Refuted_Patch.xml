@@ -51,7 +51,7 @@
 					<surpriseAttack>
 						<extraMeleeDamages>
 							<li>
-								<def>SCP_Acid</def>
+								<def>Foundation_Acid</def>
 								<amount>20</amount>
 							</li>
 						</extraMeleeDamages>

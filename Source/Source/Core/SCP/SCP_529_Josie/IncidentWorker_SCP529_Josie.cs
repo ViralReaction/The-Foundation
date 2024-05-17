@@ -16,7 +16,7 @@ namespace Foundation
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map target = (Map)parms.target;
-            PawnKindDef pawnKind = PawnKindDefOf_SCP.SCP_529_Josie;
+            PawnKindDef pawnKind = PawnKindDefOf_SCP.Foundation_529_Josie;
             IntVec3 result;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out result, target, CellFinder.EdgeRoadChance_Animal))
                 return false;

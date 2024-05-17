@@ -1,98 +1,90 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="AnomalyBase">
-		<defName>SCP_250_Allosaurus</defName>
-		<label>Most Allosaurus</label>
-		<description>Item #: SCP-250
-Object Class: Euclid
-		
-SCP-250 is the animate fossil skeleton of an allosaur, held together and animated by an unknown force. Study of this force is hindered by SCP-250's aggressive behavior, which has been assessed by Foundation palaeozoologists as being well within theoretical norms for an allosaurus.
-
-SCP-250 emulates what are presumed to have been the standard daily activities of a living allosaurus: it wanders its enclosure by day, enters a state of dormancy by night, and will attempt to kill and devour anything which it perceives as suitable prey, including humans.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>SCP_CEuclid</li>
-					<li>SCP_DVlam</li>
-					<li>SCP_RNotice</li>
-				</classRating>
-				<containmentTier>1</containmentTier>
-				<isTranqable>false</isTranqable>
-				<hatesRoofs>true</hatesRoofs>
-			</li>
-		</modExtensions>
-		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+	<ThingDef ParentName="BasePawn">
+		<defName>Foundation_Allosaurus</defName>
+		<label>Most of Allosaurus</label>
+		<description>Item #: SCP-250\n\nObject Class: Euclid\n\nSCP-250 is the animate fossil skeleton of an allosaur, held together and animated by an unknown force. Study of this force is hindered by SCP-250's aggressive behavior, which has been assessed by Foundation palaeozoologists as being well within theoretical norms for an allosaurus.\n\nSCP-250 emulates what are presumed to have been the standard daily activities of a living allosaurus: it wanders its enclosure by day, enters a state of dormancy by night, and will attempt to kill and devour anything which it perceives as suitable prey, including humans.</description>
+		<hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
 		<statBases>
-			<MoveSpeed>7.2</MoveSpeed>
-			<MarketValue>2800</MarketValue>
-			<ComfyTemperatureMax>80</ComfyTemperatureMax>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<FilthRate>2</FilthRate>
-			<MeatAmount>0</MeatAmount>
-			<LeatherAmount>0</LeatherAmount>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<MoveSpeed>5.4</MoveSpeed>
+			<MarketValue>450</MarketValue>
+			<Mass>250</Mass>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<ToxicResistance>1</ToxicResistance>
+			<MinimumContainmentStrength>80</MinimumContainmentStrength>
+			<StaggerDurationFactor>0</StaggerDurationFactor>
 		</statBases>
-		<tradeTags>
-			<li>SCP</li>
-		</tradeTags>
-		<receivesSignals>true</receivesSignals>
-		<comps>
-			<li Class="CompProperties_CanBeDormant"/>
-			<li Class="CompProperties_WakeUpDormant">
-				<wakeUpOnDamage>true</wakeUpOnDamage>
-			</li>
-		</comps>
+		<uiIconPath>Things/Pawn/Animal/SCP_250/SCP_250_east</uiIconPath>
+		<tradeability>None</tradeability>
+		<hideStats>true</hideStats>
+		<onlyShowInspectString>true</onlyShowInspectString>
+		<hideMainDesc>true</hideMainDesc>
 		<race>
-			<body>SCP_BipedalBoney</body>
-			<bloodDef>Filth_Ash</bloodDef>
+			<thinkTreeMain>Foundation_AI</thinkTreeMain>
+			<body>Foundation_BipedalBoney</body>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>6</baseHealthScale>
+			<intelligence>ToolUser</intelligence>
+			<needsRest>true</needsRest>
+			<hasGenders>false</hasGenders>
+			<fleshType>EntityFlesh</fleshType>
+			<baseHungerRate>0.9</baseHungerRate>
 			<predator>true</predator>
-			<baseBodySize>5</baseBodySize>
-			<baseHungerRate>0.325</baseHungerRate>
-			<baseHealthScale>2.5</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
-			<wildness>0.97</wildness>
-			<trainability>Advanced</trainability>
-			<useMeatFrom>Cat</useMeatFrom>
-			<leatherDef>Leather_Light</leatherDef>
-			<manhunterOnTameFailChance>0.65</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>
-			<wildBiomes>
-				<AridShrubland>0.1</AridShrubland>
-				<BorealForest>0</BorealForest>
-				<ColdBog>0</ColdBog>
-				<TemperateForest>0.04</TemperateForest>
-				<TemperateSwamp>0.04</TemperateSwamp>
-				<TropicalRainforest>0</TropicalRainforest>
-				<TropicalSwamp>0</TropicalSwamp>
-				<IceSheet>0</IceSheet>
-				<SeaIce>0</SeaIce>
-				<Tundra>0</Tundra>
-				<Desert>0.2</Desert>
-				<ExtremeDesert>0.1</ExtremeDesert>
-			</wildBiomes>
-			<gestationPeriodDays>20</gestationPeriodDays>
-			<lifeExpectancy>20</lifeExpectancy>
+			<maxPreyBodySize>4.0</maxPreyBodySize>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<hasCorpse>false</hasCorpse>
+			<lifeExpectancy>1000</lifeExpectancy>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<renderTree>Misc</renderTree>
+			<soundCallIntervalRange>120~240</soundCallIntervalRange>
+			<disableIgniteVerb>true</disableIgniteVerb>
+			<trainability>None</trainability>
 			<lifeStageAges>
 				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.5</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.75</minAge>
+					<def>EntityFullyFormed</def>
+					<soundCall>Pawn_Revenant_Call</soundCall>
+					<soundWounded>Pawn_Revenant_Wounded</soundWounded>
+					<soundDeath>Pawn_Revenant_Death</soundDeath>
 				</li>
 			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<hediffGiverSets>
+				<li>AnomalyEntity</li>
+			</hediffGiverSets>
 		</race>
+		<comps>
+			<li Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+				<lookForTargetOnEscape>true</lookForTargetOnEscape>
+			</li>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.25, 0, 0.45)</offset>
+						<type>PlatformRestraint0</type>
+					</li>
+					<li>
+						<offset>(.25, 0, 0.45)</offset>
+						<type>PlatformRestraint1</type>
+					</li>
+					<li>
+						<offset>(.3, 0, -.3)</offset>
+						<type>PlatformRestraint2</type>
+					</li>
+					<li>
+						<offset>(-.3, 0, -.3)</offset>
+						<type>PlatformRestraint3</type>
+					</li>
+				</points>
+			</li>
+			<li Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory>SCP</knowledgeCategory>
+				<anomalyKnowledge>3</anomalyKnowledge>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresHoldingPlatform>true</requiresHoldingPlatform>
+			</li>
+		</comps>
 		<tools>
 			<li>
 				<label>claws</label>
@@ -103,6 +95,24 @@ SCP-250 emulates what are presumed to have been the standard daily activities of
 				<power>10</power>
 				<cooldownTime>1.4</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
@@ -125,37 +135,17 @@ SCP-250 emulates what are presumed to have been the standard daily activities of
 			</li>
 		</tools>
 	</ThingDef>
-  
+
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_250_Allosaurus</defName>
-		<label>SCP-250</label>
-		<race>SCP_250_Allosaurus</race>
+		<defName>Foundation_Allosaurus</defName>
+		<label>Most Allosaurus</label>
+		<race>Foundation_Allosaurus</race>
 		<combatPower>400</combatPower>
 		<wildGroupSize>
 			<min>1</min>
 			<max>2</max>
 		</wildGroupSize>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_250/SCP_250</texPath>

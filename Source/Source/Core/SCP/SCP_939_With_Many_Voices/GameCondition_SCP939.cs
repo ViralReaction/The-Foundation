@@ -83,7 +83,7 @@ namespace Foundation
             }
             if (this.scp939_GeneratedTotal < this.scp939Count)
             {
-                Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf_SCP.SCP_939_Incident, (Faction)null, PawnGenerationContext.NonPlayer, this.SingleMap.Tile, false, false, false, false, true, 0.0f, false, false, false, false, false, false, false, false, false, 0.0f, 0.0f, (Pawn)null, 0.0f, (Predicate<Pawn>)null, (Predicate<Pawn>)null, (IEnumerable<TraitDef>)null, (IEnumerable<TraitDef>)null, new float?(), new float?(), new float?(), new Gender?(), (string)null, (string)null, (RoyalTitleDef)null));
+                Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf_SCP.Foundation_ManyVoices_Incident, (Faction)null, PawnGenerationContext.NonPlayer, this.SingleMap.Tile, false, false, false, false, true, 0.0f, false, false, false, false, false, false, false, false, false, 0.0f, 0.0f, (Pawn)null, 0.0f, (Predicate<Pawn>)null, (Predicate<Pawn>)null, (IEnumerable<TraitDef>)null, (IEnumerable<TraitDef>)null, new float?(), new float?(), new float?(), new Gender?(), (string)null, (string)null, (RoyalTitleDef)null));
                 ++this.scp939_GeneratedTotal;
                 this.scp939Generated.Add(pawn);
             }

@@ -18,7 +18,7 @@ namespace Foundation
         //    IntVec3 cell;
         //    if (!this.TryFindEntryCell(target, out cell))
         //        return false;
-        //    PawnKindDef kindDef = PawnKindDefOf_SCP.SCP_096_Shy_Guy;
+        //    PawnKindDef kindDef = PawnKindDefOf_SCP.Foundation_096_Shy_Guy;
         //    //int num1 = Mathf.Clamp(GenMath.RoundRandom(StorytellerUtility.DefaultThreatPointsNow((IIncidentTarget)target) / kindDef.combatPower), 2, Rand.RangeInclusive(3, 6));
         //    //int num2 = Rand.RangeInclusive(90000, 150000);
         //    IntVec3 result = IntVec3.Invalid;
@@ -44,7 +44,7 @@ namespace Foundation
             IntVec3 cell;
             if (!this.TryFindEntryCell(target, out cell))
                 return false;
-            PawnKindDef kindDef = PawnKindDefOf_SCP.SCP_096_Shy_Guy;
+            PawnKindDef kindDef = PawnKindDefOf_SCP.Foundation_ShyGuy;
             int num1 = Mathf.Clamp(GenMath.RoundRandom(StorytellerUtility.DefaultThreatPointsNow((IIncidentTarget)target) / kindDef.combatPower), 2, Rand.RangeInclusive(3, 6));
             int num2 = Rand.RangeInclusive(90000, 150000);
             IntVec3 result = IntVec3.Invalid;

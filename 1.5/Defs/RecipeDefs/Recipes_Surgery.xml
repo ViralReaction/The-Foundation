@@ -3,7 +3,7 @@
 
 	<!-- 2687 Recipe -->
 	<RecipeDef>
-		<defName>SCP_Make_SCP_2687A</defName>
+		<defName>Foundation_Make_SCP_2687A</defName>
 		<label>make scp-2687-a model</label>
 		<description>Make SCP-2687-A Organ Model.</description>
 		<jobString>Making SCP 2687-A Organ Model.</jobString>
@@ -78,191 +78,93 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>SCP_Install2687Eye</defName>
+		<defName>Foundation_Install2687Eye</defName>
 		<label>install anomalous eye</label>
 		<description>Install anomalous eye.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>SCP_2687B_Eye</HediffDef>
+			<HediffDef>Foundation_2687B_Eye</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous eye.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Eye</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>SCP_2687B_Eye</addsHediff>
+		<addsHediff>Foundation_2687B_Eye</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>SCP_Install2687Heart</defName>
+		<defName>Foundation_Install2687Heart</defName>
 		<label>install anomalous Heart</label>
 		<description>Install anomalous Heart.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>SCP_2687B_Heart</HediffDef>
+			<HediffDef>Foundation_2687B_Heart</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous Heart.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Heart</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>SCP_2687B_Heart</addsHediff>
+		<addsHediff>Foundation_2687B_Heart</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>SCP_Install2687Lung</defName>
+		<defName>Foundation_Install2687Lung</defName>
 		<label>install anomalous Lung</label>
 		<description>Install anomalous Lung.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>SCP_2687B_Lung</HediffDef>
+			<HediffDef>Foundation_2687B_Lung</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous Lung.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Lung</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>SCP_2687B_Lung</addsHediff>
+		<addsHediff>Foundation_2687B_Lung</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>SCP_Install2687Stomach</defName>
+		<defName>Foundation_Install2687Stomach</defName>
 		<label>install anomalous Stomach</label>
 		<description>Install anomalous Stomach.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>SCP_2687B_Stomach</HediffDef>
+			<HediffDef>Foundation_2687B_Stomach</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous Stomach.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Stomach</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>SCP_2687B_Stomach</addsHediff>
+		<addsHediff>Foundation_2687B_Stomach</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>SCP_Install2687Kidney</defName>
+		<defName>Foundation_Install2687Kidney</defName>
 		<label>install anomalous Kidney</label>
 		<description>Install anomalous Kidney.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>SCP_2687B_Kidney</HediffDef>
+			<HediffDef>Foundation_2687B_Kidney</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous Kidney.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Kidney</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>SCP_2687B_Kidney</addsHediff>
+		<addsHediff>Foundation_2687B_Kidney</addsHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>SCP_Install2687Liver</defName>
+		<defName>Foundation_Install2687Liver</defName>
 		<label>install anomalous liver</label>
 		<description>Install anomalous liver.</description>
 		<descriptionHyperlinks>
 			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>SCP_2687B_Liver</HediffDef>
+			<HediffDef>Foundation_2687B_Liver</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous liver.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Liver</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>SCP_2687B_Liver</addsHediff>
-	</RecipeDef>
-	
-	<!-- 3033-1 -->
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>SCP_RemoveSCP30331R</defName>
-		<label>remove SCP-3033-1</label>
-		<description>Remove the SCP-3033-1 implant.</description>
-		<skillRequirements>
-			<Medicine>15</Medicine>
-		</skillRequirements>
-		<descriptionHyperlinks>
-			<ThingDef>SCP_30331R</ThingDef>
-			<HediffDef>SCP_30331R</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing the SCP-3033-1 implant.</jobString>
-		<removesHediff>SCP_30331R</removesHediff>
-	</RecipeDef>
- 
-	<RecipeDef ParentName="SurgeryInstallImplantBase">
-		<defName>SCP_InstallSCP30331R</defName>
-		<label>install SCP-3033-1</label>
-		<description>Install an SCP-3033-1 "Mike" unit implant</description>
-		<descriptionHyperlinks>
-			<ThingDef>SCP_30331R</ThingDef>
-			<HediffDef>SCP_30331R</HediffDef>
-		</descriptionHyperlinks>
-		<skillRequirements>
-			<Medicine>15</Medicine>
-		</skillRequirements>
-		<jobString>Installing an SCP-3033-1 implant.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>SCP_30331R</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>SCP_30331R</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Brain</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>SCP_30331R</addsHediff>
-	</RecipeDef>
-
-	<!-- 3033-2 -->
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>SCP_RemoveSCP30332R</defName>
-		<label>remove SCP-3033-2</label>
-		<description>Remove the SCP-3033-2 implant.</description>
-		<skillRequirements>
-			<Medicine>15</Medicine>
-		</skillRequirements>
-		<descriptionHyperlinks>
-			<ThingDef>SCP_30332R</ThingDef>
-			<HediffDef>SCP_30332R</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing the SCP-3033-2 implant.</jobString>
-		<removesHediff>SCP_30332R</removesHediff>
-	</RecipeDef>
- 
-	<RecipeDef ParentName="SurgeryInstallImplantBase">
-		<defName>SCP_InstallSCP30332R</defName>
-		<label>install SCP-3033-2</label>
-		<description>Install an SCP-3033-2 "controller" unit implant</description>
-		<descriptionHyperlinks>
-			<ThingDef>SCP_30332R</ThingDef>
-			<HediffDef>SCP_30332R</HediffDef>
-		</descriptionHyperlinks>
-		<skillRequirements>
-			<Medicine>15</Medicine>
-		</skillRequirements>
-		<jobString>Installing an SCP-3033-2 implant.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>SCP_30332R</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>SCP_30332R</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Brain</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>SCP_30332R</addsHediff>
+		<addsHediff>Foundation_2687B_Liver</addsHediff>
 	</RecipeDef>
 
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<MentalStateDef ParentName="BaseMentalState">
-		<defName>SCP_BreachContainment</defName>
+		<defName>Foundation_BreachContainment</defName>
 		<label>breaking containment</label>
 		<stateClass>Foundation.Containment.MentalState_ContainmentBreach</stateClass>
 		<category>Aggro</category>
@@ -14,13 +14,13 @@
 	</MentalStateDef>
 	
 	<MentalBreakDef>
-		<defName>SCP_ContainmentBreaker</defName>
-		<mentalState>SCP_ContainmentBreaker</mentalState>
+		<defName>Foundation_ContainmentBreaker</defName>
+		<mentalState>Foundation_ContainmentBreaker</mentalState>
 		<baseCommonality>1</baseCommonality>
 		<intensity>Extreme</intensity>
 	</MentalBreakDef>
-	<MentalStateDef Name="SCP_ContainmentBreaker" ParentName="BaseMentalState">
-		<defName>SCP_ContainmentBreaker</defName>
+	<MentalStateDef Name="Foundation_ContainmentBreaker" ParentName="BaseMentalState">
+		<defName>Foundation_ContainmentBreaker</defName>
 		<stateClass>Foundation.Containment.MentalState_ContainmentBreaker</stateClass>
 		<workerClass>Foundation.Containment.MentalStateWorker_ContainmentBreaker</workerClass>
 		<label>inducing a containment breach</label>

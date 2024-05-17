@@ -33,7 +33,7 @@ namespace Foundation.Containment
             for (int index = 0; index < pawnList.Count; ++index)
             {
                 Pawn spawnedDownedPawn = pawnList[index];
-                if (spawnedDownedPawn.IsSCP() && spawnedDownedPawn.GetRoom().Role == SCP_Startup.containmentRoom)
+                if (spawnedDownedPawn.IsSCP() && spawnedDownedPawn.GetRoom().Role == Foundation_Startup.containmentRoom)
                     return false;
             }
             return true;

@@ -25,7 +25,7 @@ namespace Foundation.Containment
                 foreach (Pawn pawn in target.mapPawns.AllPawnsSpawned)
                 {
                     ThingDef def = pawn.def;
-                    if (pawn.IsSCP() && pawn.GetRoom().Role == SCP_Startup.containmentRoom)
+                    if (pawn.IsSCP() && pawn.GetRoom().Role == Foundation_Startup.containmentRoom)
                         return true;
                 }
             }
@@ -75,7 +75,7 @@ namespace Foundation.Containment
                 for (int index4 = 0; index4 < pawnList.Count; index4++)
                 {
                     Pawn pawn = pawnList[index4];
-                    pawn.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.SCP_BreachContainment, forceWake: true, transitionSilently: true);
+                    pawn.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.Foundation_BreachContainment, forceWake: true, transitionSilently: true);
                     FoundationComponent.ContainmentBreakDict.SetOrAdd(pawn, 0);
                 }
                 this.SendStandardLetter("LetterLabelContainmentBreach".Translate((NamedArgument)controllerPawn.def.label.CapitalizeFirst()), "LetterContainmentBreach".Translate((NamedArgument)controllerPawn.def.label), LetterDefOf.ThreatBig, parms, (LookTargets)(Thing)pawnList[0]);

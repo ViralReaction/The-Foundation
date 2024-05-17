@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="AnomalyBase">
-		<defName>SCP_682_Reptile</defName>
+		<defName>Foundation_682_Reptile</defName>
 		<label>SCP-682 "Reptile"</label>
 		<description>Item #: SCP-0682
 Object Class: Keter
@@ -12,9 +12,9 @@ SCP-682 has always been observed to have extremely high strength, speed, and ref
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CKeter</li>
-					<li>SCP_DVlam</li>
-					<li>SCP_RDanger</li>
+					<li>Foundation_CKeter</li>
+					<li>Foundation_DVlam</li>
+					<li>Foundation_RDanger</li>
 				</classRating>
 				<containmentTier>3</containmentTier>
 			</li>
@@ -142,9 +142,9 @@ SCP-682 has always been observed to have extremely high strength, speed, and ref
 		</comps>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_682_Reptile</defName>
+		<defName>Foundation_682_Reptile</defName>
 		<label>SCP-682 "Reptile"</label>
-		<race>SCP_682_Reptile</race>
+		<race>Foundation_682_Reptile</race>
 		<combatPower>25</combatPower>
 		<lifeStages>
 			<li>

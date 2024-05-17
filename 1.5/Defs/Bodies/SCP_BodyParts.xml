@@ -9,10 +9,10 @@
 		<canScarify>true</canScarify>
 		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<canSuggestAmputation>false</canSuggestAmputation>
-	 </BodyPartDef>
+	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>SCP_Hume</defName>
+		<defName>Foundation_Hume</defName>
 		<label>anomalous hume energy</label>
 		<hitPoints>51</hitPoints>
 		<frostbiteVulnerability>0</frostbiteVulnerability>

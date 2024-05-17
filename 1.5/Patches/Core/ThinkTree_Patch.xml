@@ -6,7 +6,7 @@
 		<value>
 			<!-- Jailbreaker -->
 			<li Class="ThinkNode_ConditionalMentalState">
-			  <state>SCP_ContainmentBreaker</state>
+			  <state>Foundation_ContainmentBreaker</state>
 			  <subNodes>
 				<li Class="Foundation.Containment.JobGiver_ContainmentBreaker" />
 				<li Class="ThinkNode_PrioritySorter">

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Basic -->
+  <EntityCodexEntryDef>
+    <defName>Foundation_ShyGuy</defName>
+    <label>SCP-096 "Shy Guy"</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_ShyGuy</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP_096/SCP_096_cr_east</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>0</orderInCategory>
+    <linkedThings>
+      <li>Foundation_ShyGuy</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+  
+  <EntityCodexEntryDef>
+    <defName>Foundation_OldMan</defName>
+    <label>SCP-106 "Old Man"</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_OldMan</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP_106/SCP_106_east</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>0</orderInCategory>
+    <linkedThings>
+      <li>Foundation_OldMan</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+  
+  <EntityCodexEntryDef>
+    <defName>Foundation_Allosaurus</defName>
+    <label>SCP-250 "Allosaurus"</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_Allosaurus</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP_250/SCP_250_east</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>0</orderInCategory>
+    <linkedThings>
+      <li>Foundation_Allosaurus</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>Foundation_ManyVoices</defName>
+    <label>SCP-939 "With Many Voices"</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_ManyVoices</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP_939/SCP_939_east</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>0</orderInCategory>
+    <linkedThings>
+      <li>Foundation_ManyVoices</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+</Defs>

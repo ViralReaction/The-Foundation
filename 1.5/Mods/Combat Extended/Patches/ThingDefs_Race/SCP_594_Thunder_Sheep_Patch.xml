@@ -27,7 +27,7 @@
 					<label>left hoof</label>
 					<capacities>
 						<li>Blunt</li>
-						<li>SCP_Electric</li>
+						<li>Foundation_Electric</li>
 					</capacities>
 					<power>3</power>
 					<cooldownTime>0.91</cooldownTime>
@@ -38,7 +38,7 @@
 					<label>left hoof</label>
 					<capacities>
 						<li>Poke</li>
-						<li>SCP_Electric</li>
+						<li>Foundation_Electric</li>
 					</capacities>
 					<power>3</power>
 					<cooldownTime>0.91</cooldownTime>
@@ -49,7 +49,7 @@
 					<label>right hoof</label>
 					<capacities>
 						<li>Blunt</li>
-						<li>SCP_Electric</li>
+						<li>Foundation_Electric</li>
 					</capacities>
 					<power>3</power>
 					<cooldownTime>0.91</cooldownTime>
@@ -60,7 +60,7 @@
 					<label>right hoof</label>
 					<capacities>
 						<li>Poke</li>
-						<li>SCP_Electric</li>
+						<li>Foundation_Electric</li>
 					</capacities>
 					<power>3</power>
 					<cooldownTime>0.91</cooldownTime>
@@ -70,7 +70,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<capacities>
 						<li>Bite</li>
-						<li>SCP_Electric</li>
+						<li>Foundation_Electric</li>
 					</capacities>
 					<power>2</power>
 					<cooldownTime>1.5</cooldownTime>
@@ -82,7 +82,7 @@
 					<label>head</label>
 					<capacities>
 						<li>Blunt</li>
-						<li>SCP_Electric</li>
+						<li>Foundation_Electric</li>
 					</capacities>
 					<power>6</power>
 					<cooldownTime>2.12</cooldownTime>

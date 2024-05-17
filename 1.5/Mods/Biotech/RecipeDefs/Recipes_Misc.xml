@@ -30,7 +30,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SCP_578_1_Bloodstone</li>
+						<li>Foundation_578_1_Bloodstone</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -39,7 +39,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>HemogenPack></li>
-				<li>SCP_578_1_Bloodstone</li>
+				<li>Foundation_578_1_Bloodstone</li>
 				<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Animal</li>
 				<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Corpse</li>
 				<li MayRequire="vanillaracesexpanded.sanguophage">VRE_HemogenPack_Sanguophage</li>
@@ -48,7 +48,7 @@
 		<defaultIngredientFilter>
 			<thingDefs>
 				<li>HemogenPack></li>
-				<li>SCP_578_1_Bloodstone</li>
+				<li>Foundation_578_1_Bloodstone</li>
 			</thingDefs>
 		</defaultIngredientFilter>
 		<products>

@@ -3,11 +3,11 @@
 
 	<!-- Plastic Blood Poisoning -->
 	<HediffDef ParentName="InfectionBase">
-		<defName>SCP_2687_Poison</defName>
+		<defName>Foundation_2687_Poison</defName>
 		<label>Microplastic Poisoning</label>
 		<description>The organs derived from SCP-2687 can cause acute poisoning of the blood. Without a supply of SCP-2687-C, this will most likely result in death.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SCP_2687_C</ThingDef>
+			<ThingDef>Foundation_2687_C</ThingDef>
 		</descriptionHyperlinks>
 		<makesSickThought>true</makesSickThought>
 		<lethalSeverity>1</lethalSeverity>

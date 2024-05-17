@@ -31,7 +31,7 @@ namespace Foundation.Containment
             Map map = pawn.Map;
             if (!pawn.InMentalState)
             {
-                Find.Storyteller.TryFire(new FiringIncident(SCPDefOf.SCP_Incident_ContainBreach, (StorytellerComp)null, new IncidentParms()
+                Find.Storyteller.TryFire(new FiringIncident(SCPDefOf.Foundation_Incident_ContainBreach, (StorytellerComp)null, new IncidentParms()
                 {
                     target = (IIncidentTarget)map,
                     controllerPawn = pawn,

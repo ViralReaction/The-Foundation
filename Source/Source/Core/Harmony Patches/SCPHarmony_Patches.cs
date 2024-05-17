@@ -11,9 +11,9 @@ using Verse.AI;
 using Verse;
 using Mono.Security;
 using UnityEngine;
-using Foundation.Containment;
 using System.Reflection.Emit;
 using Verse.Noise;
+using Foundation.Containment;
 using Foundation.Utilities;
 
 namespace Foundation.HarmonyPatches
@@ -35,31 +35,29 @@ namespace Foundation.HarmonyPatches
             harmony.Patch((MethodBase)AccessTools.Method(typeof(JobDriver_PredatorHunt), "CheckWarnPlayer"), new HarmonyMethod(typeof(FoundationHarmony), "SCP939_DontWarnPlayerHunted"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(Pawn), "TickRare"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "TickMindstateLeaveDaylight"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(WorldPawns), "GetSituation"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SituationSCPEvent"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(Need_Food), "NeedInterval"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SCP1675_Starving"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(FoodUtility), "IsAcceptablePreyFor"), new HarmonyMethod(typeof(FoundationHarmony), "SCP1675_GeeseOnlyAcceptablePrey"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(ThingDef), "SpecialDisplayStats"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "StatDrawEntry_Patch"));
-            harmony.Patch(AccessTools.Method(typeof(BedInteractionCellSearchPattern), "BedCellOffsets"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "BedCellOffsets_Patch"));
-            harmony.Patch(AccessTools.Method(typeof(RestUtility), "CanUseBedEver"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "CanUseBedEverPostfix"));
-            harmony.Patch(AccessTools.Method(typeof(RestUtility), "IsValidBedFor"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "IsValidBedEverPostfix"));
+            //harmony.Patch(AccessTools.Method(typeof(BedInteractionCellSearchPattern), "BedCellOffsets"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "BedCellOffsets_Patch"));
+            //harmony.Patch(AccessTools.Method(typeof(RestUtility), "CanUseBedEver"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "CanUseBedEverPostfix"));
+            //harmony.Patch(AccessTools.Method(typeof(RestUtility), "IsValidBedFor"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "IsValidBedEverPostfix"));
         }
 
         public static void SCP096_Full(Need_Food __instance, Pawn ___pawn)
         {
-            if (!(___pawn.def.defName == "SCP_096_Shy_Guy"))
+            if (!(___pawn.def.defName == "Foundation_096_Shy_Guy"))
                 return;
             __instance.CurLevel = 1f;
         }
 
         public static void SCP106_Starving(Need_Food __instance, Pawn ___pawn)
         {
-            if (!(___pawn.def.defName == "SCP_106_Old_Man"))
+            if (!(___pawn.def.defName == "Foundation_106_Old_Man"))
                 return;
             __instance.CurLevel = 0.1f;
         }
 
         public static bool SCP106_HumansOnlyAcceptablePrey(Pawn predator, Pawn prey, ref bool __result)
         {
-            if (!(predator.def.defName == "SCP_106_Old_Man"))
+            if (!(predator.def.defName == "Foundation_106_Old_Man"))
                 return true;
             __result = false;
             if (prey.RaceProps.Humanlike)
@@ -70,14 +68,14 @@ namespace Foundation.HarmonyPatches
 
         public static void SCP939_Starving(Need_Food __instance, Pawn ___pawn)
         {
-            if (!(___pawn.def.defName == "SCP939_A"))
+            if (!(___pawn.def.defName == "Foundation_ManyVoices"))
                 return;
             __instance.CurLevel = 0.1f;
         }
 
         public static bool SCP939_HumansOnlyAcceptablePrey(Pawn predator, Pawn prey, ref bool __result)
         {
-            if (!(predator.def.defName == "SCP939_A"))
+            if (!(predator.def.defName == "Foundation_ManyVoices"))
                 return true;
             __result = false;
             if (prey.RaceProps.Humanlike)
@@ -100,7 +98,7 @@ namespace Foundation.HarmonyPatches
         public static void TickMindstateLeaveDaylight(Pawn __instance)
         {
             IntVec3 result;
-            if (__instance?.kindDef != PawnKindDefOf_SCP.SCP_939_Incident || !__instance.Spawned || GenLocalDate.HourOfDay(__instance.Map) < 5 || GenLocalDate.HourOfDay(__instance.Map) >= 19 || !CellFinder.TryFindRandomPawnExitCell(__instance, out result) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.Eclipse) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.VolcanicWinter) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.UnnaturalDarkness))
+            if (__instance?.kindDef != PawnKindDefOf_SCP.Foundation_ManyVoices_Incident || !__instance.Spawned || GenLocalDate.HourOfDay(__instance.Map) < 5 || GenLocalDate.HourOfDay(__instance.Map) >= 19 || !CellFinder.TryFindRandomPawnExitCell(__instance, out result) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.Eclipse) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.VolcanicWinter) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.UnnaturalDarkness))
                 return;
             Job job = new Job(SCPDefOf.LeaveMapDaylight, (LocalTargetInfo)result);
             __instance.jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
@@ -111,7 +109,7 @@ namespace Foundation.HarmonyPatches
           ref WorldPawnSituation __result,
           WorldPawns __instance)
         {
-            if (__result != WorldPawnSituation.Free || p.kindDef != PawnKindDefOf_SCP.SCP_939_Incident)
+            if (__result != WorldPawnSituation.Free || p.kindDef != PawnKindDefOf_SCP.Foundation_ManyVoices_Incident)
                 return;
             foreach (Map map in Find.Maps)
             {
@@ -121,21 +119,6 @@ namespace Foundation.HarmonyPatches
                     break;
                 }
             }
-        }
-        public static void SCP1675_Starving(Need_Food __instance, Pawn ___pawn)
-        {
-            if (!(___pawn.def.defName == "SCP_1675_Goose_Terminator"))
-                return;
-            __instance.CurLevel = 0.1f;
-        }
-        public static bool SCP1675_GeeseOnlyAcceptablePrey(Pawn predator, Pawn prey, ref bool __result)
-        {
-            if (!(predator.def.defName == "SCP_1675_Goose_Terminator"))
-                return true;
-            __result = false;
-            if (prey.def.defName == "Goose")
-                __result = true;
-            return false;
         }
         public static void StatDrawEntry_Patch(ThingDef __instance, ref IEnumerable<StatDrawEntry> __result)
         {
@@ -153,49 +136,59 @@ namespace Foundation.HarmonyPatches
             ContainmentExtension modExtension = __instance.GetModExtension<ContainmentExtension>();
             if (modExtension.classRating.Count == 3)
             {
-                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"SCP_Contain".Translate(), (string)modExtension.classRating[0].Translate(), (string)modExtension.FindDescription(0).Translate(), 1));
-                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"SCP_Disrupt".Translate(), (string)modExtension.classRating[1].Translate(), (string)modExtension.FindDescription(1).Translate(), 1));
-                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"SCP_Risk".Translate(), (string)modExtension.classRating[2].Translate(), (string)modExtension.FindDescription(2).Translate(), 1));
+                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"Foundation_Contain".Translate(), (string)modExtension.classRating[0].Translate(), (string)modExtension.FindDescription(0).Translate(), 1));
+                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"Foundation_Disrupt".Translate(), (string)modExtension.classRating[1].Translate(), (string)modExtension.FindDescription(1).Translate(), 1));
+                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"Foundation_Risk".Translate(), (string)modExtension.classRating[2].Translate(), (string)modExtension.FindDescription(2).Translate(), 1));
             }
             else
                 Log.Error("SCP Harmony Patching Error: " + __instance.defName + " Does not have correct number of containment procedures.");
         }
 
-        public static bool BedCellOffsets_Patch(List<IntVec3> offsets, IntVec2 size, int slot)
+        public static bool CaptureFoundation_Patch(ref bool __result)
         {
-            if (size.z < 2)
-                return true;
-            bool rightEdge = slot == 0;
-            bool leftEdge = slot == BedUtility.GetSleepingSlotsCount(size) - 1;
-            BedInteractionCellSearchPattern.BedCellOffsets2xN(offsets, rightEdge, leftEdge);
-            return false;
-        }
-        public static void CanUseBedEverPostfix(ref bool __result, Pawn p, ThingDef bedDef)
-        {
-            if (__result)
+            if (__result != null)
             {
-                if (p.IsSCP())
-                {
-                    if (bedDef == ThingDefOf_SCP.Containment_Zone_Small || bedDef == ThingDefOf_SCP.Containment_Zone_Medium || bedDef == ThingDefOf_SCP.Containment_Zone_Large)
-                        __result = true;
-                    else
-                        __result = false;
-                }
-                else if (bedDef == ThingDefOf_SCP.Containment_Zone_Small || bedDef == ThingDefOf_SCP.Containment_Zone_Medium || bedDef == ThingDefOf_SCP.Containment_Zone_Large)
-                {
-                    __result = false;
-                }
+                Pawn pawn;
+                
             }
-        }
-        public static bool IsValidBedEverPostfix(Thing bedThing, Pawn sleeper)
-        {
-            if (sleeper.IsSCP() && bedThing.GetRoom().Role != SCP_Startup.containmentRoom)
-                return false;
-            return true;
+            return __result;
         }
 
+        //public static bool BedCellOffsets_Patch(List<IntVec3> offsets, IntVec2 size, int slot)
+        //{
+        //    if (size.z < 2)
+        //        return true;
+        //    bool rightEdge = slot == 0;
+        //    bool leftEdge = slot == BedUtility.GetSleepingSlotsCount(size) - 1;
+        //    BedInteractionCellSearchPattern.BedCellOffsets2xN(offsets, rightEdge, leftEdge);
+        //    return false;
+        //}
+        //public static void CanUseBedEverPostfix(ref bool __result, Pawn p, ThingDef bedDef)
+        //{
+        //    if (__result)
+        //    {
+        //        if (p.IsSCP())
+        //        {
+        //            if (bedDef == ThingDefOf_SCP.Containment_Zone_Small || bedDef == ThingDefOf_SCP.Containment_Zone_Medium || bedDef == ThingDefOf_SCP.Containment_Zone_Large)
+        //                __result = true;
+        //            else
+        //                __result = false;
+        //        }
+        //        else if (bedDef == ThingDefOf_SCP.Containment_Zone_Small || bedDef == ThingDefOf_SCP.Containment_Zone_Medium || bedDef == ThingDefOf_SCP.Containment_Zone_Large)
+        //        {
+        //            __result = false;
+        //        }
+        //    }
+        //}
+        //public static bool IsValidBedEverPostfix(Thing bedThing, Pawn sleeper)
+        //{
+        //    if (sleeper.IsSCP() && bedThing.GetRoom().Role != Foundation_Startup.containmentRoom)
+        //        return false;
+        //    return true;
+        //}
+
         [HarmonyPatch(typeof(TradeUtility), "AllSellableColonyPawns")]
-        class SellCapturedSCP_Patch
+        class SellCapturedFoundation_Patch
         {
             public static IEnumerable<Pawn> Postfix(IEnumerable<Pawn> values, Map map, bool checkAcceptableTemperatureOfAnimals)
             {

@@ -3,7 +3,7 @@
 
 	<!-- SCP-106 Corrosive Ooze -->
 	<HediffDef>
-		<defName>SCP_106_Ooze_Hediff</defName>
+		<defName>Foundation_106_Ooze_Hediff</defName>
 		<label>SCP-106 ooze</label>
 		<description>A black, mucus-like substance that has corrosive effects.</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -70,7 +70,7 @@
 
 	<!-- SCP-939 Amnesic Breath -->
 	<HediffDef ParentName="DiseaseBase">
-		<defName>SCP_939_Breath_Hediff</defName>
+		<defName>Foundation_939_Breath_Hediff</defName>
 		<label>SCP-939 breath</label>
 		<description>An amnesia-inducing substance exhaled from SCP-939.
 	\nNaturally recovers over time as the body filters it out.</description>
@@ -97,7 +97,7 @@
 	
 	<!-- SCP 2845 Aura -->
 	<HediffDef ParentName="DiseaseBase">
-		<defName>SCP_2845_Transmute_Hediff</defName>
+		<defName>Foundation_2845_Transmute_Hediff</defName>
 		<label>SCP-2845 Transmutation Aura</label>
 		<description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
 \nNaturally recovers over time as the body filters it out.</description>

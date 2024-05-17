@@ -93,7 +93,7 @@
 
 	<!-- ========== SCP-095-UA ========== -->
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>SCP_095_UA_Shmel</defName>
+		<defName>Foundation_095_UA_Shmel</defName>
 		<statBases>
 			<Mass>8</Mass>
 			<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
@@ -130,7 +130,7 @@
 
 	<!-- SCP 127 Teeth MP5 -->
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>SCP_127R</defName>
+		<defName>Foundation_127R</defName>
 		<statBases>
 			<WorkToMake>27500</WorkToMake>
 			<SightsEfficiency>1</SightsEfficiency>
@@ -164,7 +164,7 @@
 
 	<!-- SCP 1905 Rifle Dino Hunter-->
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>SCP_1905_Dino_Hunter</defName>
+		<defName>Foundation_1905_Dino_Hunter</defName>
 		<statBases>
 			<WorkToMake>27500</WorkToMake>
 			<SightsEfficiency>1</SightsEfficiency>
@@ -201,7 +201,7 @@
 
 	<!-- Lunch Gun -->
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>SCP_3118R</defName>
+		<defName>Foundation_3118R</defName>
 		<statBases>
 			<Mass>0.97</Mass>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
@@ -312,7 +312,7 @@
 	
 	<!-- Tranquilizer Dart Rifle -->
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>SCP_Gun_TranqRifle</defName>
+		<defName>Foundation_Gun_TranqRifle</defName>
 		<statBases>
 			<Mass>3</Mass>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>

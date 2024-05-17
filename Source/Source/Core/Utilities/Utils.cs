@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using Foundation.Containment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +8,7 @@ using System.Threading.Tasks;
 using Verse;
 using Verse.Noise;
 using System.Reflection;
+using Foundation.Containment;
 
 namespace Foundation.Utilities
 {
@@ -29,7 +29,7 @@ namespace Foundation.Utilities
         }
         public static bool IsCaptiveOf(this Pawn pawn)
         {
-            if (pawn.IsSCP() && pawn.GetRoom().Role == SCP_Startup.containmentRoom)
+            if (pawn.IsSCP() && pawn.GetRoom().Role == Foundation_Startup.containmentRoom)
                 return true;
             return false;
         }

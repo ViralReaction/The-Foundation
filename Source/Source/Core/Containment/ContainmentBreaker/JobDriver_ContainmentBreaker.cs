@@ -36,7 +36,7 @@ namespace Foundation.Containment
                     if (target.InMentalState)
                         return;
                     else
-                    target.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.SCP_BreachContainment, forceWake: true, transitionSilently: true);
+                    target.mindState.mentalStateHandler.TryStartMentalState(SCPDefOf.Foundation_BreachContainment, forceWake: true, transitionSilently: true);
                     this.pawn.MentalState.Notify_SlaughteredTarget();
 
                 }

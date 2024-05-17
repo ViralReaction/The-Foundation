@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="MechSerumBase">
-		<defName>SCP_500_Panacea</defName>
+		<defName>Foundation_500_Panacea</defName>
 		<label>SCP-500 Panacea Pill</label>
 		<description>Item #: SCP-500
 Object Class: Safe
@@ -11,9 +11,9 @@ SCP-500 is a small red pill that when taken orally, effectively cures the subjec
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CSafe</li>
-					<li>SCP_DDark</li>
-					<li>SCP_RNotice</li>
+					<li>Foundation_CSafe</li>
+					<li>Foundation_DDark</li>
+					<li>Foundation_RNotice</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>
@@ -64,7 +64,7 @@ SCP-500 is a small red pill that when taken orally, effectively cures the subjec
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SCP_500_Panacea</li>
+						<li>Foundation_500_Panacea</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -72,7 +72,7 @@ SCP-500 is a small red pill that when taken orally, effectively cures the subjec
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SCP_500_Panacea</li>
+				<li>Foundation_500_Panacea</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>

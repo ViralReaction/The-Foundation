@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnomalyBase">
-		<defName>SCP_5893R</defName>
+		<defName>Foundation_5893R</defName>
 		<label>SCP-5893</label>
 		<description>Item #: SCP-5893
 Object Class: Euclid
@@ -11,9 +11,9 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CEuclid</li>
-					<li>SCP_DKeneq</li>
-					<li>SCP_RDanger</li>
+					<li>Foundation_CEuclid</li>
+					<li>Foundation_DKeneq</li>
+					<li>Foundation_RDanger</li>
 				</classRating>
 				<containmentTier>1</containmentTier>
 				<hatesRoofs>true</hatesRoofs>
@@ -42,7 +42,7 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 				<heatPushMaxTemperature>38</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>SCP_5893_Egg</eggFertilizedDef>
+				<eggFertilizedDef>Foundation_5893_Egg</eggFertilizedDef>
 				<eggFertilizationCountMax>4</eggFertilizationCountMax>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -53,7 +53,7 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 			<deathAction>
 				<workerClass>DeathActionWorker_BigExplosion</workerClass>
 			</deathAction>
-			<body>SCP_BipedalQuad</body>
+			<body>Foundation_BipedalQuad</body>
 			<predator>false</predator>
 			<baseBodySize>1.2</baseBodySize>
 			<baseHungerRate>0.325</baseHungerRate>
@@ -112,7 +112,7 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
-					<li>SCP_Flame</li>
+					<li>Foundation_Flame</li>
 				</capacities>
 				<power>12</power>
 				<cooldownTime>2</cooldownTime>
@@ -122,7 +122,7 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 				<label>teeth</label>
 				<capacities>
 					<li>Bite</li>
-					<li>SCP_Flame</li>
+					<li>Foundation_Flame</li>
 				</capacities>
 				<power>6</power>
 				<cooldownTime>1.5</cooldownTime>
@@ -134,9 +134,9 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_5893R</defName>
+		<defName>Foundation_5893R</defName>
 		<label>SCP-5893</label>
-		<race>SCP_5893R</race>
+		<race>Foundation_5893R</race>
 		<combatPower>100</combatPower>
 		<wildGroupSize>4~8</wildGroupSize>
 		<ecoSystemWeight>1.1</ecoSystemWeight>

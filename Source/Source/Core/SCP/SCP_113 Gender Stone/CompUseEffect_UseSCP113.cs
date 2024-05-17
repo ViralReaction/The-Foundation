@@ -47,7 +47,7 @@ namespace Foundation
             if (usedBy.gender != 0)
             {
                 Messages.Message((string)("SCP113".Translate() + label), MessageTypeDefOf.PositiveEvent);
-                Thought_Memory newThought = (Thought_Memory)ThoughtMaker.MakeThought(SCPDefOf.SCP_113_BadThought);
+                Thought_Memory newThought = (Thought_Memory)ThoughtMaker.MakeThought(SCPDefOf.Foundation_113_BadThought);
                 usedBy.needs.mood.thoughts.memories.TryGainMemory(newThought);
             }
             else

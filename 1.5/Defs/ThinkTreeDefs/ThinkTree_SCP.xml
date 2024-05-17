@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThinkTreeDef>
-		<defName>SCP_AI</defName>
+		<defName>Foundation_AI</defName>
 		<thinkRoot Class="ThinkNode_Priority">
 			<subNodes>
 				<!-- Keep lying down if we have to -->
@@ -26,6 +26,13 @@
 				</li>
 				<li Class="ThinkNode_Subtree">
 					<treeDef>MentalStateCritical</treeDef>
+				</li>
+				
+				<!-- Escaping-->
+				<li Class="ThinkNodeConditional_EscapingHoldingPlatform">
+				  <subNodes>
+					<li Class="JobGiver_EscapingHoldingPlatform" />
+				  </subNodes>
 				</li>
         
 				<!-- React to close melee threat -->

@@ -13,12 +13,12 @@ namespace Foundation
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(SCPDefOf.SCP_2845_Transmute_Hediff);
+            Hediff firstHediffOfDef = p.health.hediffSet.GetFirstHediffOfDef(SCPDefOf.Foundation_2845_Transmute_Hediff);
             if (firstHediffOfDef == null || firstHediffOfDef.FullyImmune())
                 return (ThoughtState)false;
             if ((double)firstHediffOfDef.Severity >= 0.8)
             {
-                PawnKindDef kindDef = PawnKindDefOf_SCP.SCP_28451R;
+                PawnKindDef kindDef = PawnKindDefOf_SCP.Foundation_28451R;
                 IntVec3 result;
                 CellFinder.TryFindRandomSpawnCellForPawnNear(p.Position, p.Map, out result);
                 IntVec3 loc = CellFinder.RandomClosewalkCellNear(result, p.Map, 10);

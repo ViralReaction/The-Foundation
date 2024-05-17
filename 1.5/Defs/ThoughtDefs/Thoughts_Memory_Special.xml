@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>SCP_113_BadThought</defName>
+		<defName>Foundation_113_BadThought</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
 		<durationDays>15</durationDays>
@@ -16,7 +16,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_Infected_SCP939</defName>
+		<defName>Foundation_Infected_SCP939</defName>
 		<workerClass>Foundation.ThoughtWorker_SCP939</workerClass>
 		<stages>
 			<li>
@@ -28,7 +28,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_AteSCP2022</defName>
+		<defName>Foundation_AteSCP2022</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
 		<hediff>SCP2022High</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -42,7 +42,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_TransmuteTime</defName>
+		<defName>Foundation_TransmuteTime</defName>
 		<workerClass>Foundation.ThoughtWorker_SCP2845</workerClass>
 		<stages>
 			<li>

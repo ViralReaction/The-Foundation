@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <KnowledgeCategoryDef>
+    <defName>SCP</defName>
+    <label>SCP</label>
+    <color>(1, 1, 1, 1)</color>
+    <texPath>UI/AnomalyResearchCategoryMarkers/AnomalyResearchCategory_Basic</texPath>
+  </KnowledgeCategoryDef>
+
+</Defs>

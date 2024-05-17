@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnomalyBase">
-		<defName>SCP_2845_Deer</defName>
+		<defName>Foundation_2845_Deer</defName>
 		<label>The Deer</label>
 		<description>Item #: SCP-2845
 Object Class: Keter
@@ -13,9 +13,9 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CKeter</li>
-					<li>SCP_DKeneq</li>
-					<li>SCP_RDanger</li>
+					<li>Foundation_CKeter</li>
+					<li>Foundation_DKeneq</li>
+					<li>Foundation_RDanger</li>
 				</classRating>
 				<containmentTier>2</containmentTier>
 				<willManhuntAfterBreach>true</willManhuntAfterBreach>
@@ -117,22 +117,22 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 		</tools>
 		<comps>
 			<li Class="Foundation.Comps.CompProperties_GiveHediffSeverity">
-				<hediff>SCP_2845_Transmute_Hediff</hediff>
+				<hediff>Foundation_2845_Transmute_Hediff</hediff>
 				<range>10</range>
 				<severityTick>0.1</severityTick>
 				<tickInterval>600</tickInterval>
 				<defNamesImmune>
-					<li>SCP_2845_Deer</li>
-					<li>SCP_28451R</li>
+					<li>Foundation_2845_Deer</li>
+					<li>Foundation_28451R</li>
 				</defNamesImmune>
 			</li>
 		</comps>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_2845_Deer</defName>
+		<defName>Foundation_2845_Deer</defName>
 		<label>The Deer</label>
-		<race>SCP_2845_Deer</race>
+		<race>Foundation_2845_Deer</race>
 		<combatPower>1100</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
@@ -155,7 +155,7 @@ SCP-2845 is capable of instantaneous transmutation and reconstruction of matter,
 
 	<!-- SCP-2845-1 -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>SCP_28451R</defName>
+		<defName>Foundation_28451R</defName>
 		<label>SCP-2845-1</label>
 		<description>Item #: SCP-2845-1
 Object Class: Euclid
@@ -166,9 +166,9 @@ SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CEuclid</li>
-					<li>SCP_DKeneq</li>
-					<li>SCP_RNotice</li>
+					<li>Foundation_CEuclid</li>
+					<li>Foundation_DKeneq</li>
+					<li>Foundation_RNotice</li>
 				</classRating>
 				<containmentTier>2</containmentTier>
 				<willManhuntAfterBreach>true</willManhuntAfterBreach>
@@ -190,8 +190,8 @@ SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown
 		</butcherProducts>
 		<uiIconScale>1.6</uiIconScale>
 		<race>
-			<thinkTreeMain>SCP_AI</thinkTreeMain>
-			<body>SCP_PillarBod</body>
+			<thinkTreeMain>Foundation_AI</thinkTreeMain>
+			<body>Foundation_PillarBod</body>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHungerRate>0</baseHungerRate>
@@ -232,9 +232,9 @@ SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_28451R</defName>
+		<defName>Foundation_28451R</defName>
 		<label>SCP-2845-1</label>
-		<race>SCP_28451R</race>
+		<race>Foundation_28451R</race>
 		<combatPower>200</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>SCP_Anomaly_Reverence_Opinion</defName>
+		<defName>Foundation_Anomaly_Reverence_Opinion</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
 		<workerClass>Foundation.ThoughtWorker_Precept_SCP_Social</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -15,9 +15,9 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_Anomaly_Reverence_AnomalyInColony</defName>
+		<defName>Foundation_Anomaly_Reverence_AnomalyInColony</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>Foundation.ThoughtWorker_Precept_SCP_InColony</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_AnomalyInColony</workerClass>
 		<minExpectationForNegativeThought>Low</minExpectationForNegativeThought>
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
@@ -55,9 +55,9 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_Anomaly_Despised_Opinion</defName>
+		<defName>Foundation_Anomaly_Despised_Opinion</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>Foundation.ThoughtWorker_Precept_SCP_Social</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_Social_Anomaly</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -68,7 +68,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_AnomalyDied_Despised</defName>
+		<defName>Foundation_AnomalyDied_Despised</defName>
 		<thoughtClass>Thought_Memory</thoughtClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<durationDays>10</durationDays>
@@ -82,9 +82,9 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_AnomalySelfHatred_Despised</defName>
+		<defName>Foundation_AnomalySelfHatred_Despised</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>Foundation.ThoughtWorker_Precept_SCP</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_Anomaly</workerClass>
 		<stages>
 			<li>
 				<label>anomaly self hatred</label>
@@ -95,9 +95,9 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_AnomalyColonist_Despised</defName>
+		<defName>Foundation_AnomalyColonist_Despised</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>Foundation.ThoughtWorker_Precept_SCP_Present</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_AnomalyPresent</workerClass>
 		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
 		<stages>
 			<li>

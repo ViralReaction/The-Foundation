@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnomalyBase">
-		<defName>SCP_3199R</defName>
+		<defName>Foundation_3199R</defName>
 		<label>Human Refuted</label>
 		<description>Item #: SCP-3199
 Object Class: Keter
@@ -15,9 +15,9 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CKeter</li>
-					<li>SCP_DKeneq</li>
-					<li>SCP_RNotice</li>
+					<li>Foundation_CKeter</li>
+					<li>Foundation_DKeneq</li>
+					<li>Foundation_RNotice</li>
 				</classRating>
 				<containmentTier>2</containmentTier>
 				<willManhuntAfterBreach>true</willManhuntAfterBreach>
@@ -35,8 +35,8 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 		</tradeTags>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>SCP_3199_Egg</eggUnfertilizedDef>
-				<eggFertilizedDef>SCP_3199_Egg</eggFertilizedDef>
+				<eggUnfertilizedDef>Foundation_3199_Egg</eggUnfertilizedDef>
+				<eggFertilizedDef>Foundation_3199_Egg</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1.5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
@@ -47,7 +47,7 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 			<deathAction>
 				<workerClass>Foundation.DeathActionWorker_SCP3199_SpawnEgg</workerClass>
 			</deathAction>
-			<body>SCP_Neck</body>
+			<body>Foundation_Neck</body>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<needsRest>false</needsRest>
@@ -56,7 +56,7 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 			<baseHealthScale>1.8</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<leatherDef>Leather_Patch</leatherDef>
-			<specificMeatDef>SCP_3199_Meat</specificMeatDef>
+			<specificMeatDef>Foundation_3199_Meat</specificMeatDef>
 			<wildness>0.9</wildness>
 			<trainability>None</trainability>
 			<gestationPeriodDays>10</gestationPeriodDays>
@@ -115,9 +115,9 @@ SCP-3199 are opportunistic hunters, engaging with live subjects within a current
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_3199R</defName>
+		<defName>Foundation_3199R</defName>
 		<label>SCP-3199</label>
-		<race>SCP_3199R</race>
+		<race>Foundation_3199R</race>
 		<combatPower>200</combatPower>
 		<lifeStages>
 			<li>

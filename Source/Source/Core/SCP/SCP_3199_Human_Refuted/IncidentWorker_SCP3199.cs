@@ -14,7 +14,7 @@ namespace Foundation
         //protected override bool TryExecuteWorker(IncidentParms parms)
         //{
         //    Map target = (Map)parms.target;
-        //    PawnKindDef animalKind = PawnKindDefOf_SCP.SCP_3199R;
+        //    PawnKindDef animalKind = PawnKindDefOf_SCP.Foundation_3199R;
         //    IntVec3 result = parms.spawnCenter;
         //    if (!result.IsValid && !RCellFinder.TryFindRandomPawnEntryCell(out result, target, CellFinder.EdgeRoadChance_Animal))
         //        return false;
@@ -38,7 +38,7 @@ namespace Foundation
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map target = (Map)parms.target;
-            PawnKindDef animalKind = PawnKindDefOf_SCP.SCP_3199R;
+            PawnKindDef animalKind = PawnKindDefOf_SCP.Foundation_3199R;
             if (animalKind == null && !AggressiveAnimalIncidentUtility.TryFindAggressiveAnimalKind(parms.points, target, out animalKind) || AggressiveAnimalIncidentUtility.GetAnimalsCount(animalKind, parms.points) == 0)
                 return false;
             IntVec3 result = parms.spawnCenter;

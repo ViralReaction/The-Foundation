@@ -12,11 +12,11 @@ using Verse;
 
 namespace Foundation.Containment
 {
-    public class ITab_SCP_Needs : ITab
+    public class ITab_Foundation_Needs : ITab
     {
-#pragma warning disable CS0414 // The field 'ITab_SCP_Needs.thoughtScrollPosition' is assigned but its value is never used
+#pragma warning disable CS0414 // The field 'ITab_Foundation_Needs.thoughtScrollPosition' is assigned but its value is never used
         private Vector2 thoughtScrollPosition;
-#pragma warning restore CS0414 // The field 'ITab_SCP_Needs.thoughtScrollPosition' is assigned but its value is never used
+#pragma warning restore CS0414 // The field 'ITab_Foundation_Needs.thoughtScrollPosition' is assigned but its value is never used
 
         public override bool IsVisible
         {
@@ -28,7 +28,7 @@ namespace Foundation.Containment
             }
         }
 
-        public ITab_SCP_Needs()
+        public ITab_Foundation_Needs()
         {
             this.labelKey = "TabSCPNeeds";
             this.tutorTag = "SCPContainment";

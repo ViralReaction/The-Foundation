@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Jrwu9UXOc2rBW83gjx5Ekb1CSHwptOspbfAU1N9AYVRi7ZS/SLU4WIaAOthgGY5zTrIuPeLrfhb5rgkjkMU4BA==",
+  "dgSpecHash": "6dp5Sehx9/1qsMS4Zz0I+wM2G8dVqDtiy5jRwm90/ogbPhuLvIhGukClu5C1OA/nWAiqp7lhLAJasryo3VTceQ==",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\The-Foundation\\Source\\Source\\Foundation.csproj",
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SCP\\Source\\Source\\Foundation.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Enurta\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512"
+    "C:\\Users\\fake1\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512",
+    "C:\\Users\\fake1\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4063\\krafs.rimworld.ref.1.5.4063.nupkg.sha512"
   ],
   "logs": []
 }

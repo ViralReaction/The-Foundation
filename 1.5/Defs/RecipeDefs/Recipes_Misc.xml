@@ -29,7 +29,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SCP_3199_Egg_Ruined</li>
+				<li>Foundation_3199_Egg_Ruined</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>
@@ -50,7 +50,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SCP_113_Stone</li>
+						<li>Foundation_113_Stone</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -58,7 +58,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SCP_113_Stone</li>
+				<li>Foundation_113_Stone</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>
@@ -79,7 +79,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SCP_578_Bloodstone_Maker</li>
+						<li>Foundation_578_Bloodstone_Maker</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -87,7 +87,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SCP_578_Bloodstone_Maker</li>
+				<li>Foundation_578_Bloodstone_Maker</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>

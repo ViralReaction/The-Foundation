@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnomalyBase">
-		<defName>SCP_2584_Snake</defName>
+		<defName>Foundation_2584_Snake</defName>
 		<label>Loop Snake</label>
 		<description>Item #: SCP-2584
 Object Class: Safe
@@ -12,9 +12,9 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CSafe</li>
-					<li>SCP_DDark</li>
-					<li>SCP_RNotice</li>
+					<li>Foundation_CSafe</li>
+					<li>Foundation_DDark</li>
+					<li>Foundation_RNotice</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>
@@ -48,7 +48,7 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 				<customString>Binary Fission in: </customString>
 				<isGreenGoo>true</isGreenGoo>
 				<GreenGooLimit>15</GreenGooLimit>
-				<GreenGooTarget>SCP_2584_Snake</GreenGooTarget>
+				<GreenGooTarget>Foundation_2584_Snake</GreenGooTarget>
 			</li>		
 		</comps>
 		<race>
@@ -105,9 +105,9 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_2584_Snake</defName>
+		<defName>Foundation_2584_Snake</defName>
 		<label>SCP-2584</label>
-		<race>SCP_2584_Snake</race>
+		<race>Foundation_2584_Snake</race>
 		<combatPower>25</combatPower>
 		<ecoSystemWeight>0.01</ecoSystemWeight>
 		<lifeStages>

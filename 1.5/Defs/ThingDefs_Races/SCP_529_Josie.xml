@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="AnomalyBase">
-		<defName>SCP_529_Josie</defName>
+		<defName>Foundation_529_Josie</defName>
 		<label>Cat</label>
 		<description>Item #: SCP-529
 Object Class: Safe
@@ -13,9 +13,9 @@ In spite of this, the animal has no health problems, and moves about as if its h
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CSafe</li>
-					<li>SCP_DDark</li>
-					<li>SCP_RNotice</li>
+					<li>Foundation_CSafe</li>
+					<li>Foundation_DDark</li>
+					<li>Foundation_RNotice</li>
 				</classRating>
 				<isUniqueSCP>true</isUniqueSCP>
 				<containmentTier>0</containmentTier>
@@ -31,7 +31,7 @@ In spite of this, the animal has no health problems, and moves about as if its h
 			<li>SCP</li>
 		</tradeTags>
 		<race>
-			<body>SCP_BipedalQuad</body>
+			<body>Foundation_BipedalQuad</body>
 			<predator>true</predator>
 			<baseBodySize>0.30</baseBodySize>
 			<maxPreyBodySize>0.25</maxPreyBodySize>
@@ -162,9 +162,9 @@ In spite of this, the animal has no health problems, and moves about as if its h
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>SCP_529_Josie</defName>
+		<defName>Foundation_529_Josie</defName>
 		<label>SCP-529</label>
-		<race>SCP_529_Josie</race>
+		<race>Foundation_529_Josie</race>
 		<combatPower>35</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>

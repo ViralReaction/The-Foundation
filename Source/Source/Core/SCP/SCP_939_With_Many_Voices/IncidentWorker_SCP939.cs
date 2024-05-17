@@ -32,8 +32,8 @@ namespace Foundation
         {
             this.ResolveArrivalPoints(parms);
             Map target = (Map)parms.target;
-            //PawnKindDef scp939PawnkindDef = PawnKindDefOf_SCP.SCP_939_Incident;
-            int num = Mathf.Clamp(GenMath.RoundRandom(parms.points / PawnKindDefOf_SCP.SCP_939_Incident.combatPower), 1, Rand.RangeInclusive(2, 20));
+            //PawnKindDef scp939PawnkindDef = PawnKindDefOf_SCP.Foundation_939_Incident;
+            int num = Mathf.Clamp(GenMath.RoundRandom(parms.points / PawnKindDefOf_SCP.Foundation_ManyVoices_Incident.combatPower), 1, Rand.RangeInclusive(2, 20));
             GameCondition_SCP939 cond = (GameCondition_SCP939)GameConditionMaker.MakeCondition(this.def.gameCondition, Mathf.RoundToInt(this.def.durationDays.RandomInRange * 60000f));
             cond.scp939Count = num;
             parms.target.GameConditionManager.RegisterCondition((GameCondition)cond);

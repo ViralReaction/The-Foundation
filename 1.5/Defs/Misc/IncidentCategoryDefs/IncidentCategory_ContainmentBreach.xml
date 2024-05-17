@@ -2,7 +2,7 @@
 <Defs>
 
 	<IncidentCategoryDef>
-		<defName>SCP_Threat</defName>
+		<defName>Foundation_Threat</defName>
 		<needsParmsPoints>true</needsParmsPoints>
 		<tale>MajorThreat</tale>
 	</IncidentCategoryDef>

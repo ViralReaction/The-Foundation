@@ -11,28 +11,17 @@ namespace Foundation.Utilities
     [DefOf]
     public static class PawnKindDefOf_SCP
     {
-        public static PawnKindDef SCP_096_Shy_Guy;
-        public static PawnKindDef SCP_131_Eye_Pod;
-        public static PawnKindDef SCP_610A;
-        public static PawnKindDef SCP_610B;
-        public static PawnKindDef SCP_682_Reptile;
-        public static PawnKindDef SCP_939_Normal;
-        public static PawnKindDef SCP_939_Incident;
-        public static PawnKindDef SCP_19051R;
-        public static PawnKindDef SCP_2845_Deer;
-        public static PawnKindDef SCP_28451R;
-        public static PawnKindDef SCP_1797A_Kitten;
-        public static PawnKindDef SCP_3199R;
-        public static PawnKindDef SCP_111_Slimybellie;
-        public static PawnKindDef SCP_111_Oozedrake;
-        public static PawnKindDef SCP_111_Goowyvern;
-        public static PawnKindDef SCP_111_Blobworm;
-        public static PawnKindDef SCP_111_Glowdrake;
-        public static PawnKindDef SCP_111_Gunkwyvern;
-        public static PawnKindDef SCP_5893R;
-        public static PawnKindDef SCP_2584_Snake;
-        public static PawnKindDef SCP_529_Josie;
-        public static PawnKindDef SCP_5185R;
+        public static PawnKindDef Foundation_ShyGuy;
+        public static PawnKindDef Foundation_682_Reptile;
+        public static PawnKindDef Foundation_ManyVoices_Normal;
+        public static PawnKindDef Foundation_ManyVoices_Incident;
+        public static PawnKindDef Foundation_2845_Deer;
+        public static PawnKindDef Foundation_28451R;
+        public static PawnKindDef Foundation_3199R;
+        public static PawnKindDef Foundation_5893R;
+        public static PawnKindDef Foundation_2584_Snake;
+        public static PawnKindDef Foundation_529_Josie;
+        public static PawnKindDef Foundation_5185R;
         public static PawnKindDef Rat;
         public static PawnKindDef Boomrat;
         public static PawnKindDef Cobra;

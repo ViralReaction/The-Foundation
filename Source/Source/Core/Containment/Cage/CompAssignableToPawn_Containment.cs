@@ -31,7 +31,7 @@ namespace Foundation.Containment
             parent.NotifyRoomAssignedPawnsChanged();
             this.uninstalledAssignedPawns.Remove(pawn);
         }
-        protected override string GetAssignmentGizmoLabel() => "SCP_AssignSCP".Translate();
-        protected override string GetAssignmentGizmoDesc() => "SCP_AssignSCPDesc".Translate();
+        protected override string GetAssignmentGizmoLabel() => "Foundation_AssignSCP".Translate();
+        protected override string GetAssignmentGizmoDesc() => "Foundation_AssignSCPDesc".Translate();
     }
 }

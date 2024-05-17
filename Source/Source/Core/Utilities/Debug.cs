@@ -1,5 +1,4 @@
-﻿using Foundation.Containment;
-using RimWorld;
+﻿using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +11,7 @@ using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Foundation.Containment;
 
 namespace Foundation.Utilities
 {

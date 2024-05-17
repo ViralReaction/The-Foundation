@@ -16,7 +16,7 @@ namespace Foundation.SRA
         static HarmonyPatch_PsychicSuppression() => new Harmony("SCP.psychic.suppress").PatchAll(Assembly.GetExecutingAssembly());
 
         [HarmonyPatch(typeof(StatWorker), "GetValueUnfinalized")]
-        public static class SCP_StatValuePatch
+        public static class Foundation_StatValuePatch
         {
 
             public static float Postfix(float __result, StatRequest req, StatDef ___stat)

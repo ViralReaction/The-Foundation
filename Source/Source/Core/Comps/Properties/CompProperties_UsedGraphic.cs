@@ -8,7 +8,7 @@ using Verse;
 
 namespace Foundation.Comps
 {
-    // Created due to how CompEmptyGraphics works. Checks opposite of CompEmpty, so SCP_1695 can work nicely
+    // Created due to how CompEmptyGraphics works. Checks opposite of CompEmpty, so Foundation_1695 can work nicely
     internal class CompProperties_UsedGraphic : CompProperties
     {
         public GraphicData graphicData;

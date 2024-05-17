@@ -14,9 +14,9 @@ Overuse of the supplements increase this sensation, with the test group experien
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CSafe</li>
-					<li>SCP_DDark</li>
-					<li>SCP_RCaution</li>
+					<li>Foundation_CSafe</li>
+					<li>Foundation_DDark</li>
+					<li>Foundation_RCaution</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>

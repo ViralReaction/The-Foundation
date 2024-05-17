@@ -2,7 +2,7 @@
 <Defs>
 
 	<CombatExtended.BodyShapeDef>
-		<defName>SCP_Snail</defName>
+		<defName>Foundation_Snail</defName>
 		<width>0.5</width>
 		<widthLaying>0.5</widthLaying>
 		<height>0.125</height>
@@ -10,7 +10,7 @@
 	</CombatExtended.BodyShapeDef>
 	
 	<CombatExtended.BodyShapeDef>
-		<defName>SCP_RoundShort</defName>
+		<defName>Foundation_RoundShort</defName>
 		<width>0.5</width>
 		<widthLaying>0.5</widthLaying>
 		<height>0.5</height>

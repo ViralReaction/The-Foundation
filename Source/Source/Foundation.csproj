@@ -34,34 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Biotech\FileName.cs" />
     <Compile Include="Core\Comps\CompGiveHediff.cs" />
     <Compile Include="Core\Comps\Properties\CompProperties_ShyGuy.cs" />
     <Compile Include="Core\Comps\CompUsedGraphic.cs" />
@@ -75,7 +47,6 @@
     <Compile Include="Core\Comps\Properties\CompProperties_UsedGraphic.cs" />
     <Compile Include="Core\Containment\Cage\CompAssignableToPawn_Containment.cs" />
     <Compile Include="Core\Containment\Cage\Extension.cs" />
-    <Compile Include="Core\Containment\Cage\Harmony_Cage.cs" />
     <Compile Include="Core\Containment\ContainmentBreaker\ContainmentbreakerMentalStateUtility.cs" />
     <Compile Include="Core\Containment\ContainmentBreaker\JobDriver_ContainmentBreaker.cs" />
     <Compile Include="Core\Containment\ContainmentBreaker\JobGiver_ContainmentBreaker.cs" />
@@ -90,9 +61,6 @@
     <Compile Include="Core\Containment\ThinkNode_ContaintmentBreach.cs" />
     <Compile Include="Core\Containment\WorkGiver.cs" />
     <Compile Include="Core\Harmony Patches\SCPHarmony_Patches.cs" />
-    <Compile Include="Core\MapComponent.cs" />
-    <Compile Include="Core\Projectiles\Projectile_DinoHunter.cs" />
-    <Compile Include="Core\Projectiles\Projectile_LunchGun.cs" />
     <Compile Include="Core\Psychic Suppresion\Bulding_PsychicSuppressionField.cs" />
     <Compile Include="Core\Psychic Suppresion\CompProperties_PsychicSuppressionField.cs" />
     <Compile Include="Core\Psychic Suppresion\CompPsychicSuppress.cs" />
@@ -106,33 +74,15 @@
     <Compile Include="Core\SCP\SCP_106_Old_Man\Comp_OldMan.cs" />
     <Compile Include="Core\SCP\SCP_106_Old_Man\CompProperties_OldMan.cs" />
     <Compile Include="Core\SCP\SCP_113 Gender Stone\CompUseEffect_UseSCP113.cs" />
-    <Compile Include="Core\SCP\SCP_131_Eye_Pod\IncidentWorker_SCP131.cs" />
-    <Compile Include="Core\SCP\SCP_1577_Flare_Gun\CompUseEffect_UseSCP1577.cs" />
-    <Compile Include="Core\SCP\SCP_1695_Worm_Machine\Building_SCP1695.cs" />
-    <Compile Include="Core\SCP\SCP_1792_Dragon_Box\CompCloudMaker.cs" />
-    <Compile Include="Core\SCP\SCP_1792_Dragon_Box\CompProperties_CloudMaker.cs" />
-    <Compile Include="Core\SCP\SCP_1797_Kitten_Flu\Hediff_KittenFlu.cs" />
-    <Compile Include="Core\SCP\SCP_1797_Kitten_Flu\ThoughtWorker_KittenFlu.cs" />
     <Compile Include="Core\SCP\SCP_2687_Plastic_Organs\Hediff_SCP2687.cs" />
-    <Compile Include="Core\SCP\SCP_2687_Plastic_Organs\Hediff_TranqDart.cs" />
     <Compile Include="Core\SCP\SCP_2845_Deer\IncidentWorker_2845.cs" />
     <Compile Include="Core\SCP\SCP_2845_Deer\ThoughtWorker_SCP2845.cs" />
-    <Compile Include="Core\SCP\SCP_3033_Mike\ThoughtWorker_SCP3033.cs" />
-    <Compile Include="Core\SCP\SCP_3033_Mike\ThoughtWorker_SCP3033MikeIdle.cs" />
     <Compile Include="Core\SCP\SCP_3199_Human_Refuted\DeathActionWOrker_SCP3199.cs" />
     <Compile Include="Core\SCP\SCP_3199_Human_Refuted\IncidentWorker_SCP3199.cs" />
     <Compile Include="Core\SCP\SCP_475_Pope_Soap\CompUseEffect_UseSCP475.cs" />
     <Compile Include="Core\SCP\SCP_500_Panacea\CompUseEffect_UseSCP500.cs" />
     <Compile Include="Core\SCP\SCP_529_Josie\IncidentWorker_SCP529_Josie.cs" />
     <Compile Include="Core\SCP\SCP_578 Bloodstone\CompUseEffect_UseSCP578.cs" />
-    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\BiomeWorker_SCP610.cs" />
-    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\CompProperties_FleshHiveSpawn.cs" />
-    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\CompProperties_TerrainChanger.cs" />
-    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Comp_FleshHiveSpawn.cs" />
-    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Comp_TerrainChanger.cs" />
-    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\Hediff_610_Infection.cs" />
-    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\IncidentWorker_SCP610_Hive.cs" />
-    <Compile Include="Core\SCP\SCP_610_Flesh_That_Hates\IncidentWorker_SCP610_Local.cs" />
     <Compile Include="Core\SCP\SCP_682_Reptile\IncidentWorker_SCP682.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompProperties_Voices.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompVoices.cs" />
@@ -145,10 +95,6 @@
     <Compile Include="Core\Utilities\SPExtended\SPTrig.cs" />
     <Compile Include="Core\Utilities\SPExtended\SPTuples.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\ThoughtWorker_939.cs" />
-    <Compile Include="Core\SCP\SCP_ES_019\CompUseEffect_UseSCPES019.cs" />
-    <Compile Include="Core\SCP\ThoughtWorkers\ThoughtWorker_EquippedKatana.cs" />
-    <Compile Include="Core\SCP\ThoughtWorkers\ThoughtWorker_LivingWeaponEquippedPsycho.cs" />
-    <Compile Include="Core\SCP\ThoughtWorkers\ThoughtWortker_LivingWeaponEquipped.cs" />
     <Compile Include="Core\Startup.cs" />
     <Compile Include="Core\Utilities\DefOf\PawnKindDefOf_SCP.cs" />
     <Compile Include="Core\Utilities\DefOf\SCPDefOf.cs" />
@@ -159,11 +105,6 @@
     <Compile Include="Gizmo_HumeShield.cs" />
     <Compile Include="Core\Comps\Properties\CompProperties_HumeShield.cs" />
     <Compile Include="Core\Comps\CompHumeShield.cs" />
-    <Compile Include="Ideology\Harmony.cs" />
-    <Compile Include="Ideology\ThoughtWorker_Precept_SCP.cs" />
-    <Compile Include="Ideology\ThoughtWorker_Precept_SCP_InColony.cs" />
-    <Compile Include="Ideology\ThoughtWorker_Precept_SCP_Present.cs" />
-    <Compile Include="Ideology\ThoughtWorker_Precept_SCP_Social.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Core\Utilities\Utils.cs" />
   </ItemGroup>
@@ -172,6 +113,9 @@
       <Version>2.2.1</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.5.4063</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +126,13 @@
   <ItemGroup>
     <Folder Include="bin\Release\" />
     <Folder Include="Core\Normal Stuff\" />
+    <Folder Include="Core\SCP\ThoughtWorkers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -27,7 +27,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>left fist</label>
 					<capacities>
-						<li>SCP_610_InfectingScratch</li>
+						<li>Foundation_610_InfectingScratch</li>
 					</capacities>
 					<power>2</power>
 					<cooldownTime>2</cooldownTime>
@@ -46,7 +46,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>left fist</label>
 					<capacities>
-						<li>SCP_610_InfectingScratch</li>
+						<li>Foundation_610_InfectingScratch</li>
 					</capacities>
 					<power>2</power>
 					<cooldownTime>2</cooldownTime>
@@ -65,7 +65,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>teeth</label>
 					<capacities>
-						<li>SCP_610_InfectingBite</li>
+						<li>Foundation_610_InfectingBite</li>
 					</capacities>
 					<power>4</power>
 					<cooldownTime>4</cooldownTime>
@@ -103,7 +103,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>left fist</label>
 					<capacities>
-						<li>SCP_610_InfectingScratch</li>
+						<li>Foundation_610_InfectingScratch</li>
 					</capacities>
 					<power>5</power>
 					<cooldownTime>2</cooldownTime>
@@ -122,7 +122,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>left fist</label>
 					<capacities>
-						<li>SCP_610_InfectingScratch</li>
+						<li>Foundation_610_InfectingScratch</li>
 					</capacities>
 					<power>5</power>
 					<cooldownTime>2</cooldownTime>
@@ -141,7 +141,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>teeth</label>
 					<capacities>
-						<li>SCP_610_InfectingBite</li>
+						<li>Foundation_610_InfectingBite</li>
 					</capacities>
 					<power>17</power>
 					<cooldownTime>4</cooldownTime>

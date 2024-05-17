@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="ResourceBase">
-		<defName>SCP_475_Soap</defName>
+		<defName>Foundation_475_Soap</defName>
 		<label>SCP-475 Pope Soap</label>
 		<description>Item #: SCP-475
 Object Class: Safe
@@ -11,9 +11,9 @@ SCP-475's secondary anomalous effects manifest when it is used on a professing m
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CSafe</li>
-					<li>SCP_DDark</li>
-					<li>SCP_RNotice</li>
+					<li>Foundation_CSafe</li>
+					<li>Foundation_DDark</li>
+					<li>Foundation_RNotice</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>

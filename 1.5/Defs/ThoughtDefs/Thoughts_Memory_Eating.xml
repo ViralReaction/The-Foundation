@@ -3,7 +3,7 @@
 
 	<!-- SCP-3199 -->
 	<ThoughtDef>
-		<defName>SCP_Ate3199MeatRaw</defName>
+		<defName>Foundation_Ate3199MeatRaw</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>1</durationDays>
@@ -20,7 +20,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_Ate3199MeatRawCannibal</defName>
+		<defName>Foundation_Ate3199MeatRawCannibal</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>1</durationDays>
@@ -37,7 +37,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_Ate3199MeatAsIngredient</defName>
+		<defName>Foundation_Ate3199MeatAsIngredient</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>1</durationDays>
@@ -54,7 +54,7 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>SCP_Ate3199MeatAsIngredientCannibal</defName>
+		<defName>Foundation_Ate3199MeatAsIngredientCannibal</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>1</durationDays>

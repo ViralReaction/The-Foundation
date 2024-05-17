@@ -15,7 +15,7 @@ namespace Foundation
         {
             if (corpse.Map == null)
                 return;
-            GenPlace.TryPlaceThing(ThingMaker.MakeThing(ThingDefOf_SCP.SCP_3199_Egg), corpse.Position, corpse.Map, ThingPlaceMode.Near);
+            GenPlace.TryPlaceThing(ThingMaker.MakeThing(ThingDefOf_SCP.Foundation_3199_Egg), corpse.Position, corpse.Map, ThingPlaceMode.Near);
         }
     }
 }

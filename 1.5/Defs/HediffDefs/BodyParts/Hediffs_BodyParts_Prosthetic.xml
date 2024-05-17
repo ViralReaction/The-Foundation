@@ -18,42 +18,42 @@
 
 	<!-- SCP 2687 Plastic Organs -->
 	<HediffDef ParentName="SCP_2687BBase">
-		<defName>SCP_2687B_Eye</defName>
+		<defName>Foundation_2687B_Eye</defName>
 		<label>Plastic Eye</label>
 		<description>An installed anomalous eye.</description>
 		<labelNoun>an anomalous eye</labelNoun>
 	</HediffDef>
 	
 	<HediffDef ParentName="SCP_2687BBase">
-		<defName>SCP_2687B_Heart</defName>
+		<defName>Foundation_2687B_Heart</defName>
 		<label>Plastic Heart</label>
 		<description>An installed anomalous Heart.</description>
 		<labelNoun>an anomalous Heart</labelNoun>
 	</HediffDef>
 	
 	<HediffDef ParentName="SCP_2687BBase">
-		<defName>SCP_2687B_Lung</defName>
+		<defName>Foundation_2687B_Lung</defName>
 		<label>Plastic Lung</label>
 		<description>An installed anomalous Lung.</description>
 		<labelNoun>an anomalous Lung</labelNoun>
 	</HediffDef>
 	
 	<HediffDef ParentName="SCP_2687BBase">
-		<defName>SCP_2687B_Stomach</defName>
+		<defName>Foundation_2687B_Stomach</defName>
 		<label>Plastic Stomach</label>
 		<description>An installed anomalous Stomach.</description>
 		<labelNoun>an anomalous Stomach</labelNoun>
 	</HediffDef>
 	
 	<HediffDef ParentName="SCP_2687BBase">
-		<defName>SCP_2687B_Kidney</defName>
+		<defName>Foundation_2687B_Kidney</defName>
 		<label>Plastic Kidney</label>
 		<description>An installed anomalous Kidney.</description>
 		<labelNoun>an anomalous Kidney</labelNoun>
 	</HediffDef>
 	
 	<HediffDef ParentName="SCP_2687BBase">
-		<defName>SCP_2687B_Liver</defName>
+		<defName>Foundation_2687B_Liver</defName>
 		<label>Plastic Liver</label>
 		<description>An installed anomalous liver.</description>
 		<labelNoun>an anomalous liver</labelNoun>

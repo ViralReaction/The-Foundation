@@ -5,7 +5,7 @@
 		<xpath>Defs/ThingDef[defName="SCP_131_Eye_Pod"]</xpath>
 		<value>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
-				<bodyShape>SCP_RoundShort</bodyShape>
+				<bodyShape>Foundation_RoundShort</bodyShape>
 			</li>
 		</value>
 	</Operation>

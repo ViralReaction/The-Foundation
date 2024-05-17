@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>SCP_113_Stone</defName>
+		<defName>Foundation_113_Stone</defName>
 		<label>SCP-113 Gender Stone</label>
 		<description>Item #: SCP-113
 Object Class: Safe
@@ -13,9 +13,9 @@ When SCP-113 comes in direct contact with the flesh of an organism possessing se
 		<modExtensions>
 			<li Class="Foundation.Containment.ContainmentExtension">
 				<classRating>
-					<li>SCP_CSafe</li>
-					<li>SCP_DDark</li>
-					<li>SCP_RNotice</li>
+					<li>Foundation_CSafe</li>
+					<li>Foundation_DDark</li>
+					<li>Foundation_RNotice</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>
