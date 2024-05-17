@@ -4,7 +4,7 @@
 	<ThoughtDef>
 		<defName>Foundation_Anomaly_Reverence_Opinion</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>Foundation.ThoughtWorker_Precept_SCP_Social</workerClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_Social_Anomaly</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
