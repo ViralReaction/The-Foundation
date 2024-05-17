@@ -105,6 +105,11 @@
     <Compile Include="Gizmo_HumeShield.cs" />
     <Compile Include="Core\Comps\Properties\CompProperties_HumeShield.cs" />
     <Compile Include="Core\Comps\CompHumeShield.cs" />
+    <Compile Include="Ideology\Harmony.cs" />
+    <Compile Include="Ideology\ThoughtWorker_Precept_Anomaly.cs" />
+    <Compile Include="Ideology\ThoughtWorker_Precept_AnomalyInColony.cs" />
+    <Compile Include="Ideology\ThoughtWorker_Precept_AnomalyPresent.cs" />
+    <Compile Include="Ideology\ThoughtWorker_Precept_Social_Anomaly.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Core\Utilities\Utils.cs" />
   </ItemGroup>
