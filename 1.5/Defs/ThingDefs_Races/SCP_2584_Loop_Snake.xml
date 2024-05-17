@@ -2,33 +2,22 @@
 <Defs>
 
 	<ThingDef ParentName="AnomalyBase">
-		<defName>Foundation_2584_Snake</defName>
+		<defName>Foundation_LoopSnake</defName>
 		<label>Loop Snake</label>
-		<description>Item #: SCP-2584
-Object Class: Safe
-			
-SCP-2584 has no head or tail as its body forms a continuous closed loop. Otherwise, SCP-2584’s tissue and anatomy is completely normal, save for its circular spine, circulatory system, and digestive tract.
-As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is unknown. The digestive tract of SCP-2584 cycles the same matter continuously, but is somehow able to gain metabolic energy with each cycle without expending any of the nutrients.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CSafe</li>
-					<li>Foundation_DDark</li>
-					<li>Foundation_RNotice</li>
-				</classRating>
-				<containmentTier>0</containmentTier>
-			</li>
-		</modExtensions>
+		<description>Item #: SCP-2584\n\nObject Class: Safe\n\nSCP-2584 has no head or tail as its body forms a continuous closed loop. Otherwise, SCP-2584’s tissue and anatomy is completely normal, save for its circular spine, circulatory system, and digestive tract.\n\nAs SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is unknown. The digestive tract of SCP-2584 cycles the same matter continuously, but is somehow able to gain metabolic energy with each cycle without expending any of the nutrients.</description>
+		<hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<MarketValue>150</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<MinimumContainmentStrength>80</MinimumContainmentStrength>
 		</statBases>
-		<tradeTags>
-			<li>SCP</li>
-		</tradeTags>
-		<uiIconScale>1.1</uiIconScale>
+		<uiIconPath>Things/Pawn/Animal/SCP2584/SCP2584_Silhouette</uiIconPath>
+		<tradeability>None</tradeability>
+		<hideStats>true</hideStats>
+		<onlyShowInspectString>true</onlyShowInspectString>
+		<hideMainDesc>true</hideMainDesc>
 		<tools>
 			<li>
 				<label>body</label>
@@ -43,6 +32,37 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 			</li>
 		</tools>
 		<comps>
+			<li Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+				<lookForTargetOnEscape>false</lookForTargetOnEscape>
+			</li>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.4, 0, 0.30)</offset>
+						<type>PlatformRestraint0</type>
+					  </li>
+					  <li>
+						<offset>(.4, 0, 0.30)</offset>
+						<type>PlatformRestraint1</type>
+					  </li>
+					  <li>
+						<offset>(.3, 0, -.5)</offset>
+						<type>PlatformRestraint2</type>
+					  </li>
+					  <li>
+						<offset>(-.3, 0, -.5)</offset>
+						<type>PlatformRestraint3</type>
+					  </li>
+				</points>
+			</li>
+			<li Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory>SCP</knowledgeCategory>
+				<anomalyKnowledge>3</anomalyKnowledge>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresHoldingPlatform>true</requiresHoldingPlatform>
+			</li>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="AnimalBehaviours.CompProperties_AsexualReproduction">
 				<reproductionIntervalDays>45</reproductionIntervalDays>
 				<customString>Binary Fission in: </customString>
@@ -52,6 +72,7 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 			</li>		
 		</comps>
 		<race>
+			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>Snake</body>
 			<predator>false</predator>
 			<baseBodySize>0.25</baseBodySize>
@@ -68,73 +89,32 @@ As SCP-2584 can neither eat nor breathe, the source of SCP-2584’s energy is un
 			<lifeExpectancy>20</lifeExpectancy>
 			<lifeStageAges>
 				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+					<def>EntityFullyFormed</def>
+					<soundCall>Pawn_Revenant_Call</soundCall>
+					<soundWounded>Pawn_Revenant_Wounded</soundWounded>
+					<soundDeath>Pawn_Revenant_Death</soundDeath>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-			<wildBiomes>
-				<AridShrubland>0.2</AridShrubland>
-				<BorealForest>0</BorealForest>
-				<ColdBog>0</ColdBog>
-				<TemperateForest>0.1</TemperateForest>
-				<TemperateSwamp>0.1</TemperateSwamp>
-				<TropicalRainforest>0.1</TropicalRainforest>
-				<TropicalSwamp>0.1</TropicalSwamp>
-				<IceSheet>0</IceSheet>
-				<SeaIce>0</SeaIce>
-				<Tundra>0</Tundra>
-				<Desert>0.2</Desert>
-				<ExtremeDesert>0.4</ExtremeDesert>
-			</wildBiomes>
+			<hediffGiverSets>
+				<li>AnomalyEntity</li>
+			</hediffGiverSets>
 		</race>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Foundation_2584_Snake</defName>
-		<label>SCP-2584</label>
-		<race>Foundation_2584_Snake</race>
+		<defName>Foundation_LoopSnake</defName>
+		<label>Loop Snake</label>
+		<race>Foundation_LoopSnake</race>
 		<combatPower>25</combatPower>
 		<ecoSystemWeight>0.01</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP2584/SCP2584</texPath>
-					<drawSize>0.8</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP2584/SCP2584</texPath>
-					<drawSize>0.8</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP2584/SCP2584</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>2.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>

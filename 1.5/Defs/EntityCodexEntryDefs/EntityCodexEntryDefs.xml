@@ -57,5 +57,19 @@
       <li>Foundation_ManyVoices</li>
     </linkedThings>
   </EntityCodexEntryDef>
+  
+  <EntityCodexEntryDef>
+    <defName>Foundation_LoopSnake</defName>
+    <label>SCP-2584 "Loop Snake"</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_LoopSnake</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP2584/SCP2584_south</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>0</orderInCategory>
+    <linkedThings>
+      <li>Foundation_LoopSnake</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
 
 </Defs>
