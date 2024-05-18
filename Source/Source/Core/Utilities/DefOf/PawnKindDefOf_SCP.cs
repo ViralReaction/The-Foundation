@@ -20,7 +20,6 @@ namespace Foundation.Utilities
         public static PawnKindDef Foundation_Refuted;
         public static PawnKindDef Foundation_5893R;
         public static PawnKindDef Foundation_529_Josie;
-        public static PawnKindDef Foundation_5185R;
         public static PawnKindDef Rat;
         public static PawnKindDef Boomrat;
         public static PawnKindDef Cobra;

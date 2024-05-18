@@ -4,13 +4,13 @@
   <!-- Basic -->
   <EntityCodexEntryDef>
     <defName>Foundation_ShyGuy</defName>
-    <label>SCP-096 "Shy Guy"</label>
+    <label>Shy Guy</label>
     <category>SCP</category>
     <useDescriptionFrom>Foundation_ShyGuy</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_096/SCP_096_cr_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
-    <orderInCategory>0</orderInCategory>
+    <orderInCategory>96</orderInCategory>
     <linkedThings>
       <li>Foundation_ShyGuy</li>
     </linkedThings>
@@ -18,13 +18,13 @@
   
   <EntityCodexEntryDef>
     <defName>Foundation_OldMan</defName>
-    <label>SCP-106 "Old Man"</label>
+    <label>Old Man</label>
     <category>SCP</category>
     <useDescriptionFrom>Foundation_OldMan</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_106/SCP_106_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
-    <orderInCategory>0</orderInCategory>
+    <orderInCategory>106</orderInCategory>
     <linkedThings>
       <li>Foundation_OldMan</li>
     </linkedThings>
@@ -32,13 +32,13 @@
   
   <EntityCodexEntryDef>
     <defName>Foundation_Allosaurus</defName>
-    <label>SCP-250 "Allosaurus"</label>
+    <label>Most of Allosaurus</label>
     <category>SCP</category>
     <useDescriptionFrom>Foundation_Allosaurus</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_250/SCP_250_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
-    <orderInCategory>0</orderInCategory>
+    <orderInCategory>250</orderInCategory>
     <linkedThings>
       <li>Foundation_Allosaurus</li>
     </linkedThings>
@@ -46,13 +46,13 @@
 
   <EntityCodexEntryDef>
     <defName>Foundation_ManyVoices</defName>
-    <label>SCP-939 "With Many Voices"</label>
+    <label>With Many Voices</label>
     <category>SCP</category>
     <useDescriptionFrom>Foundation_ManyVoices</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_939/SCP_939_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
-    <orderInCategory>0</orderInCategory>
+    <orderInCategory>939</orderInCategory>
     <linkedThings>
       <li>Foundation_ManyVoices</li>
     </linkedThings>
@@ -60,13 +60,13 @@
   
   <EntityCodexEntryDef>
     <defName>Foundation_LoopSnake</defName>
-    <label>SCP-2584 "Loop Snake"</label>
+    <label>Loop Snake</label>
     <category>SCP</category>
     <useDescriptionFrom>Foundation_LoopSnake</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP2584/SCP2584_south</uiIconPath>
     <startDiscovered>false</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
-    <orderInCategory>0</orderInCategory>
+    <orderInCategory>2584</orderInCategory>
     <linkedThings>
       <li>Foundation_LoopSnake</li>
     </linkedThings>
@@ -74,13 +74,13 @@
   
   <EntityCodexEntryDef>
     <defName>Foundation_Deer</defName>
-    <label>SCP-2845 "The Deer"</label>
+    <label>The Deer</label>
     <category>SCP</category>
     <useDescriptionFrom>Foundation_Deer</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP2845/SCP2845_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
-    <orderInCategory>0</orderInCategory>
+    <orderInCategory>2845</orderInCategory>
     <linkedThings>
       <li>Foundation_Deer</li>
     </linkedThings>
@@ -88,15 +88,29 @@
   
   <EntityCodexEntryDef>
     <defName>Foundation_Refuted</defName>
-    <label>SCP-3199 "Human Refuted"</label>
+    <label>Human Refuted</label>
     <category>SCP</category>
     <useDescriptionFrom>Foundation_Refuted</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_3199/SCP_3199_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
-    <orderInCategory>0</orderInCategory>
+    <orderInCategory>3199</orderInCategory>
     <linkedThings>
       <li>Foundation_Refuted</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+  
+  <EntityCodexEntryDef>
+    <defName>Foundation_DogSpider</defName>
+    <label>Doglike Spider</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_DogSpider</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP_5185/SCP_5185_east</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>5185</orderInCategory>
+    <linkedThings>
+      <li>Foundation_DogSpider</li>
     </linkedThings>
   </EntityCodexEntryDef>
 

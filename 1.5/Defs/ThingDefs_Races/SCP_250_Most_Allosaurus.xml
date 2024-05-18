@@ -13,7 +13,6 @@
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<ToxicResistance>1</ToxicResistance>
 			<MinimumContainmentStrength>80</MinimumContainmentStrength>
-			<StaggerDurationFactor>0</StaggerDurationFactor>
 		</statBases>
 		<uiIconPath>Things/Pawn/Animal/SCP_250/SCP_250_east</uiIconPath>
 		<tradeability>None</tradeability>

@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BaseInsect">
-		<defName>Foundation_5185R</defName>
+	<ThingDef ParentName="AnomalyBase">
+		<defName>Foundation_DogSpider</defName>
 		<label>Doglike Spider</label>
-		<description>Item #: SCP-5185
-Object Class: Safe
-			
-SCP-5185 are an unclassified subspecies of giant house spider. Each possesses the physical, psychological, and social needs of an average domesticated canine.Some SCP-5185 instances have been observed showing aggressive behaviour towards staff, charging at researchers while making high pitched noises similar to growling, biting the chain link fence, and lunging.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CSafe</li>
-					<li>Foundation_DDark</li>
-					<li>Foundation_RNotice</li>
-				</classRating>
-			</li>
-		</modExtensions>
+		<description>Item #: SCP-5185\n\nObject Class: Safe\n\nSCP-5185 are an unclassified subspecies of giant house spider. Each possesses the physical, psychological, and social needs of an average domesticated canine.Some SCP-5185 instances have been observed showing aggressive behaviour towards staff, charging at researchers while making high pitched noises similar to growling, biting the chain link fence, and lunging.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
@@ -24,11 +12,82 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>450</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
+			<MinimumContainmentStrength>80</MinimumContainmentStrength>
 		</statBases>
-		<tradeTags>
-			<li>SCP</li>
-		</tradeTags>
-		<uiIconScale>2</uiIconScale>
+		<uiIconPath>Things/Pawn/Animal/SCP_5185/SCP_5185_east_Silhouette</uiIconPath>
+		<tradeability>None</tradeability>
+		<hideStats>true</hideStats>
+		<onlyShowInspectString>true</onlyShowInspectString>
+		<hideMainDesc>true</hideMainDesc>
+		<comps>
+			<li Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+				<lookForTargetOnEscape>false</lookForTargetOnEscape>
+			</li>
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.4, 0, 0.30)</offset>
+						<type>PlatformRestraint0</type>
+					  </li>
+					  <li>
+						<offset>(.4, 0, 0.30)</offset>
+						<type>PlatformRestraint1</type>
+					  </li>
+					  <li>
+						<offset>(.3, 0, -.5)</offset>
+						<type>PlatformRestraint2</type>
+					  </li>
+					  <li>
+						<offset>(-.3, 0, -.5)</offset>
+						<type>PlatformRestraint3</type>
+					  </li>
+				</points>
+			</li>
+			<li Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<knowledgeCategory>SCP</knowledgeCategory>
+				<anomalyKnowledge>3</anomalyKnowledge>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresHoldingPlatform>true</requiresHoldingPlatform>
+			</li>
+		</comps>
+		<race>
+			<body>BeetleLike</body>
+			<baseBodySize>0.75</baseBodySize>
+			<baseHungerRate>0.4</baseHungerRate>
+			<baseHealthScale>1.0</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(3, 0.7)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>12</lifeExpectancy>
+			<wildness>0</wildness>
+			<trainability>Advanced</trainability>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
+			<lifeStageAges>
+				<li>
+					<def>EntityFullyFormed</def>
+					<soundCall>Pawn_Revenant_Call</soundCall>
+					<soundWounded>Pawn_Revenant_Wounded</soundWounded>
+					<soundDeath>Pawn_Revenant_Death</soundDeath>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<hediffGiverSets>
+				<li>AnomalyEntity</li>
+			</hediffGiverSets>
+		</race>
 		<tools>
 			<li>
 				<label>mandibles</label>
@@ -51,69 +110,12 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<race>
-			<body>BeetleLike</body>
-			<baseBodySize>0.75</baseBodySize>
-			<baseHungerRate>0.4</baseHungerRate>
-			<baseHealthScale>1.0</baseHealthScale>
-			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<useMeatFrom>Megaspider</useMeatFrom>
-			<gestationPeriodDays>10</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>12</lifeExpectancy>
-			<wildness>0</wildness>
-			<trainability>Advanced</trainability>
-			<nuzzleMtbHours>12</nuzzleMtbHours>
-			<wildBiomes>
-				<AridShrubland>0</AridShrubland>
-				<BorealForest>0</BorealForest>
-				<ColdBog>0</ColdBog>
-				<TemperateForest>0</TemperateForest>
-				<TemperateSwamp>0</TemperateSwamp>
-				<TropicalRainforest>0</TropicalRainforest>
-				<TropicalSwamp>0</TropicalSwamp>
-				<IceSheet>0</IceSheet>
-				<SeaIce>0</SeaIce>
-				<Tundra>0</Tundra>
-				<Desert>0</Desert>
-				<ExtremeDesert>0</ExtremeDesert>
-			</wildBiomes>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.25</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.4</minAge>
-					<soundWounded>Pawn_DogSmall_Injured</soundWounded>
-					<soundDeath>Pawn_DogSmall_Dead</soundDeath>
-					<soundCall>Pawn_DogSmall_Call</soundCall>
-					<soundAngry>Pawn_DogSmall_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Foundation_5185R</defName>
-		<label>SCP-5185</label>
-		<race>Foundation_5185R</race>
+		<defName>Foundation_DogSpider</defName>
+		<label>Doglike Spider</label>
+		<race>Foundation_DogSpider</race>
 		<combatPower>70</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
@@ -121,28 +123,7 @@ SCP-5185 are an unclassified subspecies of giant house spider. Each possesses th
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCP_5185/SCP_5185</texPath>
-					<drawSize>1</drawSize>
-					<!-- <color>(114,107,84)</color> -->
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5185/SCP_5185</texPath>
-					<drawSize>1.25</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-					<drawSize>1.25</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCP_5185/SCP_5185</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.3, 0.2)</volume>
 						<offset>(0,0,0)</offset>

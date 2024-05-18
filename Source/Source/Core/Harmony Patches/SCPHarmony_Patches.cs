@@ -36,9 +36,6 @@ namespace Foundation.HarmonyPatches
             harmony.Patch((MethodBase)AccessTools.Method(typeof(Pawn), "TickRare"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "TickMindstateLeaveDaylight"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(WorldPawns), "GetSituation"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SituationSCPEvent"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(ThingDef), "SpecialDisplayStats"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "StatDrawEntry_Patch"));
-            //harmony.Patch(AccessTools.Method(typeof(BedInteractionCellSearchPattern), "BedCellOffsets"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "BedCellOffsets_Patch"));
-            //harmony.Patch(AccessTools.Method(typeof(RestUtility), "CanUseBedEver"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "CanUseBedEverPostfix"));
-            //harmony.Patch(AccessTools.Method(typeof(RestUtility), "IsValidBedFor"), prefix: new HarmonyMethod(typeof(FoundationHarmony), "IsValidBedEverPostfix"));
         }
 
         public static void SCP096_Full(Need_Food __instance, Pawn ___pawn)
@@ -144,47 +141,14 @@ namespace Foundation.HarmonyPatches
                 Log.Error("SCP Harmony Patching Error: " + __instance.defName + " Does not have correct number of containment procedures.");
         }
 
-        public static bool CaptureFoundation_Patch(ref bool __result)
-        {
-            if (__result != null)
-            {
-                Pawn pawn;
-                
-            }
-            return __result;
-        }
-
-        //public static bool BedCellOffsets_Patch(List<IntVec3> offsets, IntVec2 size, int slot)
+        //public static bool CaptureFoundation_Patch(ref bool __result)
         //{
-        //    if (size.z < 2)
-        //        return true;
-        //    bool rightEdge = slot == 0;
-        //    bool leftEdge = slot == BedUtility.GetSleepingSlotsCount(size) - 1;
-        //    BedInteractionCellSearchPattern.BedCellOffsets2xN(offsets, rightEdge, leftEdge);
-        //    return false;
-        //}
-        //public static void CanUseBedEverPostfix(ref bool __result, Pawn p, ThingDef bedDef)
-        //{
-        //    if (__result)
+        //    if (__result != null)
         //    {
-        //        if (p.IsSCP())
-        //        {
-        //            if (bedDef == ThingDefOf_SCP.Containment_Zone_Small || bedDef == ThingDefOf_SCP.Containment_Zone_Medium || bedDef == ThingDefOf_SCP.Containment_Zone_Large)
-        //                __result = true;
-        //            else
-        //                __result = false;
-        //        }
-        //        else if (bedDef == ThingDefOf_SCP.Containment_Zone_Small || bedDef == ThingDefOf_SCP.Containment_Zone_Medium || bedDef == ThingDefOf_SCP.Containment_Zone_Large)
-        //        {
-        //            __result = false;
-        //        }
+        //        Pawn pawn;
+                
         //    }
-        //}
-        //public static bool IsValidBedEverPostfix(Thing bedThing, Pawn sleeper)
-        //{
-        //    if (sleeper.IsSCP() && bedThing.GetRoom().Role != Foundation_Startup.containmentRoom)
-        //        return false;
-        //    return true;
+        //    return __result;
         //}
 
         [HarmonyPatch(typeof(TradeUtility), "AllSellableColonyPawns")]
