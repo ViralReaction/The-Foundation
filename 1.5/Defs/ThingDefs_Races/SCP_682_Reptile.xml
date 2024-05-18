@@ -64,9 +64,9 @@
 			<needsRest>true</needsRest>
 			<hasGenders>false</hasGenders>
 			<maxPreyBodySize>4.0</maxPreyBodySize>
-			<baseBodySize>3</baseBodySize>
+			<baseBodySize>4</baseBodySize>
 			<baseHungerRate>0.9</baseHungerRate>
-			<baseHealthScale>5</baseHealthScale>
+			<baseHealthScale>10</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<leatherDef>Leather_Human</leatherDef>
 			<useMeatFrom>Human</useMeatFrom>
