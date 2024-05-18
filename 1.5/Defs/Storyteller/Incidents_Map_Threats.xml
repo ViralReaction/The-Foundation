@@ -29,17 +29,6 @@
 	</IncidentDef>
 
 	<IncidentDef>
-		<defName>Foundation_Incident_SCP529Join</defName>
-		<label>female SCP-529 join</label>
-		<category>Misc</category>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
-		<workerClass>Foundation.IncidentWorker_SCP529_Josie</workerClass>
-		<baseChance>0.5</baseChance>
-	</IncidentDef>
-
-	<IncidentDef>
 		<defName>Foundation_Incident_SCP682_Hunt</defName>
 		<label>SCP-682 Sighted</label>
 		<targetTags>

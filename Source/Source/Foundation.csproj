@@ -81,7 +81,6 @@
     <Compile Include="Core\SCP\SCP_3199_Human_Refuted\IncidentWorker_SCP3199.cs" />
     <Compile Include="Core\SCP\SCP_475_Pope_Soap\CompUseEffect_UseSCP475.cs" />
     <Compile Include="Core\SCP\SCP_500_Panacea\CompUseEffect_UseSCP500.cs" />
-    <Compile Include="Core\SCP\SCP_529_Josie\IncidentWorker_SCP529_Josie.cs" />
     <Compile Include="Core\SCP\SCP_578 Bloodstone\CompUseEffect_UseSCP578.cs" />
     <Compile Include="Core\SCP\SCP_682_Reptile\IncidentWorker_SCP682.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompProperties_Voices.cs" />
