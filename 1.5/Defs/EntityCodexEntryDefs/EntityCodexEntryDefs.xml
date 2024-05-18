@@ -113,5 +113,19 @@
       <li>Foundation_DogSpider</li>
     </linkedThings>
   </EntityCodexEntryDef>
+  
+  <EntityCodexEntryDef>
+    <defName>Foundation_Reptile</defName>
+    <label>Impossible Reptile</label>
+    <category>SCP</category>
+    <useDescriptionFrom>Foundation_Reptile</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCP_682/SCP_682_east</uiIconPath>
+    <startDiscovered>false</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>682</orderInCategory>
+    <linkedThings>
+      <li>Foundation_Reptile</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
 
 </Defs>

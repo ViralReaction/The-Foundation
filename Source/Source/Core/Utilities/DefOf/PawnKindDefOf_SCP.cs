@@ -12,7 +12,7 @@ namespace Foundation.Utilities
     public static class PawnKindDefOf_SCP
     {
         public static PawnKindDef Foundation_ShyGuy;
-        public static PawnKindDef Foundation_682_Reptile;
+        public static PawnKindDef Foundation_Reptile;
         public static PawnKindDef Foundation_ManyVoices_Normal;
         public static PawnKindDef Foundation_ManyVoices_Incident;
         public static PawnKindDef Foundation_Deer;

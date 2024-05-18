@@ -58,7 +58,7 @@
 		<comps>
 			<li Class="CompProperties_HoldingPlatformTarget">
 				<baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
-				<lookForTargetOnEscape>false</lookForTargetOnEscape>
+				<lookForTargetOnEscape>true</lookForTargetOnEscape>
 			</li>
 			<li Class="CompProperties_AttachPoints">
 				<points>

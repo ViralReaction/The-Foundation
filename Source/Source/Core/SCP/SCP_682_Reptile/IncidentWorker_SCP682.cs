@@ -24,7 +24,7 @@ namespace Foundation
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map target = (Map)parms.target;
-            PawnKindDef animalKind = PawnKindDefOf_SCP.Foundation_682_Reptile;
+            PawnKindDef animalKind = PawnKindDefOf_SCP.Foundation_Reptile;
             if (animalKind == null && !AggressiveAnimalIncidentUtility.TryFindAggressiveAnimalKind(parms.points, target, out animalKind) || AggressiveAnimalIncidentUtility.GetAnimalsCount(animalKind, parms.points) == 0)
                 return false;
             IntVec3 result = parms.spawnCenter;

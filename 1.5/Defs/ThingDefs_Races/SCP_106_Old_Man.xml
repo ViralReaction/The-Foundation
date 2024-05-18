@@ -25,7 +25,7 @@
 		<race>
 			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>Human</body>
-			<baseBodySize>3</baseBodySize>
+			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>5</baseHealthScale>
 			<intelligence>ToolUser</intelligence>
 			<needsRest>true</needsRest>
