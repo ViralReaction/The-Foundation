@@ -3,7 +3,8 @@
 
 	<ThingDef ParentName="AnimalThingBase" Name="AnomalyBase" Abstract="True">
 		<race>
-			<thinkTreeMain>Foundation_AI</thinkTreeMain>
+			<thinkTreeMain>Chimera</thinkTreeMain>
+			<thinkTreeConstant>ChimeraConstant</thinkTreeConstant>
 			<hediffGiverSets Inherit="false">
 				<li>AnomalyStandard</li>
 			</hediffGiverSets>

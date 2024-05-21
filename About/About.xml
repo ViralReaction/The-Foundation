@@ -20,12 +20,17 @@
 		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
 		<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework/</downloadUrl>
 	  </li>
+	  <li>
+			<packageId>Ludeon.Rimworld.Anomaly</packageId>
+			<displayName>Anomaly</displayName>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
 		<li>ceteam.combatextended</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 	</loadAfter>

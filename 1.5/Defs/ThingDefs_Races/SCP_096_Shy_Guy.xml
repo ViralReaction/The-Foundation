@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef ParentName="BasePawn">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>Foundation_ShyGuy</defName>
 		<label>Shy Guy</label>
 		<description>Item #: SCP-096\n\nObject Class: Euclid\n\nSCP-096 is a humanoid creature measuring approximately 2.38 meters in height. Subject shows very little muscle mass, with preliminary analysis of body mass suggesting mild malnutrition. Arms are grossly out of proportion with the rest of the subject's body, with an approximate length of 1.5 meters each.\n\nSCP-096 is normally extremely docile. However, when someone views SCP-096's face, whether it be directly, via video recording, or even a photograph, it will enter a stage of considerable emotional distress. Any and all photos, video, or recordings of SCP-096's likeness are strictly forbidden without approval from Dr. [REDACTED] and O5-[REDACTED].</description>
@@ -24,7 +24,6 @@
 		<onlyShowInspectString>true</onlyShowInspectString>
 		<hideMainDesc>true</hideMainDesc>
 		<race>
-			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>Human</body>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>5</baseHealthScale>

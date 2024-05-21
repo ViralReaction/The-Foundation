@@ -15,16 +15,6 @@
 			<RecipeDef>Foundation_Install2687Liver</RecipeDef>
 			<HediffDef>Foundation_2687_Poison</HediffDef>
 		</descriptionHyperlinks>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CSafe</li>
-					<li>Foundation_DDark</li>
-					<li>Warning</li>
-				</classRating>
-				<containmentTier>0</containmentTier>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Health/SCP2687A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -57,16 +47,6 @@
 		<defName>Foundation_2687_C</defName>
 		<label>SCP-2687-C</label>
 		<description>SCP-2687-C uses anomalous genetic material to modify cells surrounding a SCP-2687-B instance, creating specialized organelles capable of processing the polyethylene plastic excreted by SCP-2687-B instances during cellular replacement.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CSafe</li>
-					<li>Foundation_DDark</li>
-					<li>Foundation_RNotice</li>
-				</classRating>
-				<containmentTier>0</containmentTier>
-			</li>
-		</modExtensions>
 		<descriptionHyperlinks>
 			<HediffDef>Foundation_2687_Poison</HediffDef>
 		</descriptionHyperlinks>

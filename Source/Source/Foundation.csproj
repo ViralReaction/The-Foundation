@@ -45,21 +45,6 @@
     <Compile Include="Core\Comps\Properties\CompPropertiesHatcher.cs" />
     <Compile Include="Core\Comps\Properties\CompProperties_AnomalyHeal.cs" />
     <Compile Include="Core\Comps\Properties\CompProperties_UsedGraphic.cs" />
-    <Compile Include="Core\Containment\Cage\CompAssignableToPawn_Containment.cs" />
-    <Compile Include="Core\Containment\Cage\Extension.cs" />
-    <Compile Include="Core\Containment\ContainmentBreaker\ContainmentbreakerMentalStateUtility.cs" />
-    <Compile Include="Core\Containment\ContainmentBreaker\JobDriver_ContainmentBreaker.cs" />
-    <Compile Include="Core\Containment\ContainmentBreaker\JobGiver_ContainmentBreaker.cs" />
-    <Compile Include="Core\Containment\ContainmentBreaker\MentalStateWorker_Containmentbreaker.cs" />
-    <Compile Include="Core\Containment\ContainmentBreaker\MentalState_Containmentbreaker.cs" />
-    <Compile Include="Core\Containment\ContainmentBreak_Utility.cs" />
-    <Compile Include="Core\Containment\ContainmentExtensions.cs" />
-    <Compile Include="Core\Containment\IncidentWorker_ContaintmentBreach.cs" />
-    <Compile Include="Core\Containment\ITab_SCP.cs" />
-    <Compile Include="Core\Containment\MentalState_ContainmentBreach.cs" />
-    <Compile Include="Core\Containment\RoomRoleWorker_Containment.cs" />
-    <Compile Include="Core\Containment\ThinkNode_ContaintmentBreach.cs" />
-    <Compile Include="Core\Containment\WorkGiver.cs" />
     <Compile Include="Core\Harmony Patches\SCPHarmony_Patches.cs" />
     <Compile Include="Core\Psychic Suppresion\Bulding_PsychicSuppressionField.cs" />
     <Compile Include="Core\Psychic Suppresion\CompProperties_PsychicSuppressionField.cs" />
@@ -101,12 +86,14 @@
     <Compile Include="Core\Utilities\GameComponent.cs" />
     <Compile Include="Core\Utilities\SCPRadius.cs" />
     <Compile Include="Core\Utilities\Debug.cs" />
+    <Compile Include="Core\Utilities\Utilities.cs" />
     <Compile Include="Gizmo_HumeShield.cs" />
     <Compile Include="Core\Comps\Properties\CompProperties_HumeShield.cs" />
     <Compile Include="Core\Comps\CompHumeShield.cs" />
     <Compile Include="Ideology\Harmony.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_Anomaly.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_AnomalyInColony.cs" />
+    <Compile Include="Ideology\ThoughtWorker_Precept_AnomalyMap.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_AnomalyPresent.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_Social_Anomaly.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,7 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="Core\Normal Stuff\" />
     <Folder Include="Core\SCP\ThoughtWorkers\" />
   </ItemGroup>
   <ItemGroup>

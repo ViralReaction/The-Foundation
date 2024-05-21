@@ -9,10 +9,10 @@
 		<playerInterruptible>false</playerInterruptible>
 	</JobDef>
 
-	<JobDef>
-		<defName>InduceContaintmentBreak</defName>
-		<driverClass>Foundation.Containment.JobDriver_ContainmentBreaker</driverClass>
-		<reportString>inducing TargetA to escape.</reportString>
-	</JobDef>
+	<!-- <JobDef> -->
+		<!-- <defName>InduceContaintmentBreak</defName> -->
+		<!-- <driverClass>Foundation.Containment.JobDriver_ContainmentBreaker</driverClass> -->
+		<!-- <reportString>inducing TargetA to escape.</reportString> -->
+	<!-- </JobDef> -->
 
 </Defs>

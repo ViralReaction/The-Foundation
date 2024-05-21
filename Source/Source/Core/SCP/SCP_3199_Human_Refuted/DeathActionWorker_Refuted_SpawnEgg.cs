@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
-using Foundation.Utilities;
+using Foundation;
 using Verse.AI.Group;
 
 namespace Foundation

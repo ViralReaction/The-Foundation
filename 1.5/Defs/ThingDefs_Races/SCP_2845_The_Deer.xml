@@ -165,7 +165,7 @@
 	</PawnKindDef>
 
 	<!-- SCP-2845-1 -->
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>Foundation_28451R</defName>
 		<label>SCP-2845-1</label>
 		<description>Item #: SCP-2845-1
@@ -174,17 +174,6 @@ Object Class: Euclid
 SCP-2845-1 designates organisms that have been modified by SCP-2845. Instances of SCP-2845-1 are hexagonal columns uniformly measuring 2.4 meters in height, with rubbery yellow-green skin.
 
 SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown that internal organs are likewise absent, save the brain, which now takes up the entirety of the column and contains the reconstituted mass of the other organs and some additional outside materials. It is unknown how SCP-2845-1 instances derive nutrients, or if any nutrition is required.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CEuclid</li>
-					<li>Foundation_DKeneq</li>
-					<li>Foundation_RNotice</li>
-				</classRating>
-				<containmentTier>2</containmentTier>
-				<willManhuntAfterBreach>true</willManhuntAfterBreach>
-			</li>
-		</modExtensions>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<MarketValue>1000</MarketValue>
@@ -201,7 +190,6 @@ SCP-2845-1 instances do not have any outward sense organs, and autopsy has shown
 		</butcherProducts>
 		<uiIconScale>1.6</uiIconScale>
 		<race>
-			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>Foundation_PillarBod</body>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>1.5</baseBodySize>

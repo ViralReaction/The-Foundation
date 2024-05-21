@@ -72,7 +72,6 @@
 			</li>		
 		</comps>
 		<race>
-			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>Snake</body>
 			<predator>false</predator>
 			<baseBodySize>0.25</baseBodySize>

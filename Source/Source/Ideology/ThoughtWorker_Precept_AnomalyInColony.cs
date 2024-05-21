@@ -6,54 +6,35 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
-using Foundation.Utilities;
 using Verse.Noise;
+using static RimWorld.IdeoFoundation_Deity;
 
 namespace Foundation
 {
-    public class ThoughtWorker_Precept_AnomalyInColony : ThoughtWorker_Precept
+    public class ThoughtWorker_Precept_AnomalyInColony : ThoughtWorker_Precept, IPreceptCompDescriptionArgs
     {
         private const int MinimumTicksBeforeFewAnimals = 900000;
         private string Density;
-        //int colonistNum = 0;
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
-            if (!ModsConfig.IdeologyActive || p.Faction == null || p.MapHeld == null)
-                return ThoughtState.Inactive;
-            int colonistNum = 0;
-            int scpNum = 0;
+            if (ThoughtUtility.ThoughtNullified(p, this.def) || p.IsSlave)
+            {
+                return false;
+            }
+            float density = Utilities.PlayerAnomalyBodySizePerCapita(p);
+            Density = density.ToString();
             int stageIndex = 0;
-            List<Pawn> pawnList = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_OfPlayerFaction;
-            for (int index = 0; index < pawnList.Count; index++)
-            {
-                Pawn pawn = pawnList[index];
-                if (pawn.IsFreeColonist && !pawn.IsQuestLodger())
-                    ++colonistNum;
-                if (pawn.IsSCP())
-                    ++scpNum;
-            }
-            IReadOnlyList<Pawn> scpList = p.MapHeld.mapPawns.AllPawnsSpawned;
-            for (int index = 0; index < scpList.Count; index++)
-            {
-                Pawn pawn = scpList[index];
-                if (pawn.IsCaptiveOf() && pawn.Faction != Faction.OfPlayer)
-                {
-                    ++scpNum;
-                }
-            }
-            float scpDensity = scpNum / colonistNum;
-            Density = scpDensity.ToString();
-            for (int index = 0; index < scpDensity; index++)
+            for (int index = 0; index < density; index++)
             {
                 ++stageIndex;
-                if (stageIndex < 2 && GenTicks.TicksAbs < 900000)
-                    return ThoughtState.Inactive;
             }
+            if (stageIndex < 2 && GenTicks.TicksAbs < MinimumTicksBeforeFewAnimals)
+                return ThoughtState.Inactive;
             if (stageIndex > 6)
                 stageIndex = 6;
             return ThoughtState.ActiveAtStage(stageIndex);
         }
-        public override string PostProcessDescription(Pawn p, string description) => (string)(base.PostProcessDescription(p, description) + "\n\n" + "CurrentTotalAnomalyPerColonist".Translate() + ": " + Density + "\n" + "MinAnomalyPerColonist".Translate((NamedArgument)4f.ToString("F1")));
+        public override string PostProcessDescription(Pawn p, string description) => (string)(base.PostProcessDescription(p, description) + "\n\n" + "CurrentTotalAnomalyPerColonist".Translate() + ": " + Density + "\n" + "MinAnomalyPerColonist".Translate((NamedArgument)1f.ToString("F1")));
         public IEnumerable<NamedArgument> GetDescriptionArgs()
         {
             yield return ((string)("(" + "AnomalyPerColonist".Translate() + ": ") + (object)1f + ")").Named("STAGE1");

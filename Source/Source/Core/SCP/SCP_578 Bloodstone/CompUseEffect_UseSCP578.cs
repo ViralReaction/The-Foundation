@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using static UnityEngine.GraphicsBuffer;
-using Foundation.Utilities;
+using Foundation;
 
 namespace Foundation
 {

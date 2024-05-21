@@ -107,5 +107,19 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Foundation_AnomalyColonist_DespisedMap</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>Foundation.ThoughtWorker_Precept_AnomalyMap</workerClass>
+		<nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+		<stages>
+			<li>
+				<label>anomaly nearby</label>
+				<description>There are anomalies nearby. We should purge them from this land.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 </Defs>

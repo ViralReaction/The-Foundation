@@ -8,17 +8,6 @@
 Object Class: Euclid
 			
 Although normally peaceful, SCP-5893 specimens can ignite their body without the use of incendiary compounds or chemicals to reach temperatures of up to 3,500 °C when they are threatened or stressed. SCP-5893 specimens primarily employ this property as a self-defense mechanism although they have been seen to engage in aggressive behavior against their attacker(s) in rare instances.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CEuclid</li>
-					<li>Foundation_DKeneq</li>
-					<li>Foundation_RDanger</li>
-				</classRating>
-				<containmentTier>1</containmentTier>
-				<hatesRoofs>true</hatesRoofs>
-			</li>
-		</modExtensions>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>600</MarketValue>

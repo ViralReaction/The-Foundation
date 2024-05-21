@@ -73,16 +73,6 @@ SCP-578 is a colorless, odorless liquid consisting of a solution of water, silic
 Object Class: Safe
 	
 SCP-578 and several hundred instances of SCP-578-1 were initially discovered during a Foundation raid on a Marshall, Carter, and Dark Ltd. facility. The facility had been used as a production site for various items made of SCP-578-1. The exact process MCD used to create SCP-578 is unknown.</description>
-		<modExtensions>
-			<li Class="Foundation.Containment.ContainmentExtension">
-				<classRating>
-					<li>Foundation_CSafe</li>
-					<li>Foundation_DDark</li>
-					<li>Foundation_RNotice</li>
-				</classRating>
-				<containmentTier>0</containmentTier>
-			</li>
-		</modExtensions>
 		<graphicData>
 			<texPath>Things/Item/Resource/Jade</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

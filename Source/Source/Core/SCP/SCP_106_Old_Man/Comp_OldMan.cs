@@ -11,7 +11,7 @@ using Verse;
 using Verse.AI;
 using Verse.Noise;
 using static UnityEngine.GraphicsBuffer;
-using Foundation.Utilities;
+using Foundation;
 
 namespace Foundation
 {
@@ -31,15 +31,12 @@ namespace Foundation
             {
                 if (!ScrantonCheck(oldMan) && !oldMan.Downed)
                 {
-                    Log.Message("Tick Counter");
                     if ((oldMan.CurJobDef == JobDefOf.PredatorHunt || oldMan.CurJob.def == JobDefOf.AttackMelee ) && this.WithinJumpRange(oldMan.CurJob.targetA.Thing.Position))
                     {
-                        Log.Message("Target Hunt");
                         this.targetHunted = this.oldMan?.CurJob?.targetA.Thing as Pawn;
                     }
-                    else if (oldMan.CurJob.def == JobDefOf.GotoWander || oldMan.CurJob.def == JobDefOf.Wait_Wander || oldMan.CurJob.def == JobDefOf.Wait_MaintainPosture || oldMan.GetRoom().Role == Foundation_Startup.containmentRoom || oldMan.mindState.mentalStateHandler.InMentalState)
+                    else if (oldMan.CurJob.def == JobDefOf.GotoWander || oldMan.CurJob.def == JobDefOf.Wait_Wander || oldMan.CurJob.def == JobDefOf.Wait_MaintainPosture || oldMan.IsOnHoldingPlatform || oldMan.mindState.mentalStateHandler.InMentalState)
                     {
-                        Log.Message("Check");
                         List<Pawn> pawnList = SCPRadius.GetPawnsAround(oldMan.Position, Props.jumpRange, oldMan.MapHeld);
                         for (int index = 0; index < pawnList.Count; index++)
                         {

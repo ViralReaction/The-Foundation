@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BasePawn">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>Foundation_Allosaurus</defName>
 		<label>Most of Allosaurus</label>
 		<description>Item #: SCP-250\n\nObject Class: Euclid\n\nSCP-250 is the animate fossil skeleton of an allosaur, held together and animated by an unknown force. Study of this force is hindered by SCP-250's aggressive behavior, which has been assessed by Foundation palaeozoologists as being well within theoretical norms for an allosaurus.\n\nSCP-250 emulates what are presumed to have been the standard daily activities of a living allosaurus: it wanders its enclosure by day, enters a state of dormancy by night, and will attempt to kill and devour anything which it perceives as suitable prey, including humans.</description>
@@ -20,7 +20,6 @@
 		<onlyShowInspectString>true</onlyShowInspectString>
 		<hideMainDesc>true</hideMainDesc>
 		<race>
-			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>Foundation_BipedalBoney</body>
 			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>6</baseHealthScale>

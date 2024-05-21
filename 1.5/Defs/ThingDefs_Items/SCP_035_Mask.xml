@@ -5,16 +5,6 @@
 		<!-- <defName>Foundation_035_Mask</defName> -->
 		<!-- <label>SCP-035 The Mask</label> -->
 		<!-- <description>Item #: SCP-035\n\nObject Class: Keter\n\nSCP-035 appears to be a white porcelain comedy mask, although, at times, it will change to tragedy. A highly corrosive and degenerative viscous liquid constantly seeps from the eye and mouth holes of SCP-035.\n\nSubjects within 1.5 to 2 meters (5-6 feet) of SCP-035, or in visual contact with it, experience a strong urge to put it on. When SCP-035 is placed on the face of an individual, an alternate brain wave pattern from SCP-035 overlaps that of the original host, effectively snuffing it out and causing brain death to the subject.</description> -->
-		<!-- <modExtensions> -->
-			<!-- <li Class="Foundation.Containment.ContainmentExtension"> -->
-				<!-- <classRating> -->
-					<!-- <li>Foundation_CKeter</li> -->
-					<!-- <li>Foundation_DVlam</li> -->
-					<!-- <li>Foundation_RCritical</li> -->
-				<!-- </classRating> -->
-				<!-- <containmentTier>2</containmentTier> -->
-			<!-- </li> -->
-		<!-- </modExtensions> -->
 		<!-- <graphicData> -->
 			<!-- <texPath>Things/Apparel/Headgear/Anomalous/SCP_35_Mask/SCP_35_Mask</texPath> -->
 			<!-- <graphicClass>Graphic_Single</graphicClass> -->

@@ -6,18 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Foundation.Utilities
+namespace Foundation
 {
     [DefOf]
     public static class ThingDefOf_SCP
     {
-        public static ThingDef Containment_Zone_Small;
-        public static ThingDef Containment_Zone_Medium;
-        public static ThingDef Containment_Zone_Large;
         public static ThingDef Foundation_Refuted_Egg;
-        public static ThingDef Apparel_Jacket;
-        public static ThingDef Gun_BoltActionRifle;
-        public static ThingDef Synthread;
         public static ThingDef Foundation_113_Stone;
         [MayRequireIdeology]
         public static ThingDef Foundation_475_Soap;

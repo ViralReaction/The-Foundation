@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Foundation.Utilities
+namespace Foundation
 {
     public class FoundationComponent : GameComponent
     {

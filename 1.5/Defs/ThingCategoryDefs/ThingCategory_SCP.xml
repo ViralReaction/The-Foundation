@@ -33,10 +33,4 @@
 		<parent>FoodRaw</parent>
 	</ThingCategoryDef>
 
-	<ThingCategoryDef>
-		<defName>containment</defName>
-		<label>SCP Containment</label>
-		<parent>Buildings</parent>
-	</ThingCategoryDef>
-
 </Defs>

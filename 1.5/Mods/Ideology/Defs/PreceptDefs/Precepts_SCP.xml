@@ -72,6 +72,10 @@
 				<thought>Foundation_AnomalyColonist_Despised</thought>
 				<description>Anomaly among us</description>
 			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Foundation_AnomalyColonist_DespisedMap</thought>
+				<description>Anomaly nearby</description>
+			</li>
 		</comps>
 	</PreceptDef>
 

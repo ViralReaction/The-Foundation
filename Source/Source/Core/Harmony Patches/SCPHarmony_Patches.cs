@@ -13,8 +13,7 @@ using Mono.Security;
 using UnityEngine;
 using System.Reflection.Emit;
 using Verse.Noise;
-using Foundation.Containment;
-using Foundation.Utilities;
+using Foundation;
 
 namespace Foundation.HarmonyPatches
 {
@@ -35,7 +34,6 @@ namespace Foundation.HarmonyPatches
             harmony.Patch((MethodBase)AccessTools.Method(typeof(JobDriver_PredatorHunt), "CheckWarnPlayer"), new HarmonyMethod(typeof(FoundationHarmony), "SCP939_DontWarnPlayerHunted"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(Pawn), "TickRare"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "TickMindstateLeaveDaylight"));
             harmony.Patch((MethodBase)AccessTools.Method(typeof(WorldPawns), "GetSituation"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "SituationSCPEvent"));
-            harmony.Patch((MethodBase)AccessTools.Method(typeof(ThingDef), "SpecialDisplayStats"), postfix: new HarmonyMethod(typeof(FoundationHarmony), "StatDrawEntry_Patch"));
         }
 
         public static void SCP096_Full(Need_Food __instance, Pawn ___pawn)
@@ -117,39 +115,6 @@ namespace Foundation.HarmonyPatches
                 }
             }
         }
-        public static void StatDrawEntry_Patch(ThingDef __instance, ref IEnumerable<StatDrawEntry> __result)
-        {
-            if (!__instance.IsSCP() || __instance.IsCorpse)
-                return;
-            StatCategoryDef category = StatCategoryDefOf.Basics;
-            if (__instance.IsWeapon)
-                category = StatCategoryDefOf.Weapon;
-            else if (__instance.IsApparel)
-                category = StatCategoryDefOf.Apparel;
-            else if (__instance.IsDrug)
-                category = StatCategoryDefOf.Drug;
-            else if (__instance.isTechHediff)
-                category = StatCategoryDefOf.Implant;
-            ContainmentExtension modExtension = __instance.GetModExtension<ContainmentExtension>();
-            if (modExtension.classRating.Count == 3)
-            {
-                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"Foundation_Contain".Translate(), (string)modExtension.classRating[0].Translate(), (string)modExtension.FindDescription(0).Translate(), 1));
-                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"Foundation_Disrupt".Translate(), (string)modExtension.classRating[1].Translate(), (string)modExtension.FindDescription(1).Translate(), 1));
-                __result = __result.AddItem<StatDrawEntry>(new StatDrawEntry(category, (string)"Foundation_Risk".Translate(), (string)modExtension.classRating[2].Translate(), (string)modExtension.FindDescription(2).Translate(), 1));
-            }
-            else
-                Log.Error("SCP Harmony Patching Error: " + __instance.defName + " Does not have correct number of containment procedures.");
-        }
-
-        //public static bool CaptureFoundation_Patch(ref bool __result)
-        //{
-        //    if (__result != null)
-        //    {
-        //        Pawn pawn;
-                
-        //    }
-        //    return __result;
-        //}
 
         [HarmonyPatch(typeof(TradeUtility), "AllSellableColonyPawns")]
         class SellCapturedFoundation_Patch
@@ -158,7 +123,7 @@ namespace Foundation.HarmonyPatches
             {
                 foreach (Pawn pawn in map.mapPawns.AllPawnsSpawned)
                 {
-                    if (pawn.IsCaptiveOf() && pawn.HostFaction == null && !pawn.InMentalState && !pawn.Downed && (!checkAcceptableTemperatureOfAnimals || map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(pawn.def)))
+                    if (pawn.IsOnHoldingPlatform && pawn.HostFaction == null && !pawn.InMentalState && !pawn.Downed && (!checkAcceptableTemperatureOfAnimals || map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(pawn.def)))
                         yield return pawn;
                 }
             }

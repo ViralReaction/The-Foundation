@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BasePawn">
+	<ThingDef ParentName="AnomalyBase">
 		<defName>Foundation_OldMan</defName>
 		<label>Old Man</label>
 		<description>Item #: SCP-106\n\nObject Class: Keter\n\nSCP-106 appears to be an elderly humanoid, with a general appearance of advanced decomposition. It is not exceptionally agile, and will remain motionless for days at a time, waiting for prey. SCP-106 is capable of passing through solid matter, leaving behind a large patch of its corrosive mucus. SCP-106 is able to “vanish” inside solid matter, entering what is assumed to be a form of “pocket dimension”.</description>
@@ -23,7 +23,6 @@
 		<onlyShowInspectString>true</onlyShowInspectString>
 		<hideMainDesc>true</hideMainDesc>
 		<race>
-			<thinkTreeMain>Foundation_AI</thinkTreeMain>
 			<body>Human</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>5</baseHealthScale>

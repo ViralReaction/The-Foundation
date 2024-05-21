@@ -2,19 +2,6 @@
 <Defs>
 
 	<IncidentDef>
-		<defName>Foundation_Incident_ContainBreach</defName>
-		<label>Containment Breach</label>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
-		<workerClass>Foundation.Containment.IncidentWorker_ContainmentBreach</workerClass>
-		<baseChance>5.0</baseChance>
-		<category>ThreatBig</category>
-		<pointsScaleable>true</pointsScaleable>
-		<tale>Raid</tale>
-	</IncidentDef>
-
-	<IncidentDef>
 		<defName>Foundation_Incident_SCP096_Hunt</defName>
 		<label>SCP-096</label>
 		<targetTags>

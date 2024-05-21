@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using Foundation;
-using Foundation.Containment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,21 +15,21 @@ namespace Foundation
     public class Foundation_Startup
 
     {
-        public static RoomRoleDef containmentRoom;
+       // public static RoomRoleDef containmentRoom;
         public static string version = "v0.0.1";
 
         static Foundation_Startup()
         {
-            List<RoomRoleDef> allDefList = DefDatabase<RoomRoleDef>.AllDefsListForReading;
-            for (int index = 0; index < allDefList.Count; index++)
-            {
-                RoomRoleDef allDef = allDefList[index];
-                if (allDef.defName == "Foundation_ContainmentRoom")
-                {
-                    Foundation_Startup.containmentRoom = allDef;
-                    break;
-                }
-            }
+            //List<RoomRoleDef> allDefList = DefDatabase<RoomRoleDef>.AllDefsListForReading;
+            //for (int index = 0; index < allDefList.Count; index++)
+            //{
+            //    RoomRoleDef allDef = allDefList[index];
+            //    if (allDef.defName == "Foundation_ContainmentRoom")
+            //    {
+            //        Foundation_Startup.containmentRoom = allDef;
+            //        break;
+            //    }
+            //}
             //foreach (RoomRoleDef allDef in DefDatabase<RoomRoleDef>.AllDefs)
             //{
             //    if (allDef.defName == "Foundation_ContainmentRoom")

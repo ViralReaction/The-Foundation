@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Foundation.Utilities
+namespace Foundation
 {
     [StaticConstructorOnStartup]
     public static class SPExtra
