@@ -2,35 +2,17 @@
 <Defs>
 
 	<ThingCategoryDef>
-		<defName>SCP</defName>
-		<label>SCPs</label>
+		<defName>Foundation_Root</defName>
+		<label>Anomalies</label>
 		<parent>Root</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/Foods</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>SCPWeapons</defName>
-		<label>Weapon SCPs</label>
-		<parent>SCP</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>SCPApparel</defName>
-		<label>Apparel SCPs</label>
-		<parent>SCP</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>SCPObjects</defName>
-		<label>Object SCPs</label>
-		<parent>SCP</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>SCPMeat</defName>
-		<label>SCP Meats</label>
-		<parent>FoodRaw</parent>
+		<defName>Foundation_Objects</defName>
+		<label>Objects</label>
+		<parent>Foundation_Root</parent>
 	</ThingCategoryDef>
 
 </Defs>

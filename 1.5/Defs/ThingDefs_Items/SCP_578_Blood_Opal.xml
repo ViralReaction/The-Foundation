@@ -22,6 +22,9 @@ SCP-578 is a colorless, odorless liquid consisting of a solution of water, silic
 			<MarketValue>53</MarketValue>
 			<Mass>0.1</Mass>
 		</statBases>
+		<thingCategories>
+			<li>Foundation_Objects</li>
+		</thingCategories>
 		<techLevel>Industrial</techLevel>
 		<ingestible>
 			<drugCategory>Medical</drugCategory>
@@ -94,18 +97,15 @@ SCP-578 and several hundred instances of SCP-578-1 were initially discovered dur
 		</statBases>
 		<thingCategories>
 			<li>ResourcesRaw</li>
-			<li>SCPObjects</li>
+			<li>Foundation_Objects</li>
 		</thingCategories>
-		<!--   <deepCommonality>0.5</deepCommonality>
-    <deepCountPerPortion>15</deepCountPerPortion>
-    <deepLumpSizeRange>1~4</deepLumpSizeRange> -->
 		<burnableByRecipe>false</burnableByRecipe>
 		<smeltable>false</smeltable>
 		<stuffProps>
 			<categories>
 				<li>Stony</li>
 			</categories>
-			<commonality>0.01</commonality>
+			<commonality>0</commonality>
 			<color>(115, 7, 7)</color>
 			<constructEffect>ConstructMetal</constructEffect>
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>

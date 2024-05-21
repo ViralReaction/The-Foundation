@@ -19,8 +19,7 @@ SCP-500 is a small red pill that when taken orally, effectively cures the subjec
 			<MarketValue>1300</MarketValue>
 		</statBases>
 		<thingCategories>
-			<li>Items</li>
-			<li>SCPObjects</li>
+			<li>Foundation_Objects</li>
 		</thingCategories>
 		<tradeability>Sellable</tradeability>
 		<comps>

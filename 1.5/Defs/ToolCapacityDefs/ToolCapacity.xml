@@ -2,21 +2,6 @@
 <Defs>
 
 	<ToolCapacityDef>
-		<defName>Foundation_Flame</defName>
-		<label>fire</label>
-	</ToolCapacityDef>
-	
-	<ToolCapacityDef>
-		<defName>Foundation_Acid</defName>
-		<label>acid</label>
-	</ToolCapacityDef>
-
-	<ToolCapacityDef>
-		<defName>Foundation_Electric</defName>
-		<label>static electricity</label>
-	</ToolCapacityDef>
-
-	<ToolCapacityDef>
 		<defName>Foundation_106_Oldman_Scratch</defName>
 		<label>scratch</label>
 	</ToolCapacityDef>

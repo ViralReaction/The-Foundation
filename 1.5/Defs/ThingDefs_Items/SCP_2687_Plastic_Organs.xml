@@ -3,17 +3,17 @@
 
 	<!-- SCP 2687 -->
 	<ThingDef ParentName="BodyPartBase">
-		<defName>SCP2687A</defName>
-		<label>SCP-2687-A Organ Model</label>
-		<description>A small polyethylene model of an organ presumed to have originally been manufactured by Prometheus Labs. Adding a miniscule amount of organic material to this causes this.</description>
+		<defName>Foundation_Plastic_Organ_Model</defName>
+		<label>Plastic Organ Model</label>
+		<description>A small polyethylene model of an organ presumed to have originally been manufactured by Prometheus Labs. Adding a miniscule amount of organic material to this causes it to grow into a functional, albeit plastic organ.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>Foundation_Install2687Eye</RecipeDef>
-			<RecipeDef>Foundation_Install2687Heart</RecipeDef>
-			<RecipeDef>Foundation_Install2687Lung</RecipeDef>
-			<RecipeDef>Foundation_Install2687Stomach</RecipeDef>
-			<RecipeDef>Foundation_Install2687Kidney</RecipeDef>
-			<RecipeDef>Foundation_Install2687Liver</RecipeDef>
-			<HediffDef>Foundation_2687_Poison</HediffDef>
+			<RecipeDef>Foundation_InstallPlasticEye</RecipeDef>
+			<RecipeDef>Foundation_InstallPlasticHeart</RecipeDef>
+			<RecipeDef>Foundation_InstallPlasticLung</RecipeDef>
+			<RecipeDef>Foundation_InstallPlasticStomach</RecipeDef>
+			<RecipeDef>Foundation_InstallPlasticKidney</RecipeDef>
+			<RecipeDef>Foundation_InstallPlasticLiver</RecipeDef>
+			<HediffDef>Foundation_Plastic_Poison</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Health/SCP2687A</texPath>
@@ -31,7 +31,7 @@
 		<drawerType>MapMeshOnly</drawerType>
 		<stackLimit>20</stackLimit>
 		<thingCategories>
-			<li>SCP</li>
+			<li>Foundation_Objects</li>
 		</thingCategories>
 		<tradeTags>
 			<li>SCP</li>
@@ -41,14 +41,14 @@
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<minRewardCount>2</minRewardCount>
 	</ThingDef>
-	
+
 	<!-- SCP-2687 Cure Plastic Poisoning -->
 	<ThingDef ParentName="MakeableDrugPillBase">
-		<defName>Foundation_2687_C</defName>
-		<label>SCP-2687-C</label>
-		<description>SCP-2687-C uses anomalous genetic material to modify cells surrounding a SCP-2687-B instance, creating specialized organelles capable of processing the polyethylene plastic excreted by SCP-2687-B instances during cellular replacement.</description>
+		<defName>Foundation_Plastic_Poison_Cure</defName>
+		<label>Polyethylene Purge</label>
+		<description>Polyethylene Purge uses anomalous genetic material to modify cells surrounding a SCP-2687-B instance, creating specialized organelles capable of processing the polyethylene plastic excreted by SCP-2687-B instances during cellular replacement.</description>
 		<descriptionHyperlinks>
-			<HediffDef>Foundation_2687_Poison</HediffDef>
+			<HediffDef>Foundation_Plastic_Poison</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Drug/SCP_2687_Cure</texPath>
@@ -67,7 +67,7 @@
 			<drugCategory>Medical</drugCategory>
 			<outcomeDoers>
 				<li Class="Foundation.IngestionOutcomeDoer_RemoveHediff">
-					<hediffDef>Foundation_2687_Poison</hediffDef>
+					<hediffDef>Foundation_Plastic_Poison</hediffDef>
 				</li>
 			</outcomeDoers>
 		</ingestible>

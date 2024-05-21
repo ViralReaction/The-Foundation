@@ -3,10 +3,10 @@
 
 	<!-- 2687 Recipe -->
 	<RecipeDef>
-		<defName>Foundation_Make_SCP_2687A</defName>
+		<defName>Foundation_Make_Plastic_Organ</defName>
 		<label>make scp-2687-a model</label>
-		<description>Make SCP-2687-A Organ Model.</description>
-		<jobString>Making SCP 2687-A Organ Model.</jobString>
+		<description>Make Plastic Organ Model.</description>
+		<jobString>Making Plastic Organ Model.</jobString>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
 		<effectWorking>Cook</effectWorking>
@@ -51,17 +51,17 @@
 			</thingDefs>
 		</defaultIngredientFilter>
 		<products>
-			<SCP2687A>1</SCP2687A>
+			<Foundation_Plastic_Organ_Model>1</Foundation_Plastic_Organ_Model>
 		</products>
 	</RecipeDef>
 
 	<!-- Surgery Install Recipes -->
-	<RecipeDef Name="Install_SCP2687Base" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="true">
+	<RecipeDef Name="Install_PlasticOrganBase" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="true">
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SCP2687A</li>
+						<li>Foundation_Plastic_Organ_Model</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -69,7 +69,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SCP2687A</li>
+				<li>Foundation_Plastic_Organ_Model</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<skillRequirements>
@@ -77,94 +77,94 @@
 		</skillRequirements>
 	</RecipeDef>
 
-	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>Foundation_Install2687Eye</defName>
+	<RecipeDef ParentName="Install_PlasticOrganBase">
+		<defName>Foundation_InstallPlasticEye</defName>
 		<label>install anomalous eye</label>
 		<description>Install anomalous eye.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>Foundation_2687B_Eye</HediffDef>
+			<ThingDef>Foundation_Plastic_Organ_Model</ThingDef>
+			<HediffDef>Foundation_Plastic_Eye</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous eye.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Eye</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Foundation_2687B_Eye</addsHediff>
+		<addsHediff>Foundation_Plastic_Eye</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>Foundation_Install2687Heart</defName>
+	<RecipeDef ParentName="Install_PlasticOrganBase">
+		<defName>Foundation_InstallPlasticHeart</defName>
 		<label>install anomalous Heart</label>
 		<description>Install anomalous Heart.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>Foundation_2687B_Heart</HediffDef>
+			<ThingDef>Foundation_Plastic_Organ_Model</ThingDef>
+			<HediffDef>Foundation_Plastic_Heart</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous Heart.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Heart</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Foundation_2687B_Heart</addsHediff>
+		<addsHediff>Foundation_Plastic_Heart</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>Foundation_Install2687Lung</defName>
+	<RecipeDef ParentName="Install_PlasticOrganBase">
+		<defName>Foundation_InstallPlasticLung</defName>
 		<label>install anomalous Lung</label>
 		<description>Install anomalous Lung.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>Foundation_2687B_Lung</HediffDef>
+			<ThingDef>Foundation_Plastic_Organ_Model</ThingDef>
+			<HediffDef>Foundation_Plastic_Lung</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous Lung.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Lung</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Foundation_2687B_Lung</addsHediff>
+		<addsHediff>Foundation_Plastic_Lung</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>Foundation_Install2687Stomach</defName>
+	<RecipeDef ParentName="Install_PlasticOrganBase">
+		<defName>Foundation_InstallPlasticStomach</defName>
 		<label>install anomalous Stomach</label>
 		<description>Install anomalous Stomach.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>Foundation_2687B_Stomach</HediffDef>
+			<ThingDef>Foundation_Plastic_Organ_Model</ThingDef>
+			<HediffDef>Foundation_Plastic_Stomach</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous Stomach.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Stomach</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Foundation_2687B_Stomach</addsHediff>
+		<addsHediff>Foundation_Plastic_Stomach</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>Foundation_Install2687Kidney</defName>
+	<RecipeDef ParentName="Install_PlasticOrganBase">
+		<defName>Foundation_InstallPlasticKidney</defName>
 		<label>install anomalous Kidney</label>
 		<description>Install anomalous Kidney.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>Foundation_2687B_Kidney</HediffDef>
+			<ThingDef>Foundation_Plastic_Organ_Model</ThingDef>
+			<HediffDef>Foundation_Plastic_Kidney</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous Kidney.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Kidney</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Foundation_2687B_Kidney</addsHediff>
+		<addsHediff>Foundation_Plastic_Kidney</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="Install_SCP2687Base">
-		<defName>Foundation_Install2687Liver</defName>
+	<RecipeDef ParentName="Install_PlasticOrganBase">
+		<defName>Foundation_InstallPlasticLiver</defName>
 		<label>install anomalous liver</label>
 		<description>Install anomalous liver.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SCP2687A</ThingDef>
-			<HediffDef>Foundation_2687B_Liver</HediffDef>
+			<ThingDef>Foundation_Plastic_Organ_Model</ThingDef>
+			<HediffDef>Foundation_Plastic_Liver</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing anomalous liver.</jobString>
 		<appliedOnFixedBodyParts>
 			<li>Liver</li>
 		</appliedOnFixedBodyParts>
-		<addsHediff>Foundation_2687B_Liver</addsHediff>
+		<addsHediff>Foundation_Plastic_Liver</addsHediff>
 	</RecipeDef>
 
 </Defs>

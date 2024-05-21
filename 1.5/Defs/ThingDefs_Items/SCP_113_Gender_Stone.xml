@@ -22,7 +22,7 @@ When SCP-113 comes in direct contact with the flesh of an organism possessing se
 		<useHitPoints>false</useHitPoints>
 		<techLevel>Industrial</techLevel>
 		<thingCategories>
-			<li>SCPObjects</li>
+			<li>Foundation_Objects</li>
 		</thingCategories>
 		<tradeTags>
 			<li>Artifact</li>

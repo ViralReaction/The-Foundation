@@ -2,10 +2,10 @@
 <Defs>
 	
 	<!-- SCP 2687 Plastic Organs -->
-	<HediffDef Name="SCP_2687BBase" ParentName="AddedBodyPartBase" Abstract="true">
+	<HediffDef Name="Foundation_PlasticOrganBase" ParentName="AddedBodyPartBase" Abstract="true">
 		<hediffClass>Foundation.Hediff_SCP2687</hediffClass>
 		<descriptionHyperlinks>
-			<ThingDef>SCP2687A</ThingDef>
+			<ThingDef>Foundation_Plastic_Organ_Model</ThingDef>
 		</descriptionHyperlinks>
 		<defaultLabelColor>(0, 1, 0)</defaultLabelColor>
 		<addedPartProps>
@@ -17,43 +17,43 @@
 	</HediffDef>
 
 	<!-- SCP 2687 Plastic Organs -->
-	<HediffDef ParentName="SCP_2687BBase">
-		<defName>Foundation_2687B_Eye</defName>
+	<HediffDef ParentName="Foundation_PlasticOrganBase">
+		<defName>Foundation_Plastic_Eye</defName>
 		<label>Plastic Eye</label>
 		<description>An installed anomalous eye.</description>
 		<labelNoun>an anomalous eye</labelNoun>
 	</HediffDef>
-	
-	<HediffDef ParentName="SCP_2687BBase">
-		<defName>Foundation_2687B_Heart</defName>
+
+	<HediffDef ParentName="Foundation_PlasticOrganBase">
+		<defName>Foundation_Plastic_Heart</defName>
 		<label>Plastic Heart</label>
 		<description>An installed anomalous Heart.</description>
 		<labelNoun>an anomalous Heart</labelNoun>
 	</HediffDef>
-	
-	<HediffDef ParentName="SCP_2687BBase">
-		<defName>Foundation_2687B_Lung</defName>
+
+	<HediffDef ParentName="Foundation_PlasticOrganBase">
+		<defName>Foundation_Plastic_Lung</defName>
 		<label>Plastic Lung</label>
 		<description>An installed anomalous Lung.</description>
 		<labelNoun>an anomalous Lung</labelNoun>
 	</HediffDef>
-	
-	<HediffDef ParentName="SCP_2687BBase">
-		<defName>Foundation_2687B_Stomach</defName>
+
+	<HediffDef ParentName="Foundation_PlasticOrganBase">
+		<defName>Foundation_Plastic_Stomach</defName>
 		<label>Plastic Stomach</label>
 		<description>An installed anomalous Stomach.</description>
 		<labelNoun>an anomalous Stomach</labelNoun>
 	</HediffDef>
-	
-	<HediffDef ParentName="SCP_2687BBase">
-		<defName>Foundation_2687B_Kidney</defName>
+
+	<HediffDef ParentName="Foundation_PlasticOrganBase">
+		<defName>Foundation_Plastic_Kidney</defName>
 		<label>Plastic Kidney</label>
 		<description>An installed anomalous Kidney.</description>
 		<labelNoun>an anomalous Kidney</labelNoun>
 	</HediffDef>
-	
-	<HediffDef ParentName="SCP_2687BBase">
-		<defName>Foundation_2687B_Liver</defName>
+
+	<HediffDef ParentName="Foundation_PlasticOrganBase">
+		<defName>Foundation_Plastic_Liver</defName>
 		<label>Plastic Liver</label>
 		<description>An installed anomalous liver.</description>
 		<labelNoun>an anomalous liver</labelNoun>

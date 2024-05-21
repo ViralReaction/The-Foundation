@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Going to be precept for eating twisted meat -->
+	<!-- <ThoughtDef> -->
+		<!-- <defName>AteTwistedMeat</defName> -->
+		<!-- <showBubble>true</showBubble> -->
+		<!-- <icon>Things/Mote/ThoughtSymbol/Food</icon> -->
+		<!-- <durationDays>1</durationDays> -->
+		<!-- <nullifyingTraits> -->
+			<!-- <li>Ascetic</li> -->
+		<!-- </nullifyingTraits> -->
+		<!-- <nullifyingHediffs> -->
+			<!-- <li>Inhumanized</li> -->
+		<!-- </nullifyingHediffs> -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <label>ate twisted meat</label> -->
+				<!-- <description>It was so gristly and stringy - like eating cancer. I want to throw up.</description> -->
+				<!-- <baseMoodEffect>-10</baseMoodEffect> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </ThoughtDef> -->
+
+</Defs>

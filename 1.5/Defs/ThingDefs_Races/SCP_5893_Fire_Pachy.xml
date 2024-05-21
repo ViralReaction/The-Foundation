@@ -101,7 +101,6 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
-					<li>Foundation_Flame</li>
 				</capacities>
 				<power>12</power>
 				<cooldownTime>2</cooldownTime>
@@ -111,7 +110,6 @@ Although normally peaceful, SCP-5893 specimens can ignite their body without the
 				<label>teeth</label>
 				<capacities>
 					<li>Bite</li>
-					<li>Foundation_Flame</li>
 				</capacities>
 				<power>6</power>
 				<cooldownTime>1.5</cooldownTime>

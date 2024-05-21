@@ -2,48 +2,6 @@
 <Defs>
 
 	<ManeuverDef>
-		<defName>Foundation_Flame</defName>
-		<requiredCapacity>Foundation_Flame</requiredCapacity>
-		<verb>
-			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>Foundation_Flame</meleeDamageDef>
-		</verb>
-		<logEntryDef>MeleeAttack</logEntryDef>
-		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
-		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
-		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
-		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
-	</ManeuverDef>
-
-	<ManeuverDef>
-		<defName>Foundation_Acid</defName>
-		<requiredCapacity>Foundation_Acid</requiredCapacity>
-		<verb>
-			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>Foundation_Acid</meleeDamageDef>
-		</verb>
-		<logEntryDef>MeleeAttack</logEntryDef>
-		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
-		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
-		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
-		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
-	</ManeuverDef>
-
-	<ManeuverDef>
-		<defName>Foundation_Electric</defName>
-		<requiredCapacity>Foundation_Electric</requiredCapacity>
-		<verb>
-			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>Foundation_Electric</meleeDamageDef>
-		</verb>
-		<logEntryDef>MeleeAttack</logEntryDef>
-		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
-		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
-		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
-		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
-	</ManeuverDef>
-	
-	<ManeuverDef>
 		<defName>Foundation_106_Oldman_Scratch</defName>
 		<requiredCapacity>Foundation_106_Oldman_Scratch</requiredCapacity>
 		<verb>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIAndersonRobotics</defName>
+		<defName>Foundation_GOI_Icon_AndersonRobotics</defName>
 		<iconPath>UI/Icons/AndersonRobotics</iconPath>
 		<memes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
@@ -10,7 +10,7 @@
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIChicagoSpirit</defName>
+		<defName>Foundation_GOI_Icon_ChicagoSpirit</defName>
 		<iconPath>UI/Icons/ChicagoSpirit</iconPath>
 		<memes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
@@ -18,7 +18,7 @@
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIChurchBrokeGod</defName>
+		<defName>Foundation_GOI_Icon_ChurchBrokeGod</defName>
 		<iconPath>UI/Icons/ChurchBrokenGod</iconPath>
 		<memes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
@@ -26,7 +26,7 @@
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIChurchSecondHytoth</defName>
+		<defName>Foundation_GOI_Icon_ChurchSecondHytoth</defName>
 		<iconPath>UI/Icons/ChurchSecondHytoth</iconPath>
 		<memes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
@@ -34,27 +34,27 @@
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIFactory</defName>
+		<defName>Foundation_GOI_Icon_Factory</defName>
 		<iconPath>UI/Icons/Factory</iconPath>
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIFifthChurch</defName>
+		<defName>Foundation_GOI_Icon_FifthChurch</defName>
 		<iconPath>UI/Icons/FifthChurch</iconPath>
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIMannaCharitable</defName>
+		<defName>Foundation_GOI_Icon_MannaCharitable</defName>
 		<iconPath>UI/Icons/MannaCharitable</iconPath>
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIOneiroi</defName>
+		<defName>Foundation_GOI_Icon_Oneiroi</defName>
 		<iconPath>UI/Icons/OneiroiCollective</iconPath>
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOISarkicCults</defName>
+		<defName>Foundation_GOI_Icon_SarkicCults</defName>
 		<iconPath>UI/Icons/SarkicCults</iconPath>
 		<memes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
@@ -62,17 +62,17 @@
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOISerpentsHand</defName>
+		<defName>Foundation_GOI_Icon_SerpentsHand</defName>
 		<iconPath>UI/Icons/SerpentsHand</iconPath>
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOISharkPunch</defName>
+		<defName>Foundation_GOI_Icon_SharkPunch</defName>
 		<iconPath>UI/Icons/SPC</iconPath>
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOITouHei</defName>
+		<defName>Foundation_GOI_Icon_TouHei</defName>
 		<iconPath>UI/Icons/TouHeiHeavyIndustries</iconPath>
 		<memes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
@@ -80,7 +80,7 @@
 	</IdeoIconDef>
 
 	<IdeoIconDef>
-		<defName>Ideoligion_SCP_GOIWondertainment</defName>
+		<defName>Foundation_GOI_Icon_Wondertainment</defName>
 		<iconPath>UI/Icons/Wondertainment</iconPath>
 	</IdeoIconDef>
 

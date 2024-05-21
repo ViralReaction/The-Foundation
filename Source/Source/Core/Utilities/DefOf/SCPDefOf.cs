@@ -14,7 +14,7 @@ namespace Foundation
         public static DamageDef Foundation_106_Oldman_Scratch;
         public static EffecterDef HumeShield_Break;
         public static FleckDef ExplosionHumeFlash;
-        public static HediffDef Foundation_2687_Poison; // Plastic Organ Poisoning
+        public static HediffDef Foundation_Plastic_Poison; // Plastic Organ Poisoning
         public static HediffDef Foundation_939_Breath_Hediff; // With Many Voices Amneisa Breath
         public static HediffDef Foundation_2845_Transmute_Hediff; // The Deer Transmute Aura
         public static HediffDef GutWorms; // Pope Soap Cleanining

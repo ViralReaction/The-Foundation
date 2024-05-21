@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>Foundation_475_Soap</defName>
 		<label>SCP-475 Pope Soap</label>
@@ -21,7 +22,7 @@ SCP-475's secondary anomalous effects manifest when it is used on a professing m
 		<useHitPoints>false</useHitPoints>
 		<techLevel>Ultra</techLevel>
 		<thingCategories>
-			<li>SCPObjects</li>
+			<li>Foundation_Objects</li>
 		</thingCategories>
 		<tradeTags>
 			<li>Artifact</li>
@@ -48,4 +49,5 @@ SCP-475's secondary anomalous effects manifest when it is used on a professing m
 			<li Class="CompProperties_UseEffectDestroySelf" />
 		</comps>
 	</ThingDef>
+
 </Defs>

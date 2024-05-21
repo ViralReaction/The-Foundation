@@ -21,7 +21,7 @@ namespace Foundation
             for (int index = 0; index < aliveOfPlayerFaction.Count; index++)
             {
                 Pawn pawn = aliveOfPlayerFaction[index];
-                if (pawn.IsMutant)
+                if (pawn.IsColonyMutant)
                     return ThoughtState.ActiveDefault;
             }
             return ThoughtState.Inactive;
