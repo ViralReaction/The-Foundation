@@ -58,14 +58,14 @@
     <Compile Include="Core\SCP\SCP_096_Shy_Guy\IncidentWorker_SCP096.cs" />
     <Compile Include="Core\SCP\SCP_106_Old_Man\Comp_OldMan.cs" />
     <Compile Include="Core\SCP\SCP_106_Old_Man\CompProperties_OldMan.cs" />
-    <Compile Include="Core\SCP\SCP_113 Gender Stone\CompUseEffect_UseSCP113.cs" />
+    <Compile Include="Core\SCP\SCP_113 Gender Stone\CompUseEffect_UseGenderStone.cs" />
     <Compile Include="Core\SCP\SCP_2687_Plastic_Organs\Hediff_SCP2687.cs" />
     <Compile Include="Core\SCP\SCP_2845_Deer\IncidentWorker_2845.cs" />
     <Compile Include="Core\SCP\SCP_2845_Deer\ThoughtWorker_SCP2845.cs" />
     <Compile Include="Core\SCP\SCP_3199_Human_Refuted\DeathActionWorker_Refuted_SpawnEgg.cs" />
     <Compile Include="Core\SCP\SCP_3199_Human_Refuted\IncidentWorker_SCP3199.cs" />
     <Compile Include="Core\SCP\SCP_475_Pope_Soap\CompUseEffect_UseSCP475.cs" />
-    <Compile Include="Core\SCP\SCP_500_Panacea\CompUseEffect_UseSCP500.cs" />
+    <Compile Include="Core\SCP\SCP_500_Panacea\CompUseEffect_UsePanacea.cs" />
     <Compile Include="Core\SCP\SCP_578 Bloodstone\CompUseEffect_UseSCP578.cs" />
     <Compile Include="Core\SCP\SCP_682_Reptile\IncidentWorker_SCP682.cs" />
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\CompProperties_Voices.cs" />
@@ -81,8 +81,7 @@
     <Compile Include="Core\SCP\SCP_939_With_Many_Voices\ThoughtWorker_939.cs" />
     <Compile Include="Core\Startup.cs" />
     <Compile Include="Core\Utilities\DefOf\PawnKindDefOf_SCP.cs" />
-    <Compile Include="Core\Utilities\DefOf\SCPDefOf.cs" />
-    <Compile Include="Core\Utilities\DefOf\ThingDefOf_SCP.cs" />
+    <Compile Include="Core\Utilities\DefOf\FoundationDefOf.cs" />
     <Compile Include="Core\Utilities\GameComponent.cs" />
     <Compile Include="Core\Utilities\SCPRadius.cs" />
     <Compile Include="Core\Utilities\Debug.cs" />
@@ -97,7 +96,6 @@
     <Compile Include="Ideology\ThoughtWorker_Precept_AnomalyPresent.cs" />
     <Compile Include="Ideology\ThoughtWorker_Precept_Social_Anomaly.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Core\Utilities\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">

@@ -18,7 +18,7 @@ namespace Foundation
             if (!__instance.pawn.IsMutant)
             {
                 Ideo ideo = __instance.pawn.Ideo;
-                if ((ideo != null ? (ideo.HasPrecept(SCPDefOf.Foundation_Tools) ? 1 : 0) : 0) != 0 && otherPawn.IsMutant)
+                if ((ideo != null ? (ideo.HasPrecept(FoundationDefOf.Foundation_Tools) ? 1 : 0) : 0) != 0 && otherPawn.IsMutant)
                     return false;
             }
             return true;
@@ -32,7 +32,7 @@ namespace Foundation
             if (!__instance.pawn.IsMutant)
             {
                 Ideo ideo = __instance.pawn.Ideo;
-                if ((ideo != null ? (ideo.HasPrecept(SCPDefOf.Foundation_Tools) ? 1 : 0) : 0) != 0 && otherPawn.IsMutant)
+                if ((ideo != null ? (ideo.HasPrecept(FoundationDefOf.Foundation_Tools) ? 1 : 0) : 0) != 0 && otherPawn.IsMutant)
                     return false;
             }
             return true;
@@ -47,9 +47,9 @@ namespace Foundation
             if (victim.IsEntity || victim.IsMutant)
             {
                 if (dinfo?.Instigator is Pawn instigator)
-                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(SCPDefOf.Foundation_Died, new SignalArgs(instigator.Named(HistoryEventArgsNames.Doer))));
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(FoundationDefOf.Foundation_Died, new SignalArgs(instigator.Named(HistoryEventArgsNames.Doer))));
                 else
-                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(SCPDefOf.Foundation_Died));
+                    Find.HistoryEventsManager.RecordEvent(new HistoryEvent(FoundationDefOf.Foundation_Died));
             }
         }
     }

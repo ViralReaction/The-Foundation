@@ -15,7 +15,7 @@ namespace Foundation
         {
             if (corpse.Map == null)
                 return;
-            GenPlace.TryPlaceThing(ThingMaker.MakeThing(ThingDefOf_SCP.Foundation_Refuted_Egg), corpse.Position, corpse.Map, ThingPlaceMode.Near);
+            GenPlace.TryPlaceThing(ThingMaker.MakeThing(FoundationDefOf.Foundation_Refuted_Egg), corpse.Position, corpse.Map, ThingPlaceMode.Near);
         }
     }
 }

@@ -14,14 +14,14 @@ namespace Foundation
     {
         public override void PostAdd(DamageInfo? dinfo)
         {
-            if (!this.pawn.health.hediffSet.HasHediff(SCPDefOf.Foundation_Plastic_Poison))
+            if (!this.pawn.health.hediffSet.HasHediff(FoundationDefOf.Foundation_Plastic_Poison))
             {
-                Hediff hediff = HediffMaker.MakeHediff(SCPDefOf.Foundation_Plastic_Poison, this.pawn);
+                Hediff hediff = HediffMaker.MakeHediff(FoundationDefOf.Foundation_Plastic_Poison, this.pawn);
                 hediff.Severity = 0.05f;
                 this.pawn.health.AddHediff(hediff);
             }
             else
-                this.pawn.health.hediffSet.GetFirstHediffOfDef(SCPDefOf.Foundation_Plastic_Poison).Severity += 0.05f;
+                this.pawn.health.hediffSet.GetFirstHediffOfDef(FoundationDefOf.Foundation_Plastic_Poison).Severity += 0.05f;
         }
     }
 }

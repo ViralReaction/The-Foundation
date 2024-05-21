@@ -95,7 +95,7 @@ namespace Foundation.HarmonyPatches
             IntVec3 result;
             if (__instance?.kindDef != PawnKindDefOf_SCP.Foundation_ManyVoices_Incident || !__instance.Spawned || GenLocalDate.HourOfDay(__instance.Map) < 5 || GenLocalDate.HourOfDay(__instance.Map) >= 19 || !CellFinder.TryFindRandomPawnExitCell(__instance, out result) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.Eclipse) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.VolcanicWinter) || __instance.Map.GameConditionManager.ConditionIsActive(GameConditionDefOf.UnnaturalDarkness))
                 return;
-            Job job = new Job(SCPDefOf.LeaveMapDaylight, (LocalTargetInfo)result);
+            Job job = new Job(FoundationDefOf.LeaveMapDaylight, (LocalTargetInfo)result);
             __instance.jobs.TryTakeOrderedJob(job, JobTag.DraftedOrder);
         }
 
@@ -129,14 +129,5 @@ namespace Foundation.HarmonyPatches
             }
         }
 
-        [HarmonyPatch(typeof(Pawn), "Kill")]
-        public class NotifyPawnDiedPatch
-        {
-            public static void Postfix(Pawn __instance)
-            {
-                Current.Game.GetComponent<FoundationComponent>().Notify_PawnDied(__instance);
-            }
-
-        }
     }
 }

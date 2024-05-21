@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>Foundation_113_BadThought</defName>
+		<defName>Foundation_GenderStone_BadThought</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
 		<durationDays>15</durationDays>
@@ -28,13 +28,13 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>Foundation_AteSCP2022</defName>
+		<defName>Foundation_Ate_SunlightPills</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>SCP2022High</hediff>
+		<hediff>Foundation_SunlightHigh</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
-				<label>SCP-2022</label>
+				<label>sunlight pills</label>
 				<description>I feel the sun's warmth and a gentle tropical breeze.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>

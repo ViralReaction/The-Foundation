@@ -163,8 +163,8 @@ namespace Foundation.Comps
         private void Break()
         {
             float scale = Mathf.Lerp(this.Props.minDrawSize, this.Props.maxDrawSize, this.energy);
-            SCPDefOf.HumeShield_Break.SpawnAttached((Thing)this.parent, this.parent.MapHeld, scale);
-            FleckMaker.Static(this.PawnOwner.TrueCenter(), this.PawnOwner.Map, SCPDefOf.ExplosionHumeFlash, 12f);
+            FoundationDefOf.HumeShield_Break.SpawnAttached((Thing)this.parent, this.parent.MapHeld, scale);
+            FleckMaker.Static(this.PawnOwner.TrueCenter(), this.PawnOwner.Map, FoundationDefOf.ExplosionHumeFlash, 12f);
             for (int index = 0; index < 6; ++index)
                 FleckMaker.ThrowDustPuff(this.parent.TrueCenter() + Vector3Utility.HorizontalVectorFromAngle(Rand.Range(0, 360)) * Rand.Range(0.3f, 0.6f), this.parent.Map, Rand.Range(0.8f, 1.2f));
             this.energy = 0.0f;

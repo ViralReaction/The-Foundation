@@ -2,9 +2,9 @@
 <Defs>
 
 	<RecipeDef>
-		<defName>Administer_SCP_113_Stone</defName>
-		<label>swap genders with SCR-113</label>
-		<description>Administer a SCP-113 instance. This will turn the targeted Pawn into the opposite sex!</description>
+		<defName>Administer_Gender_Stone</defName>
+		<label>swap genders with stone</label>
+		<description>Administer gender stone. This will turn the targeted Pawn into the opposite sex!</description>
 		<workerClass>Recipe_AdministerUsableItem</workerClass>
 		<jobString>Transforming {0}.</jobString>
 		<targetsBodyPart>false</targetsBodyPart>
@@ -12,12 +12,12 @@
 		<workAmount>60</workAmount>
 		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
 		<isViolation>true</isViolation>
-		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Foundation_113_Stone</li>
+						<li>Foundation_GenderStone</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -25,7 +25,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Foundation_113_Stone</li>
+				<li>Foundation_GenderStone</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>

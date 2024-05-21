@@ -3,7 +3,7 @@
 
 	<!-- SCP-106 Old Man -->
 	<DamageDef ParentName="Scratch">
-		<defName>Foundation_106_Oldman_Scratch</defName>
+		<defName>Foundation_Oldman_Scratch</defName>
 		<label>old man scratch</label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been sliced to death.</deathMessage>

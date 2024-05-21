@@ -2,12 +2,9 @@
 <Defs>
 
 	<ThingDef ParentName="MechSerumBase">
-		<defName>Foundation_500_Panacea</defName>
-		<label>SCP-500 Panacea Pill</label>
-		<description>Item #: SCP-500
-Object Class: Safe
-			
-SCP-500 is a small red pill that when taken orally, effectively cures the subject of all diseases within two hours, exact time depending on the severity and amount of the subject's conditions. Despite extensive trials, all attempts at synthesizing more of what is thought to be the active ingredient of the pills have been unsuccessful.</description>
+		<defName>Foundation_Panacea</defName>
+		<label>Panacea Pill</label>
+		<description>Item #: SCP-500/n/nObject Class: Safe/n/nSCP-500 is a small red pill that when taken orally, effectively cures the subject of all diseases within two hours, exact time depending on the severity and amount of the subject's conditions. Despite extensive trials, all attempts at synthesizing more of what is thought to be the active ingredient of the pills have been unsuccessful.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Penoxycyline</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -19,17 +16,18 @@ SCP-500 is a small red pill that when taken orally, effectively cures the subjec
 			<MarketValue>1300</MarketValue>
 		</statBases>
 		<thingCategories>
+			<li>Drugs</li>
 			<li>Foundation_Objects</li>
 		</thingCategories>
 		<tradeability>Sellable</tradeability>
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
-				<useLabel>consume a SCP-500 pill</useLabel>
+				<useLabel>consume a panacea pill</useLabel>
 				<useDuration>100</useDuration>
 			</li>
 			<li Class="CompProperties_UseEffect">
-				<compClass>Foundation.CompUseEffect_UseSCP500</compClass>
+				<compClass>Foundation.CompUseEffect_UsePanacea</compClass>
 			</li>
 			<li Class="CompProperties_UseEffectPlaySound">
 				<soundOnUsed>Ingest_Pill</soundOnUsed>
@@ -39,21 +37,21 @@ SCP-500 is a small red pill that when taken orally, effectively cures the subjec
 	</ThingDef>
   
 	<RecipeDef>
-		<defName>Administer_SCP500R</defName>
-		<label>administer SCP-500</label>
-		<description>Administer a SCP-500 panacea pill to cure any and all diseases.</description>
+		<defName>Foundation_Administer_Panacea</defName>
+		<label>administer panacea</label>
+		<description>Administer a panacea pill to cure any and all diseases.</description>
 		<workerClass>Recipe_AdministerUsableItem</workerClass>
-		<jobString>Administering SCP-500.</jobString>
+		<jobString>Administering Panacea.</jobString>
 		<targetsBodyPart>false</targetsBodyPart>
 		<anesthetize>false</anesthetize>
 		<workAmount>100</workAmount>
 		<dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
-		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Foundation_500_Panacea</li>
+						<li>Foundation_Panacea</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -61,7 +59,7 @@ SCP-500 is a small red pill that when taken orally, effectively cures the subjec
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Foundation_500_Panacea</li>
+				<li>Foundation_Panacea</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>

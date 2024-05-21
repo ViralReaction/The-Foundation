@@ -20,9 +20,6 @@ namespace Foundation
         public static PawnKindDef Foundation_Refuted;
         public static PawnKindDef Foundation_5893R;
         //public static PawnKindDef Foundation_Josie;
-        public static PawnKindDef Rat;
-        public static PawnKindDef Boomrat;
-        public static PawnKindDef Cobra;
 
         static PawnKindDefOf_SCP() => DefOfHelper.EnsureInitializedInCtor(typeof(PawnKindDefOf_SCP));
     }

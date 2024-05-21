@@ -22,7 +22,7 @@ namespace Foundation
         //}
         protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
         {
-            Thing thing = GenSpawn.Spawn(ThingDefOf_SCP.Foundation_578_1_Bloodstone, pawn.Position, pawn.Map);
+            Thing thing = GenSpawn.Spawn(FoundationDefOf.Foundation_578_1_Bloodstone, pawn.Position, pawn.Map);
             thing.stackCount = 100;
             GenPlace.TryPlaceThing(thing, pawn.Position, pawn.Map, ThingPlaceMode.Direct);
             pawn.Kill(null);

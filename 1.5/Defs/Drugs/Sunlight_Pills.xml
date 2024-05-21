@@ -3,14 +3,9 @@
 
 	<!-- SCP 2022 -->
 	<ThingDef ParentName="DrugPillBase">
-		<defName>SCP2022_Pill</defName>
-		<label>SCP-2022 Sunlight Pill</label>
-		<description>Item #: SCP-2022
-Object Class: Safe
-
-SCP-2022 are [SR] gelatin capsules that compress and constantly emit electromagnetic energies similar to sunlight and contains other unknown active ingredients, two of which are labeled Lumen and Kelvin (K), based on the packaging. How the capsules are able to compress and contain "sunlight" into a measurable and administrative form are currently unknown, with chemical analysis of the compounds used in synthesizing the drug yielding no results.
-Subjects taking the supplement have reported feeling a gentle tropical breeze, scents of sea water, faint sounds of crashing waves, and a pleasant warmth within their bodiesSCP-2022 is a glowing yellow gelatin pill that improves immune health and gives pleasant thoughts. 
-Overuse of the supplements increase this sensation, with the test group experiencing increased burning sensations in organs, development of photosensitivity, sunburn, inflammation, dim to intense bioluminescence, Hypervitaminosis D, vomiting, nausea, dehydration, decreased appetite, insomnia, constipation, fatigue, irritability, myasthenia, and metastatic calcification. Other severe cases have reported various forms of cancer, large kidney stones, hypercalcemia, xeroderma, actinic keratosis, polymorphous light eruption, cataracts, macular degeneration, immune suppression, abnormal vascular functionality, solar elastosis, 1st-3rd degree (internal and external) burns, invisibility from the visible spectrum, and [REDACTED].</description>
+		<defName>Foundation_SunlightPill</defName>
+		<label>Sunlight Pill</label>
+		<description>Item #: SCP-2022/n/nObject Class: Safe/n/nSCP-2022 are [SR] gelatin capsules that compress and constantly emit electromagnetic energies similar to sunlight and contains other unknown active ingredients, two of which are labeled Lumen and Kelvin (K), based on the packaging. How the capsules are able to compress and contain "sunlight" into a measurable and administrative form are currently unknown, with chemical analysis of the compounds used in synthesizing the drug yielding no results./n/nSubjects taking the supplement have reported feeling a gentle tropical breeze, scents of sea water, faint sounds of crashing waves, and a pleasant warmth within their bodiesSCP-2022 is a glowing yellow gelatin pill that improves immune health and gives pleasant thoughts./n/nOveruse of the supplements increase this sensation, with the test group experiencing increased burning sensations in organs, development of photosensitivity, sunburn, inflammation, dim to intense bioluminescence, Hypervitaminosis D, vomiting, nausea, dehydration, decreased appetite, insomnia, constipation, fatigue, irritability, myasthenia, and metastatic calcification. Other severe cases have reported various forms of cancer, large kidney stones, hypercalcemia, xeroderma, actinic keratosis, polymorphous light eruption, cataracts, macular degeneration, immune suppression, abnormal vascular functionality, solar elastosis, 1st-3rd degree (internal and external) burns, invisibility from the visible spectrum, and [REDACTED].</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/Penoxycyline</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -31,23 +26,24 @@ Overuse of the supplements increase this sensation, with the test group experien
 			<li>SCP</li>
 		</tradeTags>
 		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.40</joy>
+			<drugCategory>Hard</drugCategory>
 			<foodType>Processed</foodType>
-			<preferability>NeverForNutrition</preferability>
-			<drugCategory>Any</drugCategory>
-			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-			<chairSearchRadius>8</chairSearchRadius>
+			<baseIngestTicks>80</baseIngestTicks>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
 			<ingestSound>Ingest_Pill</ingestSound>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
 			<ingestCommandString>Take {0}</ingestCommandString>
 			<ingestReportString>Taking {0}.</ingestReportString>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>SCP2022High</hediffDef>
+					<hediffDef>Foundation_SunlightHigh</hediffDef>
 					<severity>1.0</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>SCP2022_Overdose</hediffDef>
+					<hediffDef>Foundation_SunlightOverdose</hediffDef>
 					<severity>0.45</severity>
 				</li>
 			</outcomeDoers>
@@ -62,15 +58,15 @@ Overuse of the supplements increase this sensation, with the test group experien
 			<li Class="CompProperties_Drug">
 				<addictiveness>0</addictiveness>
 				<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
-			  </li>
+			</li>
 		</comps>
 		<allowedArchonexusCount>5</allowedArchonexusCount>
 	</ThingDef>
 
 	<HediffDef>
-		<defName>SCP2022High</defName>
+		<defName>Foundation_SunlightHigh</defName>
 		<hediffClass>Hediff_High</hediffClass>
-		<label>SCP-2022</label>
+		<label>sunlight</label>
 		<description>SCP-2022-induced health benefits. Increases resistance to diseases, infections, and improves healing.</description>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -95,7 +91,7 @@ Overuse of the supplements increase this sensation, with the test group experien
 	</HediffDef>
 
 	<HediffDef>
-		<defName>SCP2022_Overdose</defName>
+		<defName>Foundation_SunlightOverdose</defName>
 		<label>sunlight overdose</label>
 		<labelNoun>a sunlight overdose</labelNoun>
 		<description>Generalized toxic effects due to over-concentration of sunlight in the bloodstream. Symptoms include nausea, pain, and stupor. Severe overdoses may include internal burning and death.</description>
@@ -122,11 +118,24 @@ Overuse of the supplements increase this sensation, with the test group experien
 				<minSeverity>0.50</minSeverity>
 				<vomitMtbDays>0.30</vomitMtbDays>
 				<painOffset>0.2</painOffset>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Foundation_SunlightOrganBurn</hediff>
+						<mtbDays>0.75</mtbDays>
+						<partsToAffect>
+							<li>Liver</li>
+							<li>Heart</li>
+							<li>Stomach</li>
+							<li>Lung</li>
+							<li>Kidney</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
 				<capMods>
-				  <li>
-					<capacity>Consciousness</capacity>
-					<setMax>0.5</setMax>
-				  </li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.5</setMax>
+					</li>
 				</capMods>
 			</li>
 			<li>
@@ -135,7 +144,7 @@ Overuse of the supplements increase this sensation, with the test group experien
 				<painOffset>0.8</painOffset>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
-						<hediff>SCP2022_OrganBurn</hediff>
+						<hediff>Foundation_SunlightOrganBurn</hediff>
 						<mtbDays>0.3</mtbDays>
 						<partsToAffect>
 							<li>Liver</li>
@@ -147,17 +156,17 @@ Overuse of the supplements increase this sensation, with the test group experien
 					</li>
 				</hediffGivers>
 				<capMods>
-				  <li>
-					<capacity>Consciousness</capacity>
-					<setMax>0.1</setMax>
-				  </li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
 				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
 
 	<HediffDef ParentName="DiseaseBase">
-		<defName>SCP2022_OrganBurn</defName>
+		<defName>Foundation_SunlightOrganBurn</defName>
 		<label>sunburn damage</label>
 		<description>Sunburn damage at the cellular level.</description>
 		<stages>

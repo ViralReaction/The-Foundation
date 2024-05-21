@@ -9,7 +9,7 @@ using Verse;
 
 namespace Foundation
 {
-    internal class CompUseEffect_UseSCP500 : CompUseEffect
+    internal class CompUseEffect_UsePanacea : CompUseEffect
     {
         public override void DoEffect(Pawn pawn)
         {
