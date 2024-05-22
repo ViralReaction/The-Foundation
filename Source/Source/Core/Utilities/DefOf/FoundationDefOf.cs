@@ -12,7 +12,7 @@ namespace Foundation
     public static class FoundationDefOf
     {
         public static ThingDef Foundation_Refuted_Egg;
-        public static ThingDef Foundation_578_1_Bloodstone;
+        public static ThingDef Foundation_BloodOpal;
         public static ThingDef Filth_OldMan;
 
         public static DamageDef Foundation_Oldman_Scratch;

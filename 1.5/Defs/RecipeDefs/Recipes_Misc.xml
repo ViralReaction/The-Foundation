@@ -31,9 +31,9 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>Administer_SCP_578_Stone</defName>
-		<label>infuse with SCP-578</label>
-		<description>Administer a SCP-578 instance. This will not end well for the targeted Pawn!</description>
+		<defName>Foundation_Administer_BloodOpal</defName>
+		<label>infuse with opal catalyst</label>
+		<description>Administer opal catalyst. This will not end well for the targeted Pawn!</description>
 		<workerClass>Recipe_AdministerUsableItem</workerClass>
 		<jobString>Transforming {0}.</jobString>
 		<targetsBodyPart>false</targetsBodyPart>
@@ -46,7 +46,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Foundation_578_Bloodstone_Maker</li>
+						<li>Foundation_BloodOpal_Catalyst</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -54,7 +54,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Foundation_578_Bloodstone_Maker</li>
+				<li>Foundation_BloodOpal_Catalyst</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 	</RecipeDef>

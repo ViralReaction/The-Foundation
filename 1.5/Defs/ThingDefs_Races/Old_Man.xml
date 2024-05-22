@@ -99,7 +99,7 @@
 			<li>
 				<label>left claw</label>
 				<capacities>
-					<li>Foundation_Oldman_Scratch</li>
+					<li>Foundation_OldMan_Scratch</li>
 				</capacities>
 				<power>15</power>
 				<cooldownTime>1</cooldownTime>
@@ -117,7 +117,7 @@
 			<li>
 				<label>right claw</label>
 				<capacities>
-					<li>Foundation_Oldman_Scratch</li>
+					<li>Foundation_OldMan_Scratch</li>
 				</capacities>
 				<power>15</power>
 				<cooldownTime>1</cooldownTime>

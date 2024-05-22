@@ -2,11 +2,11 @@
 <Defs>
 
 	<ManeuverDef>
-		<defName>Foundation_Oldman_Scratch</defName>
-		<requiredCapacity>Foundation_Oldman_Scratch</requiredCapacity>
+		<defName>Foundation_OldMan_Scratch</defName>
+		<requiredCapacity>Foundation_OldMan_Scratch</requiredCapacity>
 		<verb>
 			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>Foundation_Oldman_Scratch</meleeDamageDef>
+			<meleeDamageDef>Foundation_OldMan_Scratch</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>
 		<combatLogRulesHit>Maneuver_Scratch_MeleeHit</combatLogRulesHit>

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="MakeableDrugBase">
-		<defName>Foundation_578_Bloodstone_Maker</defName>
-		<label>SCP-578 Blood Opal Catalyst</label>
-		<description>Item #: SCP-578-1
-Object Class: Safe
-		
-SCP-578 is a colorless, odorless liquid consisting of a solution of water, silicon, and a previously unknown and uncharacterized enzyme. SCP-578's anomalous properties manifest when it is brought into contact with human blood, solidifing into a beautiful gemstone known as SCP-578-1.</description>
+	<ThingDef ParentName="DrugBase">
+		<defName>Foundation_BloodOpal_Catalyst</defName>
+		<label>Blood Opal Catalyst</label>
+		<description>Item #: SCP-578-1/n/nObject Class: Safe/n/nSCP-578 is a colorless, odorless liquid consisting of a solution of water, silicon, and a previously unknown and uncharacterized enzyme. SCP-578's anomalous properties manifest when it is brought into contact with human blood, solidifing into a beautiful gemstone known as SCP-578-1.</description>
 		<descriptionHyperlinks>
-			<HediffDef>GoJuiceHigh</HediffDef>
-			<HediffDef>GoJuiceAddiction</HediffDef>
+			<ThingDef>Foundation_BloodOpal</ThingDef>
+			<RecipeDef>Foundation_Administer_BloodOpal</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Special/SCP_578</texPath>
@@ -41,41 +38,18 @@ SCP-578 is a colorless, odorless liquid consisting of a solution of water, silic
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<chairSearchRadius>0</chairSearchRadius>
 			<outcomeDoers>
-				<li Class="Foundation.IngestionOutcomeDoer_IngestSCP578"></li>
+				<li Class="Foundation.IngestionOutcomeDoer_IngestBloodOpal"/>
 			</outcomeDoers>
 		</ingestible>
-		<recipeMaker>
-			<researchPrerequisite>GoJuiceProduction</researchPrerequisite>
-			<recipeUsers>
-				<li>DrugLab</li>
-			</recipeUsers>
-			<soundWorking>Recipe_Drug</soundWorking>
-		</recipeMaker>
-		<costList>
-			<Neutroamine>2</Neutroamine>
-			<Yayo>1</Yayo>
-		</costList>
 		<comps>
-			<li Class="CompProperties_Drug">
-				<!-- <chemical>GoJuice</chemical> -->
-				<!-- <addictiveness>0.026</addictiveness> -->
-				<!-- <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset> -->
-				<!-- <needLevelOffset>0.9</needLevelOffset> -->
-				<!-- <isCombatEnhancingDrug>true</isCombatEnhancingDrug> -->
-				<!-- <listOrder>200</listOrder> -->
-				<!-- <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset> -->
-				<!-- <largeOverdoseChance>0.005</largeOverdoseChance> -->
-			</li>
+			<li Class="CompProperties_Drug"/>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>Foundation_578_1_Bloodstone</defName>
+		<defName>Foundation_BloodOpal</defName>
 		<label>Blood Opal</label>
-		<description>Item #: SCP-578-1
-Object Class: Safe
-	
-SCP-578 and several hundred instances of SCP-578-1 were initially discovered during a Foundation raid on a Marshall, Carter, and Dark Ltd. facility. The facility had been used as a production site for various items made of SCP-578-1. The exact process MCD used to create SCP-578 is unknown.</description>
+		<description>Item #: SCP-578-1/n/nObject Class: Safe/n/nSCP-578 and several hundred instances of SCP-578-1 were initially discovered during a Foundation raid on a Marshall, Carter, and Dark Ltd. facility. The facility had been used as a production site for various items made of SCP-578-1. The exact process MCD used to create SCP-578 is unknown.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Jade</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

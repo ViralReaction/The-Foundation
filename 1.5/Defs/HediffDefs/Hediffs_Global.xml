@@ -3,7 +3,7 @@
 
 	<!-- SCP-106 Corrosive Ooze -->
 	<HediffDef>
-		<defName>Foundation_106_Ooze_Hediff</defName>
+		<defName>Foundation_OldMan_Ooze_Hediff</defName>
 		<label>SCP-106 ooze</label>
 		<description>A black, mucus-like substance that has corrosive effects.</description>
 		<hediffClass>HediffWithComps</hediffClass>
