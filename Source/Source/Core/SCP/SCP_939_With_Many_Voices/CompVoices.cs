@@ -97,10 +97,10 @@ namespace Foundation
 
     private void StartMentalStateSpecificPos(Pawn pawn, IntVec3 position)
     {
-        MentalState_Voices instance = (MentalState_Voices)Activator.CreateInstance(FoundationDefOf.FollowTheVoices.stateClass);
+        MentalState_Voices instance = (MentalState_Voices)Activator.CreateInstance(FoundationDefOf.Foundation_FollowTheVoices.stateClass);
         instance.voicesHeardFrom = position;
         instance.pawn = pawn;
-        instance.def = FoundationDefOf.FollowTheVoices;
+        instance.def = FoundationDefOf.Foundation_FollowTheVoices;
         instance.causedByMood = false;
         instance.PreStart();
         if (pawn.Drafted)

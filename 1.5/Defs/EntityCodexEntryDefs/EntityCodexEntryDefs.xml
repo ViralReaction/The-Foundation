@@ -5,7 +5,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_ShyGuy</defName>
     <label>Shy Guy</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_ShyGuy</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_096/SCP_096_cr_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
@@ -19,7 +19,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_OldMan</defName>
     <label>Old Man</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_OldMan</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_106/SCP_106_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
@@ -33,7 +33,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_Allosaurus</defName>
     <label>Most of Allosaurus</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_Allosaurus</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_250/SCP_250_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
@@ -47,7 +47,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_ManyVoices</defName>
     <label>With Many Voices</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_ManyVoices</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_939/SCP_939_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
@@ -61,7 +61,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_LoopSnake</defName>
     <label>Loop Snake</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_LoopSnake</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP2584/SCP2584_south</uiIconPath>
     <startDiscovered>false</startDiscovered>
@@ -75,7 +75,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_Deer</defName>
     <label>The Deer</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_Deer</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP2845/SCP2845_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
@@ -89,7 +89,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_Refuted</defName>
     <label>Human Refuted</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_Refuted</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_3199/SCP_3199_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
@@ -103,7 +103,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_DogSpider</defName>
     <label>Doglike Spider</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_DogSpider</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_5185/SCP_5185_east</uiIconPath>
     <startDiscovered>false</startDiscovered>
@@ -117,7 +117,7 @@
   <EntityCodexEntryDef>
     <defName>Foundation_Reptile</defName>
     <label>Impossible Reptile</label>
-    <category>SCP</category>
+    <category>Foundation_EnityCategory</category>
     <useDescriptionFrom>Foundation_Reptile</useDescriptionFrom>
     <uiIconPath>Things/Pawn/Animal/SCP_682/SCP_682_east</uiIconPath>
     <startDiscovered>false</startDiscovered>

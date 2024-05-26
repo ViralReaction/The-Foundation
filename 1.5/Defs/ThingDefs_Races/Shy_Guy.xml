@@ -81,7 +81,7 @@
 			</li>
 			<li Class="CompProperties_Studiable">
 				<frequencyTicks>120000</frequencyTicks>
-				<knowledgeCategory>SCP</knowledgeCategory>
+				<knowledgeCategory>Foundation_AnomalyKnowledge</knowledgeCategory>
 				<anomalyKnowledge>3</anomalyKnowledge>
 				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
 				<requiresHoldingPlatform>true</requiresHoldingPlatform>

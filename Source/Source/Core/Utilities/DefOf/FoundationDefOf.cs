@@ -15,7 +15,7 @@ namespace Foundation
         public static ThingDef Foundation_BloodOpal;
         public static ThingDef Filth_OldMan;
 
-        public static DamageDef Foundation_Oldman_Scratch;
+        public static DamageDef Foundation_OldMan_Scratch;
 
         public static EffecterDef HumeShield_Break;
 
@@ -31,7 +31,7 @@ namespace Foundation
 
         public static JobDef LeaveMapDaylight;
 
-        public static MentalStateDef FollowTheVoices;
+        public static MentalStateDef Foundation_FollowTheVoices;
 
         [MayRequireIdeology]
         public static PreceptDef Foundation_Tools;

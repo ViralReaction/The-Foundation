@@ -2,7 +2,7 @@
 <Defs>
 
   <KnowledgeCategoryDef>
-    <defName>SCP</defName>
+    <defName>Foundation_AnomalyKnowledge</defName>
     <label>SCP</label>
     <color>(1, 1, 1, 1)</color>
     <texPath>UI/AnomalyResearchCategoryMarkers/AnomalyResearchCategory_Basic</texPath>

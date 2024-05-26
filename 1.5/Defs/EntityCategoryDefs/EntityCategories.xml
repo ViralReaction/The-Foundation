@@ -2,7 +2,7 @@
 <Defs>
 
   <EntityCategoryDef>
-    <defName>SCP</defName>
+    <defName>Foundation_EnityCategory</defName>
     <label>SCP</label>
     <listOrder>3</listOrder>
   </EntityCategoryDef>

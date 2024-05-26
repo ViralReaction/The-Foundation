@@ -10,8 +10,8 @@
 			<RecipeDef>Foundation_Administer_BloodOpal</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/Special/SCP_578</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Drug/BloodCatalyst</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<statBases>
